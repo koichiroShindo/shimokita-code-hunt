@@ -12,6 +12,7 @@ window.TEXT = {
   en: {
     tagline: "Find 3 small shops hidden in the side streets of Shimokitazawa.",
     lead: "Tell us what you like and we pick 3 shops for you. Visit each one and scan the QR code inside to collect it.",
+    streetAlt: "A shopping street in Shimokitazawa",
     stepsTitle: "How it works",
     steps: [
       "Choose the kinds of shops you like.",
@@ -28,11 +29,14 @@ window.TEXT = {
       vintage: "Vintage clothing",
       records: "Records",
       cafe: "Cafés",
+      sweets: "Sweets",
+      curry: "Curry",
       music: "Live music",
+      theater: "Small theaters",
       books: "Books",
       hobby: "Hobby & anime",
       lifestyle: "Lifestyle & souvenirs",
-      food: "Local food"
+      spots: "Small shopping streets"
     },
     routeTitle: "Your 3 shops",
     progress: "{n} of 3 found",
@@ -60,6 +64,7 @@ window.TEXT = {
   zh: {
     tagline: "在下北泽的小巷里，找到3家藏起来的小店。",
     lead: "告诉我们你的喜好，我们为你挑选3家店。前往每家店，扫描店内的二维码即可收集。",
+    streetAlt: "下北泽的商店街",
     stepsTitle: "玩法",
     steps: [
       "选择你喜欢的店铺类型。",
@@ -76,11 +81,14 @@ window.TEXT = {
       vintage: "古着",
       records: "唱片",
       cafe: "咖啡馆",
+      sweets: "甜点",
+      curry: "咖喱",
       music: "现场音乐",
+      theater: "小剧场",
       books: "书店",
       hobby: "爱好与动漫",
       lifestyle: "生活杂货与纪念品",
-      food: "当地美食"
+      spots: "小店聚集的街区"
     },
     routeTitle: "你的3家店",
     progress: "已找到 {n} / 3",
@@ -108,6 +116,7 @@ window.TEXT = {
   ko: {
     tagline: "시모키타자와 골목에 숨어 있는 작은 가게 3곳을 찾아보세요.",
     lead: "좋아하는 것을 알려 주시면 가게 3곳을 골라 드립니다. 각 가게를 방문해 안에 있는 QR 코드를 스캔해 모아 보세요.",
+    streetAlt: "시모키타자와의 상점가",
     stepsTitle: "이용 방법",
     steps: [
       "좋아하는 가게 종류를 고릅니다.",
@@ -124,11 +133,14 @@ window.TEXT = {
       vintage: "빈티지 의류",
       records: "레코드",
       cafe: "카페",
+      sweets: "디저트",
+      curry: "카레",
       music: "라이브 음악",
+      theater: "소극장",
       books: "서점",
       hobby: "취미·애니메이션",
       lifestyle: "라이프스타일·기념품",
-      food: "로컬 음식"
+      spots: "작은 상점가"
     },
     routeTitle: "내 가게 3곳",
     progress: "3곳 중 {n}곳 찾음",
@@ -156,6 +168,7 @@ window.TEXT = {
   ja: {
     tagline: "下北沢の路地にある小さなお店を、3軒見つける。",
     lead: "好みを選ぶと、お店を3軒選びます。お店を回って、店内のQRコードを読んで集めてください。",
+    streetAlt: "下北沢の商店街",
     stepsTitle: "遊び方",
     steps: [
       "好きなお店の種類を選ぶ。",
@@ -172,11 +185,14 @@ window.TEXT = {
       vintage: "古着",
       records: "レコード",
       cafe: "カフェ",
+      sweets: "スイーツ",
+      curry: "カレー",
       music: "ライブハウス",
+      theater: "小劇場",
       books: "本屋",
       hobby: "ホビー・アニメ",
       lifestyle: "雑貨・おみやげ",
-      food: "地元の食べ物"
+      spots: "小さな商店街"
     },
     routeTitle: "あなたの3軒",
     progress: "3軒中 {n}軒 見つけた",

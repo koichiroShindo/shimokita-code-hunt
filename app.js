@@ -47,21 +47,30 @@
     return routeStores().filter(function (s) { return state.found[s.id]; }).length;
   }
 
-  // 好みに合う順に3軒選ぶ。前の回で見つけたお店と、1軒目と同じ主な種類は後回しにする
+  // 選んだ種類を順番に1軒ずつ割り当てて3軒選ぶ（2種類選べば両方が入る）。前の回で見つけたお店は後回しにする
   function recommend(prefs) {
-    var scored = STORES.map(function (s) {
+    function shuffle(a) {
+      a = a.slice();
+      for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var x = a[i]; a[i] = a[j]; a[j] = x; }
+      return a;
+    }
+    var pool = shuffle(STORES).map(function (s) {
       var score = s.categories.filter(function (c) { return prefs.indexOf(c) >= 0; }).length;
       if (state.done.indexOf(s.id) >= 0) score -= 10;
-      return { s: s, score: score, r: Math.random() };
+      return { s: s, score: score };
     });
-    scored.sort(function (a, b) { return b.score - a.score || a.r - b.r; });
-    var picked = [], usedMain = {};
-    scored.forEach(function (x) {
-      if (picked.length < 3 && x.score > 0 && !usedMain[x.s.categories[0]]) {
-        picked.push(x.s); usedMain[x.s.categories[0]] = true;
-      }
-    });
-    scored.forEach(function (x) {
+    pool.sort(function (a, b) { return b.score - a.score; });
+    var picked = [], order = shuffle(prefs);
+    for (var round = 0; picked.length < 3 && round < 3; round++) {
+      order.forEach(function (c) {
+        if (picked.length >= 3) return;
+        for (var i = 0; i < pool.length; i++) {
+          var x = pool[i];
+          if (picked.indexOf(x.s) < 0 && x.s.categories.indexOf(c) >= 0 && state.done.indexOf(x.s.id) < 0) { picked.push(x.s); return; }
+        }
+      });
+    }
+    pool.forEach(function (x) {
       if (picked.length < 3 && picked.indexOf(x.s) < 0) picked.push(x.s);
     });
     return picked.map(function (s) { return s.id; });
@@ -90,6 +99,10 @@
       ? '<button type="button" class="btn" data-go="route">' + t("resume") + "</button>"
       : "";
     return '<section class="hero">' +
+      '<div class="photos">' +
+      '<img src="images/street/street-1.jpg" alt="' + t("streetAlt") + '" width="508" height="380">' +
+      '<img src="images/street/street-2.jpg" alt="' + t("streetAlt") + '" width="418" height="314">' +
+      "</div>" +
       "<h1>" + t("tagline") + "</h1>" +
       '<p class="lead">' + t("lead") + "</p>" +
       '<div class="actions">' + resume +
@@ -120,6 +133,7 @@
     var map = "https://www.google.com/maps/search/?api=1&query=" +
       encodeURIComponent(s.lat != null ? s.lat + "," + s.lng : s.name + " " + s.address);
     return '<li class="shop' + (done ? " is-found" : "") + '">' +
+      (s.photo ? '<img class="shop-photo" src="images/shops/' + esc(s.photo) + '" alt="' + esc(s.name) + '" loading="lazy">' : "") +
       '<div class="shop-head"><span class="shop-no">' + (i + 1) + "</span>" +
       "<h3>" + esc(s.name) + "</h3>" +
       '<span class="status">' + (done ? t("found") : t("notYet")) + "</span></div>" +

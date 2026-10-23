@@ -1,0 +1,243 @@
+:root {
+  --bg: #FBFAF7;
+  --paper: #EAF1F5;
+  --ink: #15202B;
+  --sub: #4A5560;
+  --blue: #00579A;
+  --blue-dark: #003F70;
+  --clay: #C99B83;
+  --line: #D3DCE2;
+  --ok: #1E6B45;
+  --error: #A8321E;
+  --r-btn: 4px;
+  --r-box: 6px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+html:lang(ja) body { font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif; }
+html:lang(zh) body { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+html:lang(ko) body { font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 16px 64px;
+}
+
+h1, h2, h3 { line-height: 1.35; margin: 0; }
+
+/* ---- ヘッダー ---- */
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg);
+}
+.brand {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+.langs { display: flex; flex-wrap: wrap; gap: 4px; }
+.langs button {
+  font: inherit;
+  font-size: 14px;
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-btn);
+  background: transparent;
+  color: var(--sub);
+  cursor: pointer;
+}
+.langs button[aria-current="true"] {
+  border-color: var(--blue);
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* ---- トップ ---- */
+.hero { padding: 40px 0 24px; }
+.hero h1 {
+  font-size: clamp(28px, 7vw, 40px);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--clay);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+  text-decoration-skip-ink: none;
+}
+.lead { font-size: 18px; margin: 24px 0; }
+
+.steps {
+  background: var(--paper);
+  border-radius: var(--r-box);
+  padding: 24px;
+  margin-top: 16px;
+}
+.steps h2 { font-size: 20px; margin-bottom: 8px; }
+.steps ol { margin: 0; padding-left: 1.4em; }
+.steps li { padding: 4px 0; }
+.steps li::marker { color: var(--blue); font-weight: 700; }
+
+/* ---- ボタン ---- */
+.actions { display: flex; flex-direction: column; gap: 8px; margin-top: 24px; }
+.btn {
+  display: block;
+  width: 100%;
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  margin-top: 16px;
+  border: 2px solid var(--blue);
+  border-radius: var(--r-btn);
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+}
+.actions .btn { margin-top: 0; }
+.btn:hover { background: var(--blue-dark); border-color: var(--blue-dark); }
+.btn-sub { background: transparent; color: var(--blue); }
+.btn-sub:hover { background: var(--paper); color: var(--blue-dark); }
+.btn:focus-visible, .langs button:focus-visible, .chip input:focus-visible + span, .link:focus-visible {
+  outline: 3px solid var(--clay);
+  outline-offset: 2px;
+}
+
+/* ---- 共通の画面 ---- */
+.block { padding: 32px 0; }
+.h-page { font-size: clamp(24px, 6vw, 32px); font-weight: 700; margin-bottom: 8px; }
+.sub { color: var(--sub); margin: 8px 0 16px; }
+.error { color: var(--error); font-weight: 700; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* ---- 好み ---- */
+.chips {
+  border: 0; padding: 0; margin: 16px 0 8px;
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.chip span {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-btn);
+  background: #fff;
+  cursor: pointer;
+}
+.chip input:checked + span {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ---- 3軒 ---- */
+.progress {
+  display: flex; align-items: center; gap: 16px;
+  font-weight: 700; margin: 16px 0 8px;
+}
+.meter {
+  flex: 1;
+  height: 8px;
+  background: var(--paper);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.meter span { display: block; height: 100%; background: var(--blue); }
+
+.shops { list-style: none; padding: 0; margin: 24px 0 0; }
+.shop {
+  border: 1px solid var(--line);
+  border-radius: var(--r-box);
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.shop p { margin: 8px 0 0; }
+.shop-head { display: flex; align-items: flex-start; gap: 16px; }
+.shop-head h3 { flex: 1; font-size: 18px; }
+.shop-no {
+  flex: none;
+  width: 32px; height: 32px;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  color: var(--blue);
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.status {
+  flex: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--sub);
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-btn);
+}
+.is-found .shop-no { background: var(--blue); color: #fff; }
+.is-found .status { color: var(--ok); border-color: var(--ok); }
+.cats { color: var(--sub); font-size: 14px; }
+.addr { font-size: 14px; }
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--sub);
+  border: 1px dashed var(--sub);
+  border-radius: var(--r-btn);
+  padding: 0 4px;
+  vertical-align: middle;
+}
+.link {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.done { font-size: 20px; font-weight: 700; color: var(--ok); margin: 16px 0 0; }
+
+/* ---- メッセージ ---- */
+.message-text { font-size: 20px; font-weight: 700; margin: 24px 0 0; }
+.is-ok .message-text { color: var(--ok); }
+
+/* ---- 印刷用QRページ ---- */
+.qr-list { list-style: none; padding: 0; display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.qr-item {
+  border: 1px solid var(--line);
+  border-radius: var(--r-box);
+  background: #fff;
+  padding: 16px;
+  text-align: center;
+  break-inside: avoid;
+}
+.qr-item svg { width: 100%; max-width: 220px; height: auto; }
+.qr-item h2 { font-size: 18px; }
+.qr-item p { font-size: 12px; color: var(--sub); word-break: break-all; margin: 8px 0 0; }
+
+@media print {
+  body { background: #fff; }
+  .no-print { display: none; }
+}

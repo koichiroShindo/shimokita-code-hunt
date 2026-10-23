@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QRコードの印刷</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <main>
+    <section class="block">
+      <h1 class="h-page">QRコードの印刷</h1>
+      <p class="sub no-print">駅に貼るQRコードと、参加店に置くQRコードです。このページを印刷して切り分けてください。お店のQRコードは、そのお店の中にだけ置いてください。</p>
+      <ul class="qr-list" id="list"></ul>
+    </section>
+  </main>
+  <script src="vendor/qrcode.js"></script>
+  <script src="data/config.js?v=1"></script>
+  <script src="data/stores.js?v=1"></script>
+  <script>
+    (function () {
+      var base = location.href.replace(/qr\.html.*$/, "");
+      var items = [{ title: "駅に貼る（入口）", url: base }].concat(
+        window.STORES.map(function (s) {
+          return { title: s.name, url: base + "?s=" + encodeURIComponent(s.id) + "&k=" + encodeURIComponent(s.key) };
+        })
+      );
+      document.getElementById("list").innerHTML = items.map(function (it) {
+        var qr = qrcode(0, "M");
+        qr.addData(it.url);
+        qr.make();
+        var title = it.title.replace(/[&<>]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]; });
+        return '<li class="qr-item"><h2>' + title + "</h2>" +
+          qr.createSvgTag({ cellSize: 6, margin: 2, scalable: true }) +
+          "<p>" + it.url.replace(/&/g, "&amp;") + "</p></li>";
+      }).join("");
+    })();
+  </script>
+</body>
+</html>

@@ -1,10 +1,11 @@
 /*
  * お店の一覧。お店を足すときは { ... }, のかたまりを1つコピーして書き換える。
+ * 選ぶ基準：観光客がほとんど来ない、路地裏・2階以上・地下・建物の一室にある個人店。チェーン店や有名な施設は入れない。
  *
  *   id         : 半角英数字の名前（QRコードのURLに入る。あとから変えない）
  *   key        : お店のQRコード用の合言葉（半角英数字8文字ほど。お店ごとに別にする）
  *   name       : 店名
- *   categories : 当てはまる種類（vintage / records / cafe / sweets / curry / music / theater / books / lifestyle / spots）
+ *   categories : 当てはまる種類（vintage / records / kissa / cafe / sweets / curry / music / theater / books / goods）
  *   address    : 住所（地図のリンクにも使う）
  *   lat, lng   : お店の位置。Googleマップでお店を右クリックすると出る数字を入れる。
  *                null のあいだは、QRを読んだときに位置を確かめない
@@ -16,27 +17,60 @@
 window.STORES = [
   /* ---- 古着 ---- */
   {
-    id: "flamingo",
-    key: "k7m2q9xa",
-    name: "Flamingo Shimokitazawa",
+    id: "lomad-loman",
+    key: "82vvfnwe",
+    name: "lomad・loman",
     categories: ["vintage"],
-    address: "東京都世田谷区北沢2-25-12 リサビル1F",
+    address: "東京都世田谷区北沢2-35-15 下北沢マンション2F 66号室",
     lat: null, lng: null,
     desc: {
-      en: "Open 12:00–21:00 on weekdays, 11:00–21:00 on weekends and holidays.",
-      zh: "工作日12:00–21:00，周末及节假日11:00–21:00营业。",
-      ko: "평일 12:00–21:00, 주말·공휴일 11:00–21:00 영업.",
-      ja: "平日12:00〜21:00、土日祝11:00〜21:00。"
+      en: "Deep inside the 2nd floor of an old building on a back street. Opened in May 2021. 14:00–20:00 (weekends from 13:00).",
+      zh: "位于小巷里一栋老楼的二楼深处，2021年5月开业。14:00–20:00（周末13:00起）。",
+      ko: "골목 안 낡은 건물 2층 안쪽에 있으며, 2021년 5월에 문을 열었습니다. 14:00–20:00(주말은 13:00부터).",
+      ja: "路地裏の雑居ビル2階の奥。2021年5月開店。14:00〜20:00（土日祝13:00〜）。"
     }
   },
   {
-    id: "new-york-joe",
-    key: "p3w8n1zr",
-    name: "New York Joe Exchange",
+    id: "kimama",
+    key: "kthaz9mb",
+    name: "KIMAMA",
     categories: ["vintage"],
-    address: "東京都世田谷区北沢2-29-2",
+    address: "東京都世田谷区北沢2-30-6 UCビル2F",
     lat: null, lng: null,
-    desc: {}
+    desc: {
+      en: "On the 2nd floor of UC Building, up a staircase that is easy to miss. Closed on Wednesdays.",
+      zh: "位于UC大楼二楼，楼梯入口很容易错过。周三休息。",
+      ko: "UC빌딩 2층에 있으며, 계단 입구를 지나치기 쉽습니다. 수요일 휴무.",
+      ja: "UCビルの2階。路面から階段を上がるので見逃しやすい。水曜定休。"
+    }
+  },
+  {
+    id: "kroneko",
+    key: "fbm1lp4o",
+    name: "kroneko",
+    categories: ["vintage"],
+    address: "東京都世田谷区代沢5-28-12 藤田ビル1C",
+    lat: null, lng: null,
+    desc: {
+      en: "The owner buys and sells everything alone. About 5 minutes from the station.",
+      zh: "店主一人负责采购和销售。距车站约5分钟。",
+      ko: "주인 혼자 매입부터 판매까지 하는 가게입니다. 역에서 약 5분.",
+      ja: "店主が一人で買い付けから販売までする店。駅から約5分。"
+    }
+  },
+  {
+    id: "flocci",
+    key: "ftzmbi6b",
+    name: "flocci naucinihilipilification",
+    categories: ["vintage"],
+    address: "下北沢（民家のような建物）",
+    lat: null, lng: null,
+    desc: {
+      en: "From outside it looks like a private house, so most people walk right past.",
+      zh: "从外面看像普通民宅，很多人会直接走过。",
+      ko: "밖에서 보면 일반 주택 같아서 대부분 그냥 지나칩니다.",
+      ja: "民家のような外見で、知らなければ通り過ぎてしまう店。"
+    }
   },
   {
     id: "zondag",
@@ -47,64 +81,8 @@ window.STORES = [
     lat: null, lng: null,
     desc: {}
   },
-  {
-    id: "jam",
-    key: "0pbw3p0j",
-    name: "JAM Shimokitazawa",
-    categories: ["vintage"],
-    address: "東京都世田谷区北沢2-31-7 アビティ下北沢2F",
-    lat: null, lng: null,
-    desc: {
-      en: "Open every day, 11:00–20:00.",
-      zh: "每天营业，11:00–20:00。",
-      ko: "매일 영업, 11:00–20:00.",
-      ja: "毎日営業、11:00〜20:00。"
-    }
-  },
-  {
-    id: "jam-south",
-    key: "d4t9uvpt",
-    name: "JAM Shimokitazawa South Exit",
-    categories: ["vintage"],
-    address: "東京都世田谷区北沢2-15-16 シャイン北沢ビルB1F",
-    lat: null, lng: null,
-    desc: {
-      en: "Opened in October 2025, 3 minutes' walk from the station.",
-      zh: "2025年10月开业，距车站步行3分钟。",
-      ko: "2025년 10월 오픈, 역에서 걸어서 3분입니다.",
-      ja: "2025年10月開店。駅から歩いて3分。"
-    }
-  },
 
   /* ---- レコード ---- */
-  {
-    id: "general-record-store",
-    key: "r5t2h8vd",
-    name: "General Record Store",
-    categories: ["records"],
-    address: "東京都世田谷区北沢2-8-4 松田ビル1F",
-    lat: null, lng: null,
-    desc: {
-      en: "A sister shop of Face Records in Shibuya.",
-      zh: "涩谷 Face Records 的姊妹店。",
-      ko: "시부야 Face Records의 자매점입니다.",
-      ja: "渋谷のFace Recordsの姉妹店。"
-    }
-  },
-  {
-    id: "disk-union",
-    key: "d4u7n2kq",
-    name: "disk union Shimokitazawa",
-    categories: ["records"],
-    address: "東京都世田谷区北沢1丁目",
-    lat: null, lng: null,
-    desc: {
-      en: "A used record shop that opened in 1985.",
-      zh: "1985年开业的二手唱片店。",
-      ko: "1985년에 문을 연 중고 레코드 가게입니다.",
-      ja: "1985年に開店した中古レコード店。"
-    }
-  },
   {
     id: "flash-disc-ranch",
     key: "oflouxui",
@@ -113,10 +91,24 @@ window.STORES = [
     address: "東京都世田谷区北沢2-12-16 2F",
     lat: null, lng: null,
     desc: {
-      en: "Opened in 1982, one of the oldest record shops in Shimokitazawa. It appears in the film PERFECT DAYS.",
-      zh: "1982年创业，下北泽最老的唱片店之一，也是电影《完美的日子》的取景地。",
-      ko: "1982년 창업한 시모키타자와에서 가장 오래된 레코드 가게 중 하나로, 영화 〈퍼펙트 데이즈〉의 촬영지입니다.",
-      ja: "1982年創業、下北沢で最古参のレコード店。映画『PERFECT DAYS』のロケ地。"
+      en: "Opened in 1982, one of the oldest record shops in Shimokitazawa. The 2nd-floor entrance is squeezed between two parts of a game arcade.",
+      zh: "1982年创业，下北泽最老的唱片店之一。二楼的入口夹在游戏厅的两个店面之间。",
+      ko: "1982년 창업한 시모키타자와에서 가장 오래된 레코드 가게 중 하나입니다. 2층 입구는 게임센터 사이에 끼어 있습니다.",
+      ja: "1982年創業、下北沢で最古参のレコード店。2階への入口はゲームセンターに挟まれている。"
+    }
+  },
+  {
+    id: "record-station",
+    key: "mr4as3zy",
+    name: "RECORD STATION",
+    categories: ["records"],
+    address: "東京都世田谷区北沢3-30-1 2F",
+    lat: null, lng: null,
+    desc: {
+      en: "A used record shop on a 2nd floor along the Ichibangai shopping street.",
+      zh: "位于一番街商店街一栋楼二楼的二手唱片店。",
+      ko: "이치반가이 상점가의 건물 2층에 있는 중고 레코드 가게입니다.",
+      ja: "一番街商店街のビル2階にある中古レコード店。"
     }
   },
   {
@@ -127,68 +119,140 @@ window.STORES = [
     address: "東京都世田谷区北沢2-33-12 柳川ビル2F",
     lat: null, lng: null,
     desc: {
-      en: "Vinyl records of all genres. Its only other shop is in Kyoto.",
-      zh: "经营各种类型的黑胶唱片。另一家店在京都。",
-      ko: "모든 장르의 바이닐 레코드를 다룹니다. 다른 매장은 교토에만 있습니다.",
-      ja: "全ジャンルのアナログレコードを扱う。ほかの店舗は京都だけ。"
+      en: "Vinyl of all genres on a 2nd floor. Its only other shop is in Kyoto.",
+      zh: "位于二楼，经营各种类型的黑胶唱片。另一家店在京都。",
+      ko: "2층에서 모든 장르의 바이닐을 다룹니다. 다른 매장은 교토에만 있습니다.",
+      ja: "2階で全ジャンルのアナログ盤を扱う。ほかの店舗は京都だけ。"
     }
   },
   {
-    id: "record-station",
-    key: "mr4as3zy",
-    name: "RECORD STATION",
+    id: "pianola-records",
+    key: "4km9awl0",
+    name: "pianola records",
     categories: ["records"],
-    address: "下北沢一番街商店街",
+    address: "東京都世田谷区代田2-36-13 BONUS TRACK",
     lat: null, lng: null,
     desc: {
-      en: "Mainly used records, on the Ichibangai shopping street.",
-      zh: "位于一番街商店街，以二手唱片为主。",
-      ko: "이치반가이 상점가에 있으며, 중고 레코드가 중심입니다.",
-      ja: "一番街商店街にある、中古盤中心のレコード店。"
+      en: "Records from any genre and era, picked by the owner. Closed on Thursdays.",
+      zh: "店主亲自挑选、不分类型和年代的唱片。周四休息。",
+      ko: "주인이 장르와 시대를 가리지 않고 고른 레코드. 목요일 휴무.",
+      ja: "ジャンルも年代も問わず店主が選んだレコードが並ぶ。木曜定休。"
+    }
+  },
+  {
+    id: "best-sound-record",
+    key: "s8wrf9cb",
+    name: "Best Sound Record",
+    categories: ["records"],
+    address: "下北沢駅 西口すぐのビルの一室",
+    lat: null, lng: null,
+    desc: {
+      en: "Hidden in one room of a building with a clinic and a dry cleaner, right by the West Exit. Mainly jazz and rock, open for over 20 years.",
+      zh: "藏在西口旁一栋有诊所和洗衣店的大楼里的一个房间。以爵士和摇滚为主，已营业20多年。",
+      ko: "서쪽 출구 바로 옆, 병원과 세탁소가 있는 건물의 한 방에 숨어 있습니다. 재즈와 록 중심으로 20년 넘게 영업 중입니다.",
+      ja: "西口すぐ、病院やクリーニング店が入るビルの一室でひっそり営業。ジャズとロックが中心で20年以上続く。"
     }
   },
 
-  /* ---- カフェ ---- */
+  /* ---- 純喫茶 ---- */
   {
-    id: "bear-pond-espresso",
-    key: "c9y4j6ub",
-    name: "Bear Pond Espresso",
-    categories: ["cafe"],
-    address: "東京都世田谷区北沢2-30-11",
+    id: "toumei-bara",
+    key: "konz4yf5",
+    name: "Kissa Toumei Bara",
+    categories: ["kissa"],
+    address: "東京都世田谷区北沢2-14-5 イスズビル203",
     lat: null, lng: null,
     desc: {
-      en: "An espresso bar in a renovated old candy shop. Closed on Mondays.",
-      zh: "由老式零食店改造而成的意式咖啡店。周一休息。",
-      ko: "오래된 과자 가게를 개조한 에스프레소 바입니다. 월요일 휴무.",
-      ja: "古い駄菓子屋を改装したエスプレッソの店。月曜定休。"
+      en: "A coffee house in room 203 of an old building on a back street.",
+      zh: "位于小巷里一栋老楼203室的老派咖啡馆。",
+      ko: "골목 안 낡은 건물 203호에 있는 다방입니다.",
+      ja: "路地に建つ雑居ビル2階、203号室の喫茶店。"
     }
   },
   {
-    id: "anthrop",
-    key: "8kyc663v",
-    name: "anthrop. Espresso & Comfort",
-    categories: ["cafe", "sweets"],
-    address: "東京都世田谷区北沢2-11-17",
+    id: "ichifusa",
+    key: "hlbx95ep",
+    name: "Kissa Ichifusa",
+    categories: ["kissa"],
+    address: "東京都世田谷区北沢2-21-26 2F",
     lat: null, lng: null,
     desc: {
-      en: "A café known for its homemade baked sweets.",
-      zh: "以自制烘焙点心闻名的咖啡馆。",
-      ko: "직접 구운 과자로 알려진 카페입니다.",
-      ja: "自家製の焼き菓子で知られるカフェ。"
+      en: "A 2nd-floor coffee house in a back alley, 2 minutes from the South-West Exit.",
+      zh: "位于小巷里的二楼咖啡馆，距西南口2分钟。",
+      ko: "골목 안 2층에 있는 다방으로, 남서쪽 출구에서 2분입니다.",
+      ja: "南西口から歩いて2分、路地裏のビル2階の喫茶店。"
     }
   },
   {
-    id: "felice-domani",
-    key: "18m2urbx",
-    name: "felice domani",
-    categories: ["cafe"],
-    address: "東京都世田谷区北沢2-26-14 下北沢Coo 1F",
+    id: "trois-chambres",
+    key: "m14a14z6",
+    name: "Trois Chambres",
+    categories: ["kissa"],
+    address: "東京都世田谷区代沢5-36-14 湯浅ビル2F",
     lat: null, lng: null,
     desc: {
-      en: "About 2 minutes from the station, with unusual drinks such as a black latte.",
-      zh: "距车站约2分钟，有黑色拿铁等特色饮品。",
-      ko: "역에서 약 2분 거리로, 블랙 라테 같은 독특한 음료가 있습니다.",
-      ja: "駅から約2分。ブラックラテなど個性的なドリンクがある。"
+      en: "A coffee house on the 2nd floor of a building, about 5 minutes from the South Exit.",
+      zh: "位于大楼二楼的咖啡馆，距南口约5分钟。",
+      ko: "남쪽 출구에서 약 5분, 건물 2층에 있는 다방입니다.",
+      ja: "南口から歩いて約5分、ビル2階の喫茶店。"
+    }
+  },
+  {
+    id: "masako",
+    key: "i9zxttzs",
+    name: "Jazz Kissa Masako",
+    categories: ["kissa", "music"],
+    address: "東京都世田谷区北沢2-31-2 大久ビル201",
+    lat: null, lng: null,
+    desc: {
+      en: "A jazz coffee house in room 201. It closed in 2009 and came back in 2020. Closed on Thursdays.",
+      zh: "位于201室的爵士咖啡馆。2009年歇业，2020年重新开张。周四休息。",
+      ko: "201호에 있는 재즈 다방입니다. 2009년에 문을 닫았다가 2020년에 다시 열었습니다. 목요일 휴무.",
+      ja: "201号室のジャズ喫茶。2009年に閉店し、2020年に復活した。木曜定休。"
+    }
+  },
+  {
+    id: "tag-cafe",
+    key: "cywp8pry",
+    name: "tag cafe",
+    categories: ["kissa"],
+    address: "東京都世田谷区北沢2-12-10 サウスサイド下北沢 2-2B",
+    lat: null, lng: null,
+    desc: {
+      en: "A wood-paneled \"neo\" coffee house, 1 minute from the East Exit.",
+      zh: "以木质为基调的新派老式咖啡馆，距东口1分钟。",
+      ko: "나무로 꾸민 '네오' 다방으로, 동쪽 출구에서 1분입니다.",
+      ja: "木を基調にしたネオ純喫茶。東口から歩いて1分。"
+    }
+  },
+
+  /* ---- 隠れ家カフェ ---- */
+  {
+    id: "browns-books-cafe",
+    key: "ydoec1aj",
+    name: "Brown's Books & Cafe",
+    categories: ["cafe", "books"],
+    address: "東京都世田谷区代沢5-32-13 露崎商店ビル5F",
+    lat: null, lng: null,
+    desc: {
+      en: "On the 5th floor of a shop building. Open only on weekends; on weekdays it is a magazine office.",
+      zh: "位于一栋商店大楼的5楼。只在周末营业，平日是杂志编辑部。",
+      ko: "상점 건물 5층에 있습니다. 주말에만 열고, 평일에는 잡지 편집부로 쓰입니다.",
+      ja: "商店ビルの5階。土日だけ開くブックカフェで、平日は雑誌の編集部。"
+    }
+  },
+  {
+    id: "city-country-city",
+    key: "49a6yjnq",
+    name: "CITY COUNTRY CITY",
+    categories: ["cafe", "records"],
+    address: "東京都世田谷区北沢2-12-13 細沢ビル4F",
+    lat: null, lng: null,
+    desc: {
+      en: "A record shop and café bar on the 4th floor of an old building, 1 minute from the station.",
+      zh: "位于一栋老楼4楼的唱片店兼咖啡酒吧，距车站1分钟。",
+      ko: "낡은 건물 4층에 있는 레코드 가게 겸 카페 바로, 역에서 1분입니다.",
+      ja: "古い雑居ビルの4階にあるレコード店兼カフェバー。駅から歩いて1分。"
     }
   },
   {
@@ -206,119 +270,147 @@ window.STORES = [
     }
   },
   {
-    id: "tag-cafe",
-    key: "cywp8pry",
-    name: "tag cafe",
-    categories: ["cafe"],
-    address: "下北沢駅 東口から徒歩1分",
+    id: "fuzkue",
+    key: "loz5k7q8",
+    name: "fuzkue Shimokitazawa",
+    categories: ["cafe", "books"],
+    address: "東京都世田谷区代田2-36-14 BONUS TRACK",
     lat: null, lng: null,
     desc: {
-      en: "Just 1 minute from the East Exit of the station.",
-      zh: "距车站东口仅1分钟。",
-      ko: "역 동쪽 출구에서 1분 거리입니다.",
-      ja: "下北沢駅の東口から歩いて1分。"
+      en: "A café made for reading in quiet.",
+      zh: "专为安静读书而设的咖啡馆。",
+      ko: "조용히 책을 읽기 위한 카페입니다.",
+      ja: "本を読むための静かな店。"
+    }
+  },
+  {
+    id: "bear-pond-espresso",
+    key: "c9y4j6ub",
+    name: "Bear Pond Espresso",
+    categories: ["cafe"],
+    address: "東京都世田谷区北沢2-30-11",
+    lat: null, lng: null,
+    desc: {
+      en: "A tiny espresso bar in a renovated old candy shop. Closed on Mondays.",
+      zh: "由老式零食店改造而成的小小意式咖啡店。周一休息。",
+      ko: "오래된 과자 가게를 개조한 작은 에스프레소 바입니다. 월요일 휴무.",
+      ja: "古い駄菓子屋を改装した小さなエスプレッソの店。月曜定休。"
     }
   },
 
   /* ---- スイーツ ---- */
   {
-    id: "new-york-cupcakes",
-    key: "lgpyadqs",
-    name: "New York Cupcakes Shimokitazawa",
+    id: "monalisa-coffee",
+    key: "ush9rz7o",
+    name: "Monalisa Coffee",
     categories: ["sweets"],
-    address: "東京都世田谷区北沢3-27-1 1F",
+    address: "東京都世田谷区北沢2-34-8付近 2F",
     lat: null, lng: null,
     desc: {
-      en: "The marshmallow cupcake is the most popular. Only a few seats inside.",
-      zh: "最受欢迎的是棉花糖杯子蛋糕。店内座位不多。",
-      ko: "가장 인기 있는 것은 마시멜로 컵케이크입니다. 매장 좌석은 적습니다.",
-      ja: "一番人気はマシュマロのカップケーキ。店内の席は少なめ。"
+      en: "A tiny 2nd-floor café with 2 counter seats and 2 tables, known for its firm pudding.",
+      zh: "只有2个吧台座位和2张桌子的二楼小咖啡馆，以口感结实的布丁闻名。",
+      ko: "카운터 2석과 테이블 2개뿐인 2층의 작은 카페로, 단단한 푸딩으로 유명합니다.",
+      ja: "カウンター2席とテーブル2つだけの、ビル2階の小さなカフェ。固めのプリンが評判。"
     }
   },
   {
-    id: "flippers",
-    key: "c1om3krr",
-    name: "FLIPPER'S Shimokitazawa",
-    categories: ["sweets"],
-    address: "東京都世田谷区北沢2-26-20 1F",
+    id: "mardi-gras",
+    key: "n96g3t0u",
+    name: "Café Mardi Gras",
+    categories: ["sweets", "kissa"],
+    address: "東京都世田谷区北沢2-31-1 サン・ローザ1F",
     lat: null, lng: null,
     desc: {
-      en: "Pancakes. Look for the smoky blue shop front; there is often a line.",
-      zh: "松饼店。烟蓝色的外观是标志，常常排队。",
-      ko: "팬케이크 가게입니다. 스모키 블루 외관이 표시이며, 줄을 서는 일이 많습니다.",
-      ja: "パンケーキの店。スモーキーブルーの外観が目印で、行列ができることも多い。"
+      en: "A café of almost 40 years at the end of a back alley. Known for its pudding and shortcake.",
+      zh: "位于小巷深处、经营近40年的咖啡馆。招牌是布丁和草莓蛋糕。",
+      ko: "골목 끝에 있는 40년 가까이 된 카페입니다. 푸딩과 쇼트케이크가 명물입니다.",
+      ja: "路地裏の奥にある、40年近く続くカフェ。プリンとショートケーキが名物。"
     }
   },
   {
-    id: "natural-crepe",
-    key: "nr5tdnti",
-    name: "Natural Crepe Shimokitazawa",
-    categories: ["sweets"],
-    address: "東京都世田谷区代沢5-36-16",
+    id: "anthrop",
+    key: "8kyc663v",
+    name: "anthrop. Espresso & Comfort",
+    categories: ["sweets", "cafe"],
+    address: "東京都世田谷区北沢2-11-17",
     lat: null, lng: null,
     desc: {
-      en: "A crepe shop.",
-      zh: "可丽饼店。",
-      ko: "크레이프 가게입니다.",
-      ja: "クレープの店。"
+      en: "A café known for its homemade baked sweets.",
+      zh: "以自制烘焙点心闻名的咖啡馆。",
+      ko: "직접 구운 과자로 알려진 카페입니다.",
+      ja: "自家製の焼き菓子で知られるカフェ。"
     }
   },
   {
-    id: "chez-lui",
-    key: "0kxjdpgn",
-    name: "Chez Lui Shimokitazawa",
+    id: "latte",
+    key: "ag4kn3lk",
+    name: "Latte",
     categories: ["sweets"],
-    address: "東京都世田谷区北沢2-11-18",
+    address: "世田谷代田駅 西口から徒歩1分",
     lat: null, lng: null,
     desc: {
-      en: "A takeout-only cake shop, 1 minute from the station.",
-      zh: "只做外带的蛋糕店，距车站1分钟。",
-      ko: "포장 전문 케이크 가게로, 역에서 1분 거리입니다.",
-      ja: "テイクアウト専門のケーキ店。駅から歩いて1分。"
+      en: "A hidden café 1 minute from the West Exit of Setagaya-Daita Station, with a firm, chewy pudding.",
+      zh: "距世田谷代田站西口1分钟的隐秘咖啡馆，布丁口感结实有嚼劲。",
+      ko: "세타가야다이타역 서쪽 출구에서 1분 거리의 숨은 카페로, 쫀득하고 단단한 푸딩이 있습니다.",
+      ja: "世田谷代田駅西口から1分の隠れ家カフェ。むっちり固めのプリン。"
+    }
+  },
+  {
+    id: "sweet-twist",
+    key: "h9bhmfv0",
+    name: "SWEET TWIST",
+    categories: ["sweets"],
+    address: "下北沢駅から徒歩5分",
+    lat: null, lng: null,
+    desc: {
+      en: "Additive-free gelato with flavors that change by season. Closed on Wednesdays.",
+      zh: "无添加的意式冰淇淋，口味随季节变化。周三休息。",
+      ko: "무첨가 젤라토로, 맛은 계절마다 바뀝니다. 수요일 휴무.",
+      ja: "無添加のジェラート。フレーバーは季節で変わる。水曜定休。"
     }
   },
 
   /* ---- カレー ---- */
   {
-    id: "curry-planet",
-    key: "5mpaamqj",
-    name: "Curry no Wakusei (Curry Planet)",
+    id: "anjali",
+    key: "jriwafja",
+    name: "Anjali",
     categories: ["curry"],
-    address: "東京都世田谷区北沢3-34-3 石川荘1F",
+    address: "東京都世田谷区北沢2-15-11 センヤビルB1F",
     lat: null, lng: null,
     desc: {
-      en: "Curry in a renovated former camera shop. Chosen as one of Tabelog's top 100 curry restaurants in 2023.",
-      zh: "由旧相机店改造而成的咖喱店，入选2023年 Tabelog 百名店。",
-      ko: "예전 카메라 가게를 개조한 카레 가게로, 2023년 타베로그 100명점에 선정되었습니다.",
-      ja: "元カメラ屋を改装したカレー店。2023年の食べログ百名店。"
+      en: "A tiny half-basement curry shop, a few steps down in a back-alley building. Only a counter and small tables.",
+      zh: "位于小巷大楼里、走下几级台阶的半地下小咖喱店。只有吧台和小桌。",
+      ko: "골목 건물에서 계단을 조금 내려간 반지하의 작은 카레 가게입니다. 카운터와 작은 테이블뿐입니다.",
+      ja: "路地裏のビルの階段を少し下りた半地下の小さなカレー店。カウンターと小さなテーブルだけ。"
     }
   },
   {
-    id: "nasu-oyaji",
-    key: "f6v3x7te",
-    name: "Nasu Oyaji",
+    id: "rabukyo",
+    key: "te43ir1o",
+    name: "Rabukyo",
     categories: ["curry"],
-    address: "東京都世田谷区代沢5-36-8 アルファビル1F",
+    address: "東京都世田谷区北沢2-32-7 青柳ビル3F",
     lat: null, lng: null,
     desc: {
-      en: "A curry restaurant about 4 minutes' walk from the South Exit.",
-      zh: "距南口步行约4分钟的咖喱店。",
-      ko: "남쪽 출구에서 걸어서 약 4분 거리의 카레 가게입니다.",
-      ja: "南口から歩いて約4分のカレー店。"
+      en: "A curry shop on the 3rd floor of a building.",
+      zh: "位于大楼3楼的咖喱店。",
+      ko: "건물 3층에 있는 카레 가게입니다.",
+      ja: "ビルの3階にあるカレー店。"
     }
   },
   {
-    id: "kyu-yamu-tei",
-    key: "kkmvw0ru",
-    name: "Kyu Yamu-tei Shimokita-so",
+    id: "kappa-ism",
+    key: "584e6bym",
+    name: "Kappa ism",
     categories: ["curry"],
-    address: "東京都世田谷区代沢5-29-9 ナイスビル",
+    address: "下北沢の路地裏 3F",
     lat: null, lng: null,
     desc: {
-      en: "Three kinds of keema curry that change every month. 8 minutes from the station.",
-      zh: "每月更换的3种肉末咖喱。距车站8分钟。",
-      ko: "매달 바뀌는 3종류의 키마 카레. 역에서 8분 거리입니다.",
-      ja: "月替わりで3種類のキーマカレー。駅から歩いて8分。"
+      en: "Found in a back alley: climb a spiral staircase to the 3rd floor.",
+      zh: "藏在小巷里，要爬螺旋楼梯到3楼。",
+      ko: "골목 안에 있으며, 나선 계단을 올라 3층에 있습니다.",
+      ja: "路地裏で、らせん階段を上った3階にある。"
     }
   },
   {
@@ -336,52 +428,48 @@ window.STORES = [
     }
   },
   {
-    id: "magic-spice",
-    key: "ss3yfidb",
-    name: "Magic Spice Tokyo",
+    id: "kyu-yamu-tei",
+    key: "kkmvw0ru",
+    name: "Kyu Yamu-tei Shimokita-so",
     categories: ["curry"],
-    address: "マジックスパイス 東京店 下北沢",
+    address: "東京都世田谷区代沢5-29-9 ナイスビル1F",
     lat: null, lng: null,
     desc: {
-      en: "Indonesian-style soup curry, about 6 minutes' walk from the station.",
-      zh: "印尼风格的汤咖喱，距车站步行约6分钟。",
-      ko: "인도네시아풍 수프 카레로, 역에서 걸어서 약 6분입니다.",
-      ja: "インドネシア風のスープカレー。駅から歩いて約6分。"
+      en: "Three kinds of keema curry that change every month. 8 minutes from the station.",
+      zh: "每月更换的3种肉末咖喱。距车站8分钟。",
+      ko: "매달 바뀌는 3종류의 키마 카레. 역에서 8분 거리입니다.",
+      ja: "月替わりで3種類のキーマカレー。駅から歩いて8分。"
     }
   },
 
-  /* ---- ライブハウス ---- */
+  /* ---- ライブ・レコードバー ---- */
   {
-    id: "shelter",
-    key: "l2e7s3gk",
-    name: "Shimokitazawa SHELTER",
+    id: "mona-records",
+    key: "wzm3zkia",
+    name: "mona records",
     categories: ["music"],
-    address: "東京都世田谷区北沢2-6-10 仙田ビルB1",
-    lat: null, lng: null,
-    desc: {}
-  },
-  {
-    id: "club-que",
-    key: "q8w3e6rt",
-    name: "Shimokitazawa CLUB Que",
-    categories: ["music"],
-    address: "東京都世田谷区北沢2-5-2 ビッグベンビルB2",
+    address: "東京都世田谷区北沢2-13-5 伊奈ビル3F",
     lat: null, lng: null,
     desc: {
-      en: "A live music venue about 3 minutes' walk from the station.",
-      zh: "距车站步行约3分钟的现场音乐场馆。",
-      ko: "역에서 걸어서 약 3분 거리의 라이브 공연장입니다.",
-      ja: "駅から歩いて約3分のライブハウス。"
+      en: "A live space, record shop and café on a 3rd floor, 2 minutes from the station.",
+      zh: "位于三楼，集现场演出、唱片店和咖啡馆于一体，距车站2分钟。",
+      ko: "3층에 있는 라이브 공간 겸 레코드 가게 겸 카페로, 역에서 2분입니다.",
+      ja: "ビル3階のライブスペース兼レコード店兼食堂。駅から歩いて2分。"
     }
   },
   {
-    id: "garden",
-    key: "hptexsco",
-    name: "Shimokitazawa GARDEN",
+    id: "little-soul-cafe",
+    key: "sbznoqfx",
+    name: "Little Soul Cafe",
     categories: ["music"],
-    address: "東京都世田谷区北沢2-4-5 mosia B1F",
+    address: "東京都世田谷区北沢3-20-2 大成ビル2F",
     lat: null, lng: null,
-    desc: {}
+    desc: {
+      en: "A record bar on a 2nd floor, open for about 20 years. ¥500 cover charge, cash only.",
+      zh: "位于二楼、营业约20年的唱片酒吧。每人收500日元座位费，只收现金。",
+      ko: "2층에 있는 약 20년 된 레코드 바입니다. 자릿세 500엔, 현금만 가능.",
+      ja: "ビル2階、20年続くレコードバー。チャージ500円、現金のみ。"
+    }
   },
   {
     id: "daisy-bar",
@@ -391,49 +479,54 @@ window.STORES = [
     address: "東京都世田谷区北沢2-2-3 エルサント北沢B1",
     lat: null, lng: null,
     desc: {
-      en: "Holds about 140 people. 4 minutes from the station.",
-      zh: "可容纳约140人，距车站4分钟。",
-      ko: "약 140명을 수용하며, 역에서 4분 거리입니다.",
-      ja: "キャパは約140人。駅から歩いて4分。"
+      en: "A basement live venue for about 140 people, 4 minutes from the station.",
+      zh: "可容纳约140人的地下现场音乐场馆，距车站4分钟。",
+      ko: "약 140명이 들어가는 지하 라이브 공연장으로, 역에서 4분입니다.",
+      ja: "キャパ約140人の地下のライブハウス。駅から歩いて4分。"
     }
   },
   {
-    id: "loft",
-    key: "qdevs8x0",
-    name: "Shimokitazawa LOFT",
+    id: "basement-bar",
+    key: "4k2pkjmp",
+    name: "BASEMENT BAR",
     categories: ["music"],
-    address: "東京都世田谷区代沢5-31-8 エクセレント下北沢B1",
+    address: "東京都世田谷区代沢5-18-1 カラバッシュビルB1F",
     lat: null, lng: null,
-    desc: {}
+    desc: {
+      en: "A basement venue for many kinds of music, for about 250 people.",
+      zh: "演出各种类型音乐的地下场馆，可容纳约250人。",
+      ko: "다양한 장르의 음악을 다루는 지하 공연장으로, 약 250명을 수용합니다.",
+      ja: "さまざまなジャンルの音楽を扱う地下のライブハウス。キャパ250人。"
+    }
+  },
+  {
+    id: "garden",
+    key: "hptexsco",
+    name: "Shimokitazawa GARDEN",
+    categories: ["music"],
+    address: "東京都世田谷区北沢2-4-5 mosia B1F",
+    lat: null, lng: null,
+    desc: {
+      en: "A basement live venue.",
+      zh: "地下的现场音乐场馆。",
+      ko: "지하에 있는 라이브 공연장입니다.",
+      ja: "地下のライブハウス。"
+    }
   },
 
   /* ---- 小劇場 ---- */
   {
-    id: "honda-gekijo",
-    key: "7f5p3cgz",
-    name: "Honda Theater",
+    id: "theater-rakuen",
+    key: "fr6fmx7a",
+    name: "Theater Rakuen",
     categories: ["theater"],
-    address: "東京都世田谷区北沢2-10-15",
+    address: "東京都世田谷区北沢2-10-18 藤和下北沢ハイタウンB棟B1F",
     lat: null, lng: null,
     desc: {
-      en: "A theater for plays with 386 seats, opened in 1982.",
-      zh: "1982年开幕的话剧专用剧场，有386个座位。",
-      ko: "1982년에 문을 연 386석의 연극 전용 극장입니다.",
-      ja: "1982年開場、客席386席の演劇専用劇場。"
-    }
-  },
-  {
-    id: "ekimae-gekijo",
-    key: "rdjd9eol",
-    name: "Ekimae Theater",
-    categories: ["theater"],
-    address: "東京都世田谷区北沢2-11-8 TAROビル3F",
-    lat: null, lng: null,
-    desc: {
-      en: "A small theater. OFF OFF Theater is on the same floor.",
-      zh: "小剧场。同一层还有 OFF OFF 剧场。",
-      ko: "작은 극장입니다. 같은 층에 OFF OFF 시어터가 있습니다.",
-      ja: "小劇場。同じフロアにOFF・OFFシアターがある。"
+      en: "A small basement theater.",
+      zh: "位于地下的小剧场。",
+      ko: "지하에 있는 작은 극장입니다.",
+      ja: "地下の小劇場。"
     }
   },
   {
@@ -444,43 +537,62 @@ window.STORES = [
     address: "東京都世田谷区北沢2-11-8 TAROビル3F",
     lat: null, lng: null,
     desc: {
-      en: "A small theater on the same floor as Ekimae Theater.",
-      zh: "与站前剧场在同一层的小剧场。",
-      ko: "에키마에 극장과 같은 층에 있는 작은 극장입니다.",
-      ja: "駅前劇場と同じフロアにある小劇場。"
+      en: "A small theater on the 3rd floor, on the same floor as Ekimae Theater.",
+      zh: "位于三楼的小剧场，与站前剧场在同一层。",
+      ko: "3층에 있는 작은 극장으로, 에키마에 극장과 같은 층입니다.",
+      ja: "ビル3階の小劇場。駅前劇場と同じフロア。"
     }
   },
   {
-    id: "theater-rakuen",
-    key: "fr6fmx7a",
-    name: "Theater Rakuen",
+    id: "geki-shogekijo",
+    key: "gbco1gbl",
+    name: "\"Geki\" Shogekijo",
     categories: ["theater"],
-    address: "東京都世田谷区北沢2-10-18 藤和下北沢ハイタウンB棟B1F",
+    address: "東京都世田谷区北沢2-6-6",
     lat: null, lng: null,
-    desc: {}
+    desc: {
+      en: "A small theater opened in 1997.",
+      zh: "1997年开幕的小剧场。",
+      ko: "1997년에 문을 연 작은 극장입니다.",
+      ja: "1997年開場の小劇場。"
+    }
   },
   {
-    id: "the-suzunari",
-    key: "9ncf2lmp",
-    name: "The Suzunari",
+    id: "theater-711",
+    key: "w9chst34",
+    name: "Theater 711",
     categories: ["theater"],
     address: "東京都世田谷区北沢1-45-15",
     lat: null, lng: null,
     desc: {
-      en: "On the second floor of Suzunari Yokocho, about 5 minutes' walk from the East Exit.",
-      zh: "位于铃奈里横丁二楼，距东口步行约5分钟。",
-      ko: "스즈나리 요코초 2층에 있으며, 동쪽 출구에서 걸어서 약 5분입니다.",
-      ja: "鈴なり横丁の2階。東口から歩いて約5分。"
+      en: "A small theater right next to The Suzunari.",
+      zh: "紧挨着铃奈里剧场的小剧场。",
+      ko: "더 스즈나리 바로 옆에 있는 작은 극장입니다.",
+      ja: "ザ・スズナリの隣にある小劇場。"
+    }
+  },
+  {
+    id: "shogekijo-b1",
+    key: "rcgzflaq",
+    name: "Shogekijo B1",
+    categories: ["theater"],
+    address: "東京都世田谷区北沢2-8-18 北沢タウンホールB1",
+    lat: null, lng: null,
+    desc: {
+      en: "A small theater in the basement of Kitazawa Town Hall.",
+      zh: "位于北泽市民会馆地下的小剧场。",
+      ko: "기타자와 타운홀 지하에 있는 작은 극장입니다.",
+      ja: "北沢タウンホールの地下にある小劇場。"
     }
   },
 
-  /* ---- 本 ---- */
+  /* ---- 古本 ---- */
   {
     id: "furuhon-bibibi",
     key: "eb4omac6",
     name: "Furuhon Bibibi",
     categories: ["books"],
-    address: "東京都世田谷区北沢1丁目 土屋ビル1F",
+    address: "東京都世田谷区北沢1-40-8 土屋ビル1F",
     lat: null, lng: null,
     desc: {
       en: "A used bookstore with about 13,000 books, including many rare and strange ones.",
@@ -490,17 +602,31 @@ window.STORES = [
     }
   },
   {
-    id: "bookstore-bb",
-    key: "qvca6sgg",
-    name: "Bookstore B&B",
+    id: "honkichi",
+    key: "qeuv61u7",
+    name: "Hon-kichi",
     categories: ["books"],
-    address: "東京都世田谷区代田2-36-15 BONUS TRACK 2F",
+    address: "東京都世田谷区北沢2-7-10",
     lat: null, lng: null,
     desc: {
-      en: "B&B means Books & Beer: you can drink beer while choosing books.",
-      zh: "店名 B&B 是 Books & Beer 的缩写，可以边喝啤酒边选书。",
-      ko: "B&B는 Books & Beer의 줄임말로, 맥주를 마시며 책을 고를 수 있습니다.",
-      ja: "店名はBooks & Beerの略。ビールを飲みながら本を選べる。"
+      en: "A small used bookstore, 3 minutes from the Central Exit.",
+      zh: "距中央口3分钟的小旧书店。",
+      ko: "중앙 출구에서 3분 거리의 작은 헌책방입니다.",
+      ja: "中央口から歩いて3分の小さな古本屋。"
+    }
+  },
+  {
+    id: "kosho-asu",
+    key: "k12klf3u",
+    name: "Kosho Asu",
+    categories: ["books"],
+    address: "東京都世田谷区北沢3-21-1 1F",
+    lat: null, lng: null,
+    desc: {
+      en: "A used bookstore about 7 minutes from the North Exit.",
+      zh: "距北口约7分钟的旧书店。",
+      ko: "북쪽 출구에서 약 7분 거리의 헌책방입니다.",
+      ja: "北口から歩いて約7分の古本屋。"
     }
   },
   {
@@ -508,78 +634,22 @@ window.STORES = [
     key: "alm43wuj",
     name: "Clarice Books",
     categories: ["books"],
-    address: "東京都世田谷区北沢3丁目 一番街商店街 HANA 2F",
+    address: "東京都世田谷区北沢3-26-2 2F",
     lat: null, lng: null,
     desc: {
-      en: "Used books from philosophy to art, fashion and subculture. 6 minutes from the North Exit.",
-      zh: "从哲学到美术、时尚、亚文化的旧书店。距北口6分钟。",
-      ko: "철학부터 미술, 패션, 서브컬처까지 다루는 헌책방입니다. 북쪽 출구에서 6분.",
-      ja: "哲学・思想から美術・ファッション・サブカルまでの古書店。北口から歩いて6分。"
-    }
-  },
-  {
-    id: "fuzkue",
-    key: "loz5k7q8",
-    name: "fuzkue Shimokitazawa",
-    categories: ["books", "cafe"],
-    address: "東京都世田谷区代田2-36-14 BONUS TRACK",
-    lat: null, lng: null,
-    desc: {
-      en: "A café made for reading in quiet.",
-      zh: "专为安静读书而设的咖啡馆。",
-      ko: "조용히 책을 읽기 위한 카페입니다.",
-      ja: "本を読むための静かな店。"
-    }
-  },
-  {
-    id: "village-vanguard",
-    key: "h4n9a2qc",
-    name: "Village Vanguard Shimokitazawa",
-    categories: ["books", "lifestyle"],
-    address: "東京都世田谷区北沢2-10-15 マルシェ下北沢1F",
-    lat: null, lng: null,
-    desc: {
-      en: "A bookstore that also sells toys and goods, 2 minutes' walk from the station.",
-      zh: "同时售卖玩具和杂货的书店，距车站步行2分钟。",
-      ko: "장난감과 잡화도 파는 서점으로, 역에서 걸어서 2분입니다.",
-      ja: "おもちゃや雑貨も売っている本屋。駅から歩いて2分。"
+      en: "Go up the stairs beside the small gallery HANA. Used books from philosophy to art, fashion and subculture.",
+      zh: "从小画廊HANA旁边的楼梯上去。从哲学到美术、时尚、亚文化的旧书。",
+      ko: "작은 갤러리 HANA 옆 계단을 올라가세요. 철학부터 미술, 패션, 서브컬처까지의 헌책.",
+      ja: "1階の小さなギャラリー「HANA」脇の階段を上がる。哲学・思想から美術・ファッション・サブカルまでの古書店。"
     }
   },
 
-  /* ---- 雑貨・ホビー ---- */
-  {
-    id: "drama-tcg",
-    key: "ndx37dcv",
-    name: "Drama Shimokitazawa (trading cards)",
-    categories: ["lifestyle"],
-    address: "東京都世田谷区北沢2-14-10 こだまビル",
-    lat: null, lng: null,
-    desc: {
-      en: "A trading card shop, open every day 10:00–24:00.",
-      zh: "集换式卡牌店，每天10:00–24:00营业。",
-      ko: "트레이딩 카드 가게로, 매일 10:00–24:00 영업합니다.",
-      ja: "トレカの販売・買取店。毎日10:00〜24:00。"
-    }
-  },
-  {
-    id: "sansato",
-    key: "o8vpe9p0",
-    name: "Sansato",
-    categories: ["lifestyle"],
-    address: "東京都世田谷区代沢5-36-14",
-    lat: null, lng: null,
-    desc: {
-      en: "A goods shop with a café in the same building. 5 minutes from the station.",
-      zh: "同一栋楼里还有咖啡馆的杂货店，距车站5分钟。",
-      ko: "같은 건물에 카페가 있는 잡화점으로, 역에서 5분 거리입니다.",
-      ja: "一棟でカフェと買い物が楽しめる雑貨店。駅から歩いて5分。"
-    }
-  },
+  /* ---- アンティーク・手作り雑貨 ---- */
   {
     id: "tokyo-retro",
     key: "pm84co98",
     name: "Tokyo Retro a.m.a. store",
-    categories: ["lifestyle"],
+    categories: ["goods"],
     address: "東京都世田谷区北沢3-34-2",
     lat: null, lng: null,
     desc: {
@@ -590,10 +660,24 @@ window.STORES = [
     }
   },
   {
+    id: "antique-life-jin",
+    key: "ce5f6mzq",
+    name: "Antique Life Jin",
+    categories: ["goods"],
+    address: "東京都世田谷区北沢2-30-8",
+    lat: null, lng: null,
+    desc: {
+      en: "Vintage goods, about 3 minutes from the North Exit.",
+      zh: "经营复古杂货，距北口约3分钟。",
+      ko: "빈티지 잡화를 다루며, 북쪽 출구에서 약 3분입니다.",
+      ja: "ヴィンテージ雑貨の店。北口から歩いて約3分。"
+    }
+  },
+  {
     id: "sukonbu",
     key: "6cegalmh",
     name: "Sukonbu",
-    categories: ["lifestyle"],
+    categories: ["goods"],
     address: "ミカン下北 東洋百貨店別館",
     lat: null, lng: null,
     desc: {
@@ -603,76 +687,32 @@ window.STORES = [
       ja: "一点もののアクセサリーやハンドメイド雑貨。"
     }
   },
-
-  /* ---- 商店街 ---- */
   {
-    id: "reload",
-    key: "tehw4nvq",
-    name: "reload",
-    categories: ["spots"],
-    address: "東京都世田谷区北沢3-19-20",
+    id: "desk-labo",
+    key: "6zcd516t",
+    name: "DESK LABO",
+    categories: ["goods"],
+    address: "東京都世田谷区北沢3-19-20 reload 2F",
     lat: null, lng: null,
     desc: {
-      en: "A row of low white buildings with small shops run by their owners, 4 minutes from the station.",
-      zh: "由白色两层建筑组成的商业街，聚集着店主亲自经营的小店，距车站步行4分钟。",
-      ko: "하얀 2층 건물이 늘어선 곳으로, 주인이 직접 운영하는 작은 가게들이 모여 있습니다. 역에서 걸어서 4분입니다.",
-      ja: "白い2階建ての建物が並ぶ、店主の顔が見える個店街。駅から歩いて4分。"
+      en: "Goods and flowers on the 2nd floor of reload.",
+      zh: "位于 reload 二楼的杂货和花店。",
+      ko: "reload 2층에 있는 잡화·꽃 가게입니다.",
+      ja: "reloadの2階にある雑貨と花の店。"
     }
   },
   {
-    id: "bonus-track",
-    key: "f0x18s2h",
-    name: "BONUS TRACK",
-    categories: ["spots"],
-    address: "東京都世田谷区代田2-36-12",
+    id: "sansato",
+    key: "o8vpe9p0",
+    name: "Sansato",
+    categories: ["goods"],
+    address: "東京都世田谷区代沢5-36-14",
     lat: null, lng: null,
     desc: {
-      en: "About 13 small shops halfway between Shimokitazawa and Setagaya-Daita stations.",
-      zh: "位于下北泽站和世田谷代田站中间，聚集了约13家小店。",
-      ko: "시모키타자와역과 세타가야다이타역 사이에 작은 가게 약 13곳이 모여 있습니다.",
-      ja: "下北沢駅と世田谷代田駅の中間に、13店ほどが集まる。"
-    }
-  },
-  {
-    id: "mikan-shimokita",
-    key: "x3m8k1vb",
-    name: "Mikan Shimokita",
-    categories: ["spots"],
-    address: "東京都世田谷区北沢2-11-15",
-    lat: null, lng: null,
-    desc: {
-      en: "Shops under and beside the train tracks, right by the station.",
-      zh: "位于车站旁高架桥下及其两侧的商业设施。",
-      ko: "역 바로 옆, 고가 아래와 그 옆에 가게들이 모여 있습니다.",
-      ja: "駅のすぐそば、高架下と高架の横に店が入る。"
-    }
-  },
-  {
-    id: "shimokita-ekiue",
-    key: "0gwwjoy0",
-    name: "Shimokita Ekiue",
-    categories: ["spots"],
-    address: "東京都世田谷区北沢2-24-2",
-    lat: null, lng: null,
-    desc: {
-      en: "Shops, cafés and bars right on top of the Odakyu station. Opened in 2019.",
-      zh: "位于小田急线车站上的商场，有杂货店、咖啡馆和居酒屋。2019年开业。",
-      ko: "오다큐선 역 바로 위에 잡화점, 카페, 이자카야가 모여 있습니다. 2019년 개업.",
-      ja: "小田急線の駅の上に、雑貨・カフェ・居酒屋などが集まる。2019年開業。"
-    }
-  },
-  {
-    id: "senrogai-akichi",
-    key: "zchfjaga",
-    name: "Shimokita Senrogai Akichi",
-    categories: ["spots"],
-    address: "下北線路街 空き地（北沢2丁目）",
-    lat: null, lng: null,
-    desc: {
-      en: "An open space in the middle of Shimokita Senrogai, 4 minutes from the station.",
-      zh: "位于下北线路街中心的空地，距车站4分钟。",
-      ko: "시모키타 센로가이 한가운데에 있는 공터로, 역에서 4분 거리입니다.",
-      ja: "下北線路街の真ん中にある空き地。駅から歩いて4分。"
+      en: "A goods shop with a café in the same building. 5 minutes from the station.",
+      zh: "同一栋楼里还有咖啡馆的杂货店，距车站5分钟。",
+      ko: "같은 건물에 카페가 있는 잡화점으로, 역에서 5분 거리입니다.",
+      ja: "一棟でカフェと買い物が楽しめる雑貨店。駅から歩いて5分。"
     }
   }
 ];

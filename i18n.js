@@ -11,7 +11,7 @@ window.LANGS = [
 window.TEXT = {
   en: {
     tagline: "Find 3 small shops hidden in the side streets of Shimokitazawa.",
-    lead: "Tell us what you like and we pick 3 shops for you. Visit each one and scan the QR code inside to collect it.",
+    lead: "Tell us what you like and we pick 3 small shops most visitors never find: upstairs, underground or down a back alley. Visit each one and scan the QR code inside to collect it.",
     streetAlt: "A shopping street in Shimokitazawa",
     stepsTitle: "How it works",
     steps: [
@@ -28,14 +28,14 @@ window.TEXT = {
     cat: {
       vintage: "Vintage clothing",
       records: "Records",
-      cafe: "Cafés",
+      kissa: "Old-style coffee houses (kissaten)",
+      cafe: "Hidden cafés",
       sweets: "Sweets",
       curry: "Curry",
-      music: "Live music",
+      music: "Live music & record bars",
       theater: "Small theaters",
-      books: "Books",
-      lifestyle: "Goods, hobby & souvenirs",
-      spots: "Small shopping streets"
+      books: "Used books",
+      goods: "Antiques & handmade goods"
     },
     mapTitle: "Map of Shimokitazawa",
     mapLead: "The pin is Shimokitazawa Station. Most shops are within a 10-minute walk.",
@@ -66,7 +66,7 @@ window.TEXT = {
 
   zh: {
     tagline: "在下北泽的小巷里，找到3家藏起来的小店。",
-    lead: "告诉我们你的喜好，我们为你挑选3家店。前往每家店，扫描店内的二维码即可收集。",
+    lead: "告诉我们你的喜好，我们为你挑选3家大多数游客都找不到的小店：在二楼以上、地下或小巷深处。前往每家店，扫描店内的二维码即可收集。",
     streetAlt: "下北泽的商店街",
     stepsTitle: "玩法",
     steps: [
@@ -83,14 +83,14 @@ window.TEXT = {
     cat: {
       vintage: "古着",
       records: "唱片",
-      cafe: "咖啡馆",
+      kissa: "日式老派咖啡馆（喫茶店）",
+      cafe: "隐秘咖啡馆",
       sweets: "甜点",
       curry: "咖喱",
-      music: "现场音乐",
+      music: "现场音乐与唱片酒吧",
       theater: "小剧场",
-      books: "书店",
-      lifestyle: "杂货·爱好·纪念品",
-      spots: "小店聚集的街区"
+      books: "旧书店",
+      goods: "古董与手工杂货"
     },
     mapTitle: "下北泽地图",
     mapLead: "图钉是下北泽站。大多数店铺都在步行10分钟以内。",
@@ -121,7 +121,7 @@ window.TEXT = {
 
   ko: {
     tagline: "시모키타자와 골목에 숨어 있는 작은 가게 3곳을 찾아보세요.",
-    lead: "좋아하는 것을 알려 주시면 가게 3곳을 골라 드립니다. 각 가게를 방문해 안에 있는 QR 코드를 스캔해 모아 보세요.",
+    lead: "좋아하는 것을 알려 주시면 대부분의 여행자가 찾지 못하는 작은 가게 3곳을 골라 드립니다. 2층 이상, 지하, 골목 안쪽에 있는 가게들입니다. 각 가게를 방문해 안에 있는 QR 코드를 스캔해 모아 보세요.",
     streetAlt: "시모키타자와의 상점가",
     stepsTitle: "이용 방법",
     steps: [
@@ -138,14 +138,14 @@ window.TEXT = {
     cat: {
       vintage: "빈티지 의류",
       records: "레코드",
-      cafe: "카페",
+      kissa: "옛날식 다방(깃사텐)",
+      cafe: "숨은 카페",
       sweets: "디저트",
       curry: "카레",
-      music: "라이브 음악",
+      music: "라이브 음악·레코드 바",
       theater: "소극장",
-      books: "서점",
-      lifestyle: "잡화·취미·기념품",
-      spots: "작은 상점가"
+      books: "헌책방",
+      goods: "앤티크·수공예 잡화"
     },
     mapTitle: "시모키타자와 지도",
     mapLead: "핀은 시모키타자와역입니다. 대부분의 가게는 걸어서 10분 안에 있습니다.",
@@ -176,7 +176,7 @@ window.TEXT = {
 
   ja: {
     tagline: "下北沢の路地にある小さなお店を、3軒見つける。",
-    lead: "好みを選ぶと、お店を3軒選びます。お店を回って、店内のQRコードを読んで集めてください。",
+    lead: "好みを選ぶと、観光客がまずたどり着かない小さなお店を3軒選びます。ビルの2階より上、地下、路地の奥にあるお店です。お店を回って、店内のQRコードを読んで集めてください。",
     streetAlt: "下北沢の商店街",
     stepsTitle: "遊び方",
     steps: [
@@ -193,14 +193,14 @@ window.TEXT = {
     cat: {
       vintage: "古着",
       records: "レコード",
-      cafe: "カフェ",
+      kissa: "純喫茶",
+      cafe: "隠れ家カフェ",
       sweets: "スイーツ",
       curry: "カレー",
-      music: "ライブハウス",
+      music: "ライブハウス・レコードバー",
       theater: "小劇場",
-      books: "本屋",
-      lifestyle: "雑貨・ホビー・おみやげ",
-      spots: "小さな商店街"
+      books: "古本屋",
+      goods: "アンティーク・手作り雑貨"
     },
     mapTitle: "下北沢の地図",
     mapLead: "ピンは下北沢駅です。ほとんどのお店は駅から歩いて10分以内です。",

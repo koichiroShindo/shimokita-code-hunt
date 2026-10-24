@@ -110,7 +110,32 @@
       "</section>" +
       '<section class="steps"><h2>' + t("stepsTitle") + "</h2><ol>" +
       t("steps").map(function (s) { return "<li>" + s + "</li>"; }).join("") +
-      "</ol></section>";
+      "</ol></section>" + mapSection();
+  }
+
+  // 下北沢駅のまわりの地図（OpenStreetMap）。お店の位置が入ったら、お店ごとのピンに変えられる
+  var STATION = { lat: 35.6615, lng: 139.6683 };
+  function mapSection() {
+    var d = 0.006;
+    var bbox = [STATION.lng - d * 1.2, STATION.lat - d, STATION.lng + d * 1.2, STATION.lat + d].join(",");
+    var src = "https://www.openstreetmap.org/export/embed.html?bbox=" + bbox +
+      "&layer=mapnik&marker=" + STATION.lat + "," + STATION.lng;
+    return '<section class="map"><h2>' + t("mapTitle") + "</h2>" +
+      '<p class="sub">' + t("mapLead") + "</p>" +
+      '<iframe title="' + t("mapTitle") + '" src="' + src + '" loading="lazy"></iframe>' +
+      '<p class="map-credit">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>' +
+      '<a class="link" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent("Shimokitazawa Station") +
+      '" target="_blank" rel="noopener">' + t("mapOpen") + "</a></section>";
+  }
+
+  // 駅から3軒を順に回る、歩きの道順（Googleマップ）
+  function routeLink(list) {
+    var place = function (s) { return s.lat != null ? s.lat + "," + s.lng : s.name + " " + s.address; };
+    var url = "https://www.google.com/maps/dir/?api=1&travelmode=walking" +
+      "&origin=" + encodeURIComponent("Shimokitazawa Station") +
+      "&destination=" + encodeURIComponent(place(list[list.length - 1])) +
+      (list.length > 1 ? "&waypoints=" + encodeURIComponent(list.slice(0, -1).map(place).join("|")) : "");
+    return '<a class="btn btn-sub" href="' + url + '" target="_blank" rel="noopener">' + t("routeMap") + "</a>";
   }
 
   function viewPrefs(error) {
@@ -153,6 +178,7 @@
       (n >= 3
         ? '<p class="done">' + t("allDone") + '</p><button type="button" class="btn" data-action="again">' + t("again") + "</button>"
         : '<p class="sub">' + t("howto") + "</p>") +
+      routeLink(list) +
       '<ol class="shops">' + list.map(storeItem).join("") + "</ol>" +
       (n >= 3 ? "" : '<button type="button" class="btn btn-sub" data-action="change">' + t("change") + "</button>") +
       "</section>";

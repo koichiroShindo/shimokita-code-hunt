@@ -213,11 +213,6 @@ h1, h2, h3 { line-height: 1.35; margin: 0; }
   object-fit: cover;
   border-radius: var(--r-box) var(--r-box) 0 0;
 }
-.shop-photo figcaption {
-  font-size: 12px;
-  color: var(--sub);
-  padding: 4px 16px 0;
-}
 .shop-head { display: flex; align-items: flex-start; gap: 16px; }
 .shop-head h3 { flex: 1; font-size: 18px; }
 .shop-no {

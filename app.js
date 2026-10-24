@@ -158,8 +158,7 @@
     var map = "https://www.google.com/maps/search/?api=1&query=" +
       encodeURIComponent(s.lat != null ? s.lat + "," + s.lng : s.name + " " + s.address);
     return '<li class="shop' + (done ? " is-found" : "") + '">' +
-      (s.photo ? '<figure class="shop-photo"><img src="images/shops/' + esc(s.photo) + '" alt="' + esc(s.name) + '" loading="lazy">' +
-        (s.credit ? "<figcaption>Photo: " + esc(s.credit) + "</figcaption>" : "") + "</figure>" : "") +
+      (s.photo ? '<figure class="shop-photo"><img src="images/shops/' + esc(s.photo) + '" alt="' + esc(s.name) + '" loading="lazy"></figure>' : "") +
       '<div class="shop-head"><span class="shop-no">' + (i + 1) + "</span>" +
       "<h3>" + esc(s.name) + "</h3>" +
       '<span class="status">' + (done ? t("found") : t("notYet")) + "</span></div>" +

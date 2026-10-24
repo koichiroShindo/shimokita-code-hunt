@@ -5,12 +5,12 @@
  *   id         : 半角英数字の名前（QRコードのURLに入る。あとから変えない）
  *   key        : お店のQRコード用の合言葉（半角英数字8文字ほど。お店ごとに別にする）
  *   name       : 店名
- *   categories : 当てはまる種類（vintage / records / kissa / cafe / sweets / curry / music / theater / books / goods）
+ *   categories : 当てはまる種類（vintage / records / instruments / kissa / cafe / sweets / curry / bars / music / theater / cinema / books / galleries / goods）
  *   address    : 住所（地図のリンクにも使う）
  *   lat, lng   : お店の位置。Googleマップでお店を右クリックすると出る数字を入れる。
  *                null のあいだは、QRを読んだときに位置を確かめない
  *   photo      : お店の写真（images/shops/ に入れたファイル名）。なければ書かない
- *   credit     : 写真の出典（写真の下に「Photo: 〜」と表示する）。掲載の許可をとった相手を書く
+ *   credit     : 写真の出典（画面には出さない。掲載の許可をとった相手の記録）
  *   desc       : 短い紹介文。en（英語）は必ず書く。zh / ko / ja は書けたら
  *
  * 住所と紹介文はWebの紹介記事から拾ったもの。移転・閉店していることがあるので、QRコードを置く前にお店に確かめる。
@@ -469,7 +469,7 @@ window.STORES = [
     id: "little-soul-cafe",
     key: "sbznoqfx",
     name: "Little Soul Cafe",
-    categories: ["music"],
+    categories: ["music", "bars"],
     address: "東京都世田谷区北沢3-20-2 大成ビル2F",
     lat: null, lng: null,
     photo: "little-soul-cafe.jpg", credit: "Time Out Tokyo",
@@ -556,7 +556,7 @@ window.STORES = [
     id: "geki-shogekijo",
     key: "gbco1gbl",
     name: "\"Geki\" Shogekijo",
-    categories: ["theater"],
+    categories: ["theater", "cinema"],
     address: "東京都世田谷区北沢2-6-6",
     lat: null, lng: null,
     desc: {
@@ -584,7 +584,7 @@ window.STORES = [
     id: "shogekijo-b1",
     key: "rcgzflaq",
     name: "Shogekijo B1",
-    categories: ["theater"],
+    categories: ["theater", "cinema"],
     address: "東京都世田谷区北沢2-8-18 北沢タウンホールB1",
     lat: null, lng: null,
     desc: {
@@ -724,6 +724,266 @@ window.STORES = [
       zh: "同一栋楼里还有咖啡馆的杂货店，距车站5分钟。",
       ko: "같은 건물에 카페가 있는 잡화점으로, 역에서 5분 거리입니다.",
       ja: "一棟でカフェと買い物が楽しめる雑貨店。駅から歩いて5分。"
+    }
+  },
+
+  /* ---- 隠れ家バー ---- */
+  {
+    id: "bar-cajica",
+    key: "zgskwukt",
+    name: "Bar cajica",
+    categories: ["bars"],
+    address: "東京都世田谷区代沢2-29-1 MART下北沢II 2F",
+    lat: null, lng: null,
+    desc: {
+      en: "A hidden antique bar on a 2nd floor, with sofas and carefully chosen furniture, lights and glasses. 4 minutes from the station.",
+      zh: "位于二楼的隐秘古董酒吧，有沙发座，家具、灯具和酒杯都很讲究。距车站4分钟。",
+      ko: "2층에 있는 숨은 앤티크 바로, 소파석이 있고 가구·조명·잔까지 신경 썼습니다. 역에서 4분.",
+      ja: "ビル2階の隠れ家アンティークバー。ソファー席があり、家具や照明、グラスにもこだわる。駅から歩いて4分。"
+    }
+  },
+  {
+    id: "bar-ad-2nd",
+    key: "keq3vez4",
+    name: "Bar ad. 2nd",
+    categories: ["bars"],
+    address: "東京都世田谷区北沢2-22-13 XAビル2F",
+    lat: null, lng: null,
+    desc: {
+      en: "A whisky bar on a 2nd floor.",
+      zh: "位于二楼、以威士忌为主的酒吧。",
+      ko: "2층에 있는 위스키 중심의 바입니다.",
+      ja: "ビル2階の、ウイスキー中心のバー。"
+    }
+  },
+  {
+    id: "bar-secondo-tabacchi",
+    key: "gibdxnbe",
+    name: "Bar secondo TABACCHI",
+    categories: ["bars"],
+    address: "東京都世田谷区代田6-1-23",
+    lat: null, lng: null,
+    desc: {
+      en: "A bar inside an apartment building in a quiet residential area.",
+      zh: "位于安静住宅区一栋公寓楼里的酒吧。",
+      ko: "조용한 주택가의 맨션 안에 있는 바입니다.",
+      ja: "住宅街のマンションの中にあるバー。"
+    }
+  },
+  {
+    id: "barnitas",
+    key: "jy4kcd0i",
+    name: "barnitas",
+    categories: ["bars"],
+    address: "東京都世田谷区北沢2-33-6 飯嶋ビル2F",
+    lat: null, lng: null,
+    desc: {
+      en: "A small counter bar on a 2nd floor, playing music from the 70s and 80s.",
+      zh: "位于二楼、以吧台为主的小酒吧，播放70至80年代的音乐。",
+      ko: "2층에 있는 카운터 중심의 작은 바로, 70~80년대 음악이 흐릅니다.",
+      ja: "ビル2階、カウンター中心の小さなバー。70〜80年代の音楽が流れる。"
+    }
+  },
+  {
+    id: "bar-ensamble",
+    key: "sf6tq65p",
+    name: "BAR ENSAMBLE",
+    categories: ["bars"],
+    address: "東京都世田谷区北沢2丁目 大久ビル2D",
+    lat: null, lng: null,
+    desc: {
+      en: "A tiny bar in room 2D of an old building. Little is written about it anywhere.",
+      zh: "位于一栋老楼2D室的小酒吧，几乎查不到相关信息。",
+      ko: "낡은 건물 2D호에 있는 아주 작은 바로, 알려진 정보가 거의 없습니다.",
+      ja: "大久ビル2Dにある小さなバー。事前の情報はほとんどない。"
+    }
+  },
+
+  /* ---- ギター・楽器 ---- */
+  {
+    id: "underneath",
+    key: "3l20zvd7",
+    name: "UNDERNEATH",
+    categories: ["instruments"],
+    address: "東京都世田谷区北沢2-7-10 上原ビル2F",
+    lat: null, lng: null,
+    desc: {
+      en: "A 2nd-floor shop for used and vintage guitars, near SHELTER and Kitazawa Town Hall. Also does adjustments and repairs.",
+      zh: "位于二楼的二手及复古吉他店，靠近 SHELTER 和北泽市民会馆。也做调整和维修。",
+      ko: "SHELTER와 기타자와 타운홀 근처 2층에 있는 중고·빈티지 기타 가게입니다. 조정과 수리도 합니다.",
+      ja: "SHELTERや北沢タウンホール近く、ビル2階の中古・ヴィンテージギター店。調整やリペアもする。"
+    }
+  },
+  {
+    id: "forte-gakki",
+    key: "bv1mp53b",
+    name: "Forte Gakki",
+    categories: ["instruments"],
+    address: "東京都世田谷区代沢5-6-1",
+    lat: null, lng: null,
+    desc: {
+      en: "A specialist shop for classical and flamenco guitars, including used ones.",
+      zh: "古典吉他和弗拉门戈吉他的专门店，也有二手琴。",
+      ko: "클래식 기타와 플라멩코 기타 전문점으로, 중고도 다룹니다.",
+      ja: "クラシックギターとフラメンコギターの専門店。中古も扱う。"
+    }
+  },
+  {
+    id: "rojiura-gakkiten",
+    key: "hr0whpro",
+    name: "Shimokitazawa Rojiura Gakkiten",
+    categories: ["instruments"],
+    address: "東京都世田谷区北沢2-12-10 サウスサイドビル1F",
+    lat: null, lng: null,
+    desc: {
+      en: "Its name means \"back-alley instrument shop\".",
+      zh: "店名的意思是“小巷里的乐器店”。",
+      ko: "가게 이름이 '골목 안 악기점'이라는 뜻입니다.",
+      ja: "その名のとおり、路地裏の楽器店。"
+    }
+  },
+  {
+    id: "lost-boys",
+    key: "md7494sa",
+    name: "LOST BOYS",
+    categories: ["instruments"],
+    address: "東京都世田谷区北沢3-20-18",
+    lat: null, lng: null,
+    desc: {
+      en: "A small guitar workshop.",
+      zh: "小型吉他工坊。",
+      ko: "작은 기타 공방입니다.",
+      ja: "小さなギター工房。"
+    }
+  },
+  {
+    id: "little-by-tech",
+    key: "zu3knejv",
+    name: "LITTLE BY TECH.",
+    categories: ["instruments"],
+    address: "東京都世田谷区北沢2-12-2 レインフォレストビル2F",
+    lat: null, lng: null,
+    desc: {
+      en: "Guitar and bass repairs and small parts, on a 2nd floor right by the station.",
+      zh: "位于车站旁二楼，做吉他和贝斯的维修，也卖小配件。",
+      ko: "역 바로 옆 2층에서 기타·베이스 수리와 소품 판매를 합니다.",
+      ja: "駅すぐのビル2階。ギター・ベースのリペアと小物の販売。"
+    }
+  },
+
+  /* ---- ミニシアター・お笑い ---- */
+  {
+    id: "tollywood",
+    key: "ht2njd1o",
+    name: "Shimokitazawa Tollywood",
+    categories: ["cinema"],
+    address: "東京都世田谷区代沢5-32-5 シェルポ下北沢2F",
+    lat: null, lng: null,
+    desc: {
+      en: "A one-screen cinema on a 2nd floor, showing short films and work by young directors. 5 minutes from the station.",
+      zh: "位于二楼、只有一块银幕的影院，主要放映短片和年轻导演的作品。距车站5分钟。",
+      ko: "2층에 있는 스크린 1개짜리 영화관으로, 단편 영화와 젊은 감독의 작품을 주로 상영합니다. 역에서 5분.",
+      ja: "ビル2階、スクリーン1つの映画館。短編や若手監督の作品を中心に上映。駅から歩いて5分。"
+    }
+  },
+  {
+    id: "k2-cinema",
+    key: "79yt8hhu",
+    name: "Shimokita-Ekimae-Cinema K2",
+    categories: ["cinema"],
+    address: "東京都世田谷区北沢2-21-22 tefu lounge 2F",
+    lat: null, lng: null,
+    desc: {
+      en: "A small cinema that opened in 2022, on the 2nd floor of a building connected to the station.",
+      zh: "2022年开业的小影院，位于与车站相连的大楼二楼。",
+      ko: "2022년에 문을 연 작은 영화관으로, 역과 연결된 건물 2층에 있습니다.",
+      ja: "2022年に開館したミニシアター。駅直結の建物の2階。"
+    }
+  },
+  {
+    id: "shimokita-zawazawa",
+    key: "onq77kwe",
+    name: "Shimokita ZAWAZAWA (Shimokita GRIP)",
+    categories: ["cinema"],
+    address: "東京都世田谷区北沢2-9-20 力十ビルB1",
+    lat: null, lng: null,
+    desc: {
+      en: "A basement comedy venue with free stand-up shows by young comedians, Friday to Sunday. On weekdays it seats only about 20 people.",
+      zh: "地下的喜剧场地，周五至周日有年轻艺人的免费演出。平日只能容纳约20人。",
+      ko: "지하에 있는 코미디 공연장으로, 금~일요일에 젊은 개그맨들의 무료 공연이 열립니다. 평일에는 약 20명만 들어갑니다.",
+      ja: "地下のお笑いライブの会場。金〜日は若手芸人の入場無料ライブ。平日は先着20名ほど。"
+    }
+  },
+
+  /* ---- 小さなギャラリー ---- */
+  {
+    id: "gallery-kasutela",
+    key: "miimnkjm",
+    name: "gallery kasutela",
+    categories: ["galleries"],
+    address: "東京都世田谷区北沢3-34-3",
+    lat: null, lng: null,
+    desc: {
+      en: "A tiny gallery of just 9 square meters, 7 minutes from the West Exit.",
+      zh: "只有9平方米的小画廊，距西口7分钟。",
+      ko: "겨우 9제곱미터의 아주 작은 갤러리로, 서쪽 출구에서 7분입니다.",
+      ja: "広さわずか9㎡のギャラリー。西口から歩いて7分。"
+    }
+  },
+  {
+    id: "musashiya-garo",
+    key: "1tkhdclg",
+    name: "Musashiya Garo",
+    categories: ["galleries"],
+    address: "東京都世田谷区北沢2-32-8",
+    lat: null, lng: null,
+    desc: {
+      en: "A calm gallery of about 29 square meters.",
+      zh: "约29平方米、气氛沉稳的画廊。",
+      ko: "약 29제곱미터의 차분한 분위기의 갤러리입니다.",
+      ja: "約29㎡の、大人の雰囲気の画廊。"
+    }
+  },
+  {
+    id: "gallery-geki",
+    key: "a8bjrtq4",
+    name: "Gallery Geki",
+    categories: ["galleries"],
+    address: "東京都世田谷区北沢2-6-6",
+    lat: null, lng: null,
+    desc: {
+      en: "A gallery inside the \"Geki\" Shogekijo theater, 3 minutes from the South Exit.",
+      zh: "位于“剧”小剧场内的画廊，距南口3分钟。",
+      ko: "'게키' 소극장 안에 있는 갤러리로, 남쪽 출구에서 3분입니다.",
+      ja: "「劇」小劇場の中にあるギャラリー。南口から歩いて3分。"
+    }
+  },
+  {
+    id: "shimokitazawa-arts",
+    key: "rdroyy2m",
+    name: "Shimokitazawa Arts",
+    categories: ["galleries"],
+    address: "東京都世田谷区北沢1-40-9 1F",
+    lat: null, lng: null,
+    desc: {
+      en: "Opened in 2022. A new solo show by a young contemporary artist about once a month.",
+      zh: "2022年开业，大约每月举办一次年轻当代艺术家的个展。",
+      ko: "2022년에 문을 열었으며, 거의 매달 젊은 현대 미술가의 개인전을 엽니다.",
+      ja: "2022年開廊。月に1回ほど、若手現代アーティストの個展を開く。"
+    }
+  },
+  {
+    id: "gallery-hana",
+    key: "k4x1w7gb",
+    name: "Gallery HANA Shimokitazawa",
+    categories: ["galleries"],
+    address: "東京都世田谷区北沢3-26-2",
+    lat: null, lng: null,
+    desc: {
+      en: "A small gallery on the ground floor; Clarice Books is up the stairs beside it. 11:00–19:00.",
+      zh: "一楼的小画廊，旁边楼梯上去就是 Clarice Books。11:00–19:00。",
+      ko: "1층의 작은 갤러리로, 옆 계단을 올라가면 Clarice Books가 있습니다. 11:00–19:00.",
+      ja: "1階の小さなギャラリー。脇の階段を上がるとクラリスブックス。11:00〜19:00。"
     }
   }
 ];

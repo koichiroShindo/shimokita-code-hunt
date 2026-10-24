@@ -10,6 +10,7 @@
  *   lat, lng   : お店の位置。Googleマップでお店を右クリックすると出る数字を入れる。
  *                null のあいだは、QRを読んだときに位置を確かめない
  *   photo      : お店の写真（images/shops/ に入れたファイル名）。なければ書かない
+ *   credit     : 写真の出典（写真の下に「Photo: 〜」と表示する）。掲載の許可をとった相手を書く
  *   desc       : 短い紹介文。en（英語）は必ず書く。zh / ko / ja は書けたら
  *
  * 住所と紹介文はWebの紹介記事から拾ったもの。移転・閉店していることがあるので、QRコードを置く前にお店に確かめる。
@@ -23,6 +24,7 @@ window.STORES = [
     categories: ["vintage"],
     address: "東京都世田谷区北沢2-35-15 下北沢マンション2F 66号室",
     lat: null, lng: null,
+    photo: "lomad-loman.jpg", credit: "#シモフル",
     desc: {
       en: "Deep inside the 2nd floor of an old building on a back street. Opened in May 2021. 14:00–20:00 (weekends from 13:00).",
       zh: "位于小巷里一栋老楼的二楼深处，2021年5月开业。14:00–20:00（周末13:00起）。",
@@ -51,6 +53,7 @@ window.STORES = [
     categories: ["vintage"],
     address: "東京都世田谷区代沢5-28-12 藤田ビル1C",
     lat: null, lng: null,
+    photo: "kroneko.jpg", credit: "VINTY",
     desc: {
       en: "The owner buys and sells everything alone. About 5 minutes from the station.",
       zh: "店主一人负责采购和销售。距车站约5分钟。",
@@ -104,6 +107,7 @@ window.STORES = [
     categories: ["records"],
     address: "東京都世田谷区北沢3-30-1 2F",
     lat: null, lng: null,
+    photo: "record-station.jpg", credit: "RECORD STATION",
     desc: {
       en: "A used record shop on a 2nd floor along the Ichibangai shopping street.",
       zh: "位于一番街商店街一栋楼二楼的二手唱片店。",
@@ -248,6 +252,7 @@ window.STORES = [
     categories: ["cafe", "records"],
     address: "東京都世田谷区北沢2-12-13 細沢ビル4F",
     lat: null, lng: null,
+    photo: "city-country-city.jpg", credit: "Harumari TOKYO",
     desc: {
       en: "A record shop and café bar on the 4th floor of an old building, 1 minute from the station.",
       zh: "位于一栋老楼4楼的唱片店兼咖啡酒吧，距车站1分钟。",
@@ -306,6 +311,7 @@ window.STORES = [
     categories: ["sweets"],
     address: "東京都世田谷区北沢2-34-8付近 2F",
     lat: null, lng: null,
+    photo: "monalisa-coffee.jpg", credit: "Lemon8",
     desc: {
       en: "A tiny 2nd-floor café with 2 counter seats and 2 tables, known for its firm pudding.",
       zh: "只有2个吧台座位和2张桌子的二楼小咖啡馆，以口感结实的布丁闻名。",
@@ -320,6 +326,7 @@ window.STORES = [
     categories: ["sweets", "kissa"],
     address: "東京都世田谷区北沢2-31-1 サン・ローザ1F",
     lat: null, lng: null,
+    photo: "mardi-gras.jpg", credit: "さんたつ by 散歩の達人",
     desc: {
       en: "A café of almost 40 years at the end of a back alley. Known for its pudding and shortcake.",
       zh: "位于小巷深处、经营近40年的咖啡馆。招牌是布丁和草莓蛋糕。",
@@ -450,6 +457,7 @@ window.STORES = [
     categories: ["music"],
     address: "東京都世田谷区北沢2-13-5 伊奈ビル3F",
     lat: null, lng: null,
+    photo: "mona-records.jpg", credit: "mona records",
     desc: {
       en: "A live space, record shop and café on a 3rd floor, 2 minutes from the station.",
       zh: "位于三楼，集现场演出、唱片店和咖啡馆于一体，距车站2分钟。",
@@ -464,6 +472,7 @@ window.STORES = [
     categories: ["music"],
     address: "東京都世田谷区北沢3-20-2 大成ビル2F",
     lat: null, lng: null,
+    photo: "little-soul-cafe.jpg", credit: "Time Out Tokyo",
     desc: {
       en: "A record bar on a 2nd floor, open for about 20 years. ¥500 cover charge, cash only.",
       zh: "位于二楼、营业约20年的唱片酒吧。每人收500日元座位费，只收现金。",
@@ -608,6 +617,7 @@ window.STORES = [
     categories: ["books"],
     address: "東京都世田谷区北沢2-7-10",
     lat: null, lng: null,
+    photo: "honkichi.jpg", credit: "ほん吉",
     desc: {
       en: "A small used bookstore, 3 minutes from the Central Exit.",
       zh: "距中央口3分钟的小旧书店。",
@@ -622,6 +632,7 @@ window.STORES = [
     categories: ["books"],
     address: "東京都世田谷区北沢3-21-1 1F",
     lat: null, lng: null,
+    photo: "kosho-asu.jpg", credit: "下北沢一番街商店街振興組合",
     desc: {
       en: "A used bookstore about 7 minutes from the North Exit.",
       zh: "距北口约7分钟的旧书店。",

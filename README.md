@@ -30,7 +30,7 @@
 ## お店の写真を入れる
 1. 写真を長辺1600px程度・1MB以下に縮小し、撮影日時や位置情報（EXIF）を消す
 2. `images/shops/` に `お店のid.jpg`（例：`bear-pond-espresso.jpg`）の名前で入れる
-3. `data/stores.js` のそのお店に `photo: "bear-pond-espresso.jpg",` を足す
+3. `data/stores.js` のそのお店に `photo: "bear-pond-espresso.jpg", credit: "出典",` を足す（credit は写真の下に「Photo: 出典」と出る）
 
 お店の写真は、お店に掲載の許可をとってから入れる。
 

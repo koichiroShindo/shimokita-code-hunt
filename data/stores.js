@@ -670,6 +670,7 @@ window.STORES = [
     categories: ["goods"],
     address: "東京都世田谷区北沢3-34-2",
     lat: null, lng: null,
+    photo: "tokyo-retro.jpg", credit: "aumo",
     desc: {
       en: "Antique goods from Japan's Showa era.",
       zh: "经营日本昭和时代的古董杂货。",
@@ -684,6 +685,7 @@ window.STORES = [
     categories: ["goods"],
     address: "東京都世田谷区北沢2-30-8",
     lat: null, lng: null,
+    photo: "antique-life-jin.jpg", credit: "aumo",
     desc: {
       en: "Vintage goods, about 3 minutes from the North Exit.",
       zh: "经营复古杂货，距北口约3分钟。",
@@ -698,6 +700,7 @@ window.STORES = [
     categories: ["goods"],
     address: "ミカン下北 東洋百貨店別館",
     lat: null, lng: null,
+    photo: "sukonbu.jpg", credit: "aumo",
     desc: {
       en: "Handmade, one-of-a-kind accessories and goods.",
       zh: "手工制作的独一无二的饰品和杂货。",

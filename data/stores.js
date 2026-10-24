@@ -166,6 +166,7 @@ window.STORES = [
     categories: ["kissa"],
     address: "東京都世田谷区北沢2-14-5 イスズビル203",
     lat: null, lng: null,
+    photo: "toumei-bara.jpg", credit: "Yahoo!ニュース エキスパート",
     desc: {
       en: "A coffee house in room 203 of an old building on a back street.",
       zh: "位于小巷里一栋老楼203室的老派咖啡馆。",
@@ -194,6 +195,7 @@ window.STORES = [
     categories: ["kissa"],
     address: "東京都世田谷区代沢5-36-14 湯浅ビル2F",
     lat: null, lng: null,
+    photo: "trois-chambres.jpg", credit: "くふうトリップ",
     desc: {
       en: "A coffee house on the 2nd floor of a building, about 5 minutes from the South Exit.",
       zh: "位于大楼二楼的咖啡馆，距南口约5分钟。",
@@ -341,6 +343,7 @@ window.STORES = [
     categories: ["sweets", "cafe"],
     address: "東京都世田谷区北沢2-11-17",
     lat: null, lng: null,
+    photo: "anthrop.jpg", credit: "aumo",
     desc: {
       en: "A café known for its homemade baked sweets.",
       zh: "以自制烘焙点心闻名的咖啡馆。",
@@ -385,6 +388,7 @@ window.STORES = [
     categories: ["curry"],
     address: "東京都世田谷区北沢2-15-11 センヤビルB1F",
     lat: null, lng: null,
+    photo: "anjali.jpg", credit: "食べログまとめ",
     desc: {
       en: "A tiny half-basement curry shop, a few steps down in a back-alley building. Only a counter and small tables.",
       zh: "位于小巷大楼里、走下几级台阶的半地下小咖喱店。只有吧台和小桌。",
@@ -441,6 +445,7 @@ window.STORES = [
     categories: ["curry"],
     address: "東京都世田谷区代沢5-29-9 ナイスビル1F",
     lat: null, lng: null,
+    photo: "kyu-yamu-tei.jpg", credit: "食べログまとめ",
     desc: {
       en: "Three kinds of keema curry that change every month. 8 minutes from the station.",
       zh: "每月更换的3种肉末咖喱。距车站8分钟。",
@@ -603,6 +608,7 @@ window.STORES = [
     categories: ["books"],
     address: "東京都世田谷区北沢1-40-8 土屋ビル1F",
     lat: null, lng: null,
+    photo: "furuhon-bibibi.jpg", credit: "さんたつ by 散歩の達人",
     desc: {
       en: "A used bookstore with about 13,000 books, including many rare and strange ones.",
       zh: "约有13,000册藏书的旧书店，珍本和奇书很多。",
@@ -647,6 +653,7 @@ window.STORES = [
     categories: ["books"],
     address: "東京都世田谷区北沢3-26-2 2F",
     lat: null, lng: null,
+    photo: "clarice-books.jpg", credit: "aumo",
     desc: {
       en: "Go up the stairs beside the small gallery HANA. Used books from philosophy to art, fashion and subculture.",
       zh: "从小画廊HANA旁边的楼梯上去。从哲学到美术、时尚、亚文化的旧书。",

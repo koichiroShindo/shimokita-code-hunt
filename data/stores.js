@@ -168,6 +168,7 @@ window.STORES = [
     categories: ["mode", "euro"],
     address: "東京都世田谷区代田5-35-8",
     lat: null, lng: null,
+    photo: "flocci.jpg",
     links: {"instagram": "https://www.instagram.com/floccinaucinihiliqilification/", "web": "https://flocci-used.stores.jp"},
     desc: {
       en: "A shop for 1970s–80s archive pieces by Japanese designers such as Comme des Garçons, Issey Miyake and Yohji Yamamoto plus DC-brand and no-brand European vintage. Its full name, floccinaucinihilipilification, is an English word meaning worthlessness; regulars just say flocci. After selling only on Instagram, it opened this store in 2018. It sits on a residential street about 3 minutes from the West Exit, away from the vintage-shop strips.",
@@ -363,6 +364,7 @@ window.STORES = [
     categories: ["instruments"],
     address: "東京都世田谷区北沢2-7-10 上原ビル2F",
     lat: null, lng: null,
+    photo: "underneath.jpg",
     links: {"facebook": "https://www.facebook.com/underneath.guitar/"},
     desc: {
       en: "A used and vintage guitar shop selling guitars and basses from vintage pieces to current models, plus effects pedals, strings, cables and straps, with buying, consignment and repairs. It was opened in 2007 by Takeichi Tatsuya, a guitar-craft school graduate who worked over 15 years at major Tokyo guitar stores. From the Central Exit, walk about 4 minutes toward Shimokitazawa SHELTER and Kitazawa Town Hall, then take the entrance beside the sign up to the 2nd floor. Open 14:00-19:00; closed Wednesdays and the 1st and 3rd Sundays.",
@@ -378,6 +380,7 @@ window.STORES = [
     categories: ["instruments"],
     address: "東京都世田谷区代沢5-6-1",
     lat: null, lng: null,
+    photo: "forte-gakki.jpg",
     links: {"web": "https://forute.com/"},
     desc: {
       en: "A specialist shop for classical and flamenco guitars, from beginner models to new instruments by Japanese luthiers and guitars by Spanish masters, plus used guitars, cases, books, capos and strings. It opened in Shimokitazawa in 1982 as a handmade-guitar shop and also buys instruments. It is on the south side of the station near the Daizawa three-way junction, about 5 to 10 minutes on foot depending on the route. The official site lists 11:00-17:00, closed Wednesdays and Thursdays.",
@@ -411,6 +414,7 @@ window.STORES = [
     categories: ["kissa"],
     address: "東京都世田谷区北沢2-21-26 2F",
     lat: null, lng: null,
+    photo: "ichifusa.jpg",
     links: {"instagram": "https://www.instagram.com/kissa_hitofusa/"},
     desc: {
       en: "A small café serving seasonal fruit sandwiches with mascarpone cream and large pieces of fruit, plus coffee; sandwiches come in a regular (4 pieces) or half (2 pieces) size. It is a sister shop of the fruit sandwich store Futsuuni Furuutsu, open as a daytime kissaten since April 2023. Climb to the 2nd floor of a building in a side street, about 2 minutes from the Southwest Exit; queues sometimes reach the bottom of the stairs. They can sell out, and reviews say cash only.",
@@ -441,6 +445,7 @@ window.STORES = [
     categories: ["kissa", "music"],
     address: "本店：東京都世田谷区北沢2-31-2 大久ビル2F／パルファン店：東京都世田谷区北沢2-29-3 パルファンビル2F",
     lat: null, lng: null,
+    photo: "masako.jpg",
     links: {"x": "https://x.com/JazzKissaMasako"},
     desc: {
       en: "A jazz kissaten that plays records, known for its anko (sweet bean) toast at 450 yen and homemade ginger ale. The original Masako opened in 1953 and closed in 2009; moe, a regular since high school and a former staff member, revived the name in 2020. The main shop is on the 2nd floor of the Okyu Building, 2 minutes from the station; in August 2025 a second shop, Masako Parfun, opened 2 minutes away on the 2nd floor of the former Café de Parfun, reusing its booths, tables and chairs. Both close Thursdays; live nights have a 1,000 yen charge plus a drink.",
@@ -456,6 +461,7 @@ window.STORES = [
     categories: ["kissa"],
     address: "東京都世田谷区北沢2-12-10 サウスサイド2 2B",
     lat: null, lng: null,
+    photo: "tag-cafe.jpg",
     links: {"instagram": "https://www.instagram.com/tagcafe_shimokita/"},
     desc: {
       en: "A retro kissaten known for cream soda in 7 colors (strawberry, melon, blue Hawaii, lemon, grape, peach and Calpis) at 650 yen, and a firm \"donut pudding\" with whipped cream in the hole, cherries and chocolate sprinkles. It opened in 2011 and was renewed as a \"neo kissaten\" in January 2021. It is unit 2B on the 2nd floor of the Southside 2 building on a back street, 1 to 2 minutes from the station. Open 11:00-20:00 (last order 19:30), irregular holidays; power outlets and Wi-Fi available, reservations by phone only.",
@@ -473,6 +479,7 @@ window.STORES = [
     categories: ["cafe", "books"],
     address: "東京都世田谷区代沢5-32-13 露崎商店ビル5F",
     lat: null, lng: null,
+    photo: "browns-books-cafe.jpg",
     links: {"x": "https://x.com/BrownsBooksCafe"},
     desc: {
       en: "A book café run by Brown's Books, publisher of the culture magazines BARFOUT! and STEPPIN' OUT!, where you can read and buy current and back issues and secondhand books on music, art, travel, literature and manga, mostly from editor Yamazaki Jiro's own collection. On weekdays the room is the magazine's editorial office; it opens as a café only on Saturdays and Sundays. It is on the 5th floor of the Tsuyuzaki Shoten Building on the South Exit side, 5 minutes from the station.",
@@ -504,6 +511,7 @@ window.STORES = [
     categories: ["cafe"],
     address: "東京都世田谷区北沢2-10-10 1F",
     lat: null, lng: null,
+    photo: "ballon-dessai.jpg",
     links: {"x": "https://x.com/ballondessaicom", "threads": "https://www.threads.com/@ballondessai.latte_art"},
     desc: {
       en: "A specialty coffee stand where baristas pull each espresso by hand, known for its lattes, a latte-art experience (no booking needed) and espresso shaved ice. After its old Kitazawa Building home was torn down for age and it closed in January 2025, it reopened about 18 months later, on August 19, 2026, as a roastery and coffee stand. The new shop is on the ground floor of a building right in front of the East Exit.",
@@ -519,6 +527,7 @@ window.STORES = [
     categories: ["cafe", "books"],
     address: "東京都世田谷区代田2-36-14 BONUS TRACK内",
     lat: null, lng: null,
+    photo: "fuzkue.jpg",
     links: {"web": "https://fuzkue.com/shops/shimokitazawa"},
     desc: {
       en: "A café made only for reading: talking is not allowed, and studying, working, writing, watching videos or gaming are off-limits too. There is a seat fee starting at 1,650 yen that drops as you order food and drinks, so most visits come to around 2,000 yen. Owner Akutsu Takashi opened the first fuzkue in Hatsudai in 2014 and this second shop in 2020 inside BONUS TRACK, 5 minutes from the Inokashira Line West Exit or Odakyu Line Southwest Exit. Open daily 12:00-22:00 per the official site; reservations are for one person each.",
@@ -583,6 +592,7 @@ window.STORES = [
     categories: ["sweets", "cafe"],
     address: "東京都世田谷区代田5-10-6 イーストコート代田1F",
     lat: null, lng: null,
+    photo: "latte.jpg",
     links: {"instagram": "https://www.instagram.com/latte_shimokitazawa/", "web": "https://latte-shimokitazawa.com/"},
     desc: {
       en: "A café-restaurant known for old-style firm pudding and matcha gâteau au chocolat, plus a weekend morning plate with pudding, lunch and dinner. It opened in April 2022, appeared as a filming location in the TV drama silent, and reopened after a renewal in July 2025. It is on the ground floor of East Court Daita, 2 to 3 minutes from the West Exit of Setagaya-Daita Station on the Odakyu Line (7 minutes from Shimokitazawa Station). It does not take reservations and can get busy.",
@@ -616,6 +626,7 @@ window.STORES = [
     categories: ["curry"],
     address: "東京都世田谷区北沢2-37-16 林ビル3F",
     lat: null, lng: null,
+    photo: "kappa-ism.jpg",
     links: {"facebook": "https://www.facebook.com/p/%E3%82%AB%E3%83%83%E3%83%91%E3%82%A4%E3%82%BA%E3%83%A0-%E3%82%AB%E3%83%AC%E3%83%BC-61557239651042/"},
     desc: {
       en: "A dashi (Japanese broth) curry shop by day and a music bar by night. Curries include chicken curry made with dried-sardine, kombu and bonito broth, and a pork keema with Hatcho miso. The shop moved here from Suzunari Yokocho, and at night it serves motsuni (simmered offal) in the style of the owner's family yakitori shop near Odawara, open for over 70 years. Look for the building with a spiral staircase on Ichibangai shopping street; the shop is on the 3rd floor, with no sign, only a small name on the door.",
@@ -713,6 +724,7 @@ window.STORES = [
     categories: ["music"],
     address: "東京都世田谷区北沢2-2-3 エルサント北沢B1",
     lat: null, lng: null,
+    photo: "daisy-bar.jpg",
     links: {"web": "https://daisybar.jp/"},
     desc: {
       en: "A live music club centered on indie bands, holding about 140 people standing. It opened on March 19, 2005, and bands including Creephyp played its 10th-anniversary shows in 2015. On the 1st floor is the 60-capacity lounge 'Laguna', and the club also runs the music label 'Primitive'. It is 4 minutes on foot from the South Exit of Shimokitazawa Station, right by the South Exit shopping street; go down the stairs from the entrance to the basement. Open on show days only; see the schedule at daisybar.jp.",
@@ -728,89 +740,13 @@ window.STORES = [
     categories: ["music"],
     address: "東京都世田谷区代沢5-18-1 カラバッシュビルB1F",
     lat: null, lng: null,
+    photo: "basement-bar.jpg",
     links: {"x": "https://x.com/BASEMENTxBAR"},
     desc: {
       en: "A live music club founded in 1995 that marked its 30th anniversary in 2025, holding about 250 people standing. Its sister venue THREE is next door in the same building. In 2021 a lease problem put it at risk of moving or closing, and the two venues ran a crowdfunding campaign called 'CONTINUE PROJECT'; in 2025 the bar counter and sound system were renewed. It is in the basement of a building on Chazawa-dori, marked by the Kakuyasu liquor store's '酒' sign, 8 to 12 minutes on foot from the South Exit of Shimokitazawa Station. Open on show days.",
       zh: "1995年创办、2025年迎来30周年的Live House，站席约可容纳250人。同一栋楼的隔壁是姊妹店“THREE”。2021年因租约问题面临搬迁或关闭，与THREE一起发起了众筹“CONTINUE PROJECT”；2025年翻新了吧台和音响。位于茶泽通沿线、以酒类店KAKUYASU的“酒”字招牌为标志的大楼地下1层，从下北泽站南口步行8〜12分钟。只在有演出的日子营业。",
       ko: "1995년에 창업해 2025년에 30주년을 맞은 라이브 하우스로, 스탠딩으로 약 250명이 들어갑니다. 같은 건물 옆에 자매점 'THREE'가 있습니다. 2021년에는 계약 문제로 이전이나 폐점 가능성이 생겨 THREE와 함께 크라우드펀딩 'CONTINUE PROJECT'를 진행했고, 2025년에는 바 카운터와 음향을 새로 바꿨습니다. 차자와도리에 있는, 주류점 가쿠야스의 '酒' 간판이 표시인 건물 지하 1층으로, 시모키타자와역 남쪽 출구에서 걸어서 8~12분입니다. 공연이 있는 날 영업합니다.",
       ja: "1995年創業、2025年に30周年を迎えたライブハウスで、キャパはスタンディングで約250人。同じビルの隣に姉妹店「THREE」がある。2021年には契約の問題で移転・閉店の可能性があり、THREEとともにクラウドファンディング「CONTINUE PROJECT」を行った。2025年にはバーカウンターと音響を一新。茶沢通り沿い、カクヤスの「酒」の看板が目印のビルの地下1階で、下北沢駅南口から徒歩8〜12分。公演のある日に営業。"
-    }
-  },
-
-  /* ---- 小劇場 ---- */
-  {
-    id: "theater-rakuen",
-    key: "fr6fmx7a",
-    name: "Shogekijo Rakuen",
-    categories: ["theater"],
-    address: "東京都世田谷区北沢2-10-18 藤和下北沢ハイタウンB棟 地下1F",
-    lat: null, lng: null,
-    links: {"web": "https://www.honda-geki.com/rakuen/"},
-    desc: {
-      en: "A basement theater of the Honda Theater Group; the companies and plays change with each run. Kazuo Honda opened it in February 2007 as 'a theater for adults'. Its roughly 70 to 90 seats sit on two sides around a pillar, so the stage is watched from two directions; on one side the ceiling is low under a loft. Turn into the street in front of Honda Theater; Rakuen is on the right, behind a green door near a sweet-potato shop with a round '芋' sign, and you go down to the basement. 3 to 5 minutes from the East Exit of Shimokitazawa Station.",
-      zh: "本多剧场集团旗下位于地下的小剧场，上演的剧团和剧目每次都不同。2007年2月由本多一夫以“为大人而设的剧场”为理念开设。约70〜90个座位围绕柱子分两个方向排列，从两面观看舞台；其中一侧在阁楼下方，天花板较低。走进本多剧场前的街道，右侧就是乐园，入口是挂着圆形“芋”字招牌的红薯点心店附近的绿色门，从那里下到地下。从下北泽站东口步行3〜5分钟。",
-      ko: "혼다 극장 그룹의 지하 소극장으로, 공연하는 극단과 작품은 공연마다 바뀝니다. 2007년 2월 혼다 가즈오 씨가 '어른을 위한 극장'이라는 콘셉트로 열었습니다. 약 70~90석의 객석이 기둥을 둘러싸고 두 방향으로 놓여 있어 두 면에서 무대를 보며, 한쪽은 로프트 아래라 천장이 낮습니다. 혼다 극장 앞 길로 들어서면 오른쪽에 있으며, 둥근 '芋(고구마)' 간판의 고구마 과자점 근처의 초록색 문으로 들어가 지하로 내려갑니다. 시모키타자와역 동쪽 출구에서 걸어서 3~5분.",
-      ja: "本多劇場グループの地下の小劇場で、上演する劇団・演目は公演ごとに替わる。2007年2月、本多一夫氏が「大人のための劇場」というコンセプトで開いた。約70〜90席の客席が柱を囲んで2方向に並び、2面から舞台を見る造りで、片側はロフトの下で天井が低い。本多劇場の前の通りに入った右側、「芋」の丸い看板の芋菓子店の近くにある緑色の扉から地下へ降りる。下北沢駅東口から徒歩3〜5分。"
-    }
-  },
-  {
-    id: "off-off-theater",
-    key: "quy56bm4",
-    name: "OFF OFF Theater",
-    categories: ["theater"],
-    address: "東京都世田谷区北沢2-11-8 TAROビル3F",
-    lat: null, lng: null,
-    links: {"web": "https://www.honda-geki.com/offoff/"},
-    desc: {
-      en: "A small theater of the Honda Theater Group with about 80 seats, opened in November 1993; the 180-seat Ekimae Gekijo is on the same floor. Productions change with each run; shows in October 2026 had tickets at ¥3,500 to ¥4,000. It was closed from March to July 2026 for building renovation, and performances resumed by October. It is on the 3rd floor of the TARO Building on the East Exit side of Shimokitazawa Station, just past the Inokashira Line overpass, about 3 minutes on foot.",
-      zh: "本多剧场集团旗下约80个座位的小剧场，1993年11月开幕；同一层还有约180个座位的“站前剧场”。剧目随每次演出更换，2026年10月的演出票价为3,500〜4,000日元。2026年3月至7月因大楼改建休馆，10月已有演出。位于下北泽站东口一侧、穿过井之头线高架桥后的TARO大楼3楼，步行约3分钟。",
-      ko: "혼다 극장 그룹의 약 80석 소극장으로, 1993년 11월에 문을 열었습니다. 같은 층에 약 180석의 '에키마에 극장'이 있습니다. 작품은 공연마다 바뀌며, 2026년 10월 공연의 티켓은 3,500~4,000엔이었습니다. 2026년 3~7월에는 건물 보수 공사로 휴관했고 10월에는 공연이 있습니다. 시모키타자와역 동쪽 출구 쪽, 이노카시라선 고가 아래를 지나면 나오는 TARO 빌딩 3층으로, 걸어서 약 3분입니다.",
-      ja: "本多劇場グループの約80席の小劇場で、1993年11月開場。同じフロアには約180席の駅前劇場がある。演目は公演ごとに替わり、2026年10月の公演はチケット3,500〜4,000円だった。2026年3〜7月はビルの改修工事で休館し、10月には公演がある。下北沢駅東口側、井の頭線の高架下をくぐった先のTAROビル3階で、駅から徒歩約3分。"
-    }
-  },
-  {
-    id: "geki-shogekijo",
-    key: "gbco1gbl",
-    name: "Geki Shogekijo",
-    categories: ["theater", "cinema"],
-    address: "東京都世田谷区北沢2-6-6",
-    lat: null, lng: null,
-    links: {"web": "https://www.honda-geki.com/gekisho"},
-    desc: {
-      en: "A small theater of the Honda Theater Group, opened in September 1997, with about 100 to 130 seats; the companies and plays change with each run. It is diagonally across from Honda Theater: from the East Exit of Shimokitazawa Station (Central Exit for the Keio Inokashira Line), walk toward Village Vanguard, turn right at the first intersection, and it is on the left. Shogekijo Rakuen is in the basement across the street. There is no cloakroom or coin locker; whether bags can be left in the lobby depends on the company staging the show.",
-      zh: "本多剧场集团旗下的小剧场，1997年9月开幕，约100〜130个座位，上演的剧团和剧目每次都不同。位于本多剧场的斜对面：从下北泽站东口（京王井之头线为中央口）朝Village Vanguard方向走，在第一个路口右转，就在街道左侧。街对面的地下是小剧场乐园。没有衣帽间和投币储物柜，能否在大厅寄存行李取决于演出团体。",
-      ko: "혼다 극장 그룹의 소극장으로, 1997년 9월에 문을 열었고 객석은 약 100~130석이며, 공연하는 극단과 작품은 공연마다 바뀝니다. 혼다 극장의 대각선 맞은편에 있습니다. 시모키타자와역 동쪽 출구(게이오 이노카시라선은 중앙 출구)에서 빌리지 뱅가드 쪽으로 가다가 첫 교차로에서 오른쪽으로 돌면 길 왼편에 있습니다. 길 건너편 지하가 소극장 라쿠엔입니다. 클로크룸이나 코인 로커는 없고, 로비에서 짐을 맡아 주는지는 공연 단체에 따라 다릅니다.",
-      ja: "本多劇場グループの小劇場で、1997年9月開場。客席は約100〜130席で、上演する劇団・演目は公演ごとに替わる。本多劇場の斜め前にあり、下北沢駅東口（京王井の頭線は中央口）からヴィレッジヴァンガード方面へ進み、最初の交差点を右に曲がった通りの左手。通りの向かいの地下が小劇場楽園。クロークやコインロッカーはなく、ロビーで荷物を預かるかは公演団体による。"
-    }
-  },
-  {
-    id: "theater-711",
-    key: "w9chst34",
-    name: "Theater 711",
-    categories: ["theater"],
-    address: "東京都世田谷区北沢1-45-15 スズナリ横丁2F",
-    lat: null, lng: null,
-    links: {"web": "https://www.honda-geki.com/711"},
-    desc: {
-      en: "A small theater of the Honda Theater Group, opened in February 2009 in the former Shimokitazawa Cinema Arton, a movie theater that closed suddenly in 2008. It still uses the cinema's original seats, about 70 to 90 of them, and the plays change with each run. It is on the 2nd floor of the same building as The Suzunari, just to its left on Chazawa-dori; enter on the left side of the building, go up the stairs, and the theater door is on the right. About 5 minutes from the East Exit of Shimokitazawa Station. A line often forms in front before curtain.",
-      zh: "本多剧场集团旗下的小剧场，2009年2月在2008年突然停业的电影院“下北泽Cinema Arton”旧址开幕。至今仍沿用电影院时代的座位，约70〜90席，剧目随每次演出更换。与铃成剧场（ザ・スズナリ）在同一栋楼的2楼，位于茶泽通上铃成剧场的左边；从建物左侧入口上楼梯，右手边的门就是剧场。从下北泽站东口步行约5分钟。开演前剧场门口常常排队。",
-      ko: "혼다 극장 그룹의 소극장으로, 2008년에 갑자기 문을 닫은 영화관 '시모키타자와 시네마 아톤' 자리에 2009년 2월 문을 열었습니다. 영화관 시절의 좌석을 그대로 쓰고 있으며 객석은 70~90석 정도, 작품은 공연마다 바뀝니다. 더 스즈나리와 같은 건물의 2층으로, 차자와도리에서 스즈나리의 왼쪽 옆입니다. 건물 왼쪽 입구에서 계단을 올라가면 오른쪽 문이 극장입니다. 시모키타자와역 동쪽 출구에서 걸어서 약 5분. 개연 전에는 극장 앞에 줄이 생기는 경우가 많습니다.",
-      ja: "2008年に急に閉館した映画館「下北沢シネマアートン」の跡に、2009年2月に開いた本多劇場グループの小劇場。映画館時代の座席をそのまま使っていて、客席は70〜90席ほど。演目は公演ごとに替わる。ザ・スズナリと同じ建物の2階で、茶沢通り沿いのスズナリの左隣。建物左側の入口から階段を上がり、右手のドアが劇場。下北沢駅東口から徒歩約5分。開演前は劇場の前に行列ができることが多い。"
-    }
-  },
-  {
-    id: "shogekijo-b1",
-    key: "rcgzflaq",
-    name: "Shogekijo B1",
-    categories: ["theater", "cinema"],
-    address: "東京都世田谷区北沢2-8-18 北沢タウンホール 地下1階",
-    lat: null, lng: null,
-    links: {"web": "https://www.honda-geki.com/b1"},
-    desc: {
-      en: "A privately run small theater that opened on February 17, 2014, the eighth venue of the Honda Theater Group in Shimokitazawa. It has about 125 to 135 seats set in an L-shape around the stage, so the audience faces it from two sides; plays change with each run. It is in the basement of Kitazawa Town Hall, the gray ward building with a bus stop in front. Inside, take the stairs, or the elevator or escalator at the back on the left, down to B1. 3 to 8 minutes on foot from the East or Central Exit of Shimokitazawa Station.",
-      zh: "2014年2月17日开幕的民营小剧场，是本多剧场集团在下北泽开设的第8座剧场。约125〜135个座位以L字形围绕舞台排列，从两面观看演出，剧目随每次演出更换。位于区立设施“北泽Town Hall”（门前有公交车站的灰色大楼）的地下1层；进入大楼后走楼梯，或乘坐里面左手边的电梯、扶梯下到地下1层。从下北泽站东口或中央口步行3〜8分钟。",
-      ko: "2014년 2월 17일에 문을 연 민영 소극장으로, 혼다 극장 그룹이 시모키타자와에 연 8번째 극장입니다. 약 125~135석의 객석이 무대를 L자로 둘러싸고 있어 두 면에서 무대를 보며, 작품은 공연마다 바뀝니다. 구의 시설인 기타자와 타운홀(앞에 버스 정류장이 있는 회색 건물) 지하 1층에 있습니다. 건물에 들어가 계단이나 안쪽 왼편의 엘리베이터·에스컬레이터로 지하 1층에 내려갑니다. 시모키타자와역 동쪽 출구·중앙 출구에서 걸어서 3~8분.",
-      ja: "2014年2月17日開館の民営の小劇場で、本多劇場グループが下北沢で開いた8つ目の劇場。客席は約125〜135席で、舞台に対してL字形に並ぶ「2面舞台」。演目は公演ごとに替わる。区の施設・北沢タウンホール（バス停があるグレーのビル）の地下1階にあり、ビルに入ったら階段か、奥の左手にあるエレベーター・エスカレーターで降りる。下北沢駅東口・中央口から徒歩3〜8分。"
     }
   },
 
@@ -934,6 +870,7 @@ window.STORES = [
     categories: ["galleries"],
     address: "東京都世田谷区北沢3-34-3",
     lat: null, lng: null,
+    photo: "gallery-kasutela.jpg",
     links: {"web": "http://kasutela.shop-pro.jp/"},
     desc: {
       en: "A rental gallery of about 9 square meters on Shimokitazawa Ichibangai shopping street. Exhibitors change every six days (Wednesday to Monday) and use it for shows, sales and pop-ups of handmade goods, accessories and clothing, so what you find differs each week. It is the spot where the owner first started a select shop called 'kasutela'. The front is all glass, so you can see inside from the street. 5 to 7 minutes on foot from the West Exit of Keio Inokashira Line Shimokitazawa Station. Usually closed Tuesdays; hours depend on the exhibitor.",
@@ -1044,6 +981,7 @@ window.STORES = [
     categories: ["goods"],
     address: "東京都世田谷区北沢3-19-20 reload 2-6",
     lat: null, lng: null,
+    photo: "desk-labo.jpg",
     links: {"web": "https://desklabo.net/"},
     desc: {
       en: "A stationery shop themed on 'a stationery store in a European town', selling Japanese and imported stationery and desk-side interior goods. It started as a small shop near Shoin-jinja-mae, moved to Sangenjaya, and in 2021 relocated to reload, the low-rise shopping complex built on the former Odakyu Line tracks. It is in unit 2-6 on the 2nd floor of reload, about 4 minutes on foot from Shimokitazawa or Higashi-Kitazawa Station. Open 12 pm to 7 pm, closed Mondays (Tuesday if Monday is a holiday).",
@@ -1059,6 +997,7 @@ window.STORES = [
     categories: ["goods"],
     address: "東京都世田谷区代沢5-36-14",
     lat: null, lng: null,
+    photo: "sansato.jpg",
     links: {"x": "https://x.com/sansato_310", "web": "https://www.sansato.jp/"},
     desc: {
       en: "A three-story building that is a shop from top to bottom: the 1st floor is a cafe, the 2nd and 3rd floors carry accessories, goods, clothing and shoes by independent makers, and the 3rd floor also hosts solo shows and events. The name comes from the wish to light up the South Exit's three-way junction where people cross paths. The cafe's 'Shimokitazawa Blend' coffee is blended by the local coffee shop BOOKENDS. About 4 minutes from the Southwest Exit of Shimokitazawa Station, facing the three-way junction. Closed Mondays.",

@@ -797,20 +797,6 @@ window.STORES = [
     }
   },
   {
-    id: "musashiya-garo",
-    name: "Musashiya Garo",
-    categories: ["galleries"],
-    address: "東京都世田谷区北沢2-32-8",
-    lat: null, lng: null,
-    links: {"facebook": "https://www.facebook.com/p/%E6%AD%A6%E8%94%B5%E5%B1%8B%E7%94%BB%E5%BB%8A-100064361671012/"},
-    desc: {
-      en: "A rental gallery used for solo, group and collaborative exhibitions; past shows have included ink painting, picture books and tea ware, and in October 2026 it hosted a solo show by Shimokitazawa-born painter Riku Harada. The owner ran a kimono shop and, delivering clothes to customers' homes, was often shown their hobby artworks, so the owner opened a place where such work could be displayed easily. The first exhibition was a father-and-son show by photographer Shinpei Asai and Ryusuke Asai. About 3 minutes on foot from the North Exit side of Shimokitazawa Station. Closed Mondays.",
-      zh: "用于个展、联展和合作展的出租画廊，过去曾举办水墨画、绘本、茶器等展览，2026年10月举办了下北泽出身的画家原田陆的个展。店主原本经营和服店，给客人送衣服时常被请去看客人兴趣创作的艺术作品，于是想开一个能轻松展示作品的地方。第一场展览是摄影师浅井慎平与浅井龙介的父子展。从下北泽站北口一侧步行约3分钟。周一休息。",
-      ko: "개인전, 단체전, 협업전에 쓰이는 대여 화랑으로, 지금까지 수묵화, 그림책, 다기 전시 등이 열렸고 2026년 10월에는 시모키타자와 출신 화가 하라다 리쿠 씨의 개인전이 열렸습니다. 주인은 원래 포목점을 운영했는데, 손님 집에 옷을 배달하러 갔다가 취미로 만든 작품을 보는 일이 많아 작품을 부담 없이 걸 수 있는 곳을 만들었습니다. 첫 전시는 사진가 아사이 신페이 씨와 아사이 류스케 씨의 부자전이었습니다. 시모키타자와역 북쪽 출구 쪽에서 걸어서 약 3분. 월요일 휴무.",
-      ja: "個展・グループ展・コラボ展に使われる貸し画廊で、これまで水墨画・絵本・茶器などの展示があり、2026年10月には下北沢出身の画家・原田陸さんの個展が開かれた。もとは呉服店で、店主がお客さんの家に服を届けたときに趣味のアート作品を見せてもらうことが多かったことから、作品を気軽に飾れる場所としてつくった。最初の展示は写真家・浅井愼平さんと浅井竜介さんの父子展。下北沢駅北口側から徒歩約3分。月曜休み。"
-    }
-  },
-  {
     id: "shimokitazawa-arts",
     name: "Shimokitazawa Arts",
     categories: ["galleries"],

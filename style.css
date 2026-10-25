@@ -12,7 +12,7 @@
   --error: #A8321E;
   --r-btn: 4px;
   --r-box: 6px;
-  --serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "Songti SC", "Nanum Myeongjo", Georgia, serif;
+  --serif: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Songti SC", "Nanum Myeongjo", Georgia, serif;
 }
 
 * { box-sizing: border-box; }
@@ -208,7 +208,7 @@ img { max-width: 100%; }
 .hero-name {
   font-family: var(--serif);
   font-size: clamp(30px, 8vw, 64px);
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.06em;
   margin: 0;
   line-height: 1.2;
@@ -219,7 +219,7 @@ img { max-width: 100%; }
   font-family: var(--serif);
   font-weight: 500;
   font-size: clamp(16px, 3.4vw, 24px);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.04em;
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px solid rgba(242, 236, 226, 0.6);
@@ -422,7 +422,7 @@ img { max-width: 100%; }
 }
 @media (min-width: 768px) { .banner-text { padding: 40px 32px; } }
 .banner-kicker { margin: 0; font-size: 14px; letter-spacing: 0.08em; }
-.banner-title { font-family: var(--serif); font-size: clamp(28px, 6vw, 48px); font-weight: 700; }
+.banner-title { font-family: var(--serif); font-size: clamp(28px, 6vw, 48px); font-weight: 900; }
 
 .route { padding-bottom: 64px; }
 .list-count { font-weight: 700; color: var(--sub); margin: 24px 0 8px; }

@@ -2,13 +2,12 @@
  * お店の一覧。お店を足すときは { ... }, のかたまりを1つコピーして書き換える。
  * 選ぶ基準：観光客がほとんど来ない、路地裏・2階以上・地下・建物の一室にある個人店。チェーン店や大型店は入れない。
  *
- *   id         : 半角英数字の名前（QRコードのURLに入る。あとから変えない）
- *   key        : お店のQRコード用の合言葉（半角英数字8文字ほど。お店ごとに別にする）
+ *   id         : 半角英数字の名前（お店ごとに別にする）
  *   name       : 店名
  *   categories : 当てはまる種類。古着は系統で分ける（amekaji / y2kstreet / sports / euro / mode / graphic / remake）。
- *                そのほか（records / instruments / kissa / cafe / sweets / curry / bars / music / theater / cinema / books / galleries / goods）
+ *                そのほか（records / instruments / kissa / cafe / sweets / curry / bars / music / books / galleries / goods）
  *   address    : 住所（地図のリンクにも使う）
- *   lat, lng   : お店の位置。Googleマップでお店を右クリックすると出る数字を入れる。null のあいだは位置を確かめない
+ *   lat, lng   : お店の位置。Googleマップでお店を右クリックすると出る数字を入れる。null のあいだは店名と住所で地図を開く
  *   photo      : お店の写真（images/shops/ に入れたファイル名）
  *   links      : お店の公式SNS・サイト（instagram / x / threads / facebook / web）。お店自身のアカウントだけを書く
  *   desc       : 紹介文（en / zh / ko / ja）
@@ -19,7 +18,6 @@ window.STORES = [
   /* ---- ファッション（古着） ---- */
   {
     id: "lomad-loman",
-    key: "82vvfnwe",
     name: "Lomad Loman",
     categories: ["amekaji", "y2kstreet"],
     address: "東京都世田谷区北沢2-35-15 下北沢マンション2F 66号室",
@@ -35,7 +33,6 @@ window.STORES = [
   },
   {
     id: "step-ahead",
-    key: "vp30quds",
     name: "STEP AHEAD (Shimokitazawa main store)",
     categories: ["amekaji", "y2kstreet"],
     address: "東京都世田谷区北沢2-30-10 浜辺ビル101",
@@ -51,7 +48,6 @@ window.STORES = [
   },
   {
     id: "mwc",
-    key: "1h2wy343",
     name: "MWC",
     categories: ["amekaji"],
     address: "東京都世田谷区代沢5-30-3 1F",
@@ -67,7 +63,6 @@ window.STORES = [
   },
   {
     id: "damagedone",
-    key: "c890oxs0",
     name: "DAMAGEDONE",
     categories: ["amekaji"],
     address: "東京都世田谷区北沢2-30-10",
@@ -83,7 +78,6 @@ window.STORES = [
   },
   {
     id: "spike",
-    key: "feu5u0in",
     name: "SPiKe",
     categories: ["graphic", "amekaji"],
     address: "東京都世田谷区北沢2-35-15 下北沢マンション1F 63号",
@@ -99,7 +93,6 @@ window.STORES = [
   },
   {
     id: "kimama",
-    key: "kthaz9mb",
     name: "KIMAMA",
     categories: ["sports"],
     address: "東京都世田谷区北沢2-30-6 UCビル2F",
@@ -115,7 +108,6 @@ window.STORES = [
   },
   {
     id: "iot-reverse",
-    key: "lf90n8s8",
     name: "iot reverse (Shimokitazawa)",
     categories: ["sports", "y2kstreet"],
     address: "東京都世田谷区北沢2-13-14 1F",
@@ -131,7 +123,6 @@ window.STORES = [
   },
   {
     id: "add-c-vintage",
-    key: "14pk4moj",
     name: "add (C) Vintage",
     categories: ["y2kstreet", "mode", "remake"],
     address: "東京都世田谷区北沢3-26-3 1F",
@@ -147,7 +138,6 @@ window.STORES = [
   },
   {
     id: "kroneko",
-    key: "fbm1lp4o",
     name: "kroneko used store",
     categories: ["euro", "mode"],
     address: "東京都世田谷区代沢5-28-12 藤田ビル1C",
@@ -163,7 +153,6 @@ window.STORES = [
   },
   {
     id: "flocci",
-    key: "ftzmbi6b",
     name: "floccinaucinihilipilification (flocci)",
     categories: ["mode", "euro"],
     address: "東京都世田谷区代田5-35-8",
@@ -179,7 +168,6 @@ window.STORES = [
   },
   {
     id: "memento",
-    key: "9l2an7ki",
     name: "memento (Shimokitazawa)",
     categories: ["euro", "mode"],
     address: "東京都世田谷区北沢2-15-1 たつみビル1F",
@@ -195,7 +183,6 @@ window.STORES = [
   },
   {
     id: "monk",
-    key: "0ukcq6ag",
     name: "MONK",
     categories: ["euro"],
     address: "東京都世田谷区北沢2-26-25 エクセレントビルB102",
@@ -211,7 +198,6 @@ window.STORES = [
   },
   {
     id: "ruby-tuesday",
-    key: "l2v5hbft",
     name: "Ruby Tuesday",
     categories: ["euro"],
     address: "東京都世田谷区代沢5-36-15 井上ビル1C",
@@ -227,7 +213,6 @@ window.STORES = [
   },
   {
     id: "iroha-tokyo",
-    key: "hcoh582s",
     name: "iroha tokyo",
     categories: ["mode"],
     address: "東京都世田谷区北沢2-29-14 第11FMGビル2F",
@@ -243,7 +228,6 @@ window.STORES = [
   },
   {
     id: "lansdowne",
-    key: "tons6is4",
     name: "lansdowne",
     categories: ["mode", "remake"],
     address: "東京都世田谷区北沢3-30-3 T・Tビル1F",
@@ -259,7 +243,6 @@ window.STORES = [
   },
   {
     id: "mania-furugi83",
-    key: "4f20y6tr",
     name: "MANIA! by Furugi83",
     categories: ["graphic"],
     address: "東京都世田谷区北沢2-19-15 松下ビル2F",
@@ -275,7 +258,6 @@ window.STORES = [
   },
   {
     id: "brief-brief",
-    key: "2855f7dt",
     name: "Brief Brief",
     categories: ["remake"],
     address: "東京都世田谷区北沢3-31-5-1D",
@@ -293,7 +275,6 @@ window.STORES = [
   /* ---- レコード ---- */
   {
     id: "flash-disc-ranch",
-    key: "oflouxui",
     name: "Flash Disc Ranch",
     categories: ["records"],
     address: "東京都世田谷区北沢2-12-16 三鈴ビル2F",
@@ -309,7 +290,6 @@ window.STORES = [
   },
   {
     id: "record-station",
-    key: "mr4as3zy",
     name: "Record Station",
     categories: ["records"],
     address: "東京都世田谷区北沢3-30-1 かどやビル2F",
@@ -325,7 +305,6 @@ window.STORES = [
   },
   {
     id: "jet-set",
-    key: "jq33nzwy",
     name: "JET SET Shimokitazawa",
     categories: ["records"],
     address: "東京都世田谷区北沢2-33-12 柳川ビル201号",
@@ -341,7 +320,6 @@ window.STORES = [
   },
   {
     id: "pianola-records",
-    key: "4km9awl0",
     name: "Pianola Records",
     categories: ["records"],
     address: "東京都世田谷区代田2-36-15 BONUS TRACK内",
@@ -359,7 +337,6 @@ window.STORES = [
   /* ---- ギター・楽器 ---- */
   {
     id: "underneath",
-    key: "3l20zvd7",
     name: "UNDERNEATH",
     categories: ["instruments"],
     address: "東京都世田谷区北沢2-7-10 上原ビル2F",
@@ -375,7 +352,6 @@ window.STORES = [
   },
   {
     id: "forte-gakki",
-    key: "bv1mp53b",
     name: "Forte Gakki",
     categories: ["instruments"],
     address: "東京都世田谷区代沢5-6-1",
@@ -393,7 +369,6 @@ window.STORES = [
   /* ---- 純喫茶 ---- */
   {
     id: "toumei-bara",
-    key: "konz4yf5",
     name: "Toumei Bara",
     categories: ["kissa"],
     address: "東京都世田谷区北沢2-14-5 イスズビル203号",
@@ -409,7 +384,6 @@ window.STORES = [
   },
   {
     id: "ichifusa",
-    key: "hlbx95ep",
     name: "Kissa Hitofusa",
     categories: ["kissa"],
     address: "東京都世田谷区北沢2-21-26 2F",
@@ -425,7 +399,6 @@ window.STORES = [
   },
   {
     id: "trois-chambres",
-    key: "m14a14z6",
     name: "Trois Chambres",
     categories: ["kissa"],
     address: "東京都世田谷区代沢5-36-14 湯浅ビル2F",
@@ -440,7 +413,6 @@ window.STORES = [
   },
   {
     id: "masako",
-    key: "i9zxttzs",
     name: "Jazz Kissa Masako",
     categories: ["kissa", "music"],
     address: "本店：東京都世田谷区北沢2-31-2 大久ビル2F／パルファン店：東京都世田谷区北沢2-29-3 パルファンビル2F",
@@ -456,7 +428,6 @@ window.STORES = [
   },
   {
     id: "tag-cafe",
-    key: "cywp8pry",
     name: "TAG CAFE",
     categories: ["kissa"],
     address: "東京都世田谷区北沢2-12-10 サウスサイド2 2B",
@@ -474,7 +445,6 @@ window.STORES = [
   /* ---- 隠れ家カフェ ---- */
   {
     id: "browns-books-cafe",
-    key: "ydoec1aj",
     name: "Brown's Books & Café",
     categories: ["cafe", "books"],
     address: "東京都世田谷区代沢5-32-13 露崎商店ビル5F",
@@ -490,7 +460,6 @@ window.STORES = [
   },
   {
     id: "city-country-city",
-    key: "49a6yjnq",
     name: "CITY COUNTRY CITY",
     categories: ["cafe", "records"],
     address: "東京都世田谷区北沢2-12-13 細沢ビル4F",
@@ -506,7 +475,6 @@ window.STORES = [
   },
   {
     id: "ballon-dessai",
-    key: "2gz9jrm5",
     name: "BALLON D'ESSAI",
     categories: ["cafe"],
     address: "東京都世田谷区北沢2-10-10 1F",
@@ -522,7 +490,6 @@ window.STORES = [
   },
   {
     id: "fuzkue",
-    key: "loz5k7q8",
     name: "fuzkue Shimokitazawa",
     categories: ["cafe", "books"],
     address: "東京都世田谷区代田2-36-14 BONUS TRACK内",
@@ -538,7 +505,6 @@ window.STORES = [
   },
   {
     id: "bear-pond-espresso",
-    key: "c9y4j6ub",
     name: "Bear Pond Espresso",
     categories: ["cafe"],
     address: "東京都世田谷区北沢2-36-12 1F",
@@ -553,7 +519,6 @@ window.STORES = [
   },
   {
     id: "anthrop",
-    key: "8kyc663v",
     name: "anthrop. Espresso & Comfort",
     categories: ["cafe", "books"],
     address: "東京都世田谷区北沢2-26-7 テラスマディーナ別棟1F",
@@ -571,7 +536,6 @@ window.STORES = [
   /* ---- スイーツ ---- */
   {
     id: "mardi-gras",
-    key: "n96g3t0u",
     name: "Mardi Gras",
     categories: ["sweets", "kissa"],
     address: "東京都世田谷区北沢2-31-1 サン・ローザ1F",
@@ -587,7 +551,6 @@ window.STORES = [
   },
   {
     id: "latte",
-    key: "ag4kn3lk",
     name: "Latte",
     categories: ["sweets", "cafe"],
     address: "東京都世田谷区代田5-10-6 イーストコート代田1F",
@@ -605,7 +568,6 @@ window.STORES = [
   /* ---- カレー ---- */
   {
     id: "anjali",
-    key: "jriwafja",
     name: "ANJALI",
     categories: ["curry"],
     address: "東京都世田谷区北沢2-15-11 センヤビルB1",
@@ -621,7 +583,6 @@ window.STORES = [
   },
   {
     id: "kappa-ism",
-    key: "584e6bym",
     name: "Kappa-ism",
     categories: ["curry"],
     address: "東京都世田谷区北沢2-37-16 林ビル3F",
@@ -637,7 +598,6 @@ window.STORES = [
   },
   {
     id: "moona",
-    key: "setyc9v4",
     name: "Spice Kitchen Moona",
     categories: ["curry"],
     address: "東京都世田谷区北沢2-12-13 細沢ビル5F",
@@ -652,7 +612,6 @@ window.STORES = [
   },
   {
     id: "kyu-yamu-tei",
-    key: "kkmvw0ru",
     name: "Kyu Yamu Tei",
     categories: ["curry"],
     address: "東京都世田谷区代沢5-29-9 ナイスビル1F",
@@ -670,7 +629,6 @@ window.STORES = [
   /* ---- 隠れ家バー ---- */
   {
     id: "barnitas",
-    key: "jy4kcd0i",
     name: "Barnitas",
     categories: ["bars"],
     address: "東京都世田谷区北沢2-33-11 SY-Ⅰ 2F",
@@ -687,7 +645,6 @@ window.STORES = [
   /* ---- ライブ・レコードバー ---- */
   {
     id: "mona-records",
-    key: "wzm3zkia",
     name: "Mona Records",
     categories: ["music"],
     address: "東京都世田谷区北沢2-13-5 伊奈ビル 3F",
@@ -703,7 +660,6 @@ window.STORES = [
   },
   {
     id: "little-soul-cafe",
-    key: "sbznoqfx",
     name: "Little Soul Cafe",
     categories: ["music", "bars"],
     address: "東京都世田谷区北沢3-20-2 大成ビル2階",
@@ -719,7 +675,6 @@ window.STORES = [
   },
   {
     id: "daisy-bar",
-    key: "5mtfjnyi",
     name: "Daisy Bar",
     categories: ["music"],
     address: "東京都世田谷区北沢2-2-3 エルサント北沢B1",
@@ -735,7 +690,6 @@ window.STORES = [
   },
   {
     id: "basement-bar",
-    key: "4k2pkjmp",
     name: "BASEMENTBAR",
     categories: ["music"],
     address: "東京都世田谷区代沢5-18-1 カラバッシュビルB1F",
@@ -753,7 +707,6 @@ window.STORES = [
   /* ---- 古本 ---- */
   {
     id: "furuhon-bibibi",
-    key: "eb4omac6",
     name: "Furuhon BIBIBI",
     categories: ["books"],
     address: "東京都世田谷区北沢1-40-8 土屋ビル1F",
@@ -768,7 +721,6 @@ window.STORES = [
   },
   {
     id: "honkichi",
-    key: "qeuv61u7",
     name: "Honkichi",
     categories: ["books"],
     address: "東京都世田谷区北沢2-7-10 上原ビル1F",
@@ -784,7 +736,6 @@ window.STORES = [
   },
   {
     id: "kosho-asu",
-    key: "k12klf3u",
     name: "Kosho Ashita",
     categories: ["books"],
     address: "東京都世田谷区北沢3-21-1 1F",
@@ -800,7 +751,6 @@ window.STORES = [
   },
   {
     id: "clarice-books",
-    key: "alm43wuj",
     name: "Clarice Books",
     categories: ["books"],
     address: "東京都世田谷区北沢3-26-2 2F",
@@ -818,7 +768,6 @@ window.STORES = [
   /* ---- 小さなギャラリー ---- */
   {
     id: "gallery-kasutela",
-    key: "miimnkjm",
     name: "gallery kasutela",
     categories: ["galleries"],
     address: "東京都世田谷区北沢3-34-3",
@@ -834,7 +783,6 @@ window.STORES = [
   },
   {
     id: "musashiya-garo",
-    key: "1tkhdclg",
     name: "Musashiya Garo",
     categories: ["galleries"],
     address: "東京都世田谷区北沢2-32-8",
@@ -849,7 +797,6 @@ window.STORES = [
   },
   {
     id: "shimokitazawa-arts",
-    key: "rdroyy2m",
     name: "Shimokitazawa Arts",
     categories: ["galleries"],
     address: "東京都世田谷区北沢1-40-9 1F",
@@ -864,7 +811,6 @@ window.STORES = [
   },
   {
     id: "gallery-hana",
-    key: "k4x1w7gb",
     name: "Gallery HANA",
     categories: ["galleries"],
     address: "東京都世田谷区北沢3-26-2 1F",
@@ -881,7 +827,6 @@ window.STORES = [
   /* ---- アンティーク・雑貨 ---- */
   {
     id: "tokyo-retro",
-    key: "pm84co98",
     name: "Tokyo Retro a.m.a. store",
     categories: ["goods"],
     address: "東京都世田谷区北沢3-34-2",
@@ -897,7 +842,6 @@ window.STORES = [
   },
   {
     id: "antique-life-jin",
-    key: "ce5f6mzq",
     name: "Antique Life Jin",
     categories: ["goods"],
     address: "東京都世田谷区北沢2-30-8",
@@ -913,7 +857,6 @@ window.STORES = [
   },
   {
     id: "sukonbu",
-    key: "6cegalmh",
     name: "Sukonbu",
     categories: ["goods"],
     address: "東京都世田谷区北沢2-11-15 ミカン下北 A街区1階 A-101 東洋百貨店 別館内",
@@ -929,7 +872,6 @@ window.STORES = [
   },
   {
     id: "desk-labo",
-    key: "6zcd516t",
     name: "DESK LABO",
     categories: ["goods"],
     address: "東京都世田谷区北沢3-19-20 reload 2-6",
@@ -945,7 +887,6 @@ window.STORES = [
   },
   {
     id: "sansato",
-    key: "o8vpe9p0",
     name: "sansato",
     categories: ["goods"],
     address: "東京都世田谷区代沢5-36-14",

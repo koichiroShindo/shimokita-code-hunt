@@ -1,6 +1,6 @@
 (function () {
   var C = window.CONFIG, STORES = window.STORES, TEXT = window.TEXT, LANGS = window.LANGS;
-  var KEY = "code-hunt";
+  var KEY = "shimokita-guide";
   var app = document.getElementById("app");
   var CATS = Object.keys(TEXT.en.cat);
   // ファッション（古着）の系統と、それ以外の種類
@@ -15,8 +15,6 @@
     try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
   }
   var state = load();
-  state.found = state.found || {};
-  state.done = state.done || [];
 
   /* ---- 言語 ---- */
   function pickLang() {
@@ -28,7 +26,9 @@
   function t(key, vars) {
     var s = TEXT[lang][key];
     if (s === undefined) s = TEXT.en[key];
-    if (typeof s === "string" && vars) {
+    if (typeof s === "string") {
+      vars = vars || {};
+      vars.site = vars.site || C.siteName;
       s = s.replace(/\{(\w+)\}/g, function (m, k) { return vars[k] !== undefined ? vars[k] : m; });
     }
     return s;
@@ -40,20 +40,18 @@
   }
 
   /* ---- お店 ---- */
-  function store(id) {
-    for (var i = 0; i < STORES.length; i++) if (STORES[i].id === id) return STORES[i];
-    return null;
-  }
-  function routeStores() {
-    return (state.route || []).map(store).filter(Boolean);
-  }
-  function foundCount() {
-    return routeStores().filter(function (s) { return state.found[s.id]; }).length;
-  }
   function shopsIn(cat) {
     return STORES.filter(function (s) { return s.categories.indexOf(cat) >= 0; });
   }
-  // その種類を表す写真。主な種類がそれのお店を優先し、なければその種類に入るお店から選ぶ
+  // 選んだスタイルに入るお店をすべて出す。選んだ順に並べ、2つのスタイルに入るお店は1回だけ出す
+  function shopsFor(prefs) {
+    var list = [];
+    prefs.forEach(function (c) {
+      shopsIn(c).forEach(function (s) { if (list.indexOf(s) < 0) list.push(s); });
+    });
+    return list;
+  }
+  // そのスタイルを表す写真。主なスタイルがそれのお店を優先する
   function stylePhoto(cat) {
     if (C.stylePhotos && C.stylePhotos[cat]) return C.stylePhotos[cat];
     var list = shopsIn(cat).filter(function (s) { return s.photo; });
@@ -62,31 +60,13 @@
     return s ? "images/shops/" + s.photo : null;
   }
 
-  // 選んだ種類に入るお店をすべて出す。選んだ順に並べ、2つの種類に入るお店は1回だけ出す
-  function recommend(prefs) {
-    var ids = [];
-    prefs.forEach(function (c) {
-      shopsIn(c).forEach(function (s) { if (ids.indexOf(s.id) < 0) ids.push(s.id); });
-    });
-    return ids;
-  }
-
-  /* ---- 距離（m） ---- */
-  function distance(lat1, lng1, lat2, lng2) {
-    var R = 6371000, rad = Math.PI / 180;
-    var dLat = (lat2 - lat1) * rad, dLng = (lng2 - lng1) * rad;
-    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-      Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
-    return 2 * R * Math.asin(Math.sqrt(a));
-  }
-
   /* ---- 共通の部品 ---- */
   function header() {
     return '<header class="top"><div class="top-in">' +
       '<a class="brand" href="./" data-go="home">' + esc(C.siteName) + "</a>" +
       '<nav class="nav" aria-label="Menu">' +
       '<a href="#styles" data-go="home" data-anchor="styles">' + t("navStyles") + "</a>" +
-      (state.route && state.route.length ? '<a href="#route" data-go="route">' + t("navRoute") + "</a>" : "") +
+      (state.prefs && state.prefs.length ? '<a href="#list" data-go="list">' + t("navList") + "</a>" : "") +
       '<a href="#about" data-go="about">' + t("navAbout") + "</a></nav>" +
       '<div class="langs" role="group" aria-label="Language">' + LANGS.map(function (l) {
         return '<button type="button" lang="' + l.code + '" data-lang="' + l.code + '"' +
@@ -106,25 +86,62 @@
       "</div></footer>";
   }
 
-  // トップの写真の帯。お店の写真を並べる（写真が増えると自動で増える）
-  function mosaic() {
-    var photos = STORES.filter(function (s) { return s.photo; }).map(function (s) { return "images/shops/" + s.photo; });
-    photos = photos.concat(["images/street/street-1.jpg", "images/street/street-2.jpg"]).slice(0, 12);
-    return '<div class="mosaic" aria-hidden="true">' + photos.map(function (p) {
-      return '<img src="' + esc(p) + '" alt="" loading="eager">';
-    }).join("") + "</div>";
-  }
+  /* ---- トップの写真（自動で切り替わる） ---- */
+  var slides = (function () {
+    var list = STORES.filter(function (s) { return s.photo; });
+    for (var i = list.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var x = list[i]; list[i] = list[j]; list[j] = x; }
+    return list.slice(0, 8);
+  })();
+  var slideIndex = 0, slideTimer = null;
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var slidePlaying = !reduceMotion;
 
-  /* ---- 画面：トップ（最初に種類を選ぶ） ---- */
-  var sel = (state.prefs || []).slice();
+  function heroSlides() {
+    return '<section class="hero" aria-roledescription="carousel" aria-label="' + t("slidesLabel") + '">' +
+      '<div class="slides">' + slides.map(function (s, i) {
+        return '<figure class="slide' + (i === slideIndex ? " is-on" : "") + '" aria-hidden="' + (i === slideIndex ? "false" : "true") + '">' +
+          '<img src="images/shops/' + esc(s.photo) + '" alt="' + esc(s.name) + '"' + (i < 2 ? "" : ' loading="lazy"') + ">" +
+          '<figcaption class="slide-name">' + esc(s.name) + "</figcaption></figure>";
+      }).join("") + "</div>" +
+      '<div class="hero-text"><p class="hero-name">' + esc(C.siteName) + "</p>" +
+      '<h1 class="hero-line">' + t("tagline") + "</h1></div>" +
+      '<div class="slide-ctrl">' +
+      '<button type="button" class="slide-btn" data-slide="prev" aria-label="' + t("slidePrev") + '"><span class="arrow arrow-l"></span></button>' +
+      '<div class="dots">' + slides.map(function (s, i) {
+        return '<button type="button" class="dot' + (i === slideIndex ? " is-on" : "") + '" data-slide="' + i + '" aria-label="' + (i + 1) + " / " + slides.length + '"></button>';
+      }).join("") + "</div>" +
+      '<button type="button" class="slide-btn" data-slide="next" aria-label="' + t("slideNext") + '"><span class="arrow arrow-r"></span></button>' +
+      '<button type="button" class="slide-btn slide-play" data-slide="toggle" aria-label="' + (slidePlaying ? t("slidePause") : t("slidePlay")) + '">' +
+      '<span class="' + (slidePlaying ? "icon-pause" : "icon-play") + '"></span></button>' +
+      "</div></section>";
+  }
+  function goSlide(i) {
+    var figs = app.querySelectorAll(".slide"), dots = app.querySelectorAll(".dot");
+    if (!figs.length) return;
+    slideIndex = (i + slides.length) % slides.length;
+    for (var k = 0; k < figs.length; k++) {
+      figs[k].classList.toggle("is-on", k === slideIndex);
+      figs[k].setAttribute("aria-hidden", k === slideIndex ? "false" : "true");
+      dots[k].classList.toggle("is-on", k === slideIndex);
+    }
+  }
+  function startSlides() {
+    stopSlides();
+    if (slidePlaying && slides.length > 1) slideTimer = setInterval(function () { goSlide(slideIndex + 1); }, 5000);
+  }
+  function stopSlides() { if (slideTimer) { clearInterval(slideTimer); slideTimer = null; } }
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) stopSlides(); else if (view === "home") startSlides();
+  });
+
+  /* ---- 画面：トップ（スタイルを選ぶ） ---- */
+  var sel = [];
 
   function viewHome() {
-    var resume = (state.route && state.route.length)
-      ? '<p class="resume"><a href="#route" data-go="route">' + t("resume") + " →</a></p>"
+    var resume = (state.prefs && state.prefs.length)
+      ? '<p class="resume"><a href="#list" data-go="list">' + t("resume") + " →</a></p>"
       : "";
-    return '<section class="hero">' + mosaic() +
-      '<div class="hero-text"><p class="hero-name">' + esc(C.siteName) + "</p>" +
-      '<h1 class="hero-line">' + t("tagline") + "</h1></div></section>" +
+    return heroSlides() +
       '<div class="wrap">' + resume +
       '<section class="pick" id="styles">' +
       '<h2 class="h-sec">' + t("prefsTitle") + "</h2>" +
@@ -155,7 +172,7 @@
       }).join("") + "</div></fieldset>";
   }
 
-  // 下北沢駅のまわりの地図（OpenStreetMap）。お店の位置が入ったら、お店ごとのピンに変えられる
+  // 下北沢駅のまわりの地図（OpenStreetMap）
   var STATION = { lat: 35.6615, lng: 139.6683 };
   function mapSection() {
     var d = 0.006;
@@ -170,8 +187,8 @@
       '" target="_blank" rel="noopener">' + t("mapOpen") + "</a></section>";
   }
 
-  /* ---- 画面：3軒 ---- */
-  // 駅から3軒を順に回る、歩きの道順（Googleマップ）
+  /* ---- 画面：選んだスタイルのお店 ---- */
+  // 駅から順に回る、歩きの道順（Googleマップ）。経由地の上限があるので10軒以下のときだけ出す
   function routeLink(list) {
     if (list.length > 10) return "";
     var place = function (s) { return s.lat != null ? s.lat + "," + s.lng : s.name + " " + s.address; };
@@ -180,24 +197,6 @@
       "&destination=" + encodeURIComponent(place(list[list.length - 1])) +
       (list.length > 1 ? "&waypoints=" + encodeURIComponent(list.slice(0, -1).map(place).join("|")) : "");
     return '<a class="btn btn-line" href="' + url + '" target="_blank" rel="noopener">' + t("routeMap") + "</a>";
-  }
-
-  function storeItem(s, i) {
-    var done = !!state.found[s.id];
-    var desc = (s.desc && (s.desc[lang] || s.desc.en)) || "";
-    var map = "https://www.google.com/maps/search/?api=1&query=" +
-      encodeURIComponent(s.lat != null ? s.lat + "," + s.lng : s.name + " " + s.address);
-    return '<li class="shop' + (done ? " is-found" : "") + (s.photo ? "" : " no-photo") + '">' +
-      (s.photo ? '<figure class="shop-photo"><img src="images/shops/' + esc(s.photo) + '" alt="' + esc(s.name) + '" loading="lazy"></figure>' : "") +
-      '<div class="shop-body">' +
-      '<div class="shop-head"><span class="shop-no">' + (i + 1) + "</span>" +
-      "<h3>" + esc(s.name) + "</h3>" +
-      '<span class="status">' + (done ? t("found") : t("notYet")) + "</span></div>" +
-      '<p class="cats">' + s.categories.map(function (c) { return t("cat")[c]; }).join(" / ") + "</p>" +
-      (desc ? '<p class="desc">' + esc(desc) + "</p>" : "") +
-      '<p class="addr" lang="ja">' + esc(s.address) + "</p>" +
-      '<p class="shop-links"><a class="link" href="' + map + '" target="_blank" rel="noopener">' + t("map") + "</a>" +
-      linkList(s.links) + "</p></div></li>";
   }
 
   // お店の公式SNS・サイトへのリンク
@@ -209,27 +208,38 @@
     }).join("");
   }
 
-  function viewRoute() {
-    var list = routeStores();
-    if (!list.length) return viewHome();
-    var n = foundCount(), total = list.length;
+  function storeItem(s, i) {
+    var desc = (s.desc && (s.desc[lang] || s.desc.en)) || "";
+    var map = "https://www.google.com/maps/search/?api=1&query=" +
+      encodeURIComponent(s.lat != null ? s.lat + "," + s.lng : s.name + " " + s.address);
+    return '<li class="shop' + (s.photo ? "" : " no-photo") + '">' +
+      (s.photo ? '<figure class="shop-photo"><img src="images/shops/' + esc(s.photo) + '" alt="' + esc(s.name) + '" loading="lazy"></figure>' : "") +
+      '<div class="shop-body">' +
+      '<div class="shop-head"><span class="shop-no">' + (i + 1) + "</span>" +
+      "<h3>" + esc(s.name) + "</h3></div>" +
+      '<p class="cats">' + s.categories.map(function (c) { return t("cat")[c]; }).join(" / ") + "</p>" +
+      (desc ? '<p class="desc">' + esc(desc) + "</p>" : "") +
+      '<p class="addr" lang="ja">' + esc(s.address) + "</p>" +
+      '<p class="shop-links"><a class="link" href="' + map + '" target="_blank" rel="noopener">' + t("map") + "</a>" +
+      linkList(s.links) + "</p></div></li>";
+  }
+
+  function viewList() {
     var prefs = state.prefs || [];
+    var list = shopsFor(prefs);
+    if (!list.length) { view = "home"; return viewHome(); }
     // 選んだスタイルそれぞれの写真を横に並べる（写真のないスタイルは飛ばす。最大4枚）
     var heroes = prefs.map(stylePhoto).filter(Boolean).slice(0, 4);
-    if (!heroes.length) heroes = [list[0].photo ? "images/shops/" + list[0].photo : "images/street/street-1.jpg"];
+    if (!heroes.length) heroes = ["images/street/street-1.jpg"];
     return '<section class="banner"><div class="banner-photos n' + heroes.length + '">' +
       heroes.map(function (h) { return '<img src="' + esc(h) + '" alt="">'; }).join("") + "</div>" +
       '<div class="banner-text"><p class="banner-kicker">' + prefs.map(function (c) { return t("cat")[c]; }).join(" · ") + "</p>" +
-      '<h1 class="banner-title">' + t("routeTitle") + "</h1></div></section>" +
+      '<h1 class="banner-title">' + t("listTitle") + "</h1></div></section>" +
       '<div class="wrap route">' +
-      '<p class="progress"><span class="meter"><span style="width:' + Math.round(n / total * 100) + '%"></span></span>' +
-      t("progress", { n: n, total: total }) + "</p>" +
-      (n >= total
-        ? '<p class="done">' + t("allDone") + '</p><button type="button" class="btn" data-action="again">' + t("again") + "</button>"
-        : '<p class="sub">' + t("howto") + "</p>") +
+      '<p class="list-count">' + t("listCount", { n: list.length }) + "</p>" +
       routeLink(list) +
       '<ol class="shops">' + list.map(storeItem).join("") + "</ol>" +
-      (n >= total ? "" : '<button type="button" class="btn btn-line" data-action="change">' + t("change") + "</button>") +
+      '<button type="button" class="btn btn-line" data-action="change">' + t("change") + "</button>" +
       "</div>";
   }
 
@@ -237,7 +247,7 @@
   function viewAbout() {
     return '<div class="wrap about">' +
       '<h1 class="h-page">' + t("aboutTitle") + "</h1>" +
-      t("aboutBody").map(function (p) { return "<p>" + p + "</p>"; }).join("") +
+      t("aboutBody").map(function (p) { return "<p>" + p.replace(/\{site\}/g, esc(C.siteName)) + "</p>"; }).join("") +
       '<h2 class="h-sec">' + t("operatorTitle") + "</h2>" +
       '<dl class="about-info">' +
       "<div><dt>" + t("operatorLabel") + "</dt><dd>" + esc(C.operator[lang] || C.operator.en) + "</dd></div>" +
@@ -249,87 +259,21 @@
       '<button type="button" class="btn btn-line" data-go="home">' + t("backTop") + "</button></div>";
   }
 
-  function viewMessage(text, opts) {
-    opts = opts || {};
-    return '<div class="wrap"><section class="block message' + (opts.ok ? " is-ok" : "") + '" role="status">' +
-      '<p class="message-text">' + text + "</p>" +
-      (opts.sub ? '<p class="sub">' + opts.sub + "</p>" : "") +
-      '<div class="actions">' + (opts.buttons || "") + "</div></section></div>";
-  }
-
-  var view = "home", pending = null, lastMessage = null;
+  var view = "home";
   function render(body) {
     document.documentElement.lang = lang;
     document.title = view === "about" ? t("aboutTitle") + " | " + C.siteName : C.siteName;
     app.className = "view-" + view;
     app.innerHTML = header() + '<main id="main">' + body + "</main>" + footer();
+    if (view === "home") startSlides(); else stopSlides();
   }
   function show(name, anchor) {
     view = name;
-    if (name === "route") render(viewRoute());
+    if (name === "list") render(viewList());
     else if (name === "about") render(viewAbout());
     else { view = "home"; render(viewHome()); }
     var target = anchor && document.getElementById(anchor);
     if (target) target.scrollIntoView(); else window.scrollTo(0, 0);
-  }
-  // メッセージ画面は、言語を変えたときに作り直せるよう関数で持っておく
-  function message(fn) {
-    view = "message"; lastMessage = fn;
-    render(fn());
-    window.scrollTo(0, 0);
-  }
-
-  /* ---- お店のQRを読んだとき ---- */
-  function backBtn(sub) {
-    return '<button type="button" class="btn' + (sub ? " btn-line" : "") + '" data-go="route">' + t("back") + "</button>";
-  }
-
-  function handleStamp(id, key) {
-    var s = store(id);
-    if (!s || s.key !== key) {
-      return message(function () { return viewMessage(t("invalid"), { buttons: '<button type="button" class="btn" data-go="home">' + esc(C.siteName) + "</button>" }); });
-    }
-    if (!state.route || !state.route.length) {
-      return message(function () { return viewMessage(t("noRoute"), { buttons: '<button type="button" class="btn" data-go="home">' + t("start") + "</button>" }); });
-    }
-    if (state.route.indexOf(s.id) < 0) {
-      return message(function () { return viewMessage(t("notInRoute", { name: esc(s.name) }), { buttons: backBtn() }); });
-    }
-    if (state.found[s.id]) return stamped(s);
-    pending = s;
-    checkLocation();
-  }
-
-  function stamped(s) {
-    pending = null;
-    state.found[s.id] = true;
-    save();
-    message(function () {
-      var left = routeStores().length - foundCount();
-      return viewMessage(t("stamped", { name: esc(s.name) }), {
-        ok: true,
-        sub: left > 0 ? t("remaining", { n: left }) : t("allDone"),
-        buttons: backBtn()
-      });
-    });
-  }
-
-  function checkLocation() {
-    var s = pending;
-    if (!C.requireLocation || s.lat == null) return stamped(s);
-    var retry = function () {
-      return '<button type="button" class="btn" data-action="retry">' + t("retry") + "</button>" + backBtn(true);
-    };
-    if (!navigator.geolocation) return message(function () { return viewMessage(t("unavailable"), { buttons: retry() }); });
-    message(function () { return viewMessage(t("checking")); });
-    navigator.geolocation.getCurrentPosition(function (pos) {
-      var d = distance(pos.coords.latitude, pos.coords.longitude, s.lat, s.lng);
-      var allowance = C.radiusMeters + Math.min(pos.coords.accuracy || 0, 50);
-      if (d <= allowance) stamped(s);
-      else message(function () { return viewMessage(t("tooFar", { d: Math.round(d), name: esc(s.name) }), { buttons: retry() }); });
-    }, function (err) {
-      message(function () { return viewMessage(err.code === 1 ? t("denied") : t("unavailable"), { buttons: retry() }); });
-    }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 0 });
   }
 
   /* ---- 操作 ---- */
@@ -348,27 +292,30 @@
   });
 
   app.addEventListener("click", function (e) {
-    var el = e.target.closest("[data-go],[data-action],[data-lang]");
+    var el = e.target.closest("[data-go],[data-action],[data-lang],[data-slide]");
     if (!el) return;
-    if (el.dataset.lang) {
+    if (el.dataset.slide) {
+      var v = el.dataset.slide;
+      if (v === "toggle") {
+        slidePlaying = !slidePlaying;
+        el.setAttribute("aria-label", slidePlaying ? t("slidePause") : t("slidePlay"));
+        el.firstChild.className = slidePlaying ? "icon-pause" : "icon-play";
+        if (slidePlaying) startSlides(); else stopSlides();
+        return;
+      }
+      goSlide(v === "prev" ? slideIndex - 1 : v === "next" ? slideIndex + 1 : +v);
+      startSlides();
+    } else if (el.dataset.lang) {
       lang = el.dataset.lang; state.lang = lang; save();
       var y = window.scrollY;
-      if (view === "message") render(lastMessage());
-      else show(view);
+      show(view);
       window.scrollTo(0, y);
     } else if (el.dataset.go) {
       e.preventDefault();
       show(el.dataset.go, el.dataset.anchor);
     } else if (el.dataset.action === "change") {
-      if (foundCount() && !confirm(t("confirmChange"))) return;
-      state.found = {}; save();
+      sel = (state.prefs || []).slice();
       show("home", "styles");
-    } else if (el.dataset.action === "again") {
-      routeStores().forEach(function (s) { if (state.done.indexOf(s.id) < 0) state.done.push(s.id); });
-      state.found = {}; save();
-      show("home", "styles");
-    } else if (el.dataset.action === "retry") {
-      checkLocation();
     }
   });
 
@@ -377,22 +324,11 @@
     e.preventDefault();
     if (!sel.length) return;
     state.prefs = sel.slice();
-    state.route = recommend(sel);
-    state.found = {};
     save();
-    show("route");
+    show("list");
   });
 
-  /* ---- はじめの画面 ---- */
-  var params = new URLSearchParams(location.search);
-  if (params.get("s")) {
-    var sid = params.get("s"), skey = params.get("k");
-    history.replaceState(null, "", location.pathname);
-    handleStamp(sid, skey);
-  } else if (location.hash === "#about") {
-    show("about");
-  } else {
-    // 駅のQRコードから開いたときは、まず種類を選ぶ画面を出す。続きがあるときは上に「続きから」を出す
-    show("home");
-  }
+  /* ---- はじめの画面：いつも何も選んでいない状態でトップを出す ---- */
+  if (location.hash === "#about") show("about");
+  else show("home");
 })();

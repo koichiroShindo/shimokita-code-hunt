@@ -14,7 +14,7 @@ window.LANGS = [
 
 window.TEXT = {
   en: {
-    tagline: "Small shops in Shimokitazawa you can't see from the street.",
+    tagline: "Shimokitazawa, one step further in",
     slidesLabel: "Photos of the shops",
     slidePrev: "Previous photo",
     slideNext: "Next photo",
@@ -22,7 +22,7 @@ window.TEXT = {
     slidePlay: "Play the slideshow",
     resume: "See the shops you chose last time",
     prefsTitle: "Choose your style",
-    prefsLead: "Choose as many as you like.",
+    prefsLead: "We picked out small shops in Shimokitazawa that are usually hard to find, sorted by style.",
     prefsSubmit: "Show the shops",
     cat: {
       amekaji: "American casual",
@@ -76,7 +76,7 @@ window.TEXT = {
   },
 
   zh: {
-    tagline: "下北泽那些从街上看不到的小店。",
+    tagline: "再往里走一步的下北泽",
     slidesLabel: "店铺照片",
     slidePrev: "上一张",
     slideNext: "下一张",
@@ -84,7 +84,7 @@ window.TEXT = {
     slidePlay: "开始播放",
     resume: "查看上次选择的店铺",
     prefsTitle: "选择你的风格",
-    prefsLead: "可以选择多项。",
+    prefsLead: "我们按风格挑选了下北泽平时不容易找到的小店。",
     prefsSubmit: "显示店铺",
     cat: {
       amekaji: "美式休闲",
@@ -138,7 +138,7 @@ window.TEXT = {
   },
 
   ko: {
-    tagline: "길에서는 보이지 않는 시모키타자와의 작은 가게들.",
+    tagline: "한 걸음 더 깊은 시모키타자와",
     slidesLabel: "가게 사진",
     slidePrev: "이전 사진",
     slideNext: "다음 사진",
@@ -146,7 +146,7 @@ window.TEXT = {
     slidePlay: "슬라이드 재생",
     resume: "지난번에 고른 가게 보기",
     prefsTitle: "스타일을 고르세요",
-    prefsLead: "여러 개를 골라도 됩니다.",
+    prefsLead: "평소에 찾기 어려운 시모키타자와의 작은 가게를 스타일별로 골랐습니다.",
     prefsSubmit: "가게 보기",
     cat: {
       amekaji: "아메카지·캐주얼",
@@ -200,7 +200,7 @@ window.TEXT = {
   },
 
   ja: {
-    tagline: "通りからは見えない、下北沢の小さなお店。",
+    tagline: "もう一歩奥の下北沢",
     slidesLabel: "お店の写真",
     slidePrev: "前の写真",
     slideNext: "次の写真",
@@ -208,7 +208,7 @@ window.TEXT = {
     slidePlay: "写真の切り替えを再開する",
     resume: "前回選んだお店を見る",
     prefsTitle: "スタイルを選ぶ",
-    prefsLead: "いくつ選んでもかまいません。",
+    prefsLead: "ふだんは見つけにくい下北沢の小さなお店を、スタイルごとにピックアップしました。",
     prefsSubmit: "お店を表示する",
     cat: {
       amekaji: "アメカジ・カジュアル",
@@ -262,7 +262,7 @@ window.TEXT = {
   },
 
   "zh-Hant": {
-    tagline: "下北澤那些從街上看不到的小店。",
+    tagline: "再往裡走一步的下北澤",
     slidesLabel: "店家照片",
     slidePrev: "上一張",
     slideNext: "下一張",
@@ -270,7 +270,7 @@ window.TEXT = {
     slidePlay: "開始播放",
     resume: "查看上次選擇的店家",
     prefsTitle: "選擇你的風格",
-    prefsLead: "可以選擇多項。",
+    prefsLead: "我們依風格挑選了下北澤平常不容易找到的小店。",
     prefsSubmit: "顯示店家",
     cat: {
       amekaji: "美式休閒",
@@ -324,7 +324,7 @@ window.TEXT = {
   },
 
   th: {
-    tagline: "ร้านเล็ก ๆ ในชิโมคิตะซาวะที่มองไม่เห็นจากถนน",
+    tagline: "ชิโมคิตะซาวะ ลึกเข้าไปอีกก้าว",
     slidesLabel: "ภาพร้านค้า",
     slidePrev: "ภาพก่อนหน้า",
     slideNext: "ภาพถัดไป",
@@ -332,7 +332,7 @@ window.TEXT = {
     slidePlay: "เล่นสไลด์",
     resume: "ดูร้านที่เลือกไว้ครั้งก่อน",
     prefsTitle: "เลือกสไตล์ของคุณ",
-    prefsLead: "เลือกได้หลายแบบ",
+    prefsLead: "เราคัดร้านเล็ก ๆ ในชิโมคิตะซาวะที่ปกติหาได้ยาก แยกตามสไตล์",
     prefsSubmit: "แสดงร้านค้า",
     cat: {
       amekaji: "อเมริกันแคชชวล",
@@ -386,7 +386,7 @@ window.TEXT = {
   },
 
   fr: {
-    tagline: "Les petites boutiques de Shimokitazawa qu'on ne voit pas depuis la rue.",
+    tagline: "Shimokitazawa, un pas plus loin",
     slidesLabel: "Photos des boutiques",
     slidePrev: "Photo précédente",
     slideNext: "Photo suivante",
@@ -394,7 +394,7 @@ window.TEXT = {
     slidePlay: "Lancer le diaporama",
     resume: "Voir les boutiques choisies la dernière fois",
     prefsTitle: "Choisissez votre style",
-    prefsLead: "Vous pouvez en choisir plusieurs.",
+    prefsLead: "Une sélection de petites boutiques de Shimokitazawa, difficiles à trouver d'habitude, classées par style.",
     prefsSubmit: "Afficher les boutiques",
     cat: {
       amekaji: "Casual américain",
@@ -448,7 +448,7 @@ window.TEXT = {
   },
 
   es: {
-    tagline: "Pequeñas tiendas de Shimokitazawa que no se ven desde la calle.",
+    tagline: "Shimokitazawa, un paso más adentro",
     slidesLabel: "Fotos de las tiendas",
     slidePrev: "Foto anterior",
     slideNext: "Foto siguiente",
@@ -456,7 +456,7 @@ window.TEXT = {
     slidePlay: "Reproducir las fotos",
     resume: "Ver las tiendas que elegiste la última vez",
     prefsTitle: "Elige tu estilo",
-    prefsLead: "Puedes elegir varios.",
+    prefsLead: "Una selección de pequeñas tiendas de Shimokitazawa, normalmente difíciles de encontrar, ordenadas por estilo.",
     prefsSubmit: "Mostrar las tiendas",
     cat: {
       amekaji: "Casual americano",

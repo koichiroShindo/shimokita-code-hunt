@@ -321,6 +321,8 @@ img { max-width: 100%; }
   outline-offset: 2px;
 }
 .link { display: inline-block; margin-top: 8px; color: var(--accent); font-weight: 700; }
+.shop-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.link-sub { color: var(--ink); font-weight: 400; }
 
 /* ---- 3軒の画面：選んだスタイルの写真を上に大きく出す ---- */
 .banner {
@@ -375,7 +377,7 @@ img { max-width: 100%; }
 @media (min-width: 768px) { .shop-body { padding: 28px 32px; } }
 .shop-body p { margin: 8px 0 0; }
 .shop-head { display: flex; align-items: flex-start; gap: 16px; }
-.shop-head h3 { flex: 1; font-family: var(--serif); font-size: 22px; font-weight: 700; }
+.shop-head h3 { flex: 1; min-width: 0; font-family: var(--serif); font-size: 22px; font-weight: 700; overflow-wrap: anywhere; }
 .shop-no {
   flex: none;
   font-family: var(--serif);

@@ -196,7 +196,17 @@
       '<p class="cats">' + s.categories.map(function (c) { return t("cat")[c]; }).join(" / ") + "</p>" +
       (desc ? '<p class="desc">' + esc(desc) + "</p>" : "") +
       '<p class="addr" lang="ja">' + esc(s.address) + "</p>" +
-      '<a class="link" href="' + map + '" target="_blank" rel="noopener">' + t("map") + "</a></div></li>";
+      '<p class="shop-links"><a class="link" href="' + map + '" target="_blank" rel="noopener">' + t("map") + "</a>" +
+      linkList(s.links) + "</p></div></li>";
+  }
+
+  // お店の公式SNS・サイトへのリンク
+  var LINK_NAMES = { instagram: "Instagram", x: "X", threads: "Threads", facebook: "Facebook" };
+  function linkList(links) {
+    if (!links) return "";
+    return ["instagram", "x", "threads", "facebook", "web"].filter(function (k) { return links[k]; }).map(function (k) {
+      return '<a class="link link-sub" href="' + esc(links[k]) + '" target="_blank" rel="noopener">' + (LINK_NAMES[k] || t("website")) + "</a>";
+    }).join("");
   }
 
   function viewRoute() {

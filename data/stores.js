@@ -10,6 +10,7 @@
  *   address    : 住所（地図のリンクにも使う）
  *   lat, lng   : お店の位置。Googleマップでお店を右クリックすると出る数字を入れる。null のあいだは位置を確かめない
  *   photo      : お店の写真（images/shops/ に入れたファイル名）
+ *   links      : お店の公式SNS・サイト（instagram / x / threads / facebook / web）。お店自身のアカウントだけを書く
  *   desc       : 紹介文（en / zh / ko / ja）
  *
  * 紹介文はお店の公式情報と公開されている記事をもとに書いた。営業時間などは変わるので、ときどき見直す。
@@ -24,6 +25,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-35-15 下北沢マンション2F 66号室",
     lat: null, lng: null,
     photo: "lomad-loman.jpg",
+    links: {"web": "https://lomadloman.thebase.in/"},
     desc: {
       en: "A vintage shop built around 1970s–80s American clothing chosen by the owner, with a few British-rock-flavored pieces, sneakers and mountain boots. Opened in May 2021, it aims for clothes that are easy to wear but make you look different, so expect unusual colors and one-off designs. It is room 66 on the 2nd floor of Shimokitazawa Mansion (Kitazawa 2-35-15), at the back of the corridor. Closed irregularly.",
       zh: "以店主亲自挑选的1970〜80年代美国古着为主的古着店，也有少量带英国摇滚气息的衣服，以及运动鞋和登山靴。2021年5月开业，方针是“好穿，但穿上和别人不一样”的古着，因此少见的颜色和像孤品一样的设计很多。店在下北泽公寓（北泽2-35-15）2楼的66号室，位于走廊深处。不定期休息。",
@@ -39,6 +41,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-30-10 浜辺ビル101",
     lat: null, lng: null,
     photo: "step-ahead.jpg",
+    links: {"instagram": "https://www.instagram.com/stepahead_2012/"},
     desc: {
       en: "A vintage shop for 1970s–90s American street clothing and the main store of a chain with four shops in Shimokitazawa. ¥1,000 T-shirts hang on the same floor as ¥30,000 vintage pieces. The Hamabe Building holds several vintage shops, so look for room 101 and the neon sign. Open 12:00–20:00 weekdays, 11:00–20:00 weekends. Old US sizing runs large: a vintage L is close to today's XL.",
       zh: "经营1970〜90年代美式街头vintage的古着店，是在下北泽有4家店的系列的总店。1,000日元的T恤和30,000日元的vintage摆在同一个卖场。浜边大楼里有好几家古着店，请认准“101号室”和霓虹招牌。平日12:00〜20:00，周末11:00〜20:00。当年的美国尺码偏大，那时的L接近现在的XL。",
@@ -54,6 +57,7 @@ window.STORES = [
     address: "東京都世田谷区代沢5-30-3 1F",
     lat: null, lng: null,
     photo: "mwc.jpg",
+    links: {"instagram": "https://www.instagram.com/___mwc___/"},
     desc: {
       en: "A vintage shop for 1980s–90s American clothing, with sunglasses and watches too. The owner comes from the dry-cleaning trade, so you can ask about care, repairs and hem alterations. It is on the ground floor of Daizawa 5-30-3; look for the rabbit figure out front. Open 13:00–20:00, every day.",
       zh: "经营1980〜90年代美国古着的店，也有太阳镜和手表。店主出身洗衣行业，可以咨询衣物保养、修补和改裤长。位于代泽5-30-3的1楼，店门口的兔子玩偶是标志。13:00〜20:00，无休。",
@@ -69,6 +73,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-30-10",
     lat: null, lng: null,
     photo: "damagedone.jpg",
+    links: {"instagram": "https://www.instagram.com/damagedone_shimokitazawa/"},
     desc: {
       en: "An American-casual shop mixing vintage, deadstock and some new select items. Stock is bought directly in the US and arrives every week, including sizes XL and up. The interior is clean and urban, with wide gaps between the racks. It is at Kitazawa 2-30-10, in the same building as STEP AHEAD. Open 12:00–20:30, every day.",
       zh: "经营美式休闲古着和deadstock，也有部分新品select的店。在美国直接采购，每周到货，也有XL以上的尺码。内装偏都市感，货架之间很宽。和STEP AHEAD在同一栋楼（北泽2-30-10）。12:00〜20:30，无休。",
@@ -84,6 +89,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-35-15 下北沢マンション1F 63号",
     lat: null, lng: null,
     photo: "spike.jpg",
+    links: {"instagram": "https://www.instagram.com/spike_shimokitazawa_tokyo/"},
     desc: {
       en: "A vintage shop covering the 1930s–90s: vintage tees, flannel shirts and military. Its sister shop SyuNa by SPiKe (Kitazawa 2-31-9) carries music, film and art tees. It trades from room 63 on the ground floor of an apartment block, Shimokitazawa Mansion (Kitazawa 2-35-15); the street number alone won't lead you to the door, so note the room number. Open 12:00–20:30 weekdays, 11:00–20:30 weekends and holidays. Pieces from the 1930s–60s run small (S–M).",
       zh: "经营1930〜90年代vintage的古着店，vintage T恤、法兰绒衬衫和军装齐全。同系列的SyuNa by SPiKe（北泽2-31-9）专营音乐、电影和艺术T恤。店开在公寓楼“下北泽公寓”1楼的63号室，只看门牌号找不到入口，请记下房号。平日12:00〜20:30，周末及节假日11:00〜20:30。30〜60年代的衣服偏小，多为S、M码。",
@@ -99,6 +105,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-30-6 UCビル2F",
     lat: null, lng: null,
     photo: "kimama.jpg",
+    links: {"instagram": "https://www.instagram.com/kimama.furugi/", "web": "https://kimama-furugi.com/"},
     desc: {
       en: "A small vintage shop for sportswear: football shirts and 1980s–90s game shirts. The Magico hair-salon group opened it on 29 April 2021, and the manager buys pieces one at a time; prices run about ¥3,000–45,000. It is on the 2nd floor of the UC Building, the one with Starbucks, and you can't see in from the street. About 2 minutes from the West Exit. Closed Wednesdays. Game shirts run short, so try one size up.",
       zh: "以足球球衣和1980〜90年代比赛衫为主的运动系古着小店。美发沙龙Magico集团于2021年4月29日开设，店长逐件挑选进货，价格约3,000〜45,000日元。位于有星巴克的UC大楼2楼，从街上看不到店内，容易走过头。从西口步行约2分钟。周三休息。比赛衫衣长偏短，可以试大一号。",
@@ -114,6 +121,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-13-14 1F",
     lat: null, lng: null,
     photo: "iot-reverse.jpg",
+    links: {"instagram": "https://www.instagram.com/reverse_iot/"},
     desc: {
       en: "A vintage shop mixing sportswear, tech, mode and American casual, with plenty of nylon and track jackets. Its sister shops are iot Shimokitazawa (Kitazawa 2-33-3) and iot replay. It is on the ground floor of Kitazawa 2-13-14; look for the white sign. Open 12:00–22:00, late for a Shimokitazawa vintage shop.",
       zh: "经营运动、tech、mode和美式休闲古着的店，尼龙夹克和运动夹克很多。同系列还有iot下北泽店（北泽2-33-3）和iot replay。位于北泽2-13-14的1楼，白色招牌是标志。营业时间12:00〜22:00，在下北泽的古着店里算开得晚。",
@@ -129,6 +137,7 @@ window.STORES = [
     address: "東京都世田谷区北沢3-26-3 1F",
     lat: null, lng: null,
     photo: "add-c-vintage.jpg",
+    links: {"instagram": "https://www.instagram.com/add.c_shimokitazawa/"},
     desc: {
       en: "A men's vintage shop for vintage, Y2K and mode, with many one-offs that have a remade feel. Prices start around ¥10,000, on the higher end for Urakita, the back streets north of the station. It is on the ground floor almost opposite NEW YORK JOE EXCHANGE (Kitazawa 3-26-3); look for the blue neon. Open 12:00–20:00. The Y2K pieces lean oversized.",
       zh: "经营男装vintage、Y2K和mode系的古着店，带改造感的孤品很多。价格从10,000日元起，在车站北侧后街（裏北）的古着店里属于偏高的。位于NEW YORK JOE EXCHANGE几乎正对面的1楼，蓝色霓虹店面是标志。12:00〜20:00。Y2K的衣服偏宽松。",
@@ -144,6 +153,7 @@ window.STORES = [
     address: "東京都世田谷区代沢5-28-12 藤田ビル1C",
     lat: null, lng: null,
     photo: "kroneko.jpg",
+    links: {"instagram": "https://www.instagram.com/kroneko_used/", "x": "https://x.com/kroneko_used"},
     desc: {
       en: "A vintage shop for men's 1980s–90s regular clothing, vintage and military, with slim European tailored jackets and coats among the racks. Opened on 8 April 2023, it stocks trousers in a wide size range: sweatpants, denim and slacks. Find it in unit 1C of the Fujita Building (Daizawa 5-28-12), about 4 minutes' walk from the station. Open 13:00–20:00 and closed irregularly. European cuts are slim: fit the shoulders first, then check the length.",
       zh: "经营1980〜90年代男装常规古着、vintage和军装的古着店，也有欧洲的修身西装外套和大衣。2023年4月8日开业，运动裤、牛仔裤、西裤等裤装尺码齐全。位于代泽5-28-12的藤田大楼1C，从车站步行约4分钟。营业时间13:00〜20:00，不定期休息。欧洲尺码偏瘦，先按肩宽选，再看衣长。",
@@ -173,6 +183,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-15-1 たつみビル1F",
     lat: null, lng: null,
     photo: "memento.jpg",
+    links: {"instagram": "https://www.instagram.com/used.memento_shimokitazawa/"},
     desc: {
       en: "An independent vintage shop, opened on 15 September 2023, that mixes American and European clothing, military and mode pieces. It is on the ground floor of the Tatsumi Building (Kitazawa 2-15-1); look for the black shopfront. Open 13:00–20:00 weekdays and 12:00–20:00 weekends, never in the morning. A US L and a European L measure differently, so ask whether you can try things on.",
       zh: "美国古着、欧洲古着、军装和mode系混在一起的个人古着店，2023年9月15日开业。位于巽大楼1楼，黑色的店面是标志。平日13:00〜20:00，周末12:00〜20:00，上午不营业。同样是L，美国货和欧洲货的实际尺寸不同，可以问问能否试穿。",
@@ -188,6 +199,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-26-25 エクセレントビルB102",
     lat: null, lng: null,
     photo: "monk.jpg",
+    links: {"instagram": "https://www.instagram.com/monk_vintage_archive/"},
     desc: {
       en: "A basement shop for classic American and European menswear, especially deep in European pieces. Those run slim and tend to suit Japanese S and M sizes. It is unit B102, below ground in the Excellent Building (Kitazawa 2-26-25); the entrance and sign are easy to miss, so note the unit number before you go. Open 14:00–20:00 weekdays, 13:00–20:00 weekends.",
       zh: "经营美国和欧洲男装经典古着的地下小店，欧洲货尤其多。欧洲货偏瘦，比较适合日本人的S、M码。位于Excellent大楼地下的B102，入口不好找，招牌也很难注意到，出发前记下房号。平日14:00〜20:00，周末13:00〜20:00。",
@@ -203,6 +215,7 @@ window.STORES = [
     address: "東京都世田谷区代沢5-36-15 井上ビル1C",
     lat: null, lng: null,
     photo: "ruby-tuesday.jpg",
+    links: {"instagram": "https://www.instagram.com/rubytuesday_shimokita/"},
     desc: {
       en: "A vintage shop for European clothing, centered on 1970s–80s shirts and jackets, with vintage jerseys as well. You can also talk to them about having made-to-order jeans produced. It is unit 1C of the Inoue Building (Daizawa 5-36-15), which also holds another vintage shop, so check the unit number and look for the brick shopfront. Open 12:00–21:00, later than most; closed irregularly.",
       zh: "经营欧洲vintage的古着店，以1970〜80年代的衬衫和夹克为主，也有vintage运动衫。还可以咨询定制牛仔裤。位于井上大楼1C，同一栋楼里还有别的古着店，请看好房号，红砖店面是标志。营业到21:00，不定期休息。",
@@ -218,6 +231,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-29-14 第11FMGビル2F",
     lat: null, lng: null,
     photo: "iroha-tokyo.jpg",
+    links: {"instagram": "https://www.instagram.com/iroha_tokyo/"},
     desc: {
       en: "A second-floor shop for designer vintage and mode pieces in a clean, refined direction, strongest in coats, jackets and knitwear. It is on the 2nd floor of the 11th FMG Building (Kitazawa 2-29-14); look for the red-tiled staircase and the sign. Open 13:00–20:00, from 12:00 on weekends and holidays.",
       zh: "经营设计感古着、mode和vintage的二楼小店，走简洁利落路线，大衣、夹克和针织衫尤其多。位于第11FMG大楼2楼，红色瓷砖楼梯和招牌是标志。13:00〜20:00，周末及节假日12:00开门。",
@@ -233,6 +247,7 @@ window.STORES = [
     address: "東京都世田谷区北沢3-30-3 T・Tビル1F",
     lat: null, lng: null,
     photo: "lansdowne.jpg",
+    links: {"instagram": "https://www.instagram.com/lansdowne.shimokitazawa/"},
     desc: {
       en: "A vintage shop that crosses genres: designer pieces, brand-name used clothing and traditional ethnic garments. Sizing systems vary from piece to piece, so check each item's measurements. It is on the ground floor of the T·T Building (Kitazawa 3-30-3), toward the Higashi-Kitazawa end, with red walls inside. Open 12:00–20:00 weekdays, 12:00–19:00 weekends and holidays.",
       zh: "跨类别经营设计师古着、品牌古着乃至民族服装的古着店。尺码标准各不相同，请逐件确认实际尺寸。位于T·T大楼1楼，在下北泽靠东北泽的一侧，店内是红色的墙。平日12:00〜20:00，周末及节假日12:00〜19:00。",
@@ -248,6 +263,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-19-15 松下ビル2F",
     lat: null, lng: null,
     photo: "mania-furugi83.jpg",
+    links: {"instagram": "https://www.instagram.com/mania_by_furugi83/"},
     desc: {
       en: "A vintage shop devoted to character clothing, Disney above all. Online prices run about ¥5,500–21,800, and the character tees are mostly men's sizes around US L. It is on the 2nd floor of the Matsushita Building (Kitazawa 2-19-15), above DOSTYLE; look for the bee logo and the yellow FURUGI83 projecting sign. Open 12:00–20:00 Mon–Fri, 11:00–20:00 weekends and holidays.",
       zh: "专门经营迪士尼等卡通角色古着的店。网店价格约5,500〜21,800日元，角色T恤以男装尺码（美码L左右）为主。位于松下大楼2楼，1楼是DOSTYLE。认准蜜蜂标志和黄色的“FURUGI83”侧挂招牌。周一至周五12:00〜20:00，周末及节假日11:00〜20:00。",
@@ -263,6 +279,7 @@ window.STORES = [
     address: "東京都世田谷区北沢3-31-5-1D",
     lat: null, lng: null,
     photo: "brief-brief.jpg",
+    links: {"instagram": "https://www.instagram.com/xbriefsxbriefsx/"},
     desc: {
       en: "A vintage shop of one-offs with strong personalities: patterned and animal-motif clothing, remade denim and small goods. It trades from unit 1D at Kitazawa 3-31-5, so search by the unit number rather than by a sign. It fits into a walk around Urakita, the back streets north of the station toward reload. Open 13:00–20:00, closed irregularly.",
       zh: "经营个性鲜明孤品的古着店：印花和动物图案的衣服、改造牛仔、杂货。店在北泽3-31-5的“1D”区划营业，比起找招牌，按房号找更容易。可以在逛车站北侧往reload方向的后街（裏北）时顺路去。13:00〜20:00，不定期休息。",
@@ -280,6 +297,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-12-16 三鈴ビル2F",
     lat: null, lng: null,
     photo: "flash-disc-ranch.jpg",
+    links: {"x": "https://x.com/Flash_Tsubaki"},
     desc: {
       en: "A used record shop stocked mainly through buying trips to the US, covering Japanese jazz and fusion, city pop, rock, soul and R&B, with about 15,000 records on the floor. Tsubaki Masao has run it since 1982, and it appears as the used cassette shop in the film PERFECT DAYS. From the South Exit, walk 3 minutes and climb the stairs between two game arcades to the 2nd floor. Closed Wednesdays (Thursday if Wednesday is a holiday).",
       zh: "以美国采购为主的二手唱片店，品类有日本爵士与融合乐、City Pop、摇滚、灵魂乐和R&B，店内常备约1万5000张。店主椿正雄自1982年经营至今，电影《完美的日子》中的二手磁带店就在这里取景。从下北泽站南口步行3分钟，走上夹在两家游戏中心之间的楼梯，就在2楼。周三休息（逢节假日则改为周四）。",
@@ -295,6 +313,7 @@ window.STORES = [
     address: "東京都世田谷区北沢3-30-1 かどやビル2F",
     lat: null, lng: null,
     photo: "record-station.jpg",
+    links: {"x": "https://x.com/record_station"},
     desc: {
       en: "A used record shop with bins of Japanese wamono, soul, funk, jazz, rock, house, disco, hip hop, reggae and soundtracks, plus a small selection of new releases, cassettes and its own apparel. It started in Yokohama and moved to Shimokitazawa, opening on August 11. Look for the 2nd floor of the building next to Lawson on the Ichibangai shopping street, a 4-minute walk from the East Exit. Closed Tuesdays.",
       zh: "二手唱片店，品类有日本老歌（和物）、灵魂乐、放克、爵士、摇滚、House、Disco、嘻哈、雷鬼和电影原声，也有少量新唱片、磁带和自家服饰。原本开在横滨，后迁到下北泽，于8月11日开业。位于一番街商店街罗森便利店隔壁大楼的2楼，从东口步行4分钟。周二休息。",
@@ -325,6 +344,7 @@ window.STORES = [
     address: "東京都世田谷区代田2-36-15 BONUS TRACK内",
     lat: null, lng: null,
     photo: "pianola-records.jpg",
+    links: {"web": "https://pianola-records.com/"},
     desc: {
       en: "A tiny record shop that files nothing by genre: experimental and electronic music from around the world, roots music, avant-garde, new wave, world music and pre-war recordings sit together with cassettes and books. Owner Kunitomo Yohei, who spent over 10 years at Disk Union and HMV, opened it in April 2020 and named it after the self-playing pianola, whose records he collects. It is inside BONUS TRACK, the shopping lane built on old Odakyu Line tracks between Shimokitazawa and Setagaya-Daita. Open 14:00-21:00, closed Thursdays.",
       zh: "不按类型分类陈列的小唱片店，世界各地的实验音乐、电子音乐、根源音乐、前卫、新浪潮、世界音乐和战前录音，与磁带、书籍摆在一起。店主国友洋平曾在Disk Union和HMV工作10年以上，2020年4月开店，店名取自他爱收集唱片的自动演奏钢琴“Pianola”。位于下北泽与世田谷代田之间、由小田急线旧铁轨用地改建的商店街BONUS TRACK内。营业时间14:00至21:00，周四休息。",
@@ -341,6 +361,7 @@ window.STORES = [
     categories: ["instruments"],
     address: "東京都世田谷区北沢2-7-10 上原ビル2F",
     lat: null, lng: null,
+    links: {"facebook": "https://www.facebook.com/underneath.guitar/"},
     desc: {
       en: "A used and vintage guitar shop selling guitars and basses from vintage pieces to current models, plus effects pedals, strings, cables and straps, with buying, consignment and repairs. It was opened in 2007 by Takeichi Tatsuya, a guitar-craft school graduate who worked over 15 years at major Tokyo guitar stores. From the Central Exit, walk about 4 minutes toward Shimokitazawa SHELTER and Kitazawa Town Hall, then take the entrance beside the sign up to the 2nd floor. Open 14:00-19:00; closed Wednesdays and the 1st and 3rd Sundays.",
       zh: "二手与古董吉他店，出售从古董到最新款的吉他、贝斯，以及效果器、琴弦、线材、背带等，也提供收购、寄售和维修。店主武市达也毕业于吉他制作科，在东京大型吉他店工作15年以上后，于2007年独立开店。从中央口步行约4分钟，靠近下北泽SHELTER和北泽Town Hall，从招牌旁的入口上到2楼。营业时间14:00至19:00，周三及每月第1、第3个周日休息。",
@@ -355,6 +376,7 @@ window.STORES = [
     categories: ["instruments"],
     address: "東京都世田谷区代沢5-6-1",
     lat: null, lng: null,
+    links: {"web": "https://forute.com/"},
     desc: {
       en: "A specialist shop for classical and flamenco guitars, from beginner models to new instruments by Japanese luthiers and guitars by Spanish masters, plus used guitars, cases, books, capos and strings. It opened in Shimokitazawa in 1982 as a handmade-guitar shop and also buys instruments. It is on the south side of the station near the Daizawa three-way junction, about 5 to 10 minutes on foot depending on the route. The official site lists 11:00-17:00, closed Wednesdays and Thursdays.",
       zh: "古典吉他与弗拉门戈吉他专卖店，从入门款到日本制琴师的新作、西班牙名匠吉他，还有二手吉他、琴盒、书籍、变调夹和琴弦。1982年作为手工吉他专卖店在下北泽开业，也收购乐器。位于车站南侧的代泽三岔路附近，依路线步行约5至10分钟。官网标示营业时间11:00至17:00，周三、周四休息。",
@@ -415,6 +437,7 @@ window.STORES = [
     categories: ["kissa", "music"],
     address: "本店：東京都世田谷区北沢2-31-2 大久ビル2F／パルファン店：東京都世田谷区北沢2-29-3 パルファンビル2F",
     lat: null, lng: null,
+    links: {"x": "https://x.com/JazzKissaMasako"},
     desc: {
       en: "A jazz kissaten that plays records, known for its anko (sweet bean) toast at 450 yen and homemade ginger ale. The original Masako opened in 1953 and closed in 2009; moe, a regular since high school and a former staff member, revived the name in 2020. The main shop is on the 2nd floor of the Okyu Building, 2 minutes from the station; in August 2025 a second shop, Masako Parfun, opened 2 minutes away on the 2nd floor of the former Café de Parfun, reusing its booths, tables and chairs. Both close Thursdays; live nights have a 1,000 yen charge plus a drink.",
       zh: "用黑胶播放爵士的爵士喫茶，招牌是450日元的红豆吐司和自制姜汁汽水。初代Masako于1953年开业、2009年歇业；从高中起就是常客、也曾在店里工作的moe继承店名，于2020年重新开张。总店在大久大楼2楼，离车站步行2分钟；2025年8月又在步行2分钟外的老喫茶“Café de Parfun”旧址2楼开了二号店“Masako Parfun店”，沿用原来的卡座和桌椅。两店均周四休息，现场演出日收费1,000日元另加一杯饮品。",
@@ -429,6 +452,7 @@ window.STORES = [
     categories: ["kissa"],
     address: "東京都世田谷区北沢2-12-10 サウスサイド2 2B",
     lat: null, lng: null,
+    links: {"instagram": "https://www.instagram.com/tagcafe_shimokita/"},
     desc: {
       en: "A retro kissaten known for cream soda in 7 colors (strawberry, melon, blue Hawaii, lemon, grape, peach and Calpis) at 650 yen, and a firm \"donut pudding\" with whipped cream in the hole, cherries and chocolate sprinkles. It opened in 2011 and was renewed as a \"neo kissaten\" in January 2021. It is unit 2B on the 2nd floor of the Southside 2 building on a back street, 1 to 2 minutes from the station. Open 11:00-20:00 (last order 19:30), irregular holidays; power outlets and Wi-Fi available, reservations by phone only.",
       zh: "复古喫茶店，招牌是可选7种颜色（草莓、蜜瓜、蓝色夏威夷、柠檬、葡萄、桃子、可尔必思）的奶油苏打，650日元，还有中间孔里填满鲜奶油、点缀樱桃和巧克力碎的硬布丁“甜甜圈布丁”。2011年开业，2021年1月改装为“NEO喫茶店”。位于后街Southside 2大楼2楼2B，离车站步行1至2分钟。营业11:00至20:00（最后点单19:30），不定期休息；有电源和Wi-Fi，只接受电话预约。",
@@ -445,6 +469,7 @@ window.STORES = [
     categories: ["cafe", "books"],
     address: "東京都世田谷区代沢5-32-13 露崎商店ビル5F",
     lat: null, lng: null,
+    links: {"x": "https://x.com/BrownsBooksCafe"},
     desc: {
       en: "A book café run by Brown's Books, publisher of the culture magazines BARFOUT! and STEPPIN' OUT!, where you can read and buy current and back issues and secondhand books on music, art, travel, literature and manga, mostly from editor Yamazaki Jiro's own collection. On weekdays the room is the magazine's editorial office; it opens as a café only on Saturdays and Sundays. It is on the 5th floor of the Tsuyuzaki Shoten Building on the South Exit side, 5 minutes from the station.",
       zh: "由出版文化杂志《BARFOUT!》《STEPPIN' OUT!》的Brown's Books经营的书咖啡馆，可以阅读和购买最新及过期杂志，以及音乐、艺术、旅行、文学、漫画等二手书，多为编辑山崎二郎的个人藏书。平日这里是杂志编辑部，只在周六、周日作为咖啡馆营业。位于南口一侧露崎商店大楼5楼，离车站步行5分钟。",
@@ -474,6 +499,7 @@ window.STORES = [
     categories: ["cafe"],
     address: "東京都世田谷区北沢2-10-10 1F",
     lat: null, lng: null,
+    links: {"x": "https://x.com/ballondessaicom", "threads": "https://www.threads.com/@ballondessai.latte_art"},
     desc: {
       en: "A specialty coffee stand where baristas pull each espresso by hand, known for its lattes, a latte-art experience (no booking needed) and espresso shaved ice. After its old Kitazawa Building home was torn down for age and it closed in January 2025, it reopened about 18 months later, on August 19, 2026, as a roastery and coffee stand. The new shop is on the ground floor of a building right in front of the East Exit.",
       zh: "由咖啡师逐杯萃取浓缩咖啡的精品咖啡站，以拿铁、无需预约的拉花体验和浓缩咖啡刨冰闻名。原店所在的北泽大楼因老旧拆除，于2025年1月停业，约一年半后的2026年8月19日以烘焙工坊兼咖啡站的形式重新开业。新店位于东口正前方一栋楼的1楼。",
@@ -488,6 +514,7 @@ window.STORES = [
     categories: ["cafe", "books"],
     address: "東京都世田谷区代田2-36-14 BONUS TRACK内",
     lat: null, lng: null,
+    links: {"web": "https://fuzkue.com/shops/shimokitazawa"},
     desc: {
       en: "A café made only for reading: talking is not allowed, and studying, working, writing, watching videos or gaming are off-limits too. There is a seat fee starting at 1,650 yen that drops as you order food and drinks, so most visits come to around 2,000 yen. Owner Akutsu Takashi opened the first fuzkue in Hatsudai in 2014 and this second shop in 2020 inside BONUS TRACK, 5 minutes from the Inokashira Line West Exit or Odakyu Line Southwest Exit. Open daily 12:00-22:00 per the official site; reservations are for one person each.",
       zh: "专为读书而设的店：禁止交谈，学习、工作、写作、看视频、玩游戏等读书以外的活动也不行。采用座位费制，基本座位费1,650日元起，点餐和饮品越多扣减越多，一般花费约2,000日元。店主阿久津隆于2014年在初台开了第一家，2020年在BONUS TRACK内开了这家二号店，从井之头线西口或小田急线西南口步行5分钟。官网显示每天12:00至22:00营业，预约每次限1人。",
@@ -534,6 +561,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-31-1 サン・ローザ1F",
     lat: null, lng: null,
     photo: "mardi-gras.jpg",
+    links: {"instagram": "https://www.instagram.com/cafe_mardigras/"},
     desc: {
       en: "A long-running kissaten known for custard pudding and shortcake, with a cake set where you pick 2 of about 5 cakes, a pudding à la mode at 770 yen and French toast. Sources put its history at 35 to nearly 40 years. It sits at the end of a quiet side street off the shopping street, about 3 minutes from the station, on the ground floor of the Sun Rosa building.",
       zh: "老字号喫茶店，以卡仕达布丁和草莓奶油蛋糕闻名，有从约5种蛋糕中选2种的蛋糕套餐、770日元的布丁圣代和法式吐司。各处资料称其历史约35年至近40年。位于从商店街拐进的安静小巷尽头，Sun Rosa大楼1楼，离车站步行约3分钟。",
@@ -548,6 +576,7 @@ window.STORES = [
     categories: ["sweets", "cafe"],
     address: "東京都世田谷区代田5-10-6 イーストコート代田1F",
     lat: null, lng: null,
+    links: {"instagram": "https://www.instagram.com/latte_shimokitazawa/", "web": "https://latte-shimokitazawa.com/"},
     desc: {
       en: "A café-restaurant known for old-style firm pudding and matcha gâteau au chocolat, plus a weekend morning plate with pudding, lunch and dinner. It opened in April 2022, appeared as a filming location in the TV drama silent, and reopened after a renewal in July 2025. It is on the ground floor of East Court Daita, 2 to 3 minutes from the West Exit of Setagaya-Daita Station on the Odakyu Line (7 minutes from Shimokitazawa Station). It does not take reservations and can get busy.",
       zh: "咖啡餐厅，以老式硬布丁和抹茶巧克力蛋糕闻名，周末及节假日有可附布丁的早餐拼盘，也供应午餐和晚餐。2022年4月开业，曾是电视剧《silent》的取景地，2025年7月装修后重新开业。位于East Court代田1楼，从小田急线世田谷代田站西口步行2至3分钟（从下北泽站步行7分钟）。不接受预约，有时较拥挤。",
@@ -579,6 +608,7 @@ window.STORES = [
     categories: ["curry"],
     address: "東京都世田谷区北沢2-37-16 林ビル3F",
     lat: null, lng: null,
+    links: {"facebook": "https://www.facebook.com/p/%E3%82%AB%E3%83%83%E3%83%91%E3%82%A4%E3%82%BA%E3%83%A0-%E3%82%AB%E3%83%AC%E3%83%BC-61557239651042/"},
     desc: {
       en: "A dashi (Japanese broth) curry shop by day and a music bar by night. Curries include chicken curry made with dried-sardine, kombu and bonito broth, and a pork keema with Hatcho miso. The shop moved here from Suzunari Yokocho, and at night it serves motsuni (simmered offal) in the style of the owner's family yakitori shop near Odawara, open for over 70 years. Look for the building with a spiral staircase on Ichibangai shopping street; the shop is on the 3rd floor, with no sign, only a small name on the door.",
       zh: "白天是使用日式高汤的咖喱店，晚上是音乐酒吧。咖喱有用小鱼干、昆布和厚削柴鱼高汤做的鸡肉咖喱，以及用八丁味噌做的猪肉肉末咖喱等。店铺从铃成横丁搬来，晚上供应炖内脏，味道来自店主老家——小田原附近经营70多年的烤鸡串店。在一番街商店街找有螺旋楼梯的大楼，店在3楼。没有招牌，只在门上写着小小的店名。",
@@ -608,6 +638,7 @@ window.STORES = [
     address: "東京都世田谷区代沢5-29-9 ナイスビル1F",
     lat: null, lng: null,
     photo: "kyu-yamu-tei.jpg",
+    links: {"instagram": "https://www.instagram.com/kyu_yam_shimokita/"},
     desc: {
       en: "The first Tokyo branch of Kyu Yamu Tei, a spice curry shop from Osaka, serving a keema curry that changes every month along with a Japanese-dashi soup. You can order the 'aigake' or 'zengake' combination plates, each with curry soup, and choose brown rice. It opened in July 2017. About 5 to 7 minutes on foot from Shimokitazawa Station; look for the grapevine at the entrance. Around 12 to 14 seats, no reservations, no credit cards. On weekends you take a numbered ticket and come back when your turn comes.",
       zh: "大阪香料咖喱店“旧ヤム邸”的东京1号店，供应每月更换的肉末咖喱和日式高汤汤品。可以点“あいがけ”“ぜんがけ”两种拼盘，都附咖喱汤，米饭也可选糙米。2017年7月开业。从下北泽站步行约5〜7分钟，入口的葡萄树是标志。座位约12〜14个，不能预约，不能刷卡。周末采用号码牌制，轮到时再回到店里。",
@@ -624,6 +655,7 @@ window.STORES = [
     categories: ["bars"],
     address: "東京都世田谷区北沢2-33-11 SY-Ⅰ 2F",
     lat: null, lng: null,
+    links: {"web": "https://barnitas-hitokutiwhisky.amebaownd.com/"},
     desc: {
       en: "An authentic cocktail bar with more than 180 standard cocktails; the house favorite is a Moscow Mule made with homemade ginger vodka. The name combines 'bar' with 'vanitas', a 17th-century genre of painting. The master has over 20 years behind the bar and won a merit award in the set-product category of Suntory's The Cocktail Award 2007. It is on the 2nd floor of a building about 3 minutes from the East Exit of Shimokitazawa Station. Opens at 8 pm, closed irregularly, non-smoking, PayPay accepted.",
       zh: "正统鸡尾酒吧，备有180种以上的标准鸡尾酒，常点的是用自制姜味伏特加调的莫斯科骡子。店名是“bar”和17世纪绘画类型“vanitas（虚空派）”组合而成的造词。调酒师从业20年以上，曾获三得利“The Cocktail Award 2007”指定产品部门优秀奖。位于从下北泽站东口步行约3分钟的大楼2楼。晚上8点开门，不定期休息，禁烟，可用PayPay。",
@@ -641,6 +673,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-13-5 伊奈ビル 3F",
     lat: null, lng: null,
     photo: "mona-records.jpg",
+    links: {"x": "https://x.com/monarecords", "web": "https://www.mona-records.com/"},
     desc: {
       en: "A live music space that also runs a record label, with many acoustic and pop shows. It opened in 2004 and expanded to two floors in 2009; the 2nd-floor cafe has since closed, and only the live space remains. Japanese TV once introduced it as a venue that holds memories for singer Gen Hoshino. It is on the 3rd floor of a building on the South Exit shopping street, 2 minutes from the Central or Southwest Exit of Shimokitazawa Station. One drink must be bought on entry; seated shows hold about 50 people.",
       zh: "同时经营音乐厂牌的现场演出空间，原声和流行音乐的演出较多。2004年开业，2009年扩建为两层；2楼的咖啡馆后来关闭，现在只剩演出空间。曾在电视节目中作为歌手星野源充满回忆的演出场地被介绍。位于南口商店街沿线大楼的3楼，从下北泽站中央口或西南口步行2分钟。入场时需购买一杯饮品，坐席演出约可容纳50人。",
@@ -670,6 +703,7 @@ window.STORES = [
     categories: ["music"],
     address: "東京都世田谷区北沢2-2-3 エルサント北沢B1",
     lat: null, lng: null,
+    links: {"web": "https://daisybar.jp/"},
     desc: {
       en: "A live music club centered on indie bands, holding about 140 people standing. It opened on March 19, 2005, and bands including Creephyp played its 10th-anniversary shows in 2015. On the 1st floor is the 60-capacity lounge 'Laguna', and the club also runs the music label 'Primitive'. It is 4 minutes on foot from the South Exit of Shimokitazawa Station, right by the South Exit shopping street; go down the stairs from the entrance to the basement. Open on show days only; see the schedule at daisybar.jp.",
       zh: "以独立乐队为主的Live House，站席约可容纳140人。2005年3月19日开业，2015年10周年时Creephyp等乐队登台演出。1楼有可容纳60人的休息室“Laguna”，还经营音乐厂牌“Primitive”。从下北泽站南口步行4分钟，就在南口商店街旁边，从入口走下楼梯就是地下1层。只在有演出的日子营业，请查看 daisybar.jp 的日程。",
@@ -684,6 +718,7 @@ window.STORES = [
     categories: ["music"],
     address: "東京都世田谷区代沢5-18-1 カラバッシュビルB1F",
     lat: null, lng: null,
+    links: {"x": "https://x.com/BASEMENTxBAR"},
     desc: {
       en: "A live music club founded in 1995 that marked its 30th anniversary in 2025, holding about 250 people standing. Its sister venue THREE is next door in the same building. In 2021 a lease problem put it at risk of moving or closing, and the two venues ran a crowdfunding campaign called 'CONTINUE PROJECT'; in 2025 the bar counter and sound system were renewed. It is in the basement of a building on Chazawa-dori, marked by the Kakuyasu liquor store's '酒' sign, 8 to 12 minutes on foot from the South Exit of Shimokitazawa Station. Open on show days.",
       zh: "1995年创办、2025年迎来30周年的Live House，站席约可容纳250人。同一栋楼的隔壁是姊妹店“THREE”。2021年因租约问题面临搬迁或关闭，与THREE一起发起了众筹“CONTINUE PROJECT”；2025年翻新了吧台和音响。位于茶泽通沿线、以酒类店KAKUYASU的“酒”字招牌为标志的大楼地下1层，从下北泽站南口步行8〜12分钟。只在有演出的日子营业。",
@@ -700,6 +735,7 @@ window.STORES = [
     categories: ["theater"],
     address: "東京都世田谷区北沢2-10-18 藤和下北沢ハイタウンB棟 地下1F",
     lat: null, lng: null,
+    links: {"web": "https://www.honda-geki.com/rakuen/"},
     desc: {
       en: "A basement theater of the Honda Theater Group; the companies and plays change with each run. Kazuo Honda opened it in February 2007 as 'a theater for adults'. Its roughly 70 to 90 seats sit on two sides around a pillar, so the stage is watched from two directions; on one side the ceiling is low under a loft. Turn into the street in front of Honda Theater; Rakuen is on the right, behind a green door near a sweet-potato shop with a round '芋' sign, and you go down to the basement. 3 to 5 minutes from the East Exit of Shimokitazawa Station.",
       zh: "本多剧场集团旗下位于地下的小剧场，上演的剧团和剧目每次都不同。2007年2月由本多一夫以“为大人而设的剧场”为理念开设。约70〜90个座位围绕柱子分两个方向排列，从两面观看舞台；其中一侧在阁楼下方，天花板较低。走进本多剧场前的街道，右侧就是乐园，入口是挂着圆形“芋”字招牌的红薯点心店附近的绿色门，从那里下到地下。从下北泽站东口步行3〜5分钟。",
@@ -714,6 +750,7 @@ window.STORES = [
     categories: ["theater"],
     address: "東京都世田谷区北沢2-11-8 TAROビル3F",
     lat: null, lng: null,
+    links: {"web": "https://www.honda-geki.com/offoff/"},
     desc: {
       en: "A small theater of the Honda Theater Group with about 80 seats, opened in November 1993; the 180-seat Ekimae Gekijo is on the same floor. Productions change with each run; shows in October 2026 had tickets at ¥3,500 to ¥4,000. It was closed from March to July 2026 for building renovation, and performances resumed by October. It is on the 3rd floor of the TARO Building on the East Exit side of Shimokitazawa Station, just past the Inokashira Line overpass, about 3 minutes on foot.",
       zh: "本多剧场集团旗下约80个座位的小剧场，1993年11月开幕；同一层还有约180个座位的“站前剧场”。剧目随每次演出更换，2026年10月的演出票价为3,500〜4,000日元。2026年3月至7月因大楼改建休馆，10月已有演出。位于下北泽站东口一侧、穿过井之头线高架桥后的TARO大楼3楼，步行约3分钟。",
@@ -728,6 +765,7 @@ window.STORES = [
     categories: ["theater", "cinema"],
     address: "東京都世田谷区北沢2-6-6",
     lat: null, lng: null,
+    links: {"web": "https://www.honda-geki.com/gekisho"},
     desc: {
       en: "A small theater of the Honda Theater Group, opened in September 1997, with about 100 to 130 seats; the companies and plays change with each run. It is diagonally across from Honda Theater: from the East Exit of Shimokitazawa Station (Central Exit for the Keio Inokashira Line), walk toward Village Vanguard, turn right at the first intersection, and it is on the left. Shogekijo Rakuen is in the basement across the street. There is no cloakroom or coin locker; whether bags can be left in the lobby depends on the company staging the show.",
       zh: "本多剧场集团旗下的小剧场，1997年9月开幕，约100〜130个座位，上演的剧团和剧目每次都不同。位于本多剧场的斜对面：从下北泽站东口（京王井之头线为中央口）朝Village Vanguard方向走，在第一个路口右转，就在街道左侧。街对面的地下是小剧场乐园。没有衣帽间和投币储物柜，能否在大厅寄存行李取决于演出团体。",
@@ -742,6 +780,7 @@ window.STORES = [
     categories: ["theater"],
     address: "東京都世田谷区北沢1-45-15 スズナリ横丁2F",
     lat: null, lng: null,
+    links: {"web": "https://www.honda-geki.com/711"},
     desc: {
       en: "A small theater of the Honda Theater Group, opened in February 2009 in the former Shimokitazawa Cinema Arton, a movie theater that closed suddenly in 2008. It still uses the cinema's original seats, about 70 to 90 of them, and the plays change with each run. It is on the 2nd floor of the same building as The Suzunari, just to its left on Chazawa-dori; enter on the left side of the building, go up the stairs, and the theater door is on the right. About 5 minutes from the East Exit of Shimokitazawa Station. A line often forms in front before curtain.",
       zh: "本多剧场集团旗下的小剧场，2009年2月在2008年突然停业的电影院“下北泽Cinema Arton”旧址开幕。至今仍沿用电影院时代的座位，约70〜90席，剧目随每次演出更换。与铃成剧场（ザ・スズナリ）在同一栋楼的2楼，位于茶泽通上铃成剧场的左边；从建物左侧入口上楼梯，右手边的门就是剧场。从下北泽站东口步行约5分钟。开演前剧场门口常常排队。",
@@ -756,6 +795,7 @@ window.STORES = [
     categories: ["theater", "cinema"],
     address: "東京都世田谷区北沢2-8-18 北沢タウンホール 地下1階",
     lat: null, lng: null,
+    links: {"web": "https://www.honda-geki.com/b1"},
     desc: {
       en: "A privately run small theater that opened on February 17, 2014, the eighth venue of the Honda Theater Group in Shimokitazawa. It has about 125 to 135 seats set in an L-shape around the stage, so the audience faces it from two sides; plays change with each run. It is in the basement of Kitazawa Town Hall, the gray ward building with a bus stop in front. Inside, take the stairs, or the elevator or escalator at the back on the left, down to B1. 3 to 8 minutes on foot from the East or Central Exit of Shimokitazawa Station.",
       zh: "2014年2月17日开幕的民营小剧场，是本多剧场集团在下北泽开设的第8座剧场。约125〜135个座位以L字形围绕舞台排列，从两面观看演出，剧目随每次演出更换。位于区立设施“北泽Town Hall”（门前有公交车站的灰色大楼）的地下1层；进入大楼后走楼梯，或乘坐里面左手边的电梯、扶梯下到地下1层。从下北泽站东口或中央口步行3〜8分钟。",
@@ -772,6 +812,7 @@ window.STORES = [
     categories: ["cinema"],
     address: "東京都世田谷区代沢5-32-5 シェルポ下北沢2F",
     lat: null, lng: null,
+    links: {"x": "https://x.com/tollywooder", "web": "https://tollywood.jp/"},
     desc: {
       en: "A one-screen mini cinema with 45 seats plus one wheelchair space. It opened in December 1999 as a short-film theater and now also shows features, including work by up-and-coming Japanese directors and overseas animation. Makoto Shinkai's 'Voices of a Distant Star' premiered here. The name comes from a TV remark by comedian Tsutomu Sekine. It is on the 2nd floor of Sherpo Shimokitazawa (elevator), about 5 minutes from the Southwest Exit of Shimokitazawa Station. Closed Tuesdays. Online tickets are card only; the box office takes cash, PayPay and Setagaya Pay. An English-subtitled screening was held in 2021, but regular English subtitles could not be confirmed.",
       zh: "只有一块银幕的迷你影院，45个座位外加1个轮椅位。1999年12月作为短片专门影院开幕，现在也放映新锐日本导演的作品、海外动画等长片。新海诚导演的《星之声》就是在这里首映的。馆名来自关根勤在电视上的一句话。位于Sherpo下北泽2楼（有电梯），从下北泽站西南口步行约5分钟。周二休息。网上购票只能刷信用卡，窗口可用现金、PayPay和世田谷Pay。2021年曾有英文字幕场次，但平时是否有英文字幕无法确认。",
@@ -800,6 +841,7 @@ window.STORES = [
     categories: ["cinema"],
     address: "東京都世田谷区北沢2-9-20 カ十ビルB1",
     lat: null, lng: null,
+    links: {"x": "https://x.com/shimokitagrip2", "web": "https://www.shimokita-zawazawa.com/"},
     desc: {
       en: "A 26-seat comedy theater that hosts free stand-up shows by young comedians every day: 'Shimokita GRIP' from Friday to Sunday and 'Shimokita GRIP DASH' from Monday to Thursday. When its former venue, Shimokita Slash, closed for a building rebuild, a crowdfunding campaign raised about ¥2.1 million from 252 backers, and it reopened here in April 2025 in the basement of a former hospital on Azuma-dori. 2 minutes from the Central Exit of Shimokitazawa Station. Shows start around 3 pm and 6 pm (also 12:30 pm on weekends); entry may be limited to the first 25 or so. Reservations via coubic/STORES.",
       zh: "只有26个座位的喜剧剧场，每天都有年轻搞笑艺人的免费演出：周五至周日是“下北GRIP”，周一至周四是“下北GRIP DASH”。原来的场地“下北Slash”因大楼改建关闭后，通过众筹从252人那里筹得约210万日元，2025年4月搬到东通商店街一家旧医院遗址的地下重新开张。从下北泽站中央口步行2分钟。演出约在下午3点和6点开始（周末另有12点半场），有时只限先到的约25人入场。可在coubic/STORES预约。",
@@ -832,6 +874,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-7-10 上原ビル1F",
     lat: null, lng: null,
     photo: "honkichi.jpg",
+    links: {"web": "https://honkichi.jp/"},
     desc: {
       en: "A general used bookshop with about 30,000 books on shelves reaching nearly to the ceiling, from novels, manga and cookbooks to psychiatry, psychology, gender studies and art. It opened in 2008 with the aim of covering everything 'from tonight's dinner menu to life's crises'; the owner worked four years at a used bookshop in Kichijoji before going independent. It faces Kitazawa Town Hall, right by the 'Kitazawa Town Hall' bus stop, about 3 minutes from the Central Exit of Shimokitazawa Station. Open Tuesday to Sunday, 12 pm to 8 pm; closed Mondays.",
       zh: "综合旧书店，约3万册书摆在几乎顶到天花板的书架上，从小说、漫画、料理书到精神医学、心理学、性别研究和美术。2008年开业，目标是经营一家涵盖“从今天的晚餐菜单到人生危机”的书店；店主在吉祥寺的旧书店工作4年后独立。位于北泽Town Hall正对面，紧邻“北泽Town Hall”公交车站，从下北泽站中央口步行约3分钟。周二至周日12:00〜20:00营业，周一休息。",
@@ -878,6 +921,7 @@ window.STORES = [
     categories: ["galleries"],
     address: "東京都世田谷区北沢3-34-3",
     lat: null, lng: null,
+    links: {"web": "http://kasutela.shop-pro.jp/"},
     desc: {
       en: "A rental gallery of about 9 square meters on Shimokitazawa Ichibangai shopping street. Exhibitors change every six days (Wednesday to Monday) and use it for shows, sales and pop-ups of handmade goods, accessories and clothing, so what you find differs each week. It is the spot where the owner first started a select shop called 'kasutela'. The front is all glass, so you can see inside from the street. 5 to 7 minutes on foot from the West Exit of Keio Inokashira Line Shimokitazawa Station. Usually closed Tuesdays; hours depend on the exhibitor.",
       zh: "位于下北泽一番街商店街、约9平方米的出租画廊。每6天（周三至周一）更换一次参展者，用于手工艺品、饰品和服装的展示、销售与快闪店，所以每周的内容都不同。这里是店主最初开精选店“kasutela”的地方。店面全是玻璃，从街上就能看到里面。从京王井之头线下北泽站西口步行5〜7分钟。主要周二休息，营业时间因参展者而异。",
@@ -906,6 +950,7 @@ window.STORES = [
     categories: ["galleries"],
     address: "東京都世田谷区北沢1-40-9 1F",
     lat: null, lng: null,
+    links: {"web": "https://shimokitazawaarts.tokyo/"},
     desc: {
       en: "A commercial gallery that shows and sells work by young contemporary artists, changing exhibitions, mostly solo shows, about once a month. It opened on April 1, 2022. Director Yuko Suzuki, a Shimokitazawa resident for over 30 years whose father was an art collector, started it to add art to a neighborhood known for theater, live music, vintage clothing, used books, curry and coffee. It is a glass-fronted ground-floor space on Chazawa-dori, 4 minutes from the East Exit of Shimokitazawa Station. Open 1 pm to 7 pm only during exhibitions; closing days vary by show. The website has an English page.",
       zh: "介绍并销售年轻当代艺术家作品的商业画廊，大约每月更换一次展览，以个展为主。2022年4月1日开幕。负责人铃木裕子在下北泽住了30多年，父亲是艺术收藏家；她开设这家画廊，是想为这个以戏剧、Live House、古着、旧书、咖喱和咖啡闻名的街区“加上艺术”。位于茶泽通边上的玻璃门面1楼，从下北泽站东口步行4分钟。只在展期内的下午1点至7点开放，休息日因展览而异。官网有英文页面。",
@@ -920,6 +965,7 @@ window.STORES = [
     categories: ["galleries"],
     address: "東京都世田谷区北沢3-26-2 1F",
     lat: null, lng: null,
+    links: {"x": "https://x.com/GShimokitazawa", "web": "https://www.g-hana.jp/"},
     desc: {
       en: "A gallery, open since 2006, that runs both its own curated exhibitions and rental shows, so the exhibition changes regularly. Artworks can be seen from the street through a large window, and the lighting comes in three types with adjustable brightness. It is on the ground floor facing Shimokitazawa Ichibangai, about 5 minutes from the North Exit of Shimokitazawa Station; the used bookshop Clarice Books is upstairs. Hours vary by exhibition (recent shows ran 12 pm to 7 pm, until 5 pm on the last day), and it is usually closed Tuesdays.",
       zh: "自2006年开设、同时举办自主策划展和出租展的画廊，展览定期更换。透过临街的大窗可以从外面看到作品，照明有三种，可以调节亮度。位于面向下北泽一番街的1楼，从下北泽站北口步行约5分钟；楼上2楼是旧书店“Clarice Books”。开放时间因展览而异（最近的展览为中午12点至晚上7点，最后一天到5点），通常周二休息。",
@@ -937,6 +983,7 @@ window.STORES = [
     address: "東京都世田谷区北沢3-34-2",
     lat: null, lng: null,
     photo: "tokyo-retro.jpg",
+    links: {"x": "https://x.com/info_amastore"},
     desc: {
       en: "A shop of colorful, pop Showa-era furniture, appliances, lighting, tableware, toys, kitchen goods and stationery, almost all one-of-a-kind, with some Meiji- and Taisho-era antiques too. It was started by two former recycle-shop coworkers who left because that shop treated retro items too lightly, and it has been running for more than 20 years. Customers often say 'my grandmother had one of these'. It is at the far end of Shimokitazawa Ichibangai on the Kitazawa 3-chome side, 5 to 6 minutes from Shimokitazawa Station. Opens around 1 pm, closed irregularly. The online store ships within Japan only.",
       zh: "专卖昭和时代色彩鲜艳、风格流行的家具、家电、灯具、餐具、玩具、厨房杂货和文具的店，几乎都是孤品，也有明治、大正时期的旧物。由两位曾在二手回收店共事的同事开设——他们不认同那家店轻率对待复古物件的做法而独立，至今已经营20多年。客人常说“奶奶家里就有这个”。位于下北泽一番街商店街北泽3丁目一侧的尽头，从下北泽站步行5〜6分钟。下午1点左右开门，不定期休息。网店只发日本国内。",
@@ -952,6 +999,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-30-8",
     lat: null, lng: null,
     photo: "antique-life-jin.jpg",
+    links: {"x": "https://x.com/antiquelifejin"},
     desc: {
       en: "An antique goods shop with accessories, cutlery, lamps, antique glass tableware and glasses printed with beer company logos. It is said to date from 1982 and began as a secondhand-tools shop, becoming a goods shop as its stock grew. About 2 to 3 minutes from the North Exit of Shimokitazawa Station. Open 12 pm to 7 pm on weekdays and 11:30 am to 7 pm on weekends and holidays. About 2 minutes away at Kitazawa 2-35-15 is the second shop, JIN 2 (closed Sundays), focused on larger pieces such as early-Showa furniture, bookcases and low chabudai tables.",
       zh: "古董杂货店，有饰品、餐具刀叉、灯具、古董玻璃餐具和印着啤酒公司标志的玻璃杯。据介绍创立于1982年，最初是旧道具店，商品变多后成为杂货店。从下北泽站北口步行约2〜3分钟。平日12:00〜19:00，周末及节假日11:30〜19:00。步行约2分钟的北泽2-35-15还有2号店“JIN 2”（周日休息），以昭和初期的旧家具、书架、矮饭桌等大件为主。",
@@ -981,6 +1029,7 @@ window.STORES = [
     categories: ["goods"],
     address: "東京都世田谷区北沢3-19-20 reload 2-6",
     lat: null, lng: null,
+    links: {"web": "https://desklabo.net/"},
     desc: {
       en: "A stationery shop themed on 'a stationery store in a European town', selling Japanese and imported stationery and desk-side interior goods. It started as a small shop near Shoin-jinja-mae, moved to Sangenjaya, and in 2021 relocated to reload, the low-rise shopping complex built on the former Odakyu Line tracks. It is in unit 2-6 on the 2nd floor of reload, about 4 minutes on foot from Shimokitazawa or Higashi-Kitazawa Station. Open 12 pm to 7 pm, closed Mondays (Tuesday if Monday is a holiday).",
       zh: "以“欧洲小镇的文具店”为主题的文具店，销售日本国内和进口的文具以及桌边的室内杂货。从松阴神社前的一家小店起步，经过三轩茶屋，2021年搬进建在小田急线旧铁道上的低层商业设施“reload”。位于reload 2楼的2-6号铺，从下北泽站或东北泽站步行约4分钟。营业时间12:00〜19:00，周一休息（遇节假日改为周二）。",
@@ -995,6 +1044,7 @@ window.STORES = [
     categories: ["goods"],
     address: "東京都世田谷区代沢5-36-14",
     lat: null, lng: null,
+    links: {"x": "https://x.com/sansato_310", "web": "https://www.sansato.jp/"},
     desc: {
       en: "A three-story building that is a shop from top to bottom: the 1st floor is a cafe, the 2nd and 3rd floors carry accessories, goods, clothing and shoes by independent makers, and the 3rd floor also hosts solo shows and events. The name comes from the wish to light up the South Exit's three-way junction where people cross paths. The cafe's 'Shimokitazawa Blend' coffee is blended by the local coffee shop BOOKENDS. About 4 minutes from the Southwest Exit of Shimokitazawa Station, facing the three-way junction. Closed Mondays.",
       zh: "整栋三层楼都是店铺：1楼是咖啡馆，2楼和3楼陈列独立创作者的饰品、杂货、服装和鞋子，3楼还会举办个展等活动。店名寄托了“在下北泽南口人来人往的三岔路口点亮一盏灯”的心愿。咖啡馆的“下北泽Blend”咖啡由下北泽的咖啡店BOOKENDS调配。从下北泽站西南口步行约4分钟，就在三岔路口旁。周一休息。",

@@ -750,53 +750,6 @@ window.STORES = [
     }
   },
 
-  /* ---- ミニシアター・お笑い ---- */
-  {
-    id: "tollywood",
-    key: "ht2njd1o",
-    name: "Tollywood",
-    categories: ["cinema"],
-    address: "東京都世田谷区代沢5-32-5 シェルポ下北沢2F",
-    lat: null, lng: null,
-    links: {"x": "https://x.com/tollywooder", "web": "https://tollywood.jp/"},
-    desc: {
-      en: "A one-screen mini cinema with 45 seats plus one wheelchair space. It opened in December 1999 as a short-film theater and now also shows features, including work by up-and-coming Japanese directors and overseas animation. Makoto Shinkai's 'Voices of a Distant Star' premiered here. The name comes from a TV remark by comedian Tsutomu Sekine. It is on the 2nd floor of Sherpo Shimokitazawa (elevator), about 5 minutes from the Southwest Exit of Shimokitazawa Station. Closed Tuesdays. Online tickets are card only; the box office takes cash, PayPay and Setagaya Pay. An English-subtitled screening was held in 2021, but regular English subtitles could not be confirmed.",
-      zh: "只有一块银幕的迷你影院，45个座位外加1个轮椅位。1999年12月作为短片专门影院开幕，现在也放映新锐日本导演的作品、海外动画等长片。新海诚导演的《星之声》就是在这里首映的。馆名来自关根勤在电视上的一句话。位于Sherpo下北泽2楼（有电梯），从下北泽站西南口步行约5分钟。周二休息。网上购票只能刷信用卡，窗口可用现金、PayPay和世田谷Pay。2021年曾有英文字幕场次，但平时是否有英文字幕无法确认。",
-      ko: "스크린 1개, 좌석 45석과 휠체어석 1석의 미니 시어터입니다. 1999년 12월 단편 영화 전문관으로 문을 열었고, 지금은 신진 일본 감독의 작품, 해외 애니메이션 등 장편도 상영합니다. 신카이 마코토 감독의 '별의 목소리'가 처음 공개된 영화관입니다. 이름은 코미디언 세키네 쓰토무 씨가 TV에서 한 말에서 따왔습니다. 셰르포 시모키타자와 2층(엘리베이터 있음)으로, 시모키타자와역 남서쪽 출구에서 걸어서 약 5분. 화요일 휴관. 온라인 예매는 카드만, 창구는 현금·PayPay·세타가야Pay 가능. 2021년에 영어 자막 상영이 있었지만 평소 영어 자막 여부는 확인하지 못했습니다.",
-      ja: "スクリーン1つ・45席（＋車椅子1席）のミニシアター。1999年12月に短編映画専門館として開館し、今は新進の日本人監督の作品や海外アニメーションなど長編も上映する。新海誠監督の『ほしのこえ』が初めて公開された館で、館名は関根勤さんのテレビでの発言から。シェルポ下北沢の2階（エレベーターあり）、下北沢駅南西口から徒歩約5分。火曜休み。ウェブ販売はカードのみ、窓口は現金・PayPay・せたがやPay。英語字幕付きは2021年に上映例がある。"
-    }
-  },
-  {
-    id: "k2-cinema",
-    key: "79yt8hhu",
-    name: "K2 Cinema",
-    categories: ["cinema"],
-    address: "東京都世田谷区北沢2-21-22 (tefu)lounge 2F",
-    lat: null, lng: null,
-    links: {"instagram": "https://www.instagram.com/k2cinema/", "x": "https://x.com/K2shimokita", "facebook": "https://www.facebook.com/K2Cinema/", "web": "https://k2-cinema.com/"},
-    desc: {
-      en: "A one-screen mini cinema with 71 seats (two wheelchair-accessible) that has run English-subtitled screenings of selected films since it opened. It opened in January 2022; the name combines its address, Kitazawa 2-chome, with K2, one of the world's highest peaks. The opening film was Ryusuke Hamaguchi's 'Wheel of Fortune and Fantasy', shown with English subtitles. It is on the 2nd floor of (tefu) lounge, directly connected to the Southwest Gate of Odakyu Line Shimokitazawa Station, at the back of the cafe on the same floor; some cafe items can be taken into the theater. Cashless only, no cash. General admission ¥1,800.",
-      zh: "只有一块银幕、71个座位（其中2个可供轮椅使用）的迷你影院，自开幕以来针对部分作品举办英文字幕场次。2022年1月开幕，馆名取自所在地“北泽2丁目”和世界最高峰之一“K2”。开幕作品是滨口龙介导演的《偶然与想象》（附英文字幕）。位于与小田急线下北泽站西南检票口直接相连的“(tefu) lounge”2楼，在同层咖啡馆的里面，部分咖啡馆餐饮可带入影厅。只能无现金支付，不收现金。一般票价1,800日元。",
-      ko: "스크린 1개, 71석(그중 2석은 휠체어 가능)의 미니 시어터로, 개관 때부터 작품에 따라 영어 자막 상영을 해 왔습니다. 2022년 1월에 문을 열었고, 이름은 소재지 '기타자와 2초메'와 세계 최고봉 중 하나인 'K2'에서 따왔습니다. 개관작은 하마구치 류스케 감독의 '우연과 상상'(영어 자막)이었습니다. 오다큐선 시모키타자와역 남서쪽 개찰구와 바로 이어진 '(tefu) lounge' 2층, 같은 층 카페 안쪽에 있으며 카페 메뉴 일부는 상영관에 가지고 들어갈 수 있습니다. 캐시리스 결제만 가능하고 현금은 쓸 수 없습니다. 일반 1,800엔.",
-      ja: "スクリーン1つ・71席（うち2席は車椅子可）のミニシアターで、開館時から作品ごとに英語字幕付きの上映を行っている。2022年1月開館で、館名は所在地の「北沢2丁目」と世界最高峰の一つ「K2」から。開館作品は濱口竜介監督『偶然と想像』（英語字幕付き）。小田急線下北沢駅の南西改札に直結する「(tefu) lounge」の2階、同じフロアのカフェの奥にあり、カフェの一部メニューは館内に持ち込める。キャッシュレスのみで現金不可。一般1,800円。"
-    }
-  },
-  {
-    id: "shimokita-zawazawa",
-    key: "onq77kwe",
-    name: "Shimokita ZAWAZAWA",
-    categories: ["cinema"],
-    address: "東京都世田谷区北沢2-9-20 カ十ビルB1",
-    lat: null, lng: null,
-    links: {"x": "https://x.com/shimokitagrip2", "web": "https://www.shimokita-zawazawa.com/"},
-    desc: {
-      en: "A 26-seat comedy theater that hosts free stand-up shows by young comedians every day: 'Shimokita GRIP' from Friday to Sunday and 'Shimokita GRIP DASH' from Monday to Thursday. When its former venue, Shimokita Slash, closed for a building rebuild, a crowdfunding campaign raised about ¥2.1 million from 252 backers, and it reopened here in April 2025 in the basement of a former hospital on Azuma-dori. 2 minutes from the Central Exit of Shimokitazawa Station. Shows start around 3 pm and 6 pm (also 12:30 pm on weekends); entry may be limited to the first 25 or so. Reservations via coubic/STORES.",
-      zh: "只有26个座位的喜剧剧场，每天都有年轻搞笑艺人的免费演出：周五至周日是“下北GRIP”，周一至周四是“下北GRIP DASH”。原来的场地“下北Slash”因大楼改建关闭后，通过众筹从252人那里筹得约210万日元，2025年4月搬到东通商店街一家旧医院遗址的地下重新开张。从下北泽站中央口步行2分钟。演出约在下午3点和6点开始（周末另有12点半场），有时只限先到的约25人入场。可在coubic/STORES预约。",
-      ko: "객석 26석의 코미디 극장으로, 젊은 개그맨들의 무료 공연을 매일 엽니다. 금~일은 '시모키타 GRIP', 월~목은 '시모키타 GRIP DASH'입니다. 이전 공연장 '시모키타 슬래시'가 건물 재건축으로 문을 닫자 크라우드펀딩으로 252명에게서 약 210만 엔을 모아, 2025년 4월 아즈마도리 상점가의 옛 병원 자리 지하로 옮겨 문을 열었습니다. 시모키타자와역 중앙 출구에서 걸어서 2분. 공연은 오후 3시, 6시 무렵 시작하며(주말은 12시 30분도 있음), 선착순 25명 정도로 입장을 제한할 때가 있습니다. 예약은 coubic/STORES에서.",
-      ja: "若手芸人の入場無料のお笑いライブを毎日開く、客席26席の劇場。金〜日は「下北GRIP」、月〜木は「下北GRIP DASH」。前の会場「下北スラッシュ」がビルの建て替えで閉館し、クラウドファンディングで252人から約210万円を集めて、2025年4月にあずま通り商店街の旧病院跡の地下に移った。下北沢駅中央口から徒歩2分。15時・18時ごろ（土日は12時半も）の回があり、先着25名ほどで入場を制限することがある。予約はcoubic／STORESで。"
-    }
-  },
-
   /* ---- 古本 ---- */
   {
     id: "furuhon-bibibi",

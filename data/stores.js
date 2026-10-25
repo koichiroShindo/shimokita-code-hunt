@@ -9,6 +9,7 @@
  *   address    : 住所（地図のリンクにも使う）
  *   lat, lng   : お店の位置。Googleマップでお店を右クリックすると出る数字を入れる。null のあいだは店名と住所で地図を開く
  *   photo      : お店の写真（images/shops/ に入れたファイル名）
+ *   slide      : false にすると、トップで切り替わる写真には出さない（横幅800px未満の小さい写真はぼやけるので false にしている）
  *   links      : お店の公式SNS・サイト（instagram / x / threads / facebook / web）。お店自身のアカウントだけを書く
  *   desc       : 紹介文（en / zh / ko / ja）
  *
@@ -188,6 +189,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-26-25 エクセレントビルB102",
     lat: null, lng: null,
     photo: "monk.jpg",
+    slide: false,
     links: {"instagram": "https://www.instagram.com/monk_vintage_archive/"},
     desc: {
       en: "A basement shop for classic American and European menswear, especially deep in European pieces. Those run slim and tend to suit Japanese S and M sizes. It is unit B102, below ground in the Excellent Building (Kitazawa 2-26-25); the entrance and sign are easy to miss, so note the unit number before you go. Open 14:00–20:00 weekdays, 13:00–20:00 weekends.",
@@ -389,6 +391,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-21-26 2F",
     lat: null, lng: null,
     photo: "ichifusa.jpg",
+    slide: false,
     links: {"instagram": "https://www.instagram.com/kissa_hitofusa/"},
     desc: {
       en: "A small café serving seasonal fruit sandwiches with mascarpone cream and large pieces of fruit, plus coffee; sandwiches come in a regular (4 pieces) or half (2 pieces) size. It is a sister shop of the fruit sandwich store Futsuuni Furuutsu, open as a daytime kissaten since April 2023. Climb to the 2nd floor of a building in a side street, about 2 minutes from the Southwest Exit; queues sometimes reach the bottom of the stairs. They can sell out, and reviews say cash only.",
@@ -418,6 +421,7 @@ window.STORES = [
     address: "本店：東京都世田谷区北沢2-31-2 大久ビル2F／パルファン店：東京都世田谷区北沢2-29-3 パルファンビル2F",
     lat: null, lng: null,
     photo: "masako.jpg",
+    slide: false,
     links: {"x": "https://x.com/JazzKissaMasako"},
     desc: {
       en: "A jazz kissaten that plays records, known for its anko (sweet bean) toast at 450 yen and homemade ginger ale. The original Masako opened in 1953 and closed in 2009; moe, a regular since high school and a former staff member, revived the name in 2020. The main shop is on the 2nd floor of the Okyu Building, 2 minutes from the station; in August 2025 a second shop, Masako Parfun, opened 2 minutes away on the 2nd floor of the former Café de Parfun, reusing its booths, tables and chairs. Both close Thursdays; live nights have a 1,000 yen charge plus a drink.",
@@ -433,6 +437,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-12-10 サウスサイド2 2B",
     lat: null, lng: null,
     photo: "tag-cafe.jpg",
+    slide: false,
     links: {"instagram": "https://www.instagram.com/tagcafe_shimokita/"},
     desc: {
       en: "A retro kissaten known for cream soda in 7 colors (strawberry, melon, blue Hawaii, lemon, grape, peach and Calpis) at 650 yen, and a firm \"donut pudding\" with whipped cream in the hole, cherries and chocolate sprinkles. It opened in 2011 and was renewed as a \"neo kissaten\" in January 2021. It is unit 2B on the 2nd floor of the Southside 2 building on a back street, 1 to 2 minutes from the station. Open 11:00-20:00 (last order 19:30), irregular holidays; power outlets and Wi-Fi available, reservations by phone only.",
@@ -450,6 +455,7 @@ window.STORES = [
     address: "東京都世田谷区代沢5-32-13 露崎商店ビル5F",
     lat: null, lng: null,
     photo: "browns-books-cafe.jpg",
+    slide: false,
     links: {"x": "https://x.com/BrownsBooksCafe"},
     desc: {
       en: "A book café run by Brown's Books, publisher of the culture magazines BARFOUT! and STEPPIN' OUT!, where you can read and buy current and back issues and secondhand books on music, art, travel, literature and manga, mostly from editor Yamazaki Jiro's own collection. On weekdays the room is the magazine's editorial office; it opens as a café only on Saturdays and Sundays. It is on the 5th floor of the Tsuyuzaki Shoten Building on the South Exit side, 5 minutes from the station.",
@@ -495,6 +501,7 @@ window.STORES = [
     address: "東京都世田谷区代田2-36-14 BONUS TRACK内",
     lat: null, lng: null,
     photo: "fuzkue.jpg",
+    slide: false,
     links: {"web": "https://fuzkue.com/shops/shimokitazawa"},
     desc: {
       en: "A café made only for reading: talking is not allowed, and studying, working, writing, watching videos or gaming are off-limits too. There is a seat fee starting at 1,650 yen that drops as you order food and drinks, so most visits come to around 2,000 yen. Owner Akutsu Takashi opened the first fuzkue in Hatsudai in 2014 and this second shop in 2020 inside BONUS TRACK, 5 minutes from the Inokashira Line West Exit or Odakyu Line Southwest Exit. Open daily 12:00-22:00 per the official site; reservations are for one person each.",
@@ -509,6 +516,8 @@ window.STORES = [
     categories: ["cafe"],
     address: "東京都世田谷区北沢2-36-12 1F",
     lat: null, lng: null,
+    photo: "bear-pond-espresso.jpg",
+    slide: false,
     links: {"instagram": "https://www.instagram.com/bearpondespresso/", "x": "https://x.com/bearpond", "facebook": "https://www.facebook.com/p/Bear-Pond-Espresso-100063530142240/", "web": "http://bearpondespresso.com/"},
     desc: {
       en: "A tiny espresso bar famous for its \"Angel Stain\" espresso, served only in the morning until 13:00 and in limited numbers, and for the \"Dirty\" latte. Owner-barista Tanaka Katsuyuki trained in New York and opened it in 2009 in a converted candy shop that had operated for 60 years; the room is about 6 tsubo (20 m²) and mostly standing. It is on the Shimokitazawa Ichibangai street, 5 minutes from the station. English guides note that photos, laptops and cameras are not allowed.",
@@ -556,6 +565,7 @@ window.STORES = [
     address: "東京都世田谷区代田5-10-6 イーストコート代田1F",
     lat: null, lng: null,
     photo: "latte.jpg",
+    slide: false,
     links: {"instagram": "https://www.instagram.com/latte_shimokitazawa/", "web": "https://latte-shimokitazawa.com/"},
     desc: {
       en: "A café-restaurant known for old-style firm pudding and matcha gâteau au chocolat, plus a weekend morning plate with pudding, lunch and dinner. It opened in April 2022, appeared as a filming location in the TV drama silent, and reopened after a renewal in July 2025. It is on the ground floor of East Court Daita, 2 to 3 minutes from the West Exit of Setagaya-Daita Station on the Odakyu Line (7 minutes from Shimokitazawa Station). It does not take reservations and can get busy.",
@@ -573,6 +583,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-15-11 センヤビルB1",
     lat: null, lng: null,
     photo: "anjali.jpg",
+    slide: false,
     links: {"facebook": "https://www.facebook.com/anjali.curry.spicefoods/"},
     desc: {
       en: "A curry shop serving three or four spice curries that change daily; a two-curry plate is ¥1,600 and a one-curry plate ¥1,400. The owner, who trained in Japanese cuisine, built the recipes from travels in India and Sri Lanka, and the shop is run by a couple. It is in the basement (B1) of a building on a back lane, about 2 minutes on foot from the Southwest Exit of Shimokitazawa Station. Around 8 seats. No credit cards or e-money.",
@@ -602,6 +613,7 @@ window.STORES = [
     categories: ["curry"],
     address: "東京都世田谷区北沢2-12-13 細沢ビル5F",
     lat: null, lng: null,
+    photo: "moona.jpg",
     links: {"instagram": "https://www.instagram.com/moonamra/", "x": "https://x.com/moonamoonam", "facebook": "https://www.facebook.com/spicekitchenmoona/", "web": "http://moona.jp/"},
     desc: {
       en: "A seafood curry restaurant influenced by South Indian cooking. Its best-known dish is a set of two daily seafood curries with dal, vegetables, shrimp pickle, fried roti and fragrant rice, using seasonal fish such as salmon and saury; the seafood lunch set is limited to 10 a day. Opened in 2007, it was named one of Tabelog's 100 best Asian and ethnic restaurants in Tokyo for 2024. It is on the 5th floor of a building about a minute from Shimokitazawa Station; take the elevator. 21 seats, reservations and credit cards accepted. Closed Mondays and the last Tuesday of each month.",
@@ -617,6 +629,7 @@ window.STORES = [
     address: "東京都世田谷区代沢5-29-9 ナイスビル1F",
     lat: null, lng: null,
     photo: "kyu-yamu-tei.jpg",
+    slide: false,
     links: {"instagram": "https://www.instagram.com/kyu_yam_shimokita/"},
     desc: {
       en: "The first Tokyo branch of Kyu Yamu Tei, a spice curry shop from Osaka, serving a keema curry that changes every month along with a Japanese-dashi soup. You can order the 'aigake' or 'zengake' combination plates, each with curry soup, and choose brown rice. It opened in July 2017. About 5 to 7 minutes on foot from Shimokitazawa Station; look for the grapevine at the entrance. Around 12 to 14 seats, no reservations, no credit cards. On weekends you take a numbered ticket and come back when your turn comes.",
@@ -633,6 +646,8 @@ window.STORES = [
     categories: ["bars"],
     address: "東京都世田谷区北沢2-33-11 SY-Ⅰ 2F",
     lat: null, lng: null,
+    photo: "barnitas.jpg",
+    slide: false,
     links: {"web": "https://barnitas-hitokutiwhisky.amebaownd.com/"},
     desc: {
       en: "An authentic cocktail bar with more than 180 standard cocktails; the house favorite is a Moscow Mule made with homemade ginger vodka. The name combines 'bar' with 'vanitas', a 17th-century genre of painting. The master has over 20 years behind the bar and won a merit award in the set-product category of Suntory's The Cocktail Award 2007. It is on the 2nd floor of a building about 3 minutes from the East Exit of Shimokitazawa Station. Opens at 8 pm, closed irregularly, non-smoking, PayPay accepted.",
@@ -801,6 +816,7 @@ window.STORES = [
     categories: ["galleries"],
     address: "東京都世田谷区北沢1-40-9 1F",
     lat: null, lng: null,
+    photo: "shimokitazawa-arts.jpg",
     links: {"web": "https://shimokitazawaarts.tokyo/"},
     desc: {
       en: "A commercial gallery that shows and sells work by young contemporary artists, changing exhibitions, mostly solo shows, about once a month. It opened on April 1, 2022. Director Yuko Suzuki, a Shimokitazawa resident for over 30 years whose father was an art collector, started it to add art to a neighborhood known for theater, live music, vintage clothing, used books, curry and coffee. It is a glass-fronted ground-floor space on Chazawa-dori, 4 minutes from the East Exit of Shimokitazawa Station. Open 1 pm to 7 pm only during exhibitions; closing days vary by show. The website has an English page.",
@@ -815,6 +831,7 @@ window.STORES = [
     categories: ["galleries"],
     address: "東京都世田谷区北沢3-26-2 1F",
     lat: null, lng: null,
+    photo: "gallery-hana.jpg",
     links: {"x": "https://x.com/GShimokitazawa", "web": "https://www.g-hana.jp/"},
     desc: {
       en: "A gallery, open since 2006, that runs both its own curated exhibitions and rental shows, so the exhibition changes regularly. Artworks can be seen from the street through a large window, and the lighting comes in three types with adjustable brightness. It is on the ground floor facing Shimokitazawa Ichibangai, about 5 minutes from the North Exit of Shimokitazawa Station; the used bookshop Clarice Books is upstairs. Hours vary by exhibition (recent shows ran 12 pm to 7 pm, until 5 pm on the last day), and it is usually closed Tuesdays.",

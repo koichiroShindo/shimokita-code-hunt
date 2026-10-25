@@ -14,7 +14,7 @@
 - `index.html`：サイト本体（画面はすべて `app.js` が組み立てる）
 - `qr.html`：駅に貼るQRコードを印刷するページ（公開後にこのページを開いて印刷する）
 - `data/config.js`：サイト名、運営者と連絡先
-- `data/stores.js`：お店の一覧（58軒、うち写真ありが52軒）
+- `data/stores.js`：お店の一覧（58軒、うち写真ありが57軒）
 - `images/shops/`：お店の写真
 - `images/street/`：写真のないスタイルを選んだときに使う下北沢の写真
 - `i18n.js`：画面の文言（4言語）
@@ -27,7 +27,7 @@
 ## お店の写真を入れる
 1. 写真を長辺1600px程度・1MB以下に縮小し、撮影日時や位置情報（EXIF）を消す
 2. `images/shops/` に `お店のid.jpg`（例：`bear-pond-espresso.jpg`）の名前で入れる
-3. `data/stores.js` のそのお店に `photo: "bear-pond-espresso.jpg",` を足す
+3. `data/stores.js` のそのお店に `photo: "bear-pond-espresso.jpg",` を足す。横幅が800px未満の写真は、トップの大きな写真にするとぼやけるので `slide: false,` も足す
 
 お店の写真は、お店に掲載の許可をとってから入れる。
 
@@ -35,5 +35,5 @@
 `style.css`・`app.js`・`i18n.js`・`data/*.js` を変えたら、`index.html` の `?v=数字` を1つ増やす（古いファイルが残って表示が崩れるのを防ぐため）。日付は使わない。
 
 ## 決まっていないこと
-- **写真がないお店**：Bear Pond Espresso・SPICE KITCHEN MOONA・barnitas・武蔵屋画廊・下北沢アーツ・ギャラリーHANA
+- **写真がないお店**：武蔵屋画廊
 - **住所の確認**：Webの紹介記事から拾った住所なので、移転・閉店していないかをときどき確かめる

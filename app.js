@@ -88,7 +88,8 @@
 
   /* ---- トップの写真（自動で切り替わる） ---- */
   var slides = (function () {
-    var list = STORES.filter(function (s) { return s.photo; });
+    // 小さい写真（slide: false）はぼやけるので使わない
+    var list = STORES.filter(function (s) { return s.photo && s.slide !== false; });
     for (var i = list.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var x = list[i]; list[i] = list[j]; list[j] = x; }
     return list.slice(0, 8);
   })();

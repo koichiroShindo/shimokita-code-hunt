@@ -214,8 +214,11 @@
     if (!list.length) return viewHome();
     var n = foundCount();
     var prefs = state.prefs || [];
-    var hero = stylePhoto(prefs[0]) || (list[0].photo ? "images/shops/" + list[0].photo : "images/street/street-1.jpg");
-    return '<section class="banner"><img src="' + esc(hero) + '" alt="">' +
+    // 選んだスタイルそれぞれの写真を横に並べる（写真のないスタイルは飛ばす。最大4枚）
+    var heroes = prefs.map(stylePhoto).filter(Boolean).slice(0, 4);
+    if (!heroes.length) heroes = [list[0].photo ? "images/shops/" + list[0].photo : "images/street/street-1.jpg"];
+    return '<section class="banner"><div class="banner-photos n' + heroes.length + '">' +
+      heroes.map(function (h) { return '<img src="' + esc(h) + '" alt="">'; }).join("") + "</div>" +
       '<div class="banner-text"><p class="banner-kicker">' + prefs.map(function (c) { return t("cat")[c]; }).join(" · ") + "</p>" +
       '<h1 class="banner-title">' + t("routeTitle") + "</h1></div></section>" +
       '<div class="wrap route">' +

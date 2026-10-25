@@ -12,7 +12,7 @@
   --error: #A8321E;
   --r-btn: 4px;
   --r-box: 6px;
-  --serif: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Songti SC", "Nanum Myeongjo", Georgia, serif;
+  --serif: "BIZ UDPMincho", "Hiragino Mincho ProN", "Yu Mincho", "Songti SC", "Nanum Myeongjo", Georgia, serif;
 }
 
 * { box-sizing: border-box; }
@@ -28,6 +28,8 @@ body {
 }
 html:lang(ja) body { font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif; }
 html:lang(zh) body { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+html:lang(zh-Hant) body { font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+html:lang(th) body { font-family: "Thonburi", "Noto Sans Thai", "Leelawadee UI", "Tahoma", sans-serif; }
 html:lang(ko) body { font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; }
 
 h1, h2, h3 { line-height: 1.35; margin: 0; }
@@ -71,23 +73,70 @@ img { max-width: 100%; }
 .nav a { color: var(--on-night); text-decoration: none; font-size: 14px; }
 .nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
 @media (min-width: 900px) { .nav { display: flex; } }
-.langs { display: flex; gap: 4px; }
-.langs button {
-  font: inherit;
-  font-size: 13px;
-  padding: 3px 8px;
+/* 言語の切り替え（国旗つきのメニュー） */
+.langs { position: relative; }
+.langs summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  padding: 5px 10px;
   border: 1px solid rgba(242, 236, 226, 0.35);
+  border-radius: var(--r-btn);
+  cursor: pointer;
+}
+.langs summary::-webkit-details-marker { display: none; }
+@media (max-width: 599px) { .langs summary span { display: none; } }
+.langs summary::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin: -3px 2px 0 2px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+}
+.langs[open] summary::after { margin-top: 3px; transform: rotate(-135deg); }
+.flag {
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+  outline: 1px solid rgba(242, 236, 226, 0.25);
+  flex: none;
+  display: block;
+}
+.lang-list {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 20;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  min-width: 190px;
+  background: var(--night);
+  border: 1px solid rgba(242, 236, 226, 0.35);
+  border-radius: var(--r-box);
+}
+.lang-list button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: inherit;
+  font-size: 15px;
+  padding: 8px 10px;
+  border: 0;
   border-radius: var(--r-btn);
   background: transparent;
   color: var(--on-night);
+  text-align: left;
   cursor: pointer;
 }
-.langs button[aria-current="true"] {
-  background: var(--on-night);
-  border-color: var(--on-night);
-  color: var(--night);
-  font-weight: 700;
-}
+.lang-list button:hover { background: rgba(242, 236, 226, 0.12); }
+.lang-list button[aria-current="true"] { font-weight: 700; background: rgba(242, 236, 226, 0.16); }
+.langs summary:focus-visible, .lang-list button:focus-visible { outline: 2px solid var(--on-night); outline-offset: 2px; }
 
 /* ---- トップの写真（お店の写真が自動で切り替わり、上に名前を重ねる） ---- */
 .hero {
@@ -208,7 +257,7 @@ img { max-width: 100%; }
 .hero-name {
   font-family: var(--serif);
   font-size: clamp(30px, 8vw, 64px);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.06em;
   margin: 0;
   line-height: 1.2;
@@ -330,30 +379,7 @@ img { max-width: 100%; }
 .pick-bar .btn { margin: 0; }
 @media (min-width: 768px) { .pick-bar .btn { width: auto; min-width: 280px; margin-left: auto; } }
 
-/* ---- 遊び方・地図 ---- */
-.steps { padding: 56px 0 0; }
-.steps ol {
-  margin: 16px 0 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: step;
-  display: grid;
-  gap: 12px;
-}
-@media (min-width: 900px) { .steps ol { grid-template-columns: 1.1fr 1fr 1.2fr; gap: 32px; } }
-.steps li {
-  counter-increment: step;
-  padding-top: 12px;
-  border-top: 2px solid var(--ink);
-}
-.steps li::before {
-  content: counter(step, decimal-leading-zero);
-  display: block;
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--accent);
-}
+/* ---- 地図 ---- */
 .map { padding: 56px 0 64px; }
 .map iframe {
   display: block;
@@ -422,7 +448,7 @@ img { max-width: 100%; }
 }
 @media (min-width: 768px) { .banner-text { padding: 40px 32px; } }
 .banner-kicker { margin: 0; font-size: 14px; letter-spacing: 0.08em; }
-.banner-title { font-family: var(--serif); font-size: clamp(28px, 6vw, 48px); font-weight: 900; }
+.banner-title { font-family: var(--serif); font-size: clamp(28px, 6vw, 48px); font-weight: 700; }
 
 .route { padding-bottom: 64px; }
 .list-count { font-weight: 700; color: var(--sub); margin: 24px 0 8px; }

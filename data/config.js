@@ -9,6 +9,7 @@ window.CONFIG = {
   operator: {
     en: "Koichiro Shindo",
     zh: "新藤光一郎",
+    "zh-Hant": "新藤光一郎",
     ko: "신도 고이치로",
     ja: "新藤光一郎"
   },

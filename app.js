@@ -19,7 +19,9 @@
   /* ---- 言語 ---- */
   function pickLang() {
     if (state.lang && TEXT[state.lang]) return state.lang;
-    var code = (navigator.language || "en").toLowerCase().slice(0, 2);
+    var full = (navigator.language || "en").toLowerCase();
+    if (/^zh-(tw|hk|mo|hant)/.test(full)) return "zh-Hant";
+    var code = full.slice(0, 2);
     return TEXT[code] ? code : "en";
   }
   var lang = pickLang();
@@ -68,10 +70,16 @@
       '<a href="#styles" data-go="home" data-anchor="styles">' + t("navStyles") + "</a>" +
       (state.prefs && state.prefs.length ? '<a href="#list" data-go="list">' + t("navList") + "</a>" : "") +
       '<a href="#about" data-go="about">' + t("navAbout") + "</a></nav>" +
-      '<div class="langs" role="group" aria-label="Language">' + LANGS.map(function (l) {
-        return '<button type="button" lang="' + l.code + '" data-lang="' + l.code + '"' +
-          (l.code === lang ? ' aria-current="true"' : "") + ">" + l.label + "</button>";
-      }).join("") + "</div></div></header>";
+      langMenu() + "</div></header>";
+  }
+  function flag(l) { return '<img class="flag" src="images/flags/' + l.flag + '.svg" alt="" width="20" height="15">'; }
+  function langMenu() {
+    var cur = LANGS.filter(function (l) { return l.code === lang; })[0];
+    return '<details class="langs"><summary aria-label="Language">' + flag(cur) + "<span>" + cur.label + "</span></summary>" +
+      '<ul class="lang-list">' + LANGS.map(function (l) {
+        return '<li><button type="button" lang="' + l.code + '" data-lang="' + l.code + '"' +
+          (l.code === lang ? ' aria-current="true"' : "") + ">" + flag(l) + "<span>" + l.label + "</span></button></li>";
+      }).join("") + "</ul></details>";
   }
 
   function footer() {
@@ -154,9 +162,7 @@
       '<span class="pick-count">' + t("selectedCount", { n: sel.length }) + "</span>" +
       '<button type="submit" class="btn btn-go"' + (sel.length ? "" : " disabled") + ">" + t("prefsSubmit") + "</button>" +
       "</div></div></form></section>" +
-      '<section class="steps"><h2 class="h-sec">' + t("stepsTitle") + "</h2><ol>" +
-      t("steps").map(function (s) { return "<li>" + s + "</li>"; }).join("") +
-      "</ol></section>" + mapSection() + "</div>";
+      mapSection() + "</div>";
   }
 
   function tileGroup(title, lead, cats) {
@@ -290,6 +296,12 @@
     if (e.target.name !== "cat") return;
     sel = Array.prototype.map.call(app.querySelectorAll('#prefs input[name="cat"]:checked'), function (i) { return i.value; });
     updateBar();
+  });
+
+  // 言語メニューの外を押したら閉じる
+  document.addEventListener("click", function (e) {
+    var menu = app.querySelector(".langs[open]");
+    if (menu && !menu.contains(e.target)) menu.removeAttribute("open");
   });
 
   app.addEventListener("click", function (e) {

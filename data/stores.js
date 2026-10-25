@@ -39,6 +39,7 @@ window.STORES = [
     categories: ["vintage"],
     address: "東京都世田谷区北沢2-30-6 UCビル2F",
     lat: null, lng: null,
+    photo: "kimama.jpg", credit: "AVEND",
     desc: {
       en: "On the 2nd floor of UC Building, up a staircase that is easy to miss. Closed on Wednesdays.",
       zh: "位于UC大楼二楼，楼梯入口很容易错过。周三休息。",
@@ -53,7 +54,7 @@ window.STORES = [
     categories: ["vintage"],
     address: "東京都世田谷区代沢5-28-12 藤田ビル1C",
     lat: null, lng: null,
-    photo: "kroneko.jpg", credit: "VINTY",
+    photo: "kroneko.jpg", credit: "AVEND",
     desc: {
       en: "The owner buys and sells everything alone. About 5 minutes from the station.",
       zh: "店主一人负责采购和销售。距车站约5分钟。",
@@ -93,6 +94,7 @@ window.STORES = [
     categories: ["records"],
     address: "東京都世田谷区北沢2-12-16 2F",
     lat: null, lng: null,
+    photo: "flash-disc-ranch.jpg", credit: "Time Out Tokyo",
     desc: {
       en: "Opened in 1982, one of the oldest record shops in Shimokitazawa. The 2nd-floor entrance is squeezed between two parts of a game arcade.",
       zh: "1982年创业，下北泽最老的唱片店之一。二楼的入口夹在游戏厅的两个店面之间。",
@@ -107,7 +109,7 @@ window.STORES = [
     categories: ["records"],
     address: "東京都世田谷区北沢3-30-1 2F",
     lat: null, lng: null,
-    photo: "record-station.jpg", credit: "RECORD STATION",
+    photo: "record-station.jpg", credit: "Time Out Tokyo",
     desc: {
       en: "A used record shop on a 2nd floor along the Ichibangai shopping street.",
       zh: "位于一番街商店街一栋楼二楼的二手唱片店。",
@@ -122,6 +124,7 @@ window.STORES = [
     categories: ["records"],
     address: "東京都世田谷区北沢2-33-12 柳川ビル2F",
     lat: null, lng: null,
+    photo: "jet-set.jpg", credit: "Time Out Tokyo",
     desc: {
       en: "Vinyl of all genres on a 2nd floor. Its only other shop is in Kyoto.",
       zh: "位于二楼，经营各种类型的黑胶唱片。另一家店在京都。",
@@ -136,6 +139,7 @@ window.STORES = [
     categories: ["records"],
     address: "東京都世田谷区代田2-36-13 BONUS TRACK",
     lat: null, lng: null,
+    photo: "pianola-records.jpg", credit: "Time Out Tokyo",
     desc: {
       en: "Records from any genre and era, picked by the owner. Closed on Thursdays.",
       zh: "店主亲自挑选、不分类型和年代的唱片。周四休息。",

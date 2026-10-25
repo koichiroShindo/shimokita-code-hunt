@@ -195,7 +195,6 @@
       '<span class="status">' + (done ? t("found") : t("notYet")) + "</span></div>" +
       '<p class="cats">' + s.categories.map(function (c) { return t("cat")[c]; }).join(" / ") + "</p>" +
       (desc ? '<p class="desc">' + esc(desc) + "</p>" : "") +
-      (s.check ? '<p class="check">' + t("unverified") + "</p>" : "") +
       '<p class="addr" lang="ja">' + esc(s.address) + "</p>" +
       '<a class="link" href="' + map + '" target="_blank" rel="noopener">' + t("map") + "</a></div></li>";
   }

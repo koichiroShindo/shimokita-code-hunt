@@ -397,7 +397,6 @@ img { max-width: 100%; }
 .cats { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 0.04em; }
 .desc { font-size: 15px; }
 .addr { font-size: 13px; color: var(--sub); }
-.check { font-size: 13px; color: var(--accent-dark); font-weight: 700; }
 .done { font-size: 20px; font-weight: 700; color: var(--ok); margin: 16px 0 0; }
 
 /* ---- メッセージ ---- */

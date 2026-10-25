@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>QRコードの印刷</title>
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
-  <main>
+  <main class="qr-page">
     <section class="block">
       <h1 class="h-page">QRコードの印刷</h1>
       <p class="sub no-print">駅に貼るQRコードと、参加店に置くQRコードです。このページを印刷して切り分けてください。お店のQRコードは、そのお店の中にだけ置いてください。</p>
@@ -16,8 +16,8 @@
     </section>
   </main>
   <script src="vendor/qrcode.js"></script>
-  <script src="data/config.js?v=9"></script>
-  <script src="data/stores.js?v=9"></script>
+  <script src="data/config.js?v=10"></script>
+  <script src="data/stores.js?v=10"></script>
   <script>
     (function () {
       var base = location.href.replace(/qr\.html.*$/, "");

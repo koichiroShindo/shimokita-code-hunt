@@ -173,10 +173,20 @@ img { max-width: 100%; }
 
 /* ---- スタイルを選ぶ ---- */
 .pick { padding: 40px 0 0; }
+.tiles-group { border: 0; padding: 0; margin: 32px 0 0; min-width: 0; }
+.h-group {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 0 8px;
+  border-bottom: 2px solid var(--ink);
+  width: 100%;
+}
+.tiles-group .sub { margin: 12px 0 0; }
 .tiles {
   border: 0;
   padding: 0;
-  margin: 24px 0 0;
+  margin: 16px 0 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
@@ -387,6 +397,7 @@ img { max-width: 100%; }
 .cats { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 0.04em; }
 .desc { font-size: 15px; }
 .addr { font-size: 13px; color: var(--sub); }
+.check { font-size: 13px; color: var(--accent-dark); font-weight: 700; }
 .done { font-size: 20px; font-weight: 700; color: var(--ok); margin: 16px 0 0; }
 
 /* ---- メッセージ ---- */

@@ -3,6 +3,9 @@
   var KEY = "code-hunt";
   var app = document.getElementById("app");
   var CATS = Object.keys(TEXT.en.cat);
+  // ファッション（古着）の系統と、それ以外の種類
+  var FASHION = ["amekaji", "y2kstreet", "sports", "euro", "mode", "graphic", "remake"];
+  var OTHER = CATS.filter(function (c) { return FASHION.indexOf(c) < 0; });
 
   /* ---- 保存（端末のブラウザに記録する） ---- */
   function load() {
@@ -59,33 +62,13 @@
     return s ? "images/shops/" + s.photo : null;
   }
 
-  // 選んだ種類を順番に1軒ずつ割り当てて3軒選ぶ（2種類選べば両方が入る）。前の回で見つけたお店は後回しにする
+  // 選んだ種類に入るお店をすべて出す。選んだ順に並べ、2つの種類に入るお店は1回だけ出す
   function recommend(prefs) {
-    function shuffle(a) {
-      a = a.slice();
-      for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var x = a[i]; a[i] = a[j]; a[j] = x; }
-      return a;
-    }
-    var pool = shuffle(STORES).map(function (s) {
-      var score = s.categories.filter(function (c) { return prefs.indexOf(c) >= 0; }).length;
-      if (state.done.indexOf(s.id) >= 0) score -= 10;
-      return { s: s, score: score };
+    var ids = [];
+    prefs.forEach(function (c) {
+      shopsIn(c).forEach(function (s) { if (ids.indexOf(s.id) < 0) ids.push(s.id); });
     });
-    pool.sort(function (a, b) { return b.score - a.score; });
-    var picked = [], order = shuffle(prefs);
-    for (var round = 0; picked.length < 3 && round < 3; round++) {
-      order.forEach(function (c) {
-        if (picked.length >= 3) return;
-        for (var i = 0; i < pool.length; i++) {
-          var x = pool[i];
-          if (picked.indexOf(x.s) < 0 && x.s.categories.indexOf(c) >= 0 && state.done.indexOf(x.s.id) < 0) { picked.push(x.s); return; }
-        }
-      });
-    }
-    pool.forEach(function (x) {
-      if (picked.length < 3 && picked.indexOf(x.s) < 0) picked.push(x.s);
-    });
-    return picked.map(function (s) { return s.id; });
+    return ids;
   }
 
   /* ---- 距離（m） ---- */
@@ -146,17 +129,9 @@
       '<section class="pick" id="styles">' +
       '<h2 class="h-sec">' + t("prefsTitle") + "</h2>" +
       '<p class="sub">' + t("prefsLead") + "</p>" +
-      '<form id="prefs"><fieldset class="tiles"><legend class="visually-hidden">' + t("prefsTitle") + "</legend>" +
-      CATS.map(function (c) {
-        var p = stylePhoto(c);
-        return '<label class="tile' + (p ? "" : " no-photo") + '">' +
-          '<input type="checkbox" name="cat" value="' + c + '"' + (sel.indexOf(c) >= 0 ? " checked" : "") + ">" +
-          (p ? '<img src="' + esc(p) + '" alt="" loading="lazy">' : "") +
-          '<span class="tile-label"><span class="tile-name">' + t("cat")[c] + "</span>" +
-          '<span class="tile-count">' + t("shopsCount", { n: shopsIn(c).length }) + "</span></span>" +
-          '<span class="tile-check" aria-hidden="true"></span></label>';
-      }).join("") +
-      "</fieldset>" +
+      '<form id="prefs">' +
+      tileGroup(t("fashionTitle"), t("fashionLead"), FASHION.filter(function (c) { return shopsIn(c).length; })) +
+      tileGroup(t("otherTitle"), "", OTHER.filter(function (c) { return shopsIn(c).length; })) +
       '<div class="pick-bar' + (sel.length ? " is-on" : "") + '"><div class="pick-bar-in">' +
       '<span class="pick-count">' + t("selectedCount", { n: sel.length }) + "</span>" +
       '<button type="submit" class="btn btn-go"' + (sel.length ? "" : " disabled") + ">" + t("prefsSubmit") + "</button>" +
@@ -164,6 +139,20 @@
       '<section class="steps"><h2 class="h-sec">' + t("stepsTitle") + "</h2><ol>" +
       t("steps").map(function (s) { return "<li>" + s + "</li>"; }).join("") +
       "</ol></section>" + mapSection() + "</div>";
+  }
+
+  function tileGroup(title, lead, cats) {
+    return '<fieldset class="tiles-group"><legend class="h-group">' + title + "</legend>" +
+      (lead ? '<p class="sub">' + lead + "</p>" : "") + '<div class="tiles">' +
+      cats.map(function (c) {
+        var p = stylePhoto(c);
+        return '<label class="tile' + (p ? "" : " no-photo") + '">' +
+          '<input type="checkbox" name="cat" value="' + c + '"' + (sel.indexOf(c) >= 0 ? " checked" : "") + ">" +
+          (p ? '<img src="' + esc(p) + '" alt="" loading="lazy">' : "") +
+          '<span class="tile-label"><span class="tile-name">' + t("cat")[c] + "</span>" +
+          '<span class="tile-count">' + t("shopsCount", { n: shopsIn(c).length }) + "</span></span>" +
+          '<span class="tile-check" aria-hidden="true"></span></label>';
+      }).join("") + "</div></fieldset>";
   }
 
   // 下北沢駅のまわりの地図（OpenStreetMap）。お店の位置が入ったら、お店ごとのピンに変えられる
@@ -184,6 +173,7 @@
   /* ---- 画面：3軒 ---- */
   // 駅から3軒を順に回る、歩きの道順（Googleマップ）
   function routeLink(list) {
+    if (list.length > 10) return "";
     var place = function (s) { return s.lat != null ? s.lat + "," + s.lng : s.name + " " + s.address; };
     var url = "https://www.google.com/maps/dir/?api=1&travelmode=walking" +
       "&origin=" + encodeURIComponent("Shimokitazawa Station") +
@@ -205,6 +195,7 @@
       '<span class="status">' + (done ? t("found") : t("notYet")) + "</span></div>" +
       '<p class="cats">' + s.categories.map(function (c) { return t("cat")[c]; }).join(" / ") + "</p>" +
       (desc ? '<p class="desc">' + esc(desc) + "</p>" : "") +
+      (s.check ? '<p class="check">' + t("unverified") + "</p>" : "") +
       '<p class="addr" lang="ja">' + esc(s.address) + "</p>" +
       '<a class="link" href="' + map + '" target="_blank" rel="noopener">' + t("map") + "</a></div></li>";
   }
@@ -212,7 +203,7 @@
   function viewRoute() {
     var list = routeStores();
     if (!list.length) return viewHome();
-    var n = foundCount();
+    var n = foundCount(), total = list.length;
     var prefs = state.prefs || [];
     // 選んだスタイルそれぞれの写真を横に並べる（写真のないスタイルは飛ばす。最大4枚）
     var heroes = prefs.map(stylePhoto).filter(Boolean).slice(0, 4);
@@ -222,14 +213,14 @@
       '<div class="banner-text"><p class="banner-kicker">' + prefs.map(function (c) { return t("cat")[c]; }).join(" · ") + "</p>" +
       '<h1 class="banner-title">' + t("routeTitle") + "</h1></div></section>" +
       '<div class="wrap route">' +
-      '<p class="progress"><span class="meter"><span style="width:' + Math.round(n / 3 * 100) + '%"></span></span>' +
-      t("progress", { n: n }) + "</p>" +
-      (n >= 3
+      '<p class="progress"><span class="meter"><span style="width:' + Math.round(n / total * 100) + '%"></span></span>' +
+      t("progress", { n: n, total: total }) + "</p>" +
+      (n >= total
         ? '<p class="done">' + t("allDone") + '</p><button type="button" class="btn" data-action="again">' + t("again") + "</button>"
         : '<p class="sub">' + t("howto") + "</p>") +
       routeLink(list) +
       '<ol class="shops">' + list.map(storeItem).join("") + "</ol>" +
-      (n >= 3 ? "" : '<button type="button" class="btn btn-line" data-action="change">' + t("change") + "</button>") +
+      (n >= total ? "" : '<button type="button" class="btn btn-line" data-action="change">' + t("change") + "</button>") +
       "</div>";
   }
 
@@ -305,7 +296,7 @@
     state.found[s.id] = true;
     save();
     message(function () {
-      var left = 3 - foundCount();
+      var left = routeStores().length - foundCount();
       return viewMessage(t("stamped", { name: esc(s.name) }), {
         ok: true,
         sub: left > 0 ? t("remaining", { n: left }) : t("allDone"),

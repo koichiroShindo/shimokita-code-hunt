@@ -211,7 +211,8 @@
   function linkList(links) {
     if (!links) return "";
     return ["instagram", "x", "threads", "facebook", "web"].filter(function (k) { return links[k]; }).map(function (k) {
-      return '<a class="link link-sub" href="' + esc(links[k]) + '" target="_blank" rel="noopener">' + (LINK_NAMES[k] || t("website")) + "</a>";
+      return '<a class="link link-sub" href="' + esc(links[k]) + '" target="_blank" rel="noopener">' +
+        '<img class="icon" src="images/icons/' + k + '.svg" alt="" width="16" height="16">' + (LINK_NAMES[k] || t("website")) + "</a>";
     }).join("");
   }
 

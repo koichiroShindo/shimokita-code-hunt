@@ -19,6 +19,7 @@
 - `images/street/`：写真のないスタイルを選んだときに使う下北沢の写真
 - `i18n.js`：画面の文言（8言語）
 - `images/flags/`：言語メニューの国旗（flag-icons 7.2.3、MITライセンス。スペインは紋章なしの簡単な形に描き直した）
+- `images/icons/`：Instagram・X・Threads・Facebook のアイコン（Simple Icons 13.21.0、CC0）と公式サイトのアイコン
 - `style.css`：見た目
 - `vendor/qrcode.js`：QRコードを作る部品（qrcode-generator 1.4.4、MITライセンス）
 

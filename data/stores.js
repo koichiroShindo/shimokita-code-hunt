@@ -168,6 +168,7 @@ window.STORES = [
     categories: ["mode", "euro"],
     address: "東京都世田谷区代田5-35-8",
     lat: null, lng: null,
+    links: {"instagram": "https://www.instagram.com/floccinaucinihiliqilification/", "web": "https://flocci-used.stores.jp"},
     desc: {
       en: "A shop for 1970s–80s archive pieces by Japanese designers such as Comme des Garçons, Issey Miyake and Yohji Yamamoto plus DC-brand and no-brand European vintage. Its full name, floccinaucinihilipilification, is an English word meaning worthlessness; regulars just say flocci. After selling only on Instagram, it opened this store in 2018. It sits on a residential street about 3 minutes from the West Exit, away from the vintage-shop strips.",
       zh: "经营Comme des Garçons、Issey Miyake、Yohji Yamamoto等日本设计师1970〜80年代的archive单品、DC品牌和无品牌欧洲古着的店。正式店名floccinaucinihilipilification取自意为“无价值”的英语单词，熟客简称“flocci”。原本只在Instagram上销售，2018年开了实体店。位于西口步行约3分钟的住宅区，不在古着店集中的街上。",
@@ -329,6 +330,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-33-12 柳川ビル201号",
     lat: null, lng: null,
     photo: "jet-set.jpg",
+    links: {"instagram": "https://www.instagram.com/jetset_tokyo/", "x": "https://x.com/jetset_tokyo_", "web": "https://www.jetsetrecords.net/"},
     desc: {
       en: "A record shop known for its hand-picked new vinyl across genres, from hip hop, house, jazz and soul to indie pop, with plenty of reissues, indie releases, cassettes and CDs. The main store opened in Kyoto in 1998; the Shimokitazawa branch opened in 2002 and moved to Ichibangai in 2009. It is in room 201 on the 2nd floor of a building on the Ichibangai shopping street. Open almost every day of the year except around New Year.",
       zh: "以精选新唱片闻名的唱片店，涵盖嘻哈、House、爵士、灵魂乐、独立流行等各类黑胶，再版、独立厂牌作品、磁带和CD也很多。总店是1998年开业的京都店，下北泽店2002年开业，2009年迁到一番街。位于一番街商店街一栋大楼的2楼201室。除新年前后外几乎全年营业。",
@@ -394,6 +396,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-14-5 イスズビル203号",
     lat: null, lng: null,
     photo: "toumei-bara.jpg",
+    links: {"instagram": "https://www.instagram.com/toumeibara/", "facebook": "https://www.facebook.com/p/%E5%96%AB%E8%8C%B6-%E9%80%8F%E6%98%8E%E8%96%94%E8%96%87-61550896149328/"},
     desc: {
       en: "A Showa-retro kissaten whose signature is spaghetti Napolitan served on a silver plate with potato salad and a cherry tomato, alongside homemade mixed juice, cream soda, morning sets and brûlée cheesecake. Owner Suzuki Kazuki, born in the Heisei era, opened it on July 6, 2023 and named it after a phrase in a Miyazawa Kenji poem. Red ceiling, green walls, antique furniture and a record player fill room 203 on the 2nd floor of a small building on the South Exit shopping street, 3 minutes from the station.",
       zh: "昭和复古风纯喫茶，招牌是盛在银盘上、配土豆沙拉和小番茄的拿坡里意面，还有自制混合果汁、奶油苏打、早餐套餐和焦糖布蕾芝士蛋糕。生于平成年代的店主铃木一希于2023年7月6日开店，店名取自宫泽贤治诗中的一句。红色天花板、绿色墙壁、古董家具和唱片机，位于南口商店街一栋小楼的2楼203室，离车站步行3分钟。",
@@ -408,6 +411,7 @@ window.STORES = [
     categories: ["kissa"],
     address: "東京都世田谷区北沢2-21-26 2F",
     lat: null, lng: null,
+    links: {"instagram": "https://www.instagram.com/kissa_hitofusa/"},
     desc: {
       en: "A small café serving seasonal fruit sandwiches with mascarpone cream and large pieces of fruit, plus coffee; sandwiches come in a regular (4 pieces) or half (2 pieces) size. It is a sister shop of the fruit sandwich store Futsuuni Furuutsu, open as a daytime kissaten since April 2023. Climb to the 2nd floor of a building in a side street, about 2 minutes from the Southwest Exit; queues sometimes reach the bottom of the stairs. They can sell out, and reviews say cash only.",
       zh: "小咖啡馆，主打用当季水果做的水果三明治，夹马斯卡彭奶油和大块水果，也有咖啡；三明治分常规（4块）和半份（2块）。是水果三明治店“Futsuuni Furuutsu”的姊妹店，2023年4月起白天作为喫茶店营业。位于小巷里一栋楼的2楼，从西南口步行约2分钟，有时队伍排到楼梯下。三明治可能售罄，评论称只收现金。",
@@ -485,6 +489,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-12-13 細沢ビル4F",
     lat: null, lng: null,
     photo: "city-country-city.jpg",
+    links: {"instagram": "https://www.instagram.com/citycountrycityshimokitazawa/", "x": "https://x.com/citycountrycity", "facebook": "https://www.facebook.com/@City-Country-City-Shimokitazawa-100066829027104/"},
     desc: {
       en: "A record shop and café-bar owned by Sokabe Keiichi of the band Sunny Day Service, known for chewy fresh-noodle pasta such as mentaiko pasta. Every record carries a handwritten note and can be played on the in-store turntables, from acid folk to house and ambient; it has been open since 2006. It is on the 4th floor of an office building on the South Exit shopping street, 2 minutes from the station. Closed Wednesdays (Thursday if Wednesday is a holiday).",
       zh: "由乐队Sunny Day Service的曾我部惠一经营的唱片店兼咖啡酒吧，招牌是明太子意面等口感筋道的生面意面。每张唱片都附手写介绍，可以在店内唱机试听，从迷幻民谣到House、氛围音乐都有；2006年开业至今。位于南口商店街一栋办公楼的4楼，离车站步行2分钟。周三休息（逢节假日则改为周四）。",
@@ -529,6 +534,7 @@ window.STORES = [
     categories: ["cafe"],
     address: "東京都世田谷区北沢2-36-12 1F",
     lat: null, lng: null,
+    links: {"instagram": "https://www.instagram.com/bearpondespresso/", "x": "https://x.com/bearpond", "facebook": "https://www.facebook.com/p/Bear-Pond-Espresso-100063530142240/", "web": "http://bearpondespresso.com/"},
     desc: {
       en: "A tiny espresso bar famous for its \"Angel Stain\" espresso, served only in the morning until 13:00 and in limited numbers, and for the \"Dirty\" latte. Owner-barista Tanaka Katsuyuki trained in New York and opened it in 2009 in a converted candy shop that had operated for 60 years; the room is about 6 tsubo (20 m²) and mostly standing. It is on the Shimokitazawa Ichibangai street, 5 minutes from the station. English guides note that photos, laptops and cameras are not allowed.",
       zh: "小小的浓缩咖啡吧，以只在上午13点前限量供应的“Angel Stain”浓缩咖啡和拿铁“Dirty”闻名。店主兼咖啡师田中胜幸在纽约修业后，于2009年把一家经营了60年的粗点心店改装开店；店面约6坪（约20平方米），基本是站着喝。位于下北泽一番街，离车站步行5分钟。英文指南提到店内禁止拍照、使用笔记本电脑和相机。",
@@ -544,6 +550,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-26-7 テラスマディーナ別棟1F",
     lat: null, lng: null,
     photo: "anthrop.jpg",
+    links: {"instagram": "https://www.instagram.com/cafe_anthrop/", "x": "https://x.com/anthrop_cafe"},
     desc: {
       en: "An espresso café with a wall of bookshelves whose books you can read freely or buy, serving coffee, shaved ice, pancakes, cakes and a morning menu. It opened in 2013 as \"anthrop Espresso & Biblio\", a name taken from anthropology, and now runs as anthrop. Espresso & Comfort. It is on the ground floor of the Terrace Madina annex, 1 to 3 minutes from the station depending on the exit.",
       zh: "浓缩咖啡馆，整面墙的书架上的书可自由阅读，也可购买，提供咖啡、刨冰、松饼、蛋糕和早餐。2013年以“anthrop Espresso & Biblio”之名开业，店名源自人类学（anthropology）；现名为anthrop. Espresso & Comfort。位于Terrace Madina别栋1楼，依出口不同离车站步行1至3分钟。",
@@ -594,6 +601,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-15-11 センヤビルB1",
     lat: null, lng: null,
     photo: "anjali.jpg",
+    links: {"facebook": "https://www.facebook.com/anjali.curry.spicefoods/"},
     desc: {
       en: "A curry shop serving three or four spice curries that change daily; a two-curry plate is ¥1,600 and a one-curry plate ¥1,400. The owner, who trained in Japanese cuisine, built the recipes from travels in India and Sri Lanka, and the shop is run by a couple. It is in the basement (B1) of a building on a back lane, about 2 minutes on foot from the Southwest Exit of Shimokitazawa Station. Around 8 seats. No credit cards or e-money.",
       zh: "每天更换三到四种香料咖喱的咖喱店，双拼盘1,600日元，单品盘1,400日元。店主出身日本料理，根据在印度和斯里兰卡旅行时的体验设计了原创食谱，由一对夫妇经营。位于小巷里一栋大楼的地下1层，从下北泽站西南口步行约2分钟。座位约8个。不能使用信用卡和电子货币。",
@@ -623,6 +631,7 @@ window.STORES = [
     categories: ["curry"],
     address: "東京都世田谷区北沢2-12-13 細沢ビル5F",
     lat: null, lng: null,
+    links: {"instagram": "https://www.instagram.com/moonamra/", "x": "https://x.com/moonamoonam", "facebook": "https://www.facebook.com/spicekitchenmoona/", "web": "http://moona.jp/"},
     desc: {
       en: "A seafood curry restaurant influenced by South Indian cooking. Its best-known dish is a set of two daily seafood curries with dal, vegetables, shrimp pickle, fried roti and fragrant rice, using seasonal fish such as salmon and saury; the seafood lunch set is limited to 10 a day. Opened in 2007, it was named one of Tabelog's 100 best Asian and ethnic restaurants in Tokyo for 2024. It is on the 5th floor of a building about a minute from Shimokitazawa Station; take the elevator. 21 seats, reservations and credit cards accepted. Closed Mondays and the last Tuesday of each month.",
       zh: "受南印度料理影响的海鲜咖喱店。招牌是套餐：两种每日更换的海鲜咖喱，配豆咖喱、蔬菜、腌虾、炸烤饼和香米，使用三文鱼、秋刀鱼等当季的鱼。海鲜午餐套餐每天限量10份。2007年开业，入选食べログ百名店“亚洲·民族料理 TOKYO 2024”。位于离下北泽站步行约1分钟的大楼5楼，乘电梯上楼。共21个座位，可预约，可刷信用卡。周一和每月最后一个周二休息。",
@@ -689,6 +698,7 @@ window.STORES = [
     address: "東京都世田谷区北沢3-20-2 大成ビル2階",
     lat: null, lng: null,
     photo: "little-soul-cafe.jpg",
+    links: {"web": "https://www.littlesoulcafe.com/"},
     desc: {
       en: "A record bar playing soul, funk, jazz and dance music from a collection of about 14,000 to 15,000 records (none are for sale). It stocks over 300 spirits, including more than 100 rums, with drinks from about ¥800. Owner Nobuo Miyamae opened it in 1999 and built the interior, including the 8-seat counter, by hand. It is on the 2nd floor of a building near Ichibangai on the North Exit side, about 4 minutes from Shimokitazawa Station. Charge ¥500 per person, cash only, open every day.",
       zh: "播放灵魂乐、放克、爵士和舞曲的黑胶酒吧，收藏约14,000〜15,000张唱片（不出售）。烈酒300种以上，其中朗姆酒超过100种，饮品约800日元起。1999年由店主宫前伸夫开设，有8个座位的吧台等内装都是他亲手做的。位于北口一番街附近大楼的2楼，从下北泽站步行约4分钟。每人收费500日元，只收现金，全年无休。",
@@ -827,6 +837,7 @@ window.STORES = [
     categories: ["cinema"],
     address: "東京都世田谷区北沢2-21-22 (tefu)lounge 2F",
     lat: null, lng: null,
+    links: {"instagram": "https://www.instagram.com/k2cinema/", "x": "https://x.com/K2shimokita", "facebook": "https://www.facebook.com/K2Cinema/", "web": "https://k2-cinema.com/"},
     desc: {
       en: "A one-screen mini cinema with 71 seats (two wheelchair-accessible) that has run English-subtitled screenings of selected films since it opened. It opened in January 2022; the name combines its address, Kitazawa 2-chome, with K2, one of the world's highest peaks. The opening film was Ryusuke Hamaguchi's 'Wheel of Fortune and Fantasy', shown with English subtitles. It is on the 2nd floor of (tefu) lounge, directly connected to the Southwest Gate of Odakyu Line Shimokitazawa Station, at the back of the cafe on the same floor; some cafe items can be taken into the theater. Cashless only, no cash. General admission ¥1,800.",
       zh: "只有一块银幕、71个座位（其中2个可供轮椅使用）的迷你影院，自开幕以来针对部分作品举办英文字幕场次。2022年1月开幕，馆名取自所在地“北泽2丁目”和世界最高峰之一“K2”。开幕作品是滨口龙介导演的《偶然与想象》（附英文字幕）。位于与小田急线下北泽站西南检票口直接相连的“(tefu) lounge”2楼，在同层咖啡馆的里面，部分咖啡馆餐饮可带入影厅。只能无现金支付，不收现金。一般票价1,800日元。",
@@ -890,6 +901,7 @@ window.STORES = [
     address: "東京都世田谷区北沢3-21-1 1F",
     lat: null, lng: null,
     photo: "kosho-asu.jpg",
+    links: {"x": "https://x.com/tanakadaishi"},
     desc: {
       en: "A used bookshop that aims to be an 'ordinary bookshop' without narrowing its focus. The owner once worked at an art-book specialist, so art books and photo books are well stocked, along with film, theater, picture books and hobby books on cooking and handicrafts. It opened in January 2017 in the shop of Shirakaba Shoin, a used bookstore that had operated in Shimokitazawa for about 70 years. It is on Shimokitazawa Ichibangai shopping street, about 7 minutes from the North Exit; there are entrances on both left and right, with book carts outside. Open 12 pm to 8 pm.",
       zh: "以不限定类型的“普通旧书店”为目标的旧书店。店主曾在美术书专门店工作，所以美术书和写真集很丰富，还有电影、戏剧、绘本以及料理、手工等兴趣类书籍。2017年1月接手在下北泽经营约70年的旧书店“白桦书院”的店面开业。店名读作“こしょあした（Kosho Ashita）”。位于下北泽一番街商店街，从下北泽站北口步行约7分钟；左右各有一个入口，店外摆着书车。营业时间12:00〜20:00。",
@@ -905,6 +917,7 @@ window.STORES = [
     address: "東京都世田谷区北沢3-26-2 2F",
     lat: null, lng: null,
     photo: "clarice-books.jpg",
+    links: {"x": "https://x.com/clarisbooks", "facebook": "https://www.facebook.com/clarisbooks/", "web": "https://clarisbooks.com/"},
     desc: {
       en: "A used bookshop strongest in philosophy and critical thought, covering ten genres including literature, art and photography, fashion and subculture. It opened in December 2013; the owner trained for about ten years at a used bookshop in Kanda Jimbocho. The name comes from Clarice Starling in 'The Silence of the Lambs', chosen because she is strong, intelligent and beautiful. It is on the 2nd floor above Gallery HANA on Ichibangai, North Exit side; the entrance is at the side of the building, so look for the '本' (book) sign and take the side stairs. Closed Mondays.",
       zh: "以哲学·思想类见长的旧书店，涵盖文学、美术·摄影、时尚、亚文化等10个类别。2013年12月开业，店主曾在神田神保町的旧书店修业约10年。店名来自电影《沉默的羔羊》中的克拉丽斯·史达琳，因为她“坚强、聪明又美丽”。位于北口一番街商店街、HANA画廊所在大楼的2楼，入口在建筑侧面：以从街上看得到的“本”字为标志，走楼侧的楼梯上去。周一休息。",
@@ -936,6 +949,7 @@ window.STORES = [
     categories: ["galleries"],
     address: "東京都世田谷区北沢2-32-8",
     lat: null, lng: null,
+    links: {"facebook": "https://www.facebook.com/p/%E6%AD%A6%E8%94%B5%E5%B1%8B%E7%94%BB%E5%BB%8A-100064361671012/"},
     desc: {
       en: "A rental gallery used for solo, group and collaborative exhibitions; past shows have included ink painting, picture books and tea ware, and in October 2026 it hosted a solo show by Shimokitazawa-born painter Riku Harada. The owner ran a kimono shop and, delivering clothes to customers' homes, was often shown their hobby artworks, so the owner opened a place where such work could be displayed easily. The first exhibition was a father-and-son show by photographer Shinpei Asai and Ryusuke Asai. About 3 minutes on foot from the North Exit side of Shimokitazawa Station. Closed Mondays.",
       zh: "用于个展、联展和合作展的出租画廊，过去曾举办水墨画、绘本、茶器等展览，2026年10月举办了下北泽出身的画家原田陆的个展。店主原本经营和服店，给客人送衣服时常被请去看客人兴趣创作的艺术作品，于是想开一个能轻松展示作品的地方。第一场展览是摄影师浅井慎平与浅井龙介的父子展。从下北泽站北口一侧步行约3分钟。周一休息。",
@@ -1015,6 +1029,7 @@ window.STORES = [
     address: "東京都世田谷区北沢2-11-15 ミカン下北 A街区1階 A-101 東洋百貨店 別館内",
     lat: null, lng: null,
     photo: "sukonbu.jpg",
+    links: {"instagram": "https://www.instagram.com/sukonbu_official/", "web": "https://shop.sukonbu.jp/"},
     desc: {
       en: "A handmade-goods shop where each artist rents one wooden box to display their work. About 480 boxes hold items by around 500 makers, such as earrings, clasp purses and pouches, with accessories making up most of the stock; even the boxes are handmade. Started in Shimokitazawa nearly 20 years ago, it moved its South Exit branch here in 2022, and the original North Exit shop closed in March 2025 when its building shut. It is inside the Toyo Hyakkaten annex in Block A of Mikan Shimokita, under the Keio Inokashira Line tracks, about a minute from the station. Open 11 am to 8 pm.",
       zh: "每位作者租下一个木箱来摆放作品的手工艺品“一箱商店”。约480个木箱里陈列着约500位作者的耳环、口金包、小袋等，饰品占了大部分，店里的箱子也是手工做的。在下北泽开了将近20年，2022年南口店搬到这里，北口的总店则在2025年3月随大楼闭馆结束营业。位于京王井之头线高架下的商业设施“Mikan下北”A区、东洋百货店别馆内，离车站步行约1分钟。营业时间11:00〜20:00。",

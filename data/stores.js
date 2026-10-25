@@ -25,10 +25,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "lomad-loman.jpg",
     desc: {
-      en: "A vintage shop built around 1970s–80s American clothing chosen by the owner, with a few British-rock-flavored pieces, sneakers and mountain boots. Opened in May 2021, it aims for clothes that are easy to wear but make you look different, so expect unusual colors and one-off designs. It is room 66 on the 2nd floor of Shimokitazawa Mansion (Kitazawa 2-35-15), at the back of the corridor. Closed irregularly; hours vary, so check before you go.",
-      zh: "以店主亲自挑选的1970〜80年代美国古着为主的古着店，也有少量带英国摇滚气息的衣服，以及运动鞋和登山靴。2021年5月开业，方针是“好穿，但穿上和别人不一样”的古着，因此少见的颜色和像孤品一样的设计很多。店在下北泽公寓（北泽2-35-15）2楼的66号室，位于走廊深处。不定期休息，营业时间可能变动，出发前请先确认。",
-      ko: "점주가 직접 고른 1970〜80년대 미국 구제를 중심으로, 영국 록 분위기가 나는 옷과 스니커즈, 마운틴 부츠도 갖춘 구제숍. 2021년 5월에 문을 열었고 '입기 편하지만 남과 달라 보이는 구제'를 방침으로 해서, 보기 드문 색과 단품 같은 디자인이 많다. 시모키타자와 맨션(기타자와 2-35-15) 2층 66호실로, 복도 안쪽에 있다. 휴무일은 부정기이고 영업시간이 바뀔 수 있으니 가기 전에 확인할 것.",
-      ja: "店主が自分の目で選んだ1970〜80年代のアメリカ古着を中心に、英国ロックの気配がある服やスニーカー、マウンテンブーツも並ぶ古着店。「着やすいのに人と違って見える古着」を方針に2021年5月に開店し、見慣れない色や一点物のようなデザインが多い。店は下北沢マンション（北沢2-35-15）の2階66号室で、廊下の奥にある。不定休で、営業時間は変わることがあるので行く前に確認を。"
+      en: "A vintage shop built around 1970s–80s American clothing chosen by the owner, with a few British-rock-flavored pieces, sneakers and mountain boots. Opened in May 2021, it aims for clothes that are easy to wear but make you look different, so expect unusual colors and one-off designs. It is room 66 on the 2nd floor of Shimokitazawa Mansion (Kitazawa 2-35-15), at the back of the corridor. Closed irregularly.",
+      zh: "以店主亲自挑选的1970〜80年代美国古着为主的古着店，也有少量带英国摇滚气息的衣服，以及运动鞋和登山靴。2021年5月开业，方针是“好穿，但穿上和别人不一样”的古着，因此少见的颜色和像孤品一样的设计很多。店在下北泽公寓（北泽2-35-15）2楼的66号室，位于走廊深处。不定期休息。",
+      ko: "점주가 직접 고른 1970〜80년대 미국 구제를 중심으로, 영국 록 분위기가 나는 옷과 스니커즈, 마운틴 부츠도 갖춘 구제숍. 2021년 5월에 문을 열었고 '입기 편하지만 남과 달라 보이는 구제'를 방침으로 해서, 보기 드문 색과 단품 같은 디자인이 많다. 시모키타자와 맨션(기타자와 2-35-15) 2층 66호실로, 복도 안쪽에 있다. 휴무일은 부정기.",
+      ja: "店主が自分の目で選んだ1970〜80年代のアメリカ古着を中心に、英国ロックの気配がある服やスニーカー、マウンテンブーツも並ぶ古着店。「着やすいのに人と違って見える古着」を方針に2021年5月に開店し、見慣れない色や一点物のようなデザインが多い。店は下北沢マンション（北沢2-35-15）の2階66号室で、廊下の奥にある。不定休。"
     }
   },
   {
@@ -145,10 +145,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "kroneko.jpg",
     desc: {
-      en: "A vintage shop for men's 1980s–90s regular clothing, vintage and military, with slim European tailored jackets and coats among the racks. Opened on 8 April 2023, it stocks trousers in a wide size range: sweatpants, denim and slacks. Find it in unit 1C of the Fujita Building (Daizawa 5-28-12), about 4 minutes' walk from the station. Open 13:00–20:00 and closed irregularly, so check its social media on the day. European cuts are slim: fit the shoulders first, then check the length.",
-      zh: "经营1980〜90年代男装常规古着、vintage和军装的古着店，也有欧洲的修身西装外套和大衣。2023年4月8日开业，运动裤、牛仔裤、西裤等裤装尺码齐全。位于代泽5-28-12的藤田大楼1C，从车站步行约4分钟。营业时间13:00〜20:00，不定期休息，当天请先看店铺社交媒体确认。欧洲尺码偏瘦，先按肩宽选，再看衣长。",
-      ko: "1980〜90년대 남성 레귤러 구제와 빈티지, 밀리터리를 다루는 구제숍으로, 유럽의 슬림한 테일러드 재킷과 코트도 있다. 2023년 4월 8일에 문을 열었고, 스웨트팬츠·데님·슬랙스 등 바지를 폭넓은 사이즈로 갖췄다. 다이자와 5-28-12 후지타빌딩 1C로, 역에서 도보 약 4분. 영업은 13:00〜20:00, 휴무는 부정기라 당일 SNS로 확인할 것. 유럽 사이즈는 슬림하니 어깨를 먼저 맞추고 기장을 볼 것.",
-      ja: "80〜90年代のメンズのレギュラー古着、ヴィンテージ、ミリタリーを扱う古着店で、ヨーロッパ物の細身のテーラードやコートもそろう。2023年4月8日に開店し、スウェットパンツ・デニム・スラックスなどパンツ類を幅広いサイズで置く。代沢5-28-12の藤田ビル1Cで、駅から徒歩4分。13〜20時、不定休なので当日のSNSで確認を。ユーロ規格は細身なので、肩で合わせてから着丈を見る。"
+      en: "A vintage shop for men's 1980s–90s regular clothing, vintage and military, with slim European tailored jackets and coats among the racks. Opened on 8 April 2023, it stocks trousers in a wide size range: sweatpants, denim and slacks. Find it in unit 1C of the Fujita Building (Daizawa 5-28-12), about 4 minutes' walk from the station. Open 13:00–20:00 and closed irregularly. European cuts are slim: fit the shoulders first, then check the length.",
+      zh: "经营1980〜90年代男装常规古着、vintage和军装的古着店，也有欧洲的修身西装外套和大衣。2023年4月8日开业，运动裤、牛仔裤、西裤等裤装尺码齐全。位于代泽5-28-12的藤田大楼1C，从车站步行约4分钟。营业时间13:00〜20:00，不定期休息。欧洲尺码偏瘦，先按肩宽选，再看衣长。",
+      ko: "1980〜90년대 남성 레귤러 구제와 빈티지, 밀리터리를 다루는 구제숍으로, 유럽의 슬림한 테일러드 재킷과 코트도 있다. 2023년 4월 8일에 문을 열었고, 스웨트팬츠·데님·슬랙스 등 바지를 폭넓은 사이즈로 갖췄다. 다이자와 5-28-12 후지타빌딩 1C로, 역에서 도보 약 4분. 영업은 13:00〜20:00, 휴무는 부정기. 유럽 사이즈는 슬림하니 어깨를 먼저 맞추고 기장을 볼 것.",
+      ja: "80〜90年代のメンズのレギュラー古着、ヴィンテージ、ミリタリーを扱う古着店で、ヨーロッパ物の細身のテーラードやコートもそろう。2023年4月8日に開店し、スウェットパンツ・デニム・スラックスなどパンツ類を幅広いサイズで置く。代沢5-28-12の藤田ビル1Cで、駅から徒歩4分。13〜20時、不定休。ユーロ規格は細身なので、肩で合わせてから着丈を見る。"
     }
   },
   {
@@ -159,10 +159,10 @@ window.STORES = [
     address: "東京都世田谷区代田5-35-8",
     lat: null, lng: null,
     desc: {
-      en: "A shop for 1970s–80s archive pieces by Japanese designers such as Comme des Garçons, Issey Miyake and Yohji Yamamoto plus DC-brand and no-brand European vintage. Its full name, floccinaucinihilipilification, is an English word meaning worthlessness; regulars just say flocci. After selling only on Instagram, it opened this store in 2018. It sits on a residential street about 3 minutes from the West Exit, away from the vintage-shop strips. Hours and closing days differ between listings, so check before going.",
-      zh: "经营Comme des Garçons、Issey Miyake、Yohji Yamamoto等日本设计师1970〜80年代的archive单品、DC品牌和无品牌欧洲古着的店。正式店名floccinaucinihilipilification取自意为“无价值”的英语单词，熟客简称“flocci”。原本只在Instagram上销售，2018年开了实体店。位于西口步行约3分钟的住宅区，不在古着店集中的街上。营业时间和休息日各处信息不一，出发前请先确认。",
-      ko: "꼼데가르송, 이세이 미야케, 요지 야마모토 등 일본 디자이너의 1970〜80년대 아카이브와 DC브랜드, 노브랜드 유럽 구제를 다루는 가게. 정식 가게 이름 floccinaucinihilipilification은 '무가치'를 뜻하는 영어 단어에서 따왔고, 단골들은 '플록시'라고 줄여 부른다. 인스타그램으로만 팔다가 2018년에 실제 매장을 열었다. 서쪽 출구에서 도보 3분 정도의 주택가로, 구제숍이 모인 거리에서 벗어나 있다. 영업시간과 휴무일은 매체마다 달라 가기 전에 확인할 것.",
-      ja: "コム デ ギャルソン、イッセイ ミヤケ、ヨウジヤマモトなど日本のデザイナーの1970〜80年代のアーカイブ、DCブランド、ノーブランドのヨーロッパ古着を扱う店。店名floccinaucinihilipilificationは「無価値」を意味する英単語から取ったもので、客は「フロクシ」と呼ぶ。Instagramでの販売を経て2018年に実店舗を出した。古着店が並ぶ通りを外れた、西口から徒歩3分ほどの住宅街にある。営業時間と定休日は掲載によって違うので、事前に確認を。"
+      en: "A shop for 1970s–80s archive pieces by Japanese designers such as Comme des Garçons, Issey Miyake and Yohji Yamamoto plus DC-brand and no-brand European vintage. Its full name, floccinaucinihilipilification, is an English word meaning worthlessness; regulars just say flocci. After selling only on Instagram, it opened this store in 2018. It sits on a residential street about 3 minutes from the West Exit, away from the vintage-shop strips.",
+      zh: "经营Comme des Garçons、Issey Miyake、Yohji Yamamoto等日本设计师1970〜80年代的archive单品、DC品牌和无品牌欧洲古着的店。正式店名floccinaucinihilipilification取自意为“无价值”的英语单词，熟客简称“flocci”。原本只在Instagram上销售，2018年开了实体店。位于西口步行约3分钟的住宅区，不在古着店集中的街上。",
+      ko: "꼼데가르송, 이세이 미야케, 요지 야마모토 등 일본 디자이너의 1970〜80년대 아카이브와 DC브랜드, 노브랜드 유럽 구제를 다루는 가게. 정식 가게 이름 floccinaucinihilipilification은 '무가치'를 뜻하는 영어 단어에서 따왔고, 단골들은 '플록시'라고 줄여 부른다. 인스타그램으로만 팔다가 2018년에 실제 매장을 열었다. 서쪽 출구에서 도보 3분 정도의 주택가로, 구제숍이 모인 거리에서 벗어나 있다.",
+      ja: "コム デ ギャルソン、イッセイ ミヤケ、ヨウジヤマモトなど日本のデザイナーの1970〜80年代のアーカイブ、DCブランド、ノーブランドのヨーロッパ古着を扱う店。店名floccinaucinihilipilificationは「無価値」を意味する英単語から取ったもので、客は「フロクシ」と呼ぶ。Instagramでの販売を経て2018年に実店舗を出した。古着店が並ぶ通りを外れた、西口から徒歩3分ほどの住宅街にある。"
     }
   },
   {
@@ -281,10 +281,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "flash-disc-ranch.jpg",
     desc: {
-      en: "A used record shop stocked mainly through buying trips to the US, covering Japanese jazz and fusion, city pop, rock, soul and R&B, with about 15,000 records on the floor. Tsubaki Masao has run it since 1982, and it appears as the used cassette shop in the film PERFECT DAYS. From the South Exit, walk 3 minutes and climb the stairs between two game arcades to the 2nd floor. Closed Wednesdays (Thursday if Wednesday is a holiday); hours vary, so check before going.",
-      zh: "以美国采购为主的二手唱片店，品类有日本爵士与融合乐、City Pop、摇滚、灵魂乐和R&B，店内常备约1万5000张。店主椿正雄自1982年经营至今，电影《完美的日子》中的二手磁带店就在这里取景。从下北泽站南口步行3分钟，走上夹在两家游戏中心之间的楼梯，就在2楼。周三休息（逢节假日则改为周四），营业时间可能变动，请出发前确认。",
-      ko: "미국 현지 매입을 중심으로 한 중고 레코드점으로, 일본 재즈·퓨전, 시티팝, 록, 소울, R&B 등을 갖추고 매장에 늘 약 1만 5000장이 진열되어 있다. 1982년부터 점주 쓰바키 마사오 씨가 운영해 왔으며, 영화 『퍼펙트 데이즈』의 중고 카세트 가게 장면을 이곳에서 찍었다. 시모키타자와역 남쪽 출구에서 걸어서 3분, 게임센터 두 곳 사이의 계단을 올라간 2층에 있다. 수요일 휴무(공휴일이면 다음 날 목요일)이며, 영업시간은 바뀔 수 있으니 가기 전에 확인하자.",
-      ja: "アメリカ買い付けが中心の中古レコード店で、和ジャズ・フュージョン、シティポップ、ロック、ソウル、R&Bなどを店頭に約1万5000枚並べる。1982年から店主の椿正雄さんが営み、映画『PERFECT DAYS』で中古カセット店の場面に使われた。南口から徒歩3分、ゲームセンターに挟まれた階段を上がった2階にある。水曜定休（祝日の場合は翌木曜）。営業時間は変わることがあるので行く前に確認を。"
+      en: "A used record shop stocked mainly through buying trips to the US, covering Japanese jazz and fusion, city pop, rock, soul and R&B, with about 15,000 records on the floor. Tsubaki Masao has run it since 1982, and it appears as the used cassette shop in the film PERFECT DAYS. From the South Exit, walk 3 minutes and climb the stairs between two game arcades to the 2nd floor. Closed Wednesdays (Thursday if Wednesday is a holiday).",
+      zh: "以美国采购为主的二手唱片店，品类有日本爵士与融合乐、City Pop、摇滚、灵魂乐和R&B，店内常备约1万5000张。店主椿正雄自1982年经营至今，电影《完美的日子》中的二手磁带店就在这里取景。从下北泽站南口步行3分钟，走上夹在两家游戏中心之间的楼梯，就在2楼。周三休息（逢节假日则改为周四）。",
+      ko: "미국 현지 매입을 중심으로 한 중고 레코드점으로, 일본 재즈·퓨전, 시티팝, 록, 소울, R&B 등을 갖추고 매장에 늘 약 1만 5000장이 진열되어 있다. 1982년부터 점주 쓰바키 마사오 씨가 운영해 왔으며, 영화 『퍼펙트 데이즈』의 중고 카세트 가게 장면을 이곳에서 찍었다. 시모키타자와역 남쪽 출구에서 걸어서 3분, 게임센터 두 곳 사이의 계단을 올라간 2층에 있다. 수요일 휴무(공휴일이면 다음 날 목요일).",
+      ja: "アメリカ買い付けが中心の中古レコード店で、和ジャズ・フュージョン、シティポップ、ロック、ソウル、R&Bなどを店頭に約1万5000枚並べる。1982年から店主の椿正雄さんが営み、映画『PERFECT DAYS』で中古カセット店の場面に使われた。南口から徒歩3分、ゲームセンターに挟まれた階段を上がった2階にある。水曜定休（祝日の場合は翌木曜）。"
     }
   },
   {
@@ -296,10 +296,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "record-station.jpg",
     desc: {
-      en: "A used record shop with bins of Japanese wamono, soul, funk, jazz, rock, house, disco, hip hop, reggae and soundtracks, plus a small selection of new releases, cassettes and its own apparel. It started in Yokohama and moved to Shimokitazawa, opening on August 11. Look for the 2nd floor of the building next to Lawson on the Ichibangai shopping street, a 4-minute walk from the East Exit. Closed Tuesdays; hours vary between listings, so check before going.",
-      zh: "二手唱片店，品类有日本老歌（和物）、灵魂乐、放克、爵士、摇滚、House、Disco、嘻哈、雷鬼和电影原声，也有少量新唱片、磁带和自家服饰。原本开在横滨，后迁到下北泽，于8月11日开业。位于一番街商店街罗森便利店隔壁大楼的2楼，从东口步行4分钟。周二休息，各处标示的营业时间不一，请出发前确认。",
-      ko: "중고 레코드점으로, 일본 가요(와모노), 소울, 펑크, 재즈, 록, 하우스, 디스코, 힙합, 레게, 사운드트랙 등을 다루며 소량의 신보와 카세트테이프, 자체 의류 굿즈도 판다. 원래 요코하마에 있던 가게가 시모키타자와로 옮겨 8월 11일에 문을 열었다. 이치반가이 상점가 로손 옆 건물 2층으로, 동쪽 출구에서 걸어서 4분. 화요일 휴무이며, 영업시간은 정보마다 달라 가기 전에 확인하자.",
-      ja: "和モノ、ソウル、ファンク、ジャズ、ロック、ハウス、ディスコ、ヒップホップ、レゲエ、サウンドトラックなどがそろう中古レコード店で、少量の新譜やカセット、オリジナルのアパレルも置く。もとは横浜の店で、下北沢へ移って8月11日にグランドオープンした。一番街商店街のローソンの隣の建物の2階で、東口から徒歩4分。火曜定休。営業時間は情報源で異なるので行く前に確認を。"
+      en: "A used record shop with bins of Japanese wamono, soul, funk, jazz, rock, house, disco, hip hop, reggae and soundtracks, plus a small selection of new releases, cassettes and its own apparel. It started in Yokohama and moved to Shimokitazawa, opening on August 11. Look for the 2nd floor of the building next to Lawson on the Ichibangai shopping street, a 4-minute walk from the East Exit. Closed Tuesdays.",
+      zh: "二手唱片店，品类有日本老歌（和物）、灵魂乐、放克、爵士、摇滚、House、Disco、嘻哈、雷鬼和电影原声，也有少量新唱片、磁带和自家服饰。原本开在横滨，后迁到下北泽，于8月11日开业。位于一番街商店街罗森便利店隔壁大楼的2楼，从东口步行4分钟。周二休息。",
+      ko: "중고 레코드점으로, 일본 가요(와모노), 소울, 펑크, 재즈, 록, 하우스, 디스코, 힙합, 레게, 사운드트랙 등을 다루며 소량의 신보와 카세트테이프, 자체 의류 굿즈도 판다. 원래 요코하마에 있던 가게가 시모키타자와로 옮겨 8월 11일에 문을 열었다. 이치반가이 상점가 로손 옆 건물 2층으로, 동쪽 출구에서 걸어서 4분. 화요일 휴무.",
+      ja: "和モノ、ソウル、ファンク、ジャズ、ロック、ハウス、ディスコ、ヒップホップ、レゲエ、サウンドトラックなどがそろう中古レコード店で、少量の新譜やカセット、オリジナルのアパレルも置く。もとは横浜の店で、下北沢へ移って8月11日にグランドオープンした。一番街商店街のローソンの隣の建物の2階で、東口から徒歩4分。火曜定休。"
     }
   },
   {
@@ -311,10 +311,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "jet-set.jpg",
     desc: {
-      en: "A record shop known for its hand-picked new vinyl across genres, from hip hop, house, jazz and soul to indie pop, with plenty of reissues, indie releases, cassettes and CDs. The main store opened in Kyoto in 1998; the Shimokitazawa branch opened in 2002 and moved to Ichibangai in 2009. It is in room 201 on the 2nd floor of a building on the Ichibangai shopping street. Open almost every day of the year except around New Year; hours differ between listings, so check before going.",
-      zh: "以精选新唱片闻名的唱片店，涵盖嘻哈、House、爵士、灵魂乐、独立流行等各类黑胶，再版、独立厂牌作品、磁带和CD也很多。总店是1998年开业的京都店，下北泽店2002年开业，2009年迁到一番街。位于一番街商店街一栋大楼的2楼201室。除新年前后外几乎全年营业，各处标示的营业时间不一，请出发前确认。",
-      ko: "엄선한 신보로 알려진 레코드점으로, 힙합, 하우스, 재즈, 소울, 인디 팝 등 모든 장르의 LP를 다루며 재발매반, 인디 작품, 카세트와 CD도 많다. 본점은 1998년에 연 교토점이고, 시모키타자와점은 2002년에 문을 열어 2009년에 이치반가이로 옮겼다. 이치반가이 상점가 건물 2층 201호에 있다. 연말연시를 빼고 거의 연중무휴이며, 영업시간은 정보마다 달라 가기 전에 확인하자.",
-      ja: "全ジャンルのアナログ盤から新譜を厳選してそろえるレコード店で、ヒップホップ、ハウス、ジャズ、ソウル、インディーポップのほか、再発盤やインディーズ作品、カセット、CDも多い。本店は1998年開店の京都店で、下北沢店は2002年に開店し、2009年に一番街へ移った。一番街商店街にあるビルの2階201号。大晦日〜1月2日以外はほぼ毎日営業。営業時間は情報源で異なるので行く前に確認を。"
+      en: "A record shop known for its hand-picked new vinyl across genres, from hip hop, house, jazz and soul to indie pop, with plenty of reissues, indie releases, cassettes and CDs. The main store opened in Kyoto in 1998; the Shimokitazawa branch opened in 2002 and moved to Ichibangai in 2009. It is in room 201 on the 2nd floor of a building on the Ichibangai shopping street. Open almost every day of the year except around New Year.",
+      zh: "以精选新唱片闻名的唱片店，涵盖嘻哈、House、爵士、灵魂乐、独立流行等各类黑胶，再版、独立厂牌作品、磁带和CD也很多。总店是1998年开业的京都店，下北泽店2002年开业，2009年迁到一番街。位于一番街商店街一栋大楼的2楼201室。除新年前后外几乎全年营业。",
+      ko: "엄선한 신보로 알려진 레코드점으로, 힙합, 하우스, 재즈, 소울, 인디 팝 등 모든 장르의 LP를 다루며 재발매반, 인디 작품, 카세트와 CD도 많다. 본점은 1998년에 연 교토점이고, 시모키타자와점은 2002년에 문을 열어 2009년에 이치반가이로 옮겼다. 이치반가이 상점가 건물 2층 201호에 있다. 연말연시를 빼고 거의 연중무휴.",
+      ja: "全ジャンルのアナログ盤から新譜を厳選してそろえるレコード店で、ヒップホップ、ハウス、ジャズ、ソウル、インディーポップのほか、再発盤やインディーズ作品、カセット、CDも多い。本店は1998年開店の京都店で、下北沢店は2002年に開店し、2009年に一番街へ移った。一番街商店街にあるビルの2階201号。大晦日〜1月2日以外はほぼ毎日営業。"
     }
   },
   {
@@ -373,10 +373,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "toumei-bara.jpg",
     desc: {
-      en: "A Showa-retro kissaten whose signature is spaghetti Napolitan served on a silver plate with potato salad and a cherry tomato, alongside homemade mixed juice, cream soda, morning sets and brûlée cheesecake. Owner Suzuki Kazuki, born in the Heisei era, opened it on July 6, 2023 and named it after a phrase in a Miyazawa Kenji poem. Red ceiling, green walls, antique furniture and a record player fill room 203 on the 2nd floor of a small building on the South Exit shopping street, 3 minutes from the station. Hours vary, so check before going.",
-      zh: "昭和复古风纯喫茶，招牌是盛在银盘上、配土豆沙拉和小番茄的拿坡里意面，还有自制混合果汁、奶油苏打、早餐套餐和焦糖布蕾芝士蛋糕。生于平成年代的店主铃木一希于2023年7月6日开店，店名取自宫泽贤治诗中的一句。红色天花板、绿色墙壁、古董家具和唱片机，位于南口商店街一栋小楼的2楼203室，离车站步行3分钟。营业时间可能变动，请出发前确认。",
-      ko: "쇼와 레트로 순킷사로, 은색 접시에 감자 샐러드와 방울토마토를 곁들인 나폴리탄이 간판 메뉴이며 수제 믹스주스, 크림소다, 모닝 세트, 브륄레 치즈케이크도 있다. 헤이세이 시대에 태어난 점주 스즈키 가즈키 씨가 2023년 7월 6일에 열었고, 가게 이름은 미야자와 겐지의 시 구절에서 따왔다. 빨간 천장, 초록 벽, 앤티크 가구, 레코드플레이어가 있는 곳으로, 남쪽 출구 상점가의 작은 건물 2층 203호, 역에서 걸어서 3분. 영업시간은 바뀔 수 있으니 가기 전에 확인하자.",
-      ja: "昭和レトロの純喫茶で、看板は銀皿にポテトサラダとミニトマトを添えたナポリタン。自家製ミックスジュース、クリームソーダ、モーニング、ブリュレチーズケーキもある。平成生まれの店主・鈴木一希さんが2023年7月6日に開き、店名は宮沢賢治の詩『恋と病熱』にちなむ。赤い天井と緑の壁にアンティーク家具とレコードプレーヤーが並ぶ。南口商店街の小さなビルの2階203号室で、駅から徒歩3分。営業時間は変わることがあるので行く前に確認を。"
+      en: "A Showa-retro kissaten whose signature is spaghetti Napolitan served on a silver plate with potato salad and a cherry tomato, alongside homemade mixed juice, cream soda, morning sets and brûlée cheesecake. Owner Suzuki Kazuki, born in the Heisei era, opened it on July 6, 2023 and named it after a phrase in a Miyazawa Kenji poem. Red ceiling, green walls, antique furniture and a record player fill room 203 on the 2nd floor of a small building on the South Exit shopping street, 3 minutes from the station.",
+      zh: "昭和复古风纯喫茶，招牌是盛在银盘上、配土豆沙拉和小番茄的拿坡里意面，还有自制混合果汁、奶油苏打、早餐套餐和焦糖布蕾芝士蛋糕。生于平成年代的店主铃木一希于2023年7月6日开店，店名取自宫泽贤治诗中的一句。红色天花板、绿色墙壁、古董家具和唱片机，位于南口商店街一栋小楼的2楼203室，离车站步行3分钟。",
+      ko: "쇼와 레트로 순킷사로, 은색 접시에 감자 샐러드와 방울토마토를 곁들인 나폴리탄이 간판 메뉴이며 수제 믹스주스, 크림소다, 모닝 세트, 브륄레 치즈케이크도 있다. 헤이세이 시대에 태어난 점주 스즈키 가즈키 씨가 2023년 7월 6일에 열었고, 가게 이름은 미야자와 겐지의 시 구절에서 따왔다. 빨간 천장, 초록 벽, 앤티크 가구, 레코드플레이어가 있는 곳으로, 남쪽 출구 상점가의 작은 건물 2층 203호, 역에서 걸어서 3분.",
+      ja: "昭和レトロの純喫茶で、看板は銀皿にポテトサラダとミニトマトを添えたナポリタン。自家製ミックスジュース、クリームソーダ、モーニング、ブリュレチーズケーキもある。平成生まれの店主・鈴木一希さんが2023年7月6日に開き、店名は宮沢賢治の詩『恋と病熱』にちなむ。赤い天井と緑の壁にアンティーク家具とレコードプレーヤーが並ぶ。南口商店街の小さなビルの2階203号室で、駅から徒歩3分。"
     }
   },
   {
@@ -387,10 +387,10 @@ window.STORES = [
     address: "東京都世田谷区北沢2-21-26 2F",
     lat: null, lng: null,
     desc: {
-      en: "A small café serving seasonal fruit sandwiches with mascarpone cream and large pieces of fruit, plus coffee; sandwiches come in a regular (4 pieces) or half (2 pieces) size. It is a sister shop of the fruit sandwich store Futsuuni Furuutsu, open as a daytime kissaten since April 2023. Climb to the 2nd floor of a building in a side street, about 2 minutes from the Southwest Exit; queues sometimes reach the bottom of the stairs. They can sell out, reviews say cash only, and hours vary.",
-      zh: "小咖啡馆，主打用当季水果做的水果三明治，夹马斯卡彭奶油和大块水果，也有咖啡；三明治分常规（4块）和半份（2块）。是水果三明治店“Futsuuni Furuutsu”的姊妹店，2023年4月起白天作为喫茶店营业。位于小巷里一栋楼的2楼，从西南口步行约2分钟，有时队伍排到楼梯下。三明治可能售罄，评论称只收现金，营业时间也不固定，请出发前确认。",
-      ko: "제철 과일 샌드위치가 중심인 작은 카페로, 마스카르포네 크림과 큼직한 과일을 넣으며 커피도 있다. 샌드위치는 레귤러(4조각)와 하프(2조각) 중에서 고른다. 과일 샌드위치 가게 '후쓰니 후루쓰'의 자매점으로, 2023년 4월부터 낮 시간에 킷사로 영업하고 있다. 남서쪽 출구에서 걸어서 약 2분, 골목 안 건물 2층이며 계단 아래까지 줄이 늘어설 때가 있다. 샌드위치가 품절될 수 있고 후기로는 현금만 받으며 영업시간도 바뀌니 가기 전에 확인하자.",
-      ja: "季節のフルーツを使ったフルーツサンドとコーヒーの小さな店で、マスカルポーネ入りの生クリームと大粒のフルーツを挟む。サイズはレギュラー（4切れ）とハーフ（2切れ）。フルーツサンド店「フツウニフルウツ」の姉妹店で、2023年4月から昼の「喫茶 一房」として営業している。南西口から徒歩2分ほど、路地のビルの2階で、階段下まで行列ができることもある。完売することがあり、口コミでは現金のみ。営業時間は変わるので行く前に確認を。"
+      en: "A small café serving seasonal fruit sandwiches with mascarpone cream and large pieces of fruit, plus coffee; sandwiches come in a regular (4 pieces) or half (2 pieces) size. It is a sister shop of the fruit sandwich store Futsuuni Furuutsu, open as a daytime kissaten since April 2023. Climb to the 2nd floor of a building in a side street, about 2 minutes from the Southwest Exit; queues sometimes reach the bottom of the stairs. They can sell out, and reviews say cash only.",
+      zh: "小咖啡馆，主打用当季水果做的水果三明治，夹马斯卡彭奶油和大块水果，也有咖啡；三明治分常规（4块）和半份（2块）。是水果三明治店“Futsuuni Furuutsu”的姊妹店，2023年4月起白天作为喫茶店营业。位于小巷里一栋楼的2楼，从西南口步行约2分钟，有时队伍排到楼梯下。三明治可能售罄，评论称只收现金。",
+      ko: "제철 과일 샌드위치가 중심인 작은 카페로, 마스카르포네 크림과 큼직한 과일을 넣으며 커피도 있다. 샌드위치는 레귤러(4조각)와 하프(2조각) 중에서 고른다. 과일 샌드위치 가게 '후쓰니 후루쓰'의 자매점으로, 2023년 4월부터 낮 시간에 킷사로 영업하고 있다. 남서쪽 출구에서 걸어서 약 2분, 골목 안 건물 2층이며 계단 아래까지 줄이 늘어설 때가 있다. 샌드위치가 품절될 수 있고 후기로는 현금만 받는다.",
+      ja: "季節のフルーツを使ったフルーツサンドとコーヒーの小さな店で、マスカルポーネ入りの生クリームと大粒のフルーツを挟む。サイズはレギュラー（4切れ）とハーフ（2切れ）。フルーツサンド店「フツウニフルウツ」の姉妹店で、2023年4月から昼の「喫茶 一房」として営業している。南西口から徒歩2分ほど、路地のビルの2階で、階段下まで行列ができることもある。完売することがあり、口コミでは現金のみ。"
     }
   },
   {
@@ -402,10 +402,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "trois-chambres.jpg",
     desc: {
-      en: "A kissaten devoted to flannel-drip coffee and aged beans, with a dark and a light roast as its two signatures and a rare and baked cheesecake named to Tabelog's top 100. Owner Matsuzaki Hiroshi trained at Café Trois Bagues in Jimbocho and opened in 1980; the 6.15 m single-plank Oregon pine counter has never been remodeled. Antique cups line the shelves and jazz plays across 32 seats on the 2nd floor of the Yuasa Building, 5 minutes from the station. Cash only, smoking allowed; hours vary, so check before going.",
-      zh: "专注法兰绒滤布手冲和陈年咖啡豆的喫茶店，招牌是深焙和浅焙两种，生芝士和烤芝士蛋糕入选食べログ百名店。店主松崎宽在神保町的“Café Trois Bagues”修业后，于1980年开店；长6米15的美国松整板吧台自开业以来从未翻修。架上摆着古董杯，店内播放爵士，共32席，位于汤浅大楼2楼，离车站步行5分钟。只收现金，可吸烟，营业时间可能变动，请出发前确认。",
-      ko: "넬 드립과 올드 빈에 공을 들인 킷사텐으로, 강배전과 약배전 두 가지가 간판이며 레어·베이크드 치즈케이크는 다베로그 100명점에 선정되었다. 점주 마쓰자키 히로시 씨가 진보초의 '카페 트로와 바그'에서 수련한 뒤 1980년에 열었고, 길이 6m 15cm의 미송 통판 카운터는 창업 이래 한 번도 고치지 않았다. 앤티크 컵이 놓인 선반과 재즈가 흐르는 32석의 가게로, 유아사 빌딩 2층, 역에서 걸어서 5분. 현금만 받고 흡연 가능하며, 영업시간은 바뀔 수 있으니 가기 전에 확인하자.",
-      ja: "ネルドリップとオールドビーンズにこだわる喫茶店で、深煎りと浅煎りの2種類が看板。レアとベイクドのチーズケーキは食べログ百名店に選ばれた。店主の松﨑寛さんが神保町「カフェ トロワバグ」で修業し1980年に開いた店で、6m15cmの米松一枚板のカウンターは創業以来改装していない。アンティークのカップが並びジャズが流れる32席。湯浅ビルの2階、駅から徒歩5分。現金のみ、喫煙可。営業時間は変わることがあるので行く前に確認を。"
+      en: "A kissaten devoted to flannel-drip coffee and aged beans, with a dark and a light roast as its two signatures and a rare and baked cheesecake named to Tabelog's top 100. Owner Matsuzaki Hiroshi trained at Café Trois Bagues in Jimbocho and opened in 1980; the 6.15 m single-plank Oregon pine counter has never been remodeled. Antique cups line the shelves and jazz plays across 32 seats on the 2nd floor of the Yuasa Building, 5 minutes from the station. Cash only, smoking allowed.",
+      zh: "专注法兰绒滤布手冲和陈年咖啡豆的喫茶店，招牌是深焙和浅焙两种，生芝士和烤芝士蛋糕入选食べログ百名店。店主松崎宽在神保町的“Café Trois Bagues”修业后，于1980年开店；长6米15的美国松整板吧台自开业以来从未翻修。架上摆着古董杯，店内播放爵士，共32席，位于汤浅大楼2楼，离车站步行5分钟。只收现金，可吸烟。",
+      ko: "넬 드립과 올드 빈에 공을 들인 킷사텐으로, 강배전과 약배전 두 가지가 간판이며 레어·베이크드 치즈케이크는 다베로그 100명점에 선정되었다. 점주 마쓰자키 히로시 씨가 진보초의 '카페 트로와 바그'에서 수련한 뒤 1980년에 열었고, 길이 6m 15cm의 미송 통판 카운터는 창업 이래 한 번도 고치지 않았다. 앤티크 컵이 놓인 선반과 재즈가 흐르는 32석의 가게로, 유아사 빌딩 2층, 역에서 걸어서 5분. 현금만 받고 흡연 가능.",
+      ja: "ネルドリップとオールドビーンズにこだわる喫茶店で、深煎りと浅煎りの2種類が看板。レアとベイクドのチーズケーキは食べログ百名店に選ばれた。店主の松﨑寛さんが神保町「カフェ トロワバグ」で修業し1980年に開いた店で、6m15cmの米松一枚板のカウンターは創業以来改装していない。アンティークのカップが並びジャズが流れる32席。湯浅ビルの2階、駅から徒歩5分。現金のみ、喫煙可。"
     }
   },
   {
@@ -446,10 +446,10 @@ window.STORES = [
     address: "東京都世田谷区代沢5-32-13 露崎商店ビル5F",
     lat: null, lng: null,
     desc: {
-      en: "A book café run by Brown's Books, publisher of the culture magazines BARFOUT! and STEPPIN' OUT!, where you can read and buy current and back issues and secondhand books on music, art, travel, literature and manga, mostly from editor Yamazaki Jiro's own collection. On weekdays the room is the magazine's editorial office; it opens as a café only on Saturdays and Sundays. It is on the 5th floor of the Tsuyuzaki Shoten Building on the South Exit side, 5 minutes from the station. Hours vary between listings, so check before going.",
-      zh: "由出版文化杂志《BARFOUT!》《STEPPIN' OUT!》的Brown's Books经营的书咖啡馆，可以阅读和购买最新及过期杂志，以及音乐、艺术、旅行、文学、漫画等二手书，多为编辑山崎二郎的个人藏书。平日这里是杂志编辑部，只在周六、周日作为咖啡馆营业。位于南口一侧露崎商店大楼5楼，离车站步行5分钟。各处标示的营业时间不一，请出发前确认。",
-      ko: "문화 잡지 『BARFOUT!』『STEPPIN' OUT!』을 내는 브라운즈 북스가 운영하는 북카페로, 최신호와 과월호, 그리고 편집자 야마자키 지로 씨의 장서를 중심으로 한 음악·미술·여행·문학·만화 헌책을 읽고 살 수 있다. 평일에는 잡지 편집부이고, 토요일과 일요일에만 카페로 문을 연다. 남쪽 출구 쪽 쓰유자키 상점 빌딩 5층으로, 역에서 걸어서 5분. 영업시간은 정보마다 달라 가기 전에 확인하자.",
-      ja: "カルチャー誌『BARFOUT!』『STEPPIN' OUT!』を出すブラウンズブックスが営むブックカフェで、最新号やバックナンバー、店主・山崎二郎さんの蔵書を中心とした音楽・アート・旅・文学・漫画の古本を読め、買うこともできる。平日は雑誌の編集部で、カフェとして開くのは土日だけ。南口側の露崎商店ビル5階で、駅から徒歩5分。営業時間は情報源で異なるので行く前に確認を。"
+      en: "A book café run by Brown's Books, publisher of the culture magazines BARFOUT! and STEPPIN' OUT!, where you can read and buy current and back issues and secondhand books on music, art, travel, literature and manga, mostly from editor Yamazaki Jiro's own collection. On weekdays the room is the magazine's editorial office; it opens as a café only on Saturdays and Sundays. It is on the 5th floor of the Tsuyuzaki Shoten Building on the South Exit side, 5 minutes from the station.",
+      zh: "由出版文化杂志《BARFOUT!》《STEPPIN' OUT!》的Brown's Books经营的书咖啡馆，可以阅读和购买最新及过期杂志，以及音乐、艺术、旅行、文学、漫画等二手书，多为编辑山崎二郎的个人藏书。平日这里是杂志编辑部，只在周六、周日作为咖啡馆营业。位于南口一侧露崎商店大楼5楼，离车站步行5分钟。",
+      ko: "문화 잡지 『BARFOUT!』『STEPPIN' OUT!』을 내는 브라운즈 북스가 운영하는 북카페로, 최신호와 과월호, 그리고 편집자 야마자키 지로 씨의 장서를 중심으로 한 음악·미술·여행·문학·만화 헌책을 읽고 살 수 있다. 평일에는 잡지 편집부이고, 토요일과 일요일에만 카페로 문을 연다. 남쪽 출구 쪽 쓰유자키 상점 빌딩 5층으로, 역에서 걸어서 5분.",
+      ja: "カルチャー誌『BARFOUT!』『STEPPIN' OUT!』を出すブラウンズブックスが営むブックカフェで、最新号やバックナンバー、店主・山崎二郎さんの蔵書を中心とした音楽・アート・旅・文学・漫画の古本を読め、買うこともできる。平日は雑誌の編集部で、カフェとして開くのは土日だけ。南口側の露崎商店ビル5階で、駅から徒歩5分。"
     }
   },
   {
@@ -461,10 +461,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "city-country-city.jpg",
     desc: {
-      en: "A record shop and café-bar owned by Sokabe Keiichi of the band Sunny Day Service, known for chewy fresh-noodle pasta such as mentaiko pasta. Every record carries a handwritten note and can be played on the in-store turntables, from acid folk to house and ambient; it has been open since 2006. It is on the 4th floor of an office building on the South Exit shopping street, 2 minutes from the station. Closed Wednesdays (Thursday if Wednesday is a holiday); hours vary between listings, so check before going.",
-      zh: "由乐队Sunny Day Service的曾我部惠一经营的唱片店兼咖啡酒吧，招牌是明太子意面等口感筋道的生面意面。每张唱片都附手写介绍，可以在店内唱机试听，从迷幻民谣到House、氛围音乐都有；2006年开业至今。位于南口商店街一栋办公楼的4楼，离车站步行2分钟。周三休息（逢节假日则改为周四），各处标示的营业时间不一，请出发前确认。",
-      ko: "밴드 서니 데이 서비스의 소카베 게이이치가 운영하는 레코드숍 겸 카페 바로, 명란 파스타 등 쫄깃한 생면 파스타로 알려져 있다. 레코드마다 손글씨 소개가 붙어 있고 매장의 턴테이블로 들어볼 수 있으며, 애시드 포크부터 하우스, 앰비언트까지 갖췄다. 2006년부터 영업하고 있다. 남쪽 출구 상점가 사무실 건물 4층으로, 역에서 걸어서 2분. 수요일 휴무(공휴일이면 목요일)이며, 영업시간은 정보마다 달라 가기 전에 확인하자.",
-      ja: "サニーデイ・サービスの曽我部恵一さんがオーナーのレコードショップ兼カフェバーで、名物は明太子パスタなど生麺のもちもちしたパスタ。レコードには1枚ずつ手書きの紹介文が付き、店内のプレーヤーで試聴できる。アシッドフォークからハウス、アンビエントまでそろい、2006年から営業している。南口商店街のオフィスビルの4階で、駅から徒歩2分。水曜定休（祝日の場合は木曜）。営業時間は情報源で異なるので行く前に確認を。"
+      en: "A record shop and café-bar owned by Sokabe Keiichi of the band Sunny Day Service, known for chewy fresh-noodle pasta such as mentaiko pasta. Every record carries a handwritten note and can be played on the in-store turntables, from acid folk to house and ambient; it has been open since 2006. It is on the 4th floor of an office building on the South Exit shopping street, 2 minutes from the station. Closed Wednesdays (Thursday if Wednesday is a holiday).",
+      zh: "由乐队Sunny Day Service的曾我部惠一经营的唱片店兼咖啡酒吧，招牌是明太子意面等口感筋道的生面意面。每张唱片都附手写介绍，可以在店内唱机试听，从迷幻民谣到House、氛围音乐都有；2006年开业至今。位于南口商店街一栋办公楼的4楼，离车站步行2分钟。周三休息（逢节假日则改为周四）。",
+      ko: "밴드 서니 데이 서비스의 소카베 게이이치가 운영하는 레코드숍 겸 카페 바로, 명란 파스타 등 쫄깃한 생면 파스타로 알려져 있다. 레코드마다 손글씨 소개가 붙어 있고 매장의 턴테이블로 들어볼 수 있으며, 애시드 포크부터 하우스, 앰비언트까지 갖췄다. 2006년부터 영업하고 있다. 남쪽 출구 상점가 사무실 건물 4층으로, 역에서 걸어서 2분. 수요일 휴무(공휴일이면 목요일).",
+      ja: "サニーデイ・サービスの曽我部恵一さんがオーナーのレコードショップ兼カフェバーで、名物は明太子パスタなど生麺のもちもちしたパスタ。レコードには1枚ずつ手書きの紹介文が付き、店内のプレーヤーで試聴できる。アシッドフォークからハウス、アンビエントまでそろい、2006年から営業している。南口商店街のオフィスビルの4階で、駅から徒歩2分。水曜定休（祝日の場合は木曜）。"
     }
   },
   {
@@ -475,10 +475,10 @@ window.STORES = [
     address: "東京都世田谷区北沢2-10-10 1F",
     lat: null, lng: null,
     desc: {
-      en: "A specialty coffee stand where baristas pull each espresso by hand, known for its lattes, a latte-art experience (no booking needed) and espresso shaved ice. After its old Kitazawa Building home was torn down for age and it closed in January 2025, it reopened about 18 months later, on August 19, 2026, as a roastery and coffee stand. The new shop is on the ground floor of a building right in front of the East Exit. Hours at the new location are not yet confirmed, so check before going.",
-      zh: "由咖啡师逐杯萃取浓缩咖啡的精品咖啡站，以拿铁、无需预约的拉花体验和浓缩咖啡刨冰闻名。原店所在的北泽大楼因老旧拆除，于2025年1月停业，约一年半后的2026年8月19日以烘焙工坊兼咖啡站的形式重新开业。新店位于东口正前方一栋楼的1楼。新店营业时间尚未确认，请出发前确认。",
-      ko: "바리스타가 한 잔씩 에스프레소를 추출하는 스페셜티 커피 스탠드로, 라테와 예약 없이 할 수 있는 라테아트 체험, 에스프레소 빙수로 알려져 있다. 예전 가게가 있던 기타자와 빌딩이 노후화로 철거되면서 2025년 1월에 문을 닫았다가, 약 1년 반 뒤인 2026년 8월 19일에 로스팅 공장 겸 커피 스탠드로 다시 열었다. 새 가게는 동쪽 출구 바로 앞 건물 1층이다. 새 가게의 영업시간은 아직 확인되지 않았으니 가기 전에 확인하자.",
-      ja: "バリスタが1杯ずつエスプレッソを抽出するスペシャルティコーヒースタンドで、ラテと予約不要のラテアート体験、エスプレッソかき氷で知られる。旧店舗の北沢ビルが老朽化で立ち退きとなり2025年1月に閉めたが、約1年半後の2026年8月19日に焙煎工場兼スタンドとして移転オープンした。新店舗は東口の目の前のビルの1階で。移転後の営業時間は確認できていないので行く前に確認を。"
+      en: "A specialty coffee stand where baristas pull each espresso by hand, known for its lattes, a latte-art experience (no booking needed) and espresso shaved ice. After its old Kitazawa Building home was torn down for age and it closed in January 2025, it reopened about 18 months later, on August 19, 2026, as a roastery and coffee stand. The new shop is on the ground floor of a building right in front of the East Exit.",
+      zh: "由咖啡师逐杯萃取浓缩咖啡的精品咖啡站，以拿铁、无需预约的拉花体验和浓缩咖啡刨冰闻名。原店所在的北泽大楼因老旧拆除，于2025年1月停业，约一年半后的2026年8月19日以烘焙工坊兼咖啡站的形式重新开业。新店位于东口正前方一栋楼的1楼。",
+      ko: "바리스타가 한 잔씩 에스프레소를 추출하는 스페셜티 커피 스탠드로, 라테와 예약 없이 할 수 있는 라테아트 체험, 에스프레소 빙수로 알려져 있다. 예전 가게가 있던 기타자와 빌딩이 노후화로 철거되면서 2025년 1월에 문을 닫았다가, 약 1년 반 뒤인 2026년 8월 19일에 로스팅 공장 겸 커피 스탠드로 다시 열었다. 새 가게는 동쪽 출구 바로 앞 건물 1층이다.",
+      ja: "バリスタが1杯ずつエスプレッソを抽出するスペシャルティコーヒースタンドで、ラテと予約不要のラテアート体験、エスプレッソかき氷で知られる。旧店舗の北沢ビルが老朽化で立ち退きとなり2025年1月に閉めたが、約1年半後の2026年8月19日に焙煎工場兼スタンドとして移転オープンした。新店舗は東口の目の前のビルの1階。"
     }
   },
   {
@@ -503,10 +503,10 @@ window.STORES = [
     address: "東京都世田谷区北沢2-36-12 1F",
     lat: null, lng: null,
     desc: {
-      en: "A tiny espresso bar famous for its \"Angel Stain\" espresso, served only in the morning until 13:00 and in limited numbers, and for the \"Dirty\" latte. Owner-barista Tanaka Katsuyuki trained in New York and opened it in 2009 in a converted candy shop that had operated for 60 years; the room is about 6 tsubo (20 m²) and mostly standing. It is on the Shimokitazawa Ichibangai street, 5 minutes from the station. English guides note that photos, laptops and cameras are not allowed; closing days differ between listings, so check before going.",
-      zh: "小小的浓缩咖啡吧，以只在上午13点前限量供应的“Angel Stain”浓缩咖啡和拿铁“Dirty”闻名。店主兼咖啡师田中胜幸在纽约修业后，于2009年把一家经营了60年的粗点心店改装开店；店面约6坪（约20平方米），基本是站着喝。位于下北泽一番街，离车站步行5分钟。英文指南提到店内禁止拍照、使用笔记本电脑和相机；各处标示的休息日不一，请出发前确认。",
-      ko: "아주 작은 에스프레소 바로, 오전 13시까지만 한정 수량으로 내는 에스프레소 '엔젤 스테인'과 라테 '더티'로 알려져 있다. 뉴욕에서 수련한 오너 바리스타 다나카 가쓰유키 씨가 60년 동안 영업한 막과자 가게를 고쳐 2009년에 열었고, 매장은 약 6평(약 20㎡)으로 대부분 서서 마신다. 시모키타자와 이치반가이에 있으며 역에서 걸어서 5분. 영어 가이드에는 사진 촬영, 노트북, 카메라가 금지라고 나와 있고, 휴무일은 정보마다 달라 가기 전에 확인하자.",
-      ja: "午前中（13時まで）に数量限定で出すエスプレッソ「エンジェルステイン」と、ラテの「ダーティー」で知られる小さなエスプレッソバー。ニューヨークで修業したオーナーバリスタの田中勝幸さんが、60年続いた駄菓子店「大月商店」の店舗を改装して2009年に開いた。約6坪で、基本は立ち飲み。下北沢一番街にあり、駅から徒歩5分。英語のガイドでは写真撮影やノートパソコン、カメラは禁止と紹介されている。定休日は情報源で異なるので行く前に確認を。"
+      en: "A tiny espresso bar famous for its \"Angel Stain\" espresso, served only in the morning until 13:00 and in limited numbers, and for the \"Dirty\" latte. Owner-barista Tanaka Katsuyuki trained in New York and opened it in 2009 in a converted candy shop that had operated for 60 years; the room is about 6 tsubo (20 m²) and mostly standing. It is on the Shimokitazawa Ichibangai street, 5 minutes from the station. English guides note that photos, laptops and cameras are not allowed.",
+      zh: "小小的浓缩咖啡吧，以只在上午13点前限量供应的“Angel Stain”浓缩咖啡和拿铁“Dirty”闻名。店主兼咖啡师田中胜幸在纽约修业后，于2009年把一家经营了60年的粗点心店改装开店；店面约6坪（约20平方米），基本是站着喝。位于下北泽一番街，离车站步行5分钟。英文指南提到店内禁止拍照、使用笔记本电脑和相机。",
+      ko: "아주 작은 에스프레소 바로, 오전 13시까지만 한정 수량으로 내는 에스프레소 '엔젤 스테인'과 라테 '더티'로 알려져 있다. 뉴욕에서 수련한 오너 바리스타 다나카 가쓰유키 씨가 60년 동안 영업한 막과자 가게를 고쳐 2009년에 열었고, 매장은 약 6평(약 20㎡)으로 대부분 서서 마신다. 시모키타자와 이치반가이에 있으며 역에서 걸어서 5분. 영어 가이드에는 사진 촬영, 노트북, 카메라가 금지라고 나와 있다.",
+      ja: "午前中（13時まで）に数量限定で出すエスプレッソ「エンジェルステイン」と、ラテの「ダーティー」で知られる小さなエスプレッソバー。ニューヨークで修業したオーナーバリスタの田中勝幸さんが、60年続いた駄菓子店「大月商店」の店舗を改装して2009年に開いた。約6坪で、基本は立ち飲み。下北沢一番街にあり、駅から徒歩5分。英語のガイドでは写真撮影やノートパソコン、カメラは禁止と紹介されている。"
     }
   },
   {
@@ -518,10 +518,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "anthrop.jpg",
     desc: {
-      en: "An espresso café with a wall of bookshelves whose books you can read freely or buy, serving coffee, shaved ice, pancakes, cakes and a morning menu. It opened in 2013 as \"anthrop Espresso & Biblio\", a name taken from anthropology, and now runs as anthrop. Espresso & Comfort. It is on the ground floor of the Terrace Madina annex, 1 to 3 minutes from the station depending on the exit. Closing days and hours vary between listings, so check before going.",
-      zh: "浓缩咖啡馆，整面墙的书架上的书可自由阅读，也可购买，提供咖啡、刨冰、松饼、蛋糕和早餐。2013年以“anthrop Espresso & Biblio”之名开业，店名源自人类学（anthropology）；现名为anthrop. Espresso & Comfort。位于Terrace Madina别栋1楼，依出口不同离车站步行1至3分钟。各处标示的休息日和营业时间不一，请出发前确认。",
-      ko: "벽 한 면을 채운 책장의 책을 자유롭게 읽거나 살 수 있는 에스프레소 카페로, 커피, 빙수, 팬케이크, 케이크, 모닝 메뉴를 낸다. 2013년에 'anthrop Espresso & Biblio'라는 이름으로 문을 열었고, 이름은 인류학(anthropology)에서 왔다. 지금은 anthrop. Espresso & Comfort로 영업한다. 테라스 마디나 별관 1층으로, 출구에 따라 역에서 걸어서 1~3분. 휴무일과 영업시간은 정보마다 달라 가기 전에 확인하자.",
-      ja: "壁一面の本棚の本を自由に読め、買うこともできるエスプレッソのカフェで、コーヒー、かき氷、パンケーキ、ケーキ、モーニングを出す。2013年に「anthrop Espresso & Biblio」として開店し、店名は人類学（anthropology）から。現在の店名は「anthrop.Espresso&Comfort」。テラスマディーナ別棟の1階で、出口により駅から徒歩1〜3分。定休日・営業時間は情報源で異なるので行く前に確認を。"
+      en: "An espresso café with a wall of bookshelves whose books you can read freely or buy, serving coffee, shaved ice, pancakes, cakes and a morning menu. It opened in 2013 as \"anthrop Espresso & Biblio\", a name taken from anthropology, and now runs as anthrop. Espresso & Comfort. It is on the ground floor of the Terrace Madina annex, 1 to 3 minutes from the station depending on the exit.",
+      zh: "浓缩咖啡馆，整面墙的书架上的书可自由阅读，也可购买，提供咖啡、刨冰、松饼、蛋糕和早餐。2013年以“anthrop Espresso & Biblio”之名开业，店名源自人类学（anthropology）；现名为anthrop. Espresso & Comfort。位于Terrace Madina别栋1楼，依出口不同离车站步行1至3分钟。",
+      ko: "벽 한 면을 채운 책장의 책을 자유롭게 읽거나 살 수 있는 에스프레소 카페로, 커피, 빙수, 팬케이크, 케이크, 모닝 메뉴를 낸다. 2013년에 'anthrop Espresso & Biblio'라는 이름으로 문을 열었고, 이름은 인류학(anthropology)에서 왔다. 지금은 anthrop. Espresso & Comfort로 영업한다. 테라스 마디나 별관 1층으로, 출구에 따라 역에서 걸어서 1~3분.",
+      ja: "壁一面の本棚の本を自由に読め、買うこともできるエスプレッソのカフェで、コーヒー、かき氷、パンケーキ、ケーキ、モーニングを出す。2013年に「anthrop Espresso & Biblio」として開店し、店名は人類学（anthropology）から。現在の店名は「anthrop.Espresso&Comfort」。テラスマディーナ別棟の1階で、出口により駅から徒歩1〜3分。"
     }
   },
 
@@ -535,10 +535,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "mardi-gras.jpg",
     desc: {
-      en: "A long-running kissaten known for custard pudding and shortcake, with a cake set where you pick 2 of about 5 cakes, a pudding à la mode at 770 yen and French toast. Sources put its history at 35 to nearly 40 years. It sits at the end of a quiet side street off the shopping street, about 3 minutes from the station, on the ground floor of the Sun Rosa building. Closing days and hours vary between listings, so check before going.",
-      zh: "老字号喫茶店，以卡仕达布丁和草莓奶油蛋糕闻名，有从约5种蛋糕中选2种的蛋糕套餐、770日元的布丁圣代和法式吐司。各处资料称其历史约35年至近40年。位于从商店街拐进的安静小巷尽头，Sun Rosa大楼1楼，离车站步行约3分钟。各处标示的休息日和营业时间不一，请出发前确认。",
-      ko: "오래된 킷사텐으로, 커스터드 푸딩과 쇼트케이크로 알려져 있으며 5가지 정도의 케이크 중 2가지를 고르는 케이크 세트, 770엔짜리 푸딩 아라모드, 프렌치토스트가 있다. 역사는 자료에 따라 약 35년에서 40년 가까이로 나온다. 상점가에서 조용한 골목으로 들어간 안쪽, 산 로자 빌딩 1층으로 역에서 걸어서 약 3분. 휴무일과 영업시간은 정보마다 달라 가기 전에 확인하자.",
-      ja: "プリンとショートケーキで知られる喫茶店で、5種類ほどのケーキから2つ選べるケーキセット、プリンアラモード（770円）、フレンチトーストもある。歴史は「約35年」「40年近い」と情報源で異なる。商店街から静かな路地に入った奥、サン・ローザの1階で、駅から徒歩3分ほど。定休日・営業時間は情報源で異なるので行く前に確認を。"
+      en: "A long-running kissaten known for custard pudding and shortcake, with a cake set where you pick 2 of about 5 cakes, a pudding à la mode at 770 yen and French toast. Sources put its history at 35 to nearly 40 years. It sits at the end of a quiet side street off the shopping street, about 3 minutes from the station, on the ground floor of the Sun Rosa building.",
+      zh: "老字号喫茶店，以卡仕达布丁和草莓奶油蛋糕闻名，有从约5种蛋糕中选2种的蛋糕套餐、770日元的布丁圣代和法式吐司。各处资料称其历史约35年至近40年。位于从商店街拐进的安静小巷尽头，Sun Rosa大楼1楼，离车站步行约3分钟。",
+      ko: "오래된 킷사텐으로, 커스터드 푸딩과 쇼트케이크로 알려져 있으며 5가지 정도의 케이크 중 2가지를 고르는 케이크 세트, 770엔짜리 푸딩 아라모드, 프렌치토스트가 있다. 역사는 자료에 따라 약 35년에서 40년 가까이로 나온다. 상점가에서 조용한 골목으로 들어간 안쪽, 산 로자 빌딩 1층으로 역에서 걸어서 약 3분.",
+      ja: "プリンとショートケーキで知られる喫茶店で、5種類ほどのケーキから2つ選べるケーキセット、プリンアラモード（770円）、フレンチトーストもある。歴史は「約35年」「40年近い」と情報源で異なる。商店街から静かな路地に入った奥、サン・ローザの1階で、駅から徒歩3分ほど。"
     }
   },
   {
@@ -549,10 +549,10 @@ window.STORES = [
     address: "東京都世田谷区代田5-10-6 イーストコート代田1F",
     lat: null, lng: null,
     desc: {
-      en: "A café-restaurant known for old-style firm pudding and matcha gâteau au chocolat, plus a weekend morning plate with pudding, lunch and dinner. It opened in April 2022, appeared as a filming location in the TV drama silent, and reopened after a renewal in July 2025. It is on the ground floor of East Court Daita, 2 to 3 minutes from the West Exit of Setagaya-Daita Station on the Odakyu Line (7 minutes from Shimokitazawa Station). It does not take reservations and can get busy; hours vary, so check before going.",
-      zh: "咖啡餐厅，以老式硬布丁和抹茶巧克力蛋糕闻名，周末及节假日有可附布丁的早餐拼盘，也供应午餐和晚餐。2022年4月开业，曾是电视剧《silent》的取景地，2025年7月装修后重新开业。位于East Court代田1楼，从小田急线世田谷代田站西口步行2至3分钟（从下北泽站步行7分钟）。不接受预约，有时较拥挤；营业时间可能变动，请出发前确认。",
-      ko: "옛날식 단단한 푸딩과 말차 가토 쇼콜라로 알려진 카페 레스토랑으로, 주말·공휴일에는 푸딩이 함께 나오는 모닝 플레이트도 있고 점심과 저녁도 한다. 2022년 4월에 문을 열었고 드라마 『silent』의 촬영지로 소개되었으며, 2025년 7월에 새단장해 다시 열었다. 이스트코트 다이타 1층으로, 오다큐선 세타가야다이타역 서쪽 출구에서 걸어서 2~3분(시모키타자와역에서 7분). 예약은 받지 않고 붐빌 때가 있으며, 영업시간은 바뀔 수 있으니 가기 전에 확인하자.",
-      ja: "昔ながらの固めのプリンと抹茶ガトーショコラで知られるカフェレストランで、土日祝にはプリン付きのワンプレートもあるモーニングを出し、ランチ・ディナーもある。2022年4月に開店し、ドラマ『silent』のロケ地になり、2025年7月にリニューアルした。イーストコート代田の1階で、小田急線世田谷代田駅西口から徒歩2〜3分（下北沢駅から徒歩7分）。予約は受け付けておらず、混むことがある。営業時間は変わることがあるので行く前に確認を。"
+      en: "A café-restaurant known for old-style firm pudding and matcha gâteau au chocolat, plus a weekend morning plate with pudding, lunch and dinner. It opened in April 2022, appeared as a filming location in the TV drama silent, and reopened after a renewal in July 2025. It is on the ground floor of East Court Daita, 2 to 3 minutes from the West Exit of Setagaya-Daita Station on the Odakyu Line (7 minutes from Shimokitazawa Station). It does not take reservations and can get busy.",
+      zh: "咖啡餐厅，以老式硬布丁和抹茶巧克力蛋糕闻名，周末及节假日有可附布丁的早餐拼盘，也供应午餐和晚餐。2022年4月开业，曾是电视剧《silent》的取景地，2025年7月装修后重新开业。位于East Court代田1楼，从小田急线世田谷代田站西口步行2至3分钟（从下北泽站步行7分钟）。不接受预约，有时较拥挤。",
+      ko: "옛날식 단단한 푸딩과 말차 가토 쇼콜라로 알려진 카페 레스토랑으로, 주말·공휴일에는 푸딩이 함께 나오는 모닝 플레이트도 있고 점심과 저녁도 한다. 2022년 4월에 문을 열었고 드라마 『silent』의 촬영지로 소개되었으며, 2025년 7월에 새단장해 다시 열었다. 이스트코트 다이타 1층으로, 오다큐선 세타가야다이타역 서쪽 출구에서 걸어서 2~3분(시모키타자와역에서 7분). 예약은 받지 않고 붐빌 때가 있다.",
+      ja: "昔ながらの固めのプリンと抹茶ガトーショコラで知られるカフェレストランで、土日祝にはプリン付きのワンプレートもあるモーニングを出し、ランチ・ディナーもある。2022年4月に開店し、ドラマ『silent』のロケ地になり、2025年7月にリニューアルした。イーストコート代田の1階で、小田急線世田谷代田駅西口から徒歩2〜3分（下北沢駅から徒歩7分）。予約は受け付けておらず、混むことがある。"
     }
   },
 
@@ -566,10 +566,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "anjali.jpg",
     desc: {
-      en: "A curry shop serving three or four spice curries that change daily; a two-curry plate is ¥1,600 and a one-curry plate ¥1,400. The owner, who trained in Japanese cuisine, built the recipes from travels in India and Sri Lanka, and the shop is run by a couple. It is in the basement (B1) of a building on a back lane, about 2 minutes on foot from the Southwest Exit of Shimokitazawa Station. Around 8 seats. No credit cards or e-money. Opening days and hours have changed over time, so check before you go.",
-      zh: "每天更换三到四种香料咖喱的咖喱店，双拼盘1,600日元，单品盘1,400日元。店主出身日本料理，根据在印度和斯里兰卡旅行时的体验设计了原创食谱，由一对夫妇经营。位于小巷里一栋大楼的地下1层，从下北泽站西南口步行约2分钟。座位约8个。不能使用信用卡和电子货币。营业日和营业时间曾有变动，前往前请先确认。",
-      ko: "매일 바뀌는 스파이스 카레 3~4종을 내는 카레 가게로, 2종 플레이트는 1,600엔, 1종 플레이트는 1,400엔입니다. 일식 출신 주인이 인도와 스리랑카를 여행하며 맛본 경험을 바탕으로 직접 레시피를 만들었고, 부부가 함께 운영합니다. 골목 안 건물의 지하 1층에 있으며 시모키타자와역 남서쪽 출구에서 걸어서 2분 정도입니다. 좌석은 8석 정도. 신용카드와 전자화폐는 사용할 수 없습니다. 영업일과 영업시간이 바뀐 적이 있으니 가기 전에 확인하세요.",
-      ja: "日替わりで3〜4種類のスパイスカレーを出すカレー店で、2種盛りのプレートは1,600円、1種は1,400円。和食出身の店主がインドやスリランカの旅で味わった経験をもとにレシピを考え、夫婦で切り盛りしている。路地裏のビルの地下1階にあり、下北沢駅南西口から徒歩2分ほど。席は8席ほど。カード・電子マネーは使えない。営業日と営業時間は時期によって変わっているので、行く前に確認を。"
+      en: "A curry shop serving three or four spice curries that change daily; a two-curry plate is ¥1,600 and a one-curry plate ¥1,400. The owner, who trained in Japanese cuisine, built the recipes from travels in India and Sri Lanka, and the shop is run by a couple. It is in the basement (B1) of a building on a back lane, about 2 minutes on foot from the Southwest Exit of Shimokitazawa Station. Around 8 seats. No credit cards or e-money.",
+      zh: "每天更换三到四种香料咖喱的咖喱店，双拼盘1,600日元，单品盘1,400日元。店主出身日本料理，根据在印度和斯里兰卡旅行时的体验设计了原创食谱，由一对夫妇经营。位于小巷里一栋大楼的地下1层，从下北泽站西南口步行约2分钟。座位约8个。不能使用信用卡和电子货币。",
+      ko: "매일 바뀌는 스파이스 카레 3~4종을 내는 카레 가게로, 2종 플레이트는 1,600엔, 1종 플레이트는 1,400엔입니다. 일식 출신 주인이 인도와 스리랑카를 여행하며 맛본 경험을 바탕으로 직접 레시피를 만들었고, 부부가 함께 운영합니다. 골목 안 건물의 지하 1층에 있으며 시모키타자와역 남서쪽 출구에서 걸어서 2분 정도입니다. 좌석은 8석 정도. 신용카드와 전자화폐는 사용할 수 없습니다.",
+      ja: "日替わりで3〜4種類のスパイスカレーを出すカレー店で、2種盛りのプレートは1,600円、1種は1,400円。和食出身の店主がインドやスリランカの旅で味わった経験をもとにレシピを考え、夫婦で切り盛りしている。路地裏のビルの地下1階にあり、下北沢駅南西口から徒歩2分ほど。席は8席ほど。カード・電子マネーは使えない。"
     }
   },
   {
@@ -580,10 +580,10 @@ window.STORES = [
     address: "東京都世田谷区北沢2-37-16 林ビル3F",
     lat: null, lng: null,
     desc: {
-      en: "A dashi (Japanese broth) curry shop by day and a music bar by night. Curries include chicken curry made with dried-sardine, kombu and bonito broth, and a pork keema with Hatcho miso. The shop moved here from Suzunari Yokocho, and at night it serves motsuni (simmered offal) in the style of the owner's family yakitori shop near Odawara, open for over 70 years. Look for the building with a spiral staircase on Ichibangai shopping street; the shop is on the 3rd floor, with no sign, only a small name on the door. Curry days differ between sources, so check before you go.",
-      zh: "白天是使用日式高汤的咖喱店，晚上是音乐酒吧。咖喱有用小鱼干、昆布和厚削柴鱼高汤做的鸡肉咖喱，以及用八丁味噌做的猪肉肉末咖喱等。店铺从铃成横丁搬来，晚上供应炖内脏，味道来自店主老家——小田原附近经营70多年的烤鸡串店。在一番街商店街找有螺旋楼梯的大楼，店在3楼。没有招牌，只在门上写着小小的店名。各信息来源对咖喱营业日的记载不同，前往前请先确认。",
-      ko: "낮에는 일본식 육수(다시) 카레, 밤에는 뮤직 바가 되는 가게입니다. 멸치·다시마·두껍게 깎은 가쓰오부시 육수로 만든 치킨 카레, 핫초 된장을 넣은 포크 키마 카레 등을 냅니다. 스즈나리 요코초에서 이전해 온 가게로, 밤에는 주인의 본가인 오다와라 근처에서 70년 넘게 이어 온 야키토리집의 맛을 담은 모쓰니(곱창 조림)를 냅니다. 이치반가이 상점가에서 나선 계단이 있는 건물을 찾으면 3층에 있습니다. 간판은 없고 문에 작게 가게 이름만 적혀 있습니다. 카레 영업일은 정보마다 다르니 가기 전에 확인하세요.",
-      ja: "昼は出汁カレー、夜はミュージックバーになる店。いりこ・昆布・厚削り節の出汁を使ったチキンカレーや、八丁味噌を使ったポークキーマなどを出す。鈴なり横丁から移ってきた店で、夜は小田原の近くで70年以上続く店主の実家の焼き鳥屋の味のモツ煮がある。一番街商店街の、らせん階段が目印のビルの3階。看板はなく、ドアに小さく店名があるだけ。カレーの営業日は情報源で異なるので、行く前に確認を。"
+      en: "A dashi (Japanese broth) curry shop by day and a music bar by night. Curries include chicken curry made with dried-sardine, kombu and bonito broth, and a pork keema with Hatcho miso. The shop moved here from Suzunari Yokocho, and at night it serves motsuni (simmered offal) in the style of the owner's family yakitori shop near Odawara, open for over 70 years. Look for the building with a spiral staircase on Ichibangai shopping street; the shop is on the 3rd floor, with no sign, only a small name on the door.",
+      zh: "白天是使用日式高汤的咖喱店，晚上是音乐酒吧。咖喱有用小鱼干、昆布和厚削柴鱼高汤做的鸡肉咖喱，以及用八丁味噌做的猪肉肉末咖喱等。店铺从铃成横丁搬来，晚上供应炖内脏，味道来自店主老家——小田原附近经营70多年的烤鸡串店。在一番街商店街找有螺旋楼梯的大楼，店在3楼。没有招牌，只在门上写着小小的店名。",
+      ko: "낮에는 일본식 육수(다시) 카레, 밤에는 뮤직 바가 되는 가게입니다. 멸치·다시마·두껍게 깎은 가쓰오부시 육수로 만든 치킨 카레, 핫초 된장을 넣은 포크 키마 카레 등을 냅니다. 스즈나리 요코초에서 이전해 온 가게로, 밤에는 주인의 본가인 오다와라 근처에서 70년 넘게 이어 온 야키토리집의 맛을 담은 모쓰니(곱창 조림)를 냅니다. 이치반가이 상점가에서 나선 계단이 있는 건물을 찾으면 3층에 있습니다. 간판은 없고 문에 작게 가게 이름만 적혀 있습니다.",
+      ja: "昼は出汁カレー、夜はミュージックバーになる店。いりこ・昆布・厚削り節の出汁を使ったチキンカレーや、八丁味噌を使ったポークキーマなどを出す。鈴なり横丁から移ってきた店で、夜は小田原の近くで70年以上続く店主の実家の焼き鳥屋の味のモツ煮がある。一番街商店街の、らせん階段が目印のビルの3階。看板はなく、ドアに小さく店名があるだけ。"
     }
   },
   {
@@ -609,10 +609,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "kyu-yamu-tei.jpg",
     desc: {
-      en: "The first Tokyo branch of Kyu Yamu Tei, a spice curry shop from Osaka, serving a keema curry that changes every month along with a Japanese-dashi soup. You can order the 'aigake' or 'zengake' combination plates, each with curry soup, and choose brown rice. It opened in July 2017. About 5 to 7 minutes on foot from Shimokitazawa Station; look for the grapevine at the entrance. Around 12 to 14 seats, no reservations, no credit cards. On weekends you take a numbered ticket and come back when your turn comes. Sources differ on the closing day, so check before you go.",
-      zh: "大阪香料咖喱店“旧ヤム邸”的东京1号店，供应每月更换的肉末咖喱和日式高汤汤品。可以点“あいがけ”“ぜんがけ”两种拼盘，都附咖喱汤，米饭也可选糙米。2017年7月开业。从下北泽站步行约5〜7分钟，入口的葡萄树是标志。座位约12〜14个，不能预约，不能刷卡。周末采用号码牌制，轮到时再回到店里。各信息来源对定休日的记载不同，前往前请先确认。",
-      ko: "오사카의 스파이스 카레 가게 '규야무테이(旧ヤム邸)'의 도쿄 1호점으로, 매달 바뀌는 키마 카레와 일본식 육수 수프를 냅니다. '아이가케', '젠가케' 조합 플레이트를 주문할 수 있고 둘 다 카레 수프가 함께 나오며, 밥은 현미도 고를 수 있습니다. 2017년 7월에 문을 열었습니다. 시모키타자와역에서 걸어서 5~7분, 입구의 포도나무가 표시입니다. 좌석은 12~14석 정도, 예약 불가, 카드 불가. 주말에는 번호표를 받고 순서가 되면 가게로 돌아오는 방식입니다. 정기 휴일은 정보마다 다르니 가기 전에 확인하세요.",
-      ja: "大阪のスパイスカレー店「旧ヤム邸」の東京1号店で、月替わりのキーマカレーと和出汁のスープを出す。「あいがけ」「ぜんがけ」ができてそれぞれカレースープが付き、ご飯は玄米も選べる。2017年7月開店。下北沢駅から徒歩5〜7分で、入口のぶどうの木が目印。席は12〜14席ほど、予約不可・カード不可。土日は整理券制で、順番が来たら店に戻る。定休日は情報源で異なるので、行く前に確認を。"
+      en: "The first Tokyo branch of Kyu Yamu Tei, a spice curry shop from Osaka, serving a keema curry that changes every month along with a Japanese-dashi soup. You can order the 'aigake' or 'zengake' combination plates, each with curry soup, and choose brown rice. It opened in July 2017. About 5 to 7 minutes on foot from Shimokitazawa Station; look for the grapevine at the entrance. Around 12 to 14 seats, no reservations, no credit cards. On weekends you take a numbered ticket and come back when your turn comes.",
+      zh: "大阪香料咖喱店“旧ヤム邸”的东京1号店，供应每月更换的肉末咖喱和日式高汤汤品。可以点“あいがけ”“ぜんがけ”两种拼盘，都附咖喱汤，米饭也可选糙米。2017年7月开业。从下北泽站步行约5〜7分钟，入口的葡萄树是标志。座位约12〜14个，不能预约，不能刷卡。周末采用号码牌制，轮到时再回到店里。",
+      ko: "오사카의 스파이스 카레 가게 '규야무테이(旧ヤム邸)'의 도쿄 1호점으로, 매달 바뀌는 키마 카레와 일본식 육수 수프를 냅니다. '아이가케', '젠가케' 조합 플레이트를 주문할 수 있고 둘 다 카레 수프가 함께 나오며, 밥은 현미도 고를 수 있습니다. 2017년 7월에 문을 열었습니다. 시모키타자와역에서 걸어서 5~7분, 입구의 포도나무가 표시입니다. 좌석은 12~14석 정도, 예약 불가, 카드 불가. 주말에는 번호표를 받고 순서가 되면 가게로 돌아오는 방식입니다.",
+      ja: "大阪のスパイスカレー店「旧ヤム邸」の東京1号店で、月替わりのキーマカレーと和出汁のスープを出す。「あいがけ」「ぜんがけ」ができてそれぞれカレースープが付き、ご飯は玄米も選べる。2017年7月開店。下北沢駅から徒歩5〜7分で、入口のぶどうの木が目印。席は12〜14席ほど、予約不可・カード不可。土日は整理券制で、順番が来たら店に戻る。"
     }
   },
 
@@ -657,10 +657,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "little-soul-cafe.jpg",
     desc: {
-      en: "A record bar playing soul, funk, jazz and dance music from a collection of about 14,000 to 15,000 records (none are for sale). It stocks over 300 spirits, including more than 100 rums, with drinks from about ¥800. Owner Nobuo Miyamae opened it in 1999 and built the interior, including the 8-seat counter, by hand. It is on the 2nd floor of a building near Ichibangai on the North Exit side, about 4 minutes from Shimokitazawa Station. Charge ¥500 per person, cash only, open every day. Sources give different opening times, so check before you go.",
-      zh: "播放灵魂乐、放克、爵士和舞曲的黑胶酒吧，收藏约14,000〜15,000张唱片（不出售）。烈酒300种以上，其中朗姆酒超过100种，饮品约800日元起。1999年由店主宫前伸夫开设，有8个座位的吧台等内装都是他亲手做的。位于北口一番街附近大楼的2楼，从下北泽站步行约4分钟。每人收费500日元，只收现金，全年无休。各来源记载的开门时间不同，前往前请先确认。",
-      ko: "소울, 펑크, 재즈, 댄스 음악을 중심으로 약 14,000~15,000장의 레코드를 트는 레코드 바입니다(레코드 판매는 하지 않음). 스피릿은 300종 이상, 그중 럼만 100종이 넘고, 음료는 800엔 정도부터입니다. 1999년에 주인 미야마에 노부오 씨가 열었으며, 8석 카운터를 비롯한 내부를 직접 만들었습니다. 북쪽 출구 쪽 이치반가이 근처 건물 2층으로, 시모키타자와역에서 걸어서 4분입니다. 1인당 차지 500엔, 현금만 가능, 연중무휴. 개점 시간은 정보마다 다르니 가기 전에 확인하세요.",
-      ja: "ソウル、ファンク、ジャズ、ダンスミュージックを中心に、約14,000〜15,000枚のレコードをかけるレコードバー（レコードの販売はしない）。スピリッツは300種以上、うちラムは100種以上で、ドリンクは約800円から。1999年にオーナーの宮前伸夫さんが開き、カウンター8席などの内装も自分で作った。北口・一番街商店街の近くのビル2階で、下北沢駅から徒歩4分。チャージ1人500円、現金のみ、無休。開店時間は情報源で異なるので確認を。"
+      en: "A record bar playing soul, funk, jazz and dance music from a collection of about 14,000 to 15,000 records (none are for sale). It stocks over 300 spirits, including more than 100 rums, with drinks from about ¥800. Owner Nobuo Miyamae opened it in 1999 and built the interior, including the 8-seat counter, by hand. It is on the 2nd floor of a building near Ichibangai on the North Exit side, about 4 minutes from Shimokitazawa Station. Charge ¥500 per person, cash only, open every day.",
+      zh: "播放灵魂乐、放克、爵士和舞曲的黑胶酒吧，收藏约14,000〜15,000张唱片（不出售）。烈酒300种以上，其中朗姆酒超过100种，饮品约800日元起。1999年由店主宫前伸夫开设，有8个座位的吧台等内装都是他亲手做的。位于北口一番街附近大楼的2楼，从下北泽站步行约4分钟。每人收费500日元，只收现金，全年无休。",
+      ko: "소울, 펑크, 재즈, 댄스 음악을 중심으로 약 14,000~15,000장의 레코드를 트는 레코드 바입니다(레코드 판매는 하지 않음). 스피릿은 300종 이상, 그중 럼만 100종이 넘고, 음료는 800엔 정도부터입니다. 1999년에 주인 미야마에 노부오 씨가 열었으며, 8석 카운터를 비롯한 내부를 직접 만들었습니다. 북쪽 출구 쪽 이치반가이 근처 건물 2층으로, 시모키타자와역에서 걸어서 4분입니다. 1인당 차지 500엔, 현금만 가능, 연중무휴.",
+      ja: "ソウル、ファンク、ジャズ、ダンスミュージックを中心に、約14,000〜15,000枚のレコードをかけるレコードバー（レコードの販売はしない）。スピリッツは300種以上、うちラムは100種以上で、ドリンクは約800円から。1999年にオーナーの宮前伸夫さんが開き、カウンター8席などの内装も自分で作った。北口・一番街商店街の近くのビル2階で、下北沢駅から徒歩4分。チャージ1人500円、現金のみ、無休。"
     }
   },
   {
@@ -818,10 +818,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "furuhon-bibibi.jpg",
     desc: {
-      en: "A used bookshop with about 13,000 books, leaning toward subculture: out-of-print manga, film and theater books and philosophy, plus photo books, DVDs and children's books. It opened in January 2005; the name expresses the owner's wish for a selection that gives you a 'bi-bi-bi!' jolt the moment you walk in. Stock comes from books bought from customers, and it now also carries new books and zines. It is on the ground floor on Chazawa-dori, on the right just before The Suzunari, about 4 minutes from the East Exit of Shimokitazawa Station; outside is a glass-doored shelf of fixed-price books. Closed Tuesdays; hours vary by source.",
-      zh: "藏书约13,000册的旧书店，偏重亚文化：绝版漫画、电影和戏剧书籍、思想类书籍，还有写真集、DVD和儿童书。2005年1月开业，店名寄托了店主的愿望：希望品种齐全到让人一进门就像“哔哔哔！”被电到一样。商品都是从客人那里收购来的，现在也卖新书和ZINE。位于茶泽通沿街的1楼，在铃成剧场前面的右侧，从下北泽站东口步行约4分钟；店外有带门的均价书架。周二休息，营业时间各来源不同。",
-      ko: "약 13,000권을 갖춘 헌책방으로, 절판 만화, 영화·연극 책, 사상서 같은 서브컬처 계열에 사진집, DVD, 아동서도 있습니다. 2005년 1월에 문을 열었고, 가게 이름에는 들어서는 순간 '비비빗!' 하고 전기가 통하는 듯한 책을 갖추고 싶다는 주인의 바람이 담겨 있습니다. 상품은 손님에게서 사들인 책이며, 요즘은 신간과 ZINE도 다룹니다. 차자와도리에 면한 1층, 스즈나리 바로 앞 오른쪽으로 시모키타자와역 동쪽 출구에서 약 4분이며, 가게 밖에 문 달린 균일가 책장이 있습니다. 화요일 휴무, 영업시간은 정보마다 다릅니다.",
-      ja: "約13,000冊をそろえる古書店で、絶版マンガ、映画・演劇の本、思想書などのサブカル系に、写真集・DVD・児童書も並ぶ。2005年1月開業で、店名は入った瞬間「ビビビッ!」と痺れるような品ぞろえにしたいという店主の思いから。商品はお客さんから買い取ったもので、新刊やZINEも扱う。茶沢通り沿いの1階、スズナリ手前の右側で、下北沢駅東口から約4分。店外に扉付きの均一本棚がある。火曜定休、営業時間は情報源で異なる。"
+      en: "A used bookshop with about 13,000 books, leaning toward subculture: out-of-print manga, film and theater books and philosophy, plus photo books, DVDs and children's books. It opened in January 2005; the name expresses the owner's wish for a selection that gives you a 'bi-bi-bi!' jolt the moment you walk in. Stock comes from books bought from customers, and it now also carries new books and zines. It is on the ground floor on Chazawa-dori, on the right just before The Suzunari, about 4 minutes from the East Exit of Shimokitazawa Station; outside is a glass-doored shelf of fixed-price books. Closed Tuesdays.",
+      zh: "藏书约13,000册的旧书店，偏重亚文化：绝版漫画、电影和戏剧书籍、思想类书籍，还有写真集、DVD和儿童书。2005年1月开业，店名寄托了店主的愿望：希望品种齐全到让人一进门就像“哔哔哔！”被电到一样。商品都是从客人那里收购来的，现在也卖新书和ZINE。位于茶泽通沿街的1楼，在铃成剧场前面的右侧，从下北泽站东口步行约4分钟；店外有带门的均价书架。周二休息。",
+      ko: "약 13,000권을 갖춘 헌책방으로, 절판 만화, 영화·연극 책, 사상서 같은 서브컬처 계열에 사진집, DVD, 아동서도 있습니다. 2005년 1월에 문을 열었고, 가게 이름에는 들어서는 순간 '비비빗!' 하고 전기가 통하는 듯한 책을 갖추고 싶다는 주인의 바람이 담겨 있습니다. 상품은 손님에게서 사들인 책이며, 요즘은 신간과 ZINE도 다룹니다. 차자와도리에 면한 1층, 스즈나리 바로 앞 오른쪽으로 시모키타자와역 동쪽 출구에서 약 4분이며, 가게 밖에 문 달린 균일가 책장이 있습니다. 화요일 휴무.",
+      ja: "約13,000冊をそろえる古書店で、絶版マンガ、映画・演劇の本、思想書などのサブカル系に、写真集・DVD・児童書も並ぶ。2005年1月開業で、店名は入った瞬間「ビビビッ!」と痺れるような品ぞろえにしたいという店主の思いから。商品はお客さんから買い取ったもので、新刊やZINEも扱う。茶沢通り沿いの1階、スズナリ手前の右側で、下北沢駅東口から約4分。店外に扉付きの均一本棚がある。火曜定休。"
     }
   },
   {
@@ -848,10 +848,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "kosho-asu.jpg",
     desc: {
-      en: "A used bookshop that aims to be an 'ordinary bookshop' without narrowing its focus. The owner once worked at an art-book specialist, so art books and photo books are well stocked, along with film, theater, picture books and hobby books on cooking and handicrafts. It opened in January 2017 in the shop of Shirakaba Shoin, a used bookstore that had operated in Shimokitazawa for about 70 years. It is on Shimokitazawa Ichibangai shopping street, about 7 minutes from the North Exit; there are entrances on both left and right, with book carts outside. Open 12 pm to 8 pm; sources differ on the closing day.",
-      zh: "以不限定类型的“普通旧书店”为目标的旧书店。店主曾在美术书专门店工作，所以美术书和写真集很丰富，还有电影、戏剧、绘本以及料理、手工等兴趣类书籍。2017年1月接手在下北泽经营约70年的旧书店“白桦书院”的店面开业。店名读作“こしょあした（Kosho Ashita）”。位于下北泽一番街商店街，从下北泽站北口步行约7分钟；左右各有一个入口，店外摆着书车。营业时间12:00〜20:00，各来源记载的定休日不同。",
-      ko: "장르를 좁히지 않는 '평범한 헌책방'을 목표로 하는 서점입니다. 주인이 미술서 전문점에서 일했기 때문에 미술서와 사진집이 많고, 영화·연극, 그림책, 요리·수예 같은 취미 책도 있습니다. 2017년 1월, 시모키타자와에서 약 70년 이어진 헌책방 '시라카바 서원'의 가게를 이어받아 문을 열었습니다. 가게 이름은 '고쇼 아시타'라고 읽습니다. 시모키타자와 이치반가이 상점가에 있으며 북쪽 출구에서 걸어서 7분 정도이고, 입구는 좌우 두 곳, 가게 밖에 책 왜건이 있습니다. 12:00~20:00 영업, 정기 휴일은 정보마다 다릅니다.",
-      ja: "ジャンルを絞らない「普通の古本屋」をめざす古書店。店主が美術書専門店で働いていたため美術書・写真集が厚く、映画・演劇、絵本、料理・手芸など趣味の本もある。2017年1月、下北沢で約70年続いた古書店「白樺書院」の店舗を引き継いで開いた。店名の読みは「こしょあした」。下北沢一番街商店街沿いで、下北沢駅北口から徒歩7分ほど。入口は左右2カ所あり、店外にワゴンが出ている。12:00〜20:00、定休日は情報源で異なる。"
+      en: "A used bookshop that aims to be an 'ordinary bookshop' without narrowing its focus. The owner once worked at an art-book specialist, so art books and photo books are well stocked, along with film, theater, picture books and hobby books on cooking and handicrafts. It opened in January 2017 in the shop of Shirakaba Shoin, a used bookstore that had operated in Shimokitazawa for about 70 years. It is on Shimokitazawa Ichibangai shopping street, about 7 minutes from the North Exit; there are entrances on both left and right, with book carts outside. Open 12 pm to 8 pm.",
+      zh: "以不限定类型的“普通旧书店”为目标的旧书店。店主曾在美术书专门店工作，所以美术书和写真集很丰富，还有电影、戏剧、绘本以及料理、手工等兴趣类书籍。2017年1月接手在下北泽经营约70年的旧书店“白桦书院”的店面开业。店名读作“こしょあした（Kosho Ashita）”。位于下北泽一番街商店街，从下北泽站北口步行约7分钟；左右各有一个入口，店外摆着书车。营业时间12:00〜20:00。",
+      ko: "장르를 좁히지 않는 '평범한 헌책방'을 목표로 하는 서점입니다. 주인이 미술서 전문점에서 일했기 때문에 미술서와 사진집이 많고, 영화·연극, 그림책, 요리·수예 같은 취미 책도 있습니다. 2017년 1월, 시모키타자와에서 약 70년 이어진 헌책방 '시라카바 서원'의 가게를 이어받아 문을 열었습니다. 가게 이름은 '고쇼 아시타'라고 읽습니다. 시모키타자와 이치반가이 상점가에 있으며 북쪽 출구에서 걸어서 7분 정도이고, 입구는 좌우 두 곳, 가게 밖에 책 왜건이 있습니다. 12:00~20:00 영업.",
+      ja: "ジャンルを絞らない「普通の古本屋」をめざす古書店。店主が美術書専門店で働いていたため美術書・写真集が厚く、映画・演劇、絵本、料理・手芸など趣味の本もある。2017年1月、下北沢で約70年続いた古書店「白樺書院」の店舗を引き継いで開いた。店名の読みは「こしょあした」。下北沢一番街商店街沿いで、下北沢駅北口から徒歩7分ほど。入口は左右2カ所あり、店外にワゴンが出ている。12:00〜20:00。"
     }
   },
   {
@@ -863,10 +863,10 @@ window.STORES = [
     lat: null, lng: null,
     photo: "clarice-books.jpg",
     desc: {
-      en: "A used bookshop strongest in philosophy and critical thought, covering ten genres including literature, art and photography, fashion and subculture. It opened in December 2013; the owner trained for about ten years at a used bookshop in Kanda Jimbocho. The name comes from Clarice Starling in 'The Silence of the Lambs', chosen because she is strong, intelligent and beautiful. It is on the 2nd floor above Gallery HANA on Ichibangai, North Exit side; the entrance is at the side of the building, so look for the '本' (book) sign and take the side stairs. Closed Mondays; hours vary by source, so check before you go.",
-      zh: "以哲学·思想类见长的旧书店，涵盖文学、美术·摄影、时尚、亚文化等10个类别。2013年12月开业，店主曾在神田神保町的旧书店修业约10年。店名来自电影《沉默的羔羊》中的克拉丽斯·史达琳，因为她“坚强、聪明又美丽”。位于北口一番街商店街、HANA画廊所在大楼的2楼，入口在建筑侧面：以从街上看得到的“本”字为标志，走楼侧的楼梯上去。周一休息，营业时间各来源不同，前往前请先确认。",
-      ko: "철학·사상 분야에 특히 힘을 쏟는 헌책방으로, 문학, 미술·사진, 패션, 서브컬처 등 10개 장르를 갖추고 있습니다. 2013년 12월에 문을 열었고, 주인은 간다 진보초의 헌책방에서 약 10년간 수련했습니다. 가게 이름은 영화 '양들의 침묵'의 클라리스 스탈링이 '강하고 지적이며 아름답다'는 데서 따왔습니다. 북쪽 출구 쪽 이치반가이의 갤러리 'HANA' 건물 2층으로, 입구가 건물 옆에 있습니다. 길에서 보이는 '本' 글자를 표시 삼아 건물 옆 계단을 올라가세요. 월요일 휴무, 영업시간은 정보마다 다르니 가기 전에 확인하세요.",
-      ja: "哲学・思想に力を入れ、文学、美術・写真、ファッション、サブカルチャーなど10ジャンルをそろえる古書店。2013年12月開店で、店主は神田神保町の古書店で約10年修業した。店名は映画『羊たちの沈黙』のクラリス・スターリングが「強く、知的で、美しい」ことから取った。北口・一番街商店街のギャラリー「HANA」の2階で、入口は建物の脇。通りから見える「本」の文字を目印に、ビル横の階段を上る。月曜休み、営業時間は情報源で異なるので確認を。"
+      en: "A used bookshop strongest in philosophy and critical thought, covering ten genres including literature, art and photography, fashion and subculture. It opened in December 2013; the owner trained for about ten years at a used bookshop in Kanda Jimbocho. The name comes from Clarice Starling in 'The Silence of the Lambs', chosen because she is strong, intelligent and beautiful. It is on the 2nd floor above Gallery HANA on Ichibangai, North Exit side; the entrance is at the side of the building, so look for the '本' (book) sign and take the side stairs. Closed Mondays.",
+      zh: "以哲学·思想类见长的旧书店，涵盖文学、美术·摄影、时尚、亚文化等10个类别。2013年12月开业，店主曾在神田神保町的旧书店修业约10年。店名来自电影《沉默的羔羊》中的克拉丽斯·史达琳，因为她“坚强、聪明又美丽”。位于北口一番街商店街、HANA画廊所在大楼的2楼，入口在建筑侧面：以从街上看得到的“本”字为标志，走楼侧的楼梯上去。周一休息。",
+      ko: "철학·사상 분야에 특히 힘을 쏟는 헌책방으로, 문학, 미술·사진, 패션, 서브컬처 등 10개 장르를 갖추고 있습니다. 2013년 12월에 문을 열었고, 주인은 간다 진보초의 헌책방에서 약 10년간 수련했습니다. 가게 이름은 영화 '양들의 침묵'의 클라리스 스탈링이 '강하고 지적이며 아름답다'는 데서 따왔습니다. 북쪽 출구 쪽 이치반가이의 갤러리 'HANA' 건물 2층으로, 입구가 건물 옆에 있습니다. 길에서 보이는 '本' 글자를 표시 삼아 건물 옆 계단을 올라가세요. 월요일 휴무.",
+      ja: "哲学・思想に力を入れ、文学、美術・写真、ファッション、サブカルチャーなど10ジャンルをそろえる古書店。2013年12月開店で、店主は神田神保町の古書店で約10年修業した。店名は映画『羊たちの沈黙』のクラリス・スターリングが「強く、知的で、美しい」ことから取った。北口・一番街商店街のギャラリー「HANA」の2階で、入口は建物の脇。通りから見える「本」の文字を目印に、ビル横の階段を上る。月曜休み。"
     }
   },
 
@@ -893,10 +893,10 @@ window.STORES = [
     address: "東京都世田谷区北沢2-32-8",
     lat: null, lng: null,
     desc: {
-      en: "A rental gallery used for solo, group and collaborative exhibitions; past shows have included ink painting, picture books and tea ware, and in October 2026 it hosted a solo show by Shimokitazawa-born painter Riku Harada. The owner ran a kimono shop and, delivering clothes to customers' homes, was often shown their hobby artworks, so the owner opened a place where such work could be displayed easily. The first exhibition was a father-and-son show by photographer Shinpei Asai and Ryusuke Asai. About 3 minutes on foot from the North Exit side of Shimokitazawa Station. Closed Mondays; hours vary by source, so check before you go.",
-      zh: "用于个展、联展和合作展的出租画廊，过去曾举办水墨画、绘本、茶器等展览，2026年10月举办了下北泽出身的画家原田陆的个展。店主原本经营和服店，给客人送衣服时常被请去看客人兴趣创作的艺术作品，于是想开一个能轻松展示作品的地方。第一场展览是摄影师浅井慎平与浅井龙介的父子展。从下北泽站北口一侧步行约3分钟。周一休息；营业时间各来源不同，前往前请先确认。",
-      ko: "개인전, 단체전, 협업전에 쓰이는 대여 화랑으로, 지금까지 수묵화, 그림책, 다기 전시 등이 열렸고 2026년 10월에는 시모키타자와 출신 화가 하라다 리쿠 씨의 개인전이 열렸습니다. 주인은 원래 포목점을 운영했는데, 손님 집에 옷을 배달하러 갔다가 취미로 만든 작품을 보는 일이 많아 작품을 부담 없이 걸 수 있는 곳을 만들었습니다. 첫 전시는 사진가 아사이 신페이 씨와 아사이 류스케 씨의 부자전이었습니다. 시모키타자와역 북쪽 출구 쪽에서 걸어서 약 3분. 월요일 휴무이며, 영업시간은 정보마다 다르니 가기 전에 확인하세요.",
-      ja: "個展・グループ展・コラボ展に使われる貸し画廊で、これまで水墨画・絵本・茶器などの展示があり、2026年10月には下北沢出身の画家・原田陸さんの個展が開かれた。もとは呉服店で、店主がお客さんの家に服を届けたときに趣味のアート作品を見せてもらうことが多かったことから、作品を気軽に飾れる場所としてつくった。最初の展示は写真家・浅井愼平さんと浅井竜介さんの父子展。下北沢駅北口側から徒歩約3分。月曜休み、営業時間は情報源で異なるので確認を。"
+      en: "A rental gallery used for solo, group and collaborative exhibitions; past shows have included ink painting, picture books and tea ware, and in October 2026 it hosted a solo show by Shimokitazawa-born painter Riku Harada. The owner ran a kimono shop and, delivering clothes to customers' homes, was often shown their hobby artworks, so the owner opened a place where such work could be displayed easily. The first exhibition was a father-and-son show by photographer Shinpei Asai and Ryusuke Asai. About 3 minutes on foot from the North Exit side of Shimokitazawa Station. Closed Mondays.",
+      zh: "用于个展、联展和合作展的出租画廊，过去曾举办水墨画、绘本、茶器等展览，2026年10月举办了下北泽出身的画家原田陆的个展。店主原本经营和服店，给客人送衣服时常被请去看客人兴趣创作的艺术作品，于是想开一个能轻松展示作品的地方。第一场展览是摄影师浅井慎平与浅井龙介的父子展。从下北泽站北口一侧步行约3分钟。周一休息。",
+      ko: "개인전, 단체전, 협업전에 쓰이는 대여 화랑으로, 지금까지 수묵화, 그림책, 다기 전시 등이 열렸고 2026년 10월에는 시모키타자와 출신 화가 하라다 리쿠 씨의 개인전이 열렸습니다. 주인은 원래 포목점을 운영했는데, 손님 집에 옷을 배달하러 갔다가 취미로 만든 작품을 보는 일이 많아 작품을 부담 없이 걸 수 있는 곳을 만들었습니다. 첫 전시는 사진가 아사이 신페이 씨와 아사이 류스케 씨의 부자전이었습니다. 시모키타자와역 북쪽 출구 쪽에서 걸어서 약 3분. 월요일 휴무.",
+      ja: "個展・グループ展・コラボ展に使われる貸し画廊で、これまで水墨画・絵本・茶器などの展示があり、2026年10月には下北沢出身の画家・原田陸さんの個展が開かれた。もとは呉服店で、店主がお客さんの家に服を届けたときに趣味のアート作品を見せてもらうことが多かったことから、作品を気軽に飾れる場所としてつくった。最初の展示は写真家・浅井愼平さんと浅井竜介さんの父子展。下北沢駅北口側から徒歩約3分。月曜休み。"
     }
   },
   {
@@ -982,10 +982,10 @@ window.STORES = [
     address: "東京都世田谷区北沢3-19-20 reload 2-6",
     lat: null, lng: null,
     desc: {
-      en: "A stationery shop themed on 'a stationery store in a European town', selling Japanese and imported stationery and desk-side interior goods. It started as a small shop near Shoin-jinja-mae, moved to Sangenjaya, and in 2021 relocated to reload, the low-rise shopping complex built on the former Odakyu Line tracks. It is in unit 2-6 on the 2nd floor of reload, about 4 minutes on foot from Shimokitazawa or Higashi-Kitazawa Station. The official site lists 12 pm to 7 pm, closed Mondays (Tuesday if Monday is a holiday), but other sources differ, so check before you go.",
-      zh: "以“欧洲小镇的文具店”为主题的文具店，销售日本国内和进口的文具以及桌边的室内杂货。从松阴神社前的一家小店起步，经过三轩茶屋，2021年搬进建在小田急线旧铁道上的低层商业设施“reload”。位于reload 2楼的2-6号铺，从下北泽站或东北泽站步行约4分钟。官网写的是12:00〜19:00、周一休息（遇节假日改为周二），但其他来源不同，前往前请先确认。",
-      ko: "'유럽 거리의 문방구'를 테마로 한 문구점으로, 국내외 문구와 책상 주변 인테리어 잡화를 판매합니다. 쇼인진자마에의 작은 가게에서 시작해 산겐자야를 거쳐, 2021년 오다큐선 옛 선로 자리에 생긴 저층 상업시설 'reload'로 옮겨 왔습니다. reload 2층의 2-6 구획으로, 시모키타자와역이나 히가시키타자와역에서 걸어서 약 4분입니다. 공식 사이트에는 12:00~19:00, 월요일 휴무(공휴일이면 화요일)로 나와 있지만 정보마다 다르니 가기 전에 확인하세요.",
-      ja: "「ヨーロッパの街の文房具店」がテーマの文具店で、国内外の文具やデスクまわりのインテリア雑貨を扱う。松陰神社前の小さな店から始まり、三軒茶屋を経て、2021年に小田急線の線路跡にできた低層の商業施設「reload」へ移ってきた。reloadの2階、区画2-6にあり、下北沢駅または東北沢駅から徒歩約4分。公式サイトでは12:00〜19:00・月曜定休（祝日なら火曜）だが、情報源で異なるので行く前に確認を。"
+      en: "A stationery shop themed on 'a stationery store in a European town', selling Japanese and imported stationery and desk-side interior goods. It started as a small shop near Shoin-jinja-mae, moved to Sangenjaya, and in 2021 relocated to reload, the low-rise shopping complex built on the former Odakyu Line tracks. It is in unit 2-6 on the 2nd floor of reload, about 4 minutes on foot from Shimokitazawa or Higashi-Kitazawa Station. Open 12 pm to 7 pm, closed Mondays (Tuesday if Monday is a holiday).",
+      zh: "以“欧洲小镇的文具店”为主题的文具店，销售日本国内和进口的文具以及桌边的室内杂货。从松阴神社前的一家小店起步，经过三轩茶屋，2021年搬进建在小田急线旧铁道上的低层商业设施“reload”。位于reload 2楼的2-6号铺，从下北泽站或东北泽站步行约4分钟。营业时间12:00〜19:00，周一休息（遇节假日改为周二）。",
+      ko: "'유럽 거리의 문방구'를 테마로 한 문구점으로, 국내외 문구와 책상 주변 인테리어 잡화를 판매합니다. 쇼인진자마에의 작은 가게에서 시작해 산겐자야를 거쳐, 2021년 오다큐선 옛 선로 자리에 생긴 저층 상업시설 'reload'로 옮겨 왔습니다. reload 2층의 2-6 구획으로, 시모키타자와역이나 히가시키타자와역에서 걸어서 약 4분입니다. 12:00~19:00 영업, 월요일 휴무(공휴일이면 화요일).",
+      ja: "「ヨーロッパの街の文房具店」がテーマの文具店で、国内外の文具やデスクまわりのインテリア雑貨を扱う。松陰神社前の小さな店から始まり、三軒茶屋を経て、2021年に小田急線の線路跡にできた低層の商業施設「reload」へ移ってきた。reloadの2階、区画2-6にあり、下北沢駅または東北沢駅から徒歩約4分。12:00〜19:00、月曜定休（祝日なら火曜）。"
     }
   },
   {
@@ -996,10 +996,10 @@ window.STORES = [
     address: "東京都世田谷区代沢5-36-14",
     lat: null, lng: null,
     desc: {
-      en: "A three-story building that is a shop from top to bottom: the 1st floor is a cafe, the 2nd and 3rd floors carry accessories, goods, clothing and shoes by independent makers, and the 3rd floor also hosts solo shows and events. The name comes from the wish to light up the South Exit's three-way junction where people cross paths. The cafe's 'Shimokitazawa Blend' coffee is blended by the local coffee shop BOOKENDS. About 4 minutes from the Southwest Exit of Shimokitazawa Station, facing the three-way junction. Closed Mondays; hours vary by source, so check before you go.",
-      zh: "整栋三层楼都是店铺：1楼是咖啡馆，2楼和3楼陈列独立创作者的饰品、杂货、服装和鞋子，3楼还会举办个展等活动。店名寄托了“在下北泽南口人来人往的三岔路口点亮一盏灯”的心愿。咖啡馆的“下北泽Blend”咖啡由下北泽的咖啡店BOOKENDS调配。从下北泽站西南口步行约4分钟，就在三岔路口旁。周一休息，营业时间各来源不同，前往前请先确认。",
-      ko: "3층 건물 전체가 가게로, 1층은 카페, 2·3층에는 개인 작가의 액세서리, 잡화, 옷, 신발이 있고 3층에서는 개인전 등도 열립니다. 가게 이름은 '사람들이 오가는 시모키타자와 남쪽 출구의 삼거리(산사로)에 불을 밝히고 싶다'는 마음에서 지었습니다. 카페의 '시모키타자와 블렌드' 커피는 시모키타자와의 커피점 BOOKENDS가 블렌딩했습니다. 시모키타자와역 남서쪽 출구에서 걸어서 약 4분, 삼거리에 면한 건물입니다. 월요일 휴무, 영업시간은 정보마다 다르니 가기 전에 확인하세요.",
-      ja: "3階建ての建物全体が店で、1階はカフェ、2・3階は個人作家のアクセサリーや雑貨、服、靴を並べ、3階では個展なども開く。店名は「下北沢南口の三叉路、人々が交差するこの場所に灯を」という思いから。カフェのコーヒーは、下北沢のコーヒー店BOOKENDSがブレンドした「下北沢ブレンド」。下北沢駅南西口から徒歩約4分、南口の三叉路に面した建物。月曜定休、営業時間は情報源で異なるので確認を。"
+      en: "A three-story building that is a shop from top to bottom: the 1st floor is a cafe, the 2nd and 3rd floors carry accessories, goods, clothing and shoes by independent makers, and the 3rd floor also hosts solo shows and events. The name comes from the wish to light up the South Exit's three-way junction where people cross paths. The cafe's 'Shimokitazawa Blend' coffee is blended by the local coffee shop BOOKENDS. About 4 minutes from the Southwest Exit of Shimokitazawa Station, facing the three-way junction. Closed Mondays.",
+      zh: "整栋三层楼都是店铺：1楼是咖啡馆，2楼和3楼陈列独立创作者的饰品、杂货、服装和鞋子，3楼还会举办个展等活动。店名寄托了“在下北泽南口人来人往的三岔路口点亮一盏灯”的心愿。咖啡馆的“下北泽Blend”咖啡由下北泽的咖啡店BOOKENDS调配。从下北泽站西南口步行约4分钟，就在三岔路口旁。周一休息。",
+      ko: "3층 건물 전체가 가게로, 1층은 카페, 2·3층에는 개인 작가의 액세서리, 잡화, 옷, 신발이 있고 3층에서는 개인전 등도 열립니다. 가게 이름은 '사람들이 오가는 시모키타자와 남쪽 출구의 삼거리(산사로)에 불을 밝히고 싶다'는 마음에서 지었습니다. 카페의 '시모키타자와 블렌드' 커피는 시모키타자와의 커피점 BOOKENDS가 블렌딩했습니다. 시모키타자와역 남서쪽 출구에서 걸어서 약 4분, 삼거리에 면한 건물입니다. 월요일 휴무.",
+      ja: "3階建ての建物全体が店で、1階はカフェ、2・3階は個人作家のアクセサリーや雑貨、服、靴を並べ、3階では個展なども開く。店名は「下北沢南口の三叉路、人々が交差するこの場所に灯を」という思いから。カフェのコーヒーは、下北沢のコーヒー店BOOKENDSがブレンドした「下北沢ブレンド」。下北沢駅南西口から徒歩約4分、南口の三叉路に面した建物。月曜定休。"
     }
   }
 ];
